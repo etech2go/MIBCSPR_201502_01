@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Campaign Type</value>
+        </caseValues>
+        <name>type_campaign</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <label><!-- Ad Type --></label>
+        <name>Ad_Type__c</name>
+        <picklistValues>
+            <masterLabel>3rd Party</masterLabel>
+            <translation><!-- 3rd Party --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bing/Yahoo/Adcenter</masterLabel>
+            <translation><!-- Bing/Yahoo/Adcenter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Blog</masterLabel>
+            <translation><!-- Blog --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Display</masterLabel>
+            <translation><!-- Display --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Google/Adwords</masterLabel>
+            <translation><!-- Google/Adwords --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>M6/ Dstilery</masterLabel>
+            <translation><!-- M6/ Dstilery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Paid Social</masterLabel>
+            <translation><!-- Paid Social --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retargeting</masterLabel>
+            <translation><!-- Retargeting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unpaid Social</masterLabel>
+            <translation><!-- Unpaid Social --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- CRM Campaign ID --></label>
+        <name>CRM_Campaign_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- CampaignID --></label>
+        <name>CampaignID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Campaign Goal --></label>
+        <name>Campaign_Goal__c</name>
+        <picklistValues>
+            <masterLabel>Cross Sell Up Sell</masterLabel>
+            <translation><!-- Cross Sell Up Sell --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Interest Building (2)/Product</masterLabel>
+            <translation><!-- Interest Building (2)/Product --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales Leads (1)</masterLabel>
+            <translation><!-- Sales Leads (1) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Thought Leadership (3)</masterLabel>
+            <translation><!-- Thought Leadership (3) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Campaign Number --></label>
+        <name>Campaign_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Divsion --></label>
+        <name>Divsion__c</name>
+        <picklistValues>
+            <masterLabel>Broadcast</masterLabel>
+            <translation><!-- Broadcast --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Canada</masterLabel>
+            <translation><!-- Canada --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cision US</masterLabel>
+            <translation><!-- Cision US --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Evaluation</masterLabel>
+            <translation><!-- Evaluation --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Offer --></label>
+        <name>Offer__c</name>
+        <picklistValues>
+            <masterLabel>Briefing Book</masterLabel>
+            <translation><!-- Briefing Book --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Case Study</masterLabel>
+            <translation><!-- Case Study --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Free Trial/Free Report</masterLabel>
+            <translation><!-- Free Trial/Free Report --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pitching Kit</masterLabel>
+            <translation><!-- Pitching Kit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pricing Info Demo (PID)</masterLabel>
+            <translation><!-- Pricing Info Demo (PID) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Webinar</masterLabel>
+            <translation><!-- Webinar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>White Paper/Tip Sheet</masterLabel>
+            <translation><!-- White Paper/Tip Sheet --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>Product__c</name>
+        <picklistValues>
+            <masterLabel>Analyze</masterLabel>
+            <translation><!-- Analyze --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Connect</masterLabel>
+            <translation><!-- Connect --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Content Marketing</masterLabel>
+            <translation><!-- Content Marketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ed Cals</masterLabel>
+            <translation><!-- Ed Cals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Integrated</masterLabel>
+            <translation><!-- Integrated --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monitor</masterLabel>
+            <translation><!-- Monitor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plan</masterLabel>
+            <translation><!-- Plan --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <name>Status</name>
+        <picklistValues>
+            <masterLabel>Aborted</masterLabel>
+            <translation><!-- Aborted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cision Canceled</masterLabel>
+            <translation><!-- Cision Canceled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cision Completed</masterLabel>
+            <translation><!-- Cision Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cision In Development</masterLabel>
+            <translation><!-- Cision In Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cision Launched</masterLabel>
+            <translation><!-- Cision Launched --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cision Proposed</masterLabel>
+            <translation><!-- Cision Proposed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cision Suspended</masterLabel>
+            <translation><!-- Cision Suspended --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation><!-- Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Planned</masterLabel>
+            <translation><!-- Planned --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Team Queue --></label>
+        <name>Team_Queue__c</name>
+        <picklistValues>
+            <masterLabel>Analysis</masterLabel>
+            <translation><!-- Analysis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Broadcast</masterLabel>
+            <translation><!-- Broadcast --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lead Generation</masterLabel>
+            <translation><!-- Lead Generation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Biz</masterLabel>
+            <translation><!-- New Biz --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renewals</masterLabel>
+            <translation><!-- Renewals --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <name>Type</name>
+        <picklistValues>
+            <masterLabel>Direct Mail</masterLabel>
+            <translation><!-- Direct Mail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email</masterLabel>
+            <translation><!-- Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Event</masterLabel>
+            <translation><!-- Event --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal</masterLabel>
+            <translation><!-- Internal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nurture</masterLabel>
+            <translation><!-- Nurture --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OLA</masterLabel>
+            <translation><!-- OLA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SEM</masterLabel>
+            <translation><!-- SEM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Social</masterLabel>
+            <translation><!-- Social --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Webinar</masterLabel>
+            <translation><!-- Webinar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Website/Direct/SEO</masterLabel>
+            <translation><!-- Website/Direct/SEO --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Web Page URL --></label>
+        <name>Web_Page_URL__c</name>
+    </fields>
+    <webLinks>
+        <label><!-- ViewAllCampaignMembers --></label>
+        <name>ViewAllCampaignMembers</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- ViewCampaignInfluenceReport --></label>
+        <name>ViewCampaignInfluenceReport</name>
+    </webLinks>
+</CustomObjectTranslation>

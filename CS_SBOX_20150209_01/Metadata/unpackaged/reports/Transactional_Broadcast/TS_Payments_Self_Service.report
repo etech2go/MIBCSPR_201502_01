@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>fw1__Payment__c$CreatedDate</field>
+    </columns>
+    <columns>
+        <field>fw1__Payment__c$fw1__Account__c</field>
+    </columns>
+    <columns>
+        <field>fw1__Payment__c$fw1__Invoice__c</field>
+    </columns>
+    <columns>
+        <field>fw1__Payment__c$fw1__Payment_Date__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>fw1__Payment__c$fw1__Total_Captured_Amount__c</field>
+    </columns>
+    <columns>
+        <field>fw1__Payment__c$fw1__Email__c</field>
+    </columns>
+    <columns>
+        <field>fw1__Payment__c$fw1__Payment_Method__c</field>
+    </columns>
+    <columns>
+        <field>fw1__Payment__c$Name</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>fw1__Payment__c$CreatedBy</column>
+            <operator>equals</operator>
+            <value>Web Payments Site Guest User</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>TS: Payments: Self Service</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>fw1__Payments__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>fw1__Payment__c$CreatedDate</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>fw1__Payment__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_THISMONTH</interval>
+    </timeFrameFilter>
+</Report>

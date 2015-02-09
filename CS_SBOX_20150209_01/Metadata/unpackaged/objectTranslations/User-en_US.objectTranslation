@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- This is a System Admin Attribute that for certain circumstances, we can bypass Validation when Deploying. --></help>
+        <label><!-- Bypass Validation --></label>
+        <name>Bypass_Validation__c</name>
+    </fields>
+    <fields>
+        <label><!-- CA Rep --></label>
+        <name>CA_Rep__c</name>
+        <relationshipLabel><!-- Users --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Hire Date --></label>
+        <name>Hire_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Basic Manager --></label>
+        <name>Is_Basic_Manager__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Broadcast User --></label>
+        <name>Is_Broadcast_User__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Client Manager --></label>
+        <name>Is_Client_Manager__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Major Manager --></label>
+        <name>Is_Major_Manager__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Manager VP --></label>
+        <name>Is_Manager_VP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is National Manager --></label>
+        <name>Is_National_Manager__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is VP --></label>
+        <name>Is_VP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Region --></label>
+        <name>Region__c</name>
+        <picklistValues>
+            <masterLabel>East</masterLabel>
+            <translation><!-- East --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>West</masterLabel>
+            <translation><!-- West --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Reporting Functional Team --></label>
+        <name>Reporting_Functional_Team__c</name>
+        <picklistValues>
+            <masterLabel>Agency</masterLabel>
+            <translation><!-- Agency --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Basic</masterLabel>
+            <translation><!-- Basic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client</masterLabel>
+            <translation><!-- Client --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lead Gen</masterLabel>
+            <translation><!-- Lead Gen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Major</masterLabel>
+            <translation><!-- Major --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Major Accounts Business Development</masterLabel>
+            <translation><!-- Major Accounts Business Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>National</masterLabel>
+            <translation><!-- National --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>National Business Development</masterLabel>
+            <translation><!-- National Business Development --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Reporting Main Team --></label>
+        <name>Reporting_Main_Team__c</name>
+        <picklistValues>
+            <masterLabel>Broadcast</masterLabel>
+            <translation><!-- Broadcast --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Biz</masterLabel>
+            <translation><!-- New Biz --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renewals</masterLabel>
+            <translation><!-- Renewals --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Reporting Region --></label>
+        <name>Reporting_Region__c</name>
+        <picklistValues>
+            <masterLabel>Central</masterLabel>
+            <translation><!-- Central --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>East</masterLabel>
+            <translation><!-- East --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>West</masterLabel>
+            <translation><!-- West --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Customize default tab in Product Lookup page. --></help>
+        <label><!-- Default Product Lookup Tab --></label>
+        <name>SBQQ__DefaultProductLookupTab__c</name>
+        <picklistValues>
+            <masterLabel>Guided Selling</masterLabel>
+            <translation><!-- Guided Selling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Search Filters</masterLabel>
+            <translation><!-- Search Filters --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Check to allow this user to change output format of quote documents. --></help>
+        <label><!-- Allow Output Format Change --></label>
+        <name>SBQQ__OutputFormatChangeAllowed__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select &quot;Followed&quot; to display products you follow in Chatter before others when adding to quote. --></help>
+        <label><!-- Product Sort Preference --></label>
+        <name>SBQQ__ProductSortPreference__c</name>
+        <picklistValues>
+            <masterLabel>Followed</masterLabel>
+            <translation><!-- Followed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Check to clear search filters and results every time you add products to your quotes. Otherwise, your previous selections are kept. --></help>
+        <label><!-- Reset Product Lookup --></label>
+        <name>SBQQ__ResetProductLookup__c</name>
+    </fields>
+    <fields>
+        <label><!-- ShowID2 --></label>
+        <name>ShowID2__c</name>
+    </fields>
+    <fields>
+        <label><!-- ShowID --></label>
+        <name>ShowID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Softrax Territory --></label>
+        <name>Softrax_Territory__c</name>
+        <picklistValues>
+            <masterLabel>000 - General</masterLabel>
+            <translation><!-- 000 - General --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>045 - San Diego</masterLabel>
+            <translation><!-- 045 - San Diego --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>050 - Los Angeles</masterLabel>
+            <translation><!-- 050 - Los Angeles --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>060 - Oakland</masterLabel>
+            <translation><!-- 060 - Oakland --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>070 - Seattle</masterLabel>
+            <translation><!-- 070 - Seattle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>105 - Minneapolis</masterLabel>
+            <translation><!-- 105 - Minneapolis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>110 - Chicago</masterLabel>
+            <translation><!-- 110 - Chicago --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>125 - Washington, D.C.</masterLabel>
+            <translation><!-- 125 - Washington, D.C. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>130 - New York</masterLabel>
+            <translation><!-- 130 - New York --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>135 - New Hampshire</masterLabel>
+            <translation><!-- 135 - New Hampshire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>140 - Texas</masterLabel>
+            <translation><!-- 140 - Texas --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>150 - St. Louis</masterLabel>
+            <translation><!-- 150 - St. Louis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>160 - Phoenix</masterLabel>
+            <translation><!-- 160 - Phoenix --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>170 - Indiana</masterLabel>
+            <translation><!-- 170 - Indiana --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>185 - Massachusetts</masterLabel>
+            <translation><!-- 185 - Massachusetts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>200 - Miami</masterLabel>
+            <translation><!-- 200 - Miami --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- User External Id --></label>
+        <name>User_External_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- DSProSFMembershipStatus --></label>
+        <name>dsfs__DSProSFMembershipStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- DSProSFPassword --></label>
+        <name>dsfs__DSProSFPassword__c</name>
+    </fields>
+    <fields>
+        <label><!-- DSProSFUsername --></label>
+        <name>dsfs__DSProSFUsername__c</name>
+    </fields>
+    <fields>
+        <label><!-- Work.com User UUID --></label>
+        <name>wdcc2__UserUuid__c</name>
+    </fields>
+</CustomObjectTranslation>

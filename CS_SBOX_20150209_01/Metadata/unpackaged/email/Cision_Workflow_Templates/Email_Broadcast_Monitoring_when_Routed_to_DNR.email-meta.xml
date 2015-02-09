@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Email Broadcast Monitoring when Routed to DNR</name>
+    <style>none</style>
+    <subject>Routed to DNR: The opp for {!Opportunity.Account} (Opp Number: {!Opportunity.Name}) has been routed to DNR</subject>
+    <type>text</type>
+</EmailTemplate>

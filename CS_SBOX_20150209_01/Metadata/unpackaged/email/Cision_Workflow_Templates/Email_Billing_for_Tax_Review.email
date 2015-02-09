@@ -1,0 +1,5 @@
+Hi Billing
+
+You have a new Opportunity that is sitting in Tax Review due to the client indicating that they are Tax Exempt.
+
+{!Opportunity.Link}

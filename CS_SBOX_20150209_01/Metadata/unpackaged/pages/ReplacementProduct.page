@@ -1,0 +1,27 @@
+<apex:page standardController="Product2" extensions="replaceProductController">
+
+	<apex:form >
+        
+        <apex:pageBlock title="Replace Renewal Product"> 
+            <apex:pageMessages />
+            <center><h1><font color="Red"><apex:outputText value="{!processMessage}" /></font></h1></center>
+            <apex:pageBlockButtons >
+                <apex:commandButton value="Replace" action="{!save}"/>
+			    <apex:commandButton value="Cancel" action="{!cancel}"/>
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection columns="2">
+				<apex:outputField value="{!Product2.ProductCode}"/><br/>
+                <apex:outputField value="{!Product2.Name}"/><br/>
+				<apex:inputField value="{!Product2.SBQQ__RenewalProduct__c}" required="true" id="renewalProduct"/>
+		      	<apex:outputPanel id="Renewal">
+                <apex:outputText value="Renewal Pricebook"/>
+				<apex:selectList size="1" id="selectedRenewalPriceBook" value="{!selectedRenewalPriceBook}">
+             		<apex:selectOptions value="{!PriceBookList}" />
+           		</apex:selectList>
+           		
+               </apex:outputPanel>
+            </apex:pageBlockSection>
+			
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

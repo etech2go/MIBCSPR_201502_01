@@ -1,0 +1,4 @@
+<apex:page showHeader="false" sidebar="false" controller="ShowCallTemplateController">
+	<apex:outputField value="{!ActivityType.Call_Template__c}" rendered="{!DisplayTemplate}"/>
+	<apex:outputText value="There is no Call Template assigned to this Task." rendered="NOT({!DisplayTemplate})"/>
+</apex:page>

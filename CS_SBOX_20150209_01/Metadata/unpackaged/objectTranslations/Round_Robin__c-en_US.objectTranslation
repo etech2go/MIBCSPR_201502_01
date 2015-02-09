@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Round Robin</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Round Robin</value>
+    </caseValues>
+    <fields>
+        <label><!-- Assign Records --></label>
+        <name>Assign_Records__c</name>
+    </fields>
+    <fields>
+        <label><!-- CC Manager --></label>
+        <name>CC_Manager__c</name>
+    </fields>
+    <fields>
+        <label><!-- Group --></label>
+        <name>Group__c</name>
+        <picklistValues>
+            <masterLabel>All</masterLabel>
+            <translation><!-- All --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>At Risk</masterLabel>
+            <translation><!-- At Risk --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Broadcast</masterLabel>
+            <translation><!-- Broadcast --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CST</masterLabel>
+            <translation><!-- CST --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client Services</masterLabel>
+            <translation><!-- Client Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Content Marketing New Biz</masterLabel>
+            <translation><!-- Content Marketing New Biz --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contract Admin</masterLabel>
+            <translation><!-- Contract Admin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Services</masterLabel>
+            <translation><!-- Customer Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EST</masterLabel>
+            <translation><!-- EST --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>East</masterLabel>
+            <translation><!-- East --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lead Gen</masterLabel>
+            <translation><!-- Lead Gen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MST</masterLabel>
+            <translation><!-- MST --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monitoring</masterLabel>
+            <translation><!-- Monitoring --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Biz</masterLabel>
+            <translation><!-- New Biz --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Biz (Broadcast Response)</masterLabel>
+            <translation><!-- New Biz (Broadcast Response) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Biz (International Response)</masterLabel>
+            <translation><!-- New Biz (International Response) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OnSite/Consult</masterLabel>
+            <translation><!-- OnSite/Consult --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PST</masterLabel>
+            <translation><!-- PST --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Regional Lead Gen</masterLabel>
+            <translation><!-- Regional Lead Gen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renewals</masterLabel>
+            <translation><!-- Renewals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Training</masterLabel>
+            <translation><!-- Training --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>West</masterLabel>
+            <translation><!-- West --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- When including multiple emails, please separate by a semi-colon. --></help>
+        <label><!-- Include Emails --></label>
+        <name>Include_Emails__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Allocated --></label>
+        <name>Last_Allocated__c</name>
+    </fields>
+    <fields>
+        <label><!-- Max Hot Leads Monthly --></label>
+        <name>Max_Hot_Leads_Monthly__c</name>
+    </fields>
+    <fields>
+        <label><!-- Max Warm Leads Monthly --></label>
+        <name>Max_Warm_Leads_Monthly__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Records Assigned --></label>
+        <name>Number_of_Records_Assigned__c</name>
+    </fields>
+    <fields>
+        <label><!-- Object Type --></label>
+        <name>Object_Type__c</name>
+        <picklistValues>
+            <masterLabel>Case</masterLabel>
+            <translation><!-- Case --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>International Print Quote</masterLabel>
+            <translation><!-- International Print Quote --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lead</masterLabel>
+            <translation><!-- Lead --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Opportunity</masterLabel>
+            <translation><!-- Opportunity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Task</masterLabel>
+            <translation><!-- Task --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Open Hot Leads This Month --></label>
+        <name>Open_Hot_Leads_This_Month__c</name>
+    </fields>
+    <fields>
+        <label><!-- Open Opps --></label>
+        <name>Open_Opps__c</name>
+    </fields>
+    <fields>
+        <label><!-- Open Warm Leads This Month --></label>
+        <name>Open_Warm_Leads_This_Month__c</name>
+    </fields>
+    <fields>
+        <label><!-- Process --></label>
+        <name>Process__c</name>
+        <picklistValues>
+            <masterLabel>Broadcast Lead Assignments</masterLabel>
+            <translation><!-- Broadcast Lead Assignments --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client Services Task Assignments</masterLabel>
+            <translation><!-- Client Services Task Assignments --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client Services US Monitoring Email Assignments</masterLabel>
+            <translation><!-- Client Services US Monitoring Email Assignments --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client Services US Support Email Assignments</masterLabel>
+            <translation><!-- Client Services US Support Email Assignments --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>International Lead Assignments</masterLabel>
+            <translation><!-- International Lead Assignments --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lead Gen Lead Assignments</masterLabel>
+            <translation><!-- Lead Gen Lead Assignments --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Biz Lead Assignments</masterLabel>
+            <translation><!-- New Biz Lead Assignments --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renewal Lead Assignments</masterLabel>
+            <translation><!-- Renewal Lead Assignments --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renewal Opportunity Assignments</masterLabel>
+            <translation><!-- Renewal Opportunity Assignments --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Training At Risk Assignments</masterLabel>
+            <translation><!-- Training At Risk Assignments --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Training On-Site and Consult Assignments</masterLabel>
+            <translation><!-- Training On-Site and Consult Assignments --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Training US Training Email Assignments</masterLabel>
+            <translation><!-- Training US Training Email Assignments --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Store Stats --></label>
+        <name>Store_Stats__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sub Group --></label>
+        <name>Sub_Group__c</name>
+        <picklistValues>
+            <masterLabel>AM</masterLabel>
+            <translation><!-- AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BASIC</masterLabel>
+            <translation><!-- BASIC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BDM</masterLabel>
+            <translation><!-- BDM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BROADCAST</masterLabel>
+            <translation><!-- BROADCAST --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CLIENT</masterLabel>
+            <translation><!-- CLIENT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MAJOR</masterLabel>
+            <translation><!-- MAJOR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NATIONAL</masterLabel>
+            <translation><!-- NATIONAL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Small Business Outreach</masterLabel>
+            <translation><!-- New Small Business Outreach --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PitchEngine Setup</masterLabel>
+            <translation><!-- PitchEngine Setup --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Verification Call</masterLabel>
+            <translation><!-- Verification Call --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Total Available Potential --></label>
+        <name>Total_Available_Potential__c</name>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>User__c</name>
+        <relationshipLabel><!-- Round Robin --></relationshipLabel>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

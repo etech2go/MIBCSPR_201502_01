@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>fw1__Invoice__c$fw1__Invoice_Date__c</field>
+    </columns>
+    <columns>
+        <field>fw1__Invoice__c$Name</field>
+    </columns>
+    <columns>
+        <field>fw1__Invoice__c$fw1__Account__c</field>
+    </columns>
+    <columns>
+        <field>fw1__Invoice__c$fw1__Total_Invoice_Amount__c</field>
+    </columns>
+    <columns>
+        <field>fw1__Invoice__c$fw1__Balance_Due__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>fw1__Invoice__c$fw1__Total_Paid_Amount__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>fw1__Invoice__c$fw1__Total_Paid_Amount__c</column>
+            <operator>greaterThan</operator>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>fw1__Invoice__c$LastModifiedBy</column>
+            <operator>contains</operator>
+            <value>web payments site guest user</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>TS: Paid Invoices - Self Service</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>fw1__All_Invoices__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>fw1__Invoice__c$fw1__Invoice_Date__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>fw1__Invoice__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_THISMONTH</interval>
+    </timeFrameFilter>
+</Report>

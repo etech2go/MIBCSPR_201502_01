@@ -1,0 +1,35 @@
+<apex:page standardController="Task" extensions="LeadConversionExtension" showHeader="false">
+		<body style="bgcolor:white">
+		    <apex:form id="frmLeadConversion">	       
+				<table width="100%">					
+					<tr>
+						<td>
+							<apex:pageBlock id="leadDetails" mode="edit">  				             	
+								<apex:pageMessages id="MSG"/>
+				                <apex:pageBlockSection title="" columns="1">	
+									<apex:actionRegion >
+										<apex:selectList id="OpportunityOption" size="1" value="{!LeadConversionType}">	
+											 <apex:selectOptions value="{!options}"/>										
+										</apex:selectList>											
+									</apex:actionRegion>								
+									<!--<apex:inputField id="OpportunityName" value="{!t.WhatId}" label=""></apex:inputField>-->
+								<!-- 	<apex:inputField id="taskOwnerName" rendered="{!TaskViewMode}" value="{!t.OwnerId}" label=""></apex:inputField> -->
+								</apex:pageBlockSection>                       
+					         </apex:pageBlock>        			
+						</td>
+					</tr>								
+				 </table>
+				<table width="100%">
+					 <tr align="center">
+						<td>
+							<apex:pageBlock >
+							<apex:pageblockbuttons location="bottom">						
+									<apex:commandButton action="{!ConvertLead}" value="Convert Lead"/> 
+							</apex:pageblockbuttons>
+							</apex:pageBlock>
+						</td>												
+					</tr>    									
+				</table>
+			</apex:form>
+		</body>	
+	</apex:page>

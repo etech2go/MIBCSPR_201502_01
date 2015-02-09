@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Billing Terms --></label>
+        <name>Billing_Terms__c</name>
+    </fields>
+    <fields>
+        <label><!-- Locked --></label>
+        <name>Locked__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Number --></label>
+        <name>Opportunity_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- PO Number --></label>
+        <name>PO_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Passed to GP --></label>
+        <name>Passed_to_GP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Salesperson --></label>
+        <name>Salesperson__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipping Method --></label>
+        <name>Shipping_Method__c</name>
+    </fields>
+    <fields>
+        <label><!-- Void Date --></label>
+        <name>Void_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Reason for voiding the invoice --></help>
+        <label><!-- Void Reason --></label>
+        <name>Void_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Opportunity Adjustment</masterLabel>
+            <translation><!-- Opportunity Adjustment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Voided</masterLabel>
+            <translation><!-- Voided --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>fw1__Account__c</name>
+        <relationshipLabel><!-- Invoices --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Age --></label>
+        <name>fw1__Age__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Invoice Number --></label>
+        <name>fw1__Alternate_Invoice_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Authorized Amount --></label>
+        <name>fw1__Authorized_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Balance Due --></label>
+        <name>fw1__Balance_Due__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing City --></label>
+        <name>fw1__Billing_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Country --></label>
+        <name>fw1__Billing_Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Period --></label>
+        <name>fw1__Billing_Period__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing State --></label>
+        <name>fw1__Billing_State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Street --></label>
+        <name>fw1__Billing_Street__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Zip --></label>
+        <name>fw1__Billing_Zip__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cleared For Fulfillment --></label>
+        <name>fw1__Cleared_For_Fulfillment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>fw1__Contact__c</name>
+        <relationshipLabel><!-- Invoices --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Credit Card Failure Reason --></label>
+        <name>fw1__Credit_Card_Failure_Reason__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Installment Age --></label>
+        <name>fw1__Current_Installment_Age__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Installment Due Date --></label>
+        <name>fw1__Current_Installment_Due_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delinquent (OBSOLETE) --></label>
+        <name>fw1__Delinquent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>fw1__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Do Not Store Credit Card/Bank Account --></label>
+        <name>fw1__Do_Not_Store_Credit_Card__c</name>
+    </fields>
+    <fields>
+        <label><!-- Domain Name --></label>
+        <name>fw1__Domain_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Due Date --></label>
+        <name>fw1__Due_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Due Installment Amount --></label>
+        <name>fw1__Due_Installment_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- CC Recipients --></label>
+        <name>fw1__Email_CC_Recipients__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email Currency Symbol --></label>
+        <name>fw1__Email_Currency_Symbol__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email Footer --></label>
+        <name>fw1__Email_Footer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email Message --></label>
+        <name>fw1__Email_Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email Sent --></label>
+        <name>fw1__Email_Sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email Subject --></label>
+        <name>fw1__Email_Subject__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email me a copy of invoice --></label>
+        <name>fw1__Email_me_a_copy_of_invoice__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enter Down Payment In --></label>
+        <name>fw1__Enter_Down_Payment_In__c</name>
+        <picklistValues>
+            <masterLabel>Amount</masterLabel>
+            <translation><!-- Amount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Percentage</masterLabel>
+            <translation><!-- Percentage --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- From Email Address Id --></label>
+        <name>fw1__From_Email_Address_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Installment Count --></label>
+        <name>fw1__Installment_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Installment Fee --></label>
+        <name>fw1__Installment_Fee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Date --></label>
+        <name>fw1__Invoice_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Discount Amount --></label>
+        <name>fw1__Invoice_Discount_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Discount Percentage --></label>
+        <name>fw1__Invoice_Discount_Percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stop Collection --></label>
+        <name>fw1__Is_Stop_Collection__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Voided --></label>
+        <name>fw1__Is_Voided__c</name>
+    </fields>
+    <fields>
+        <label><!-- Net Amount --></label>
+        <name>fw1__Net_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Retries --></label>
+        <name>fw1__Number_of_Retries__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Plan --></label>
+        <name>fw1__Payment_Plan__c</name>
+        <relationshipLabel><!-- Invoices --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Pending Auto Bill Pay --></label>
+        <name>fw1__Pending_Auto_Bill_Pay__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field cobtains the timestamp when this invoice was printed --></help>
+        <label><!-- Printed Date --></label>
+        <name>fw1__Printed_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Recipient Email --></label>
+        <name>fw1__Recipient_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Recipient Name --></label>
+        <name>fw1__Recipient_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Recurring Invoice --></label>
+        <name>fw1__Recurring_Invoice__c</name>
+        <relationshipLabel><!-- Invoices --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Reply To Email --></label>
+        <name>fw1__Reply_To_Email__c</name>
+    </fields>
+    <fields>
+        <help><!-- You can enter the required down payment amount here. --></help>
+        <label><!-- Required Down Payment Amount --></label>
+        <name>fw1__Required_Down_Payment_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- You can enter the required down payment percentage here. --></help>
+        <label><!-- Required Down Payment % --></label>
+        <name>fw1__Required_Down_Payment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Retry Date --></label>
+        <name>fw1__Retry_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Revolving Balance --></label>
+        <name>fw1__Revolving_Balance__c</name>
+    </fields>
+    <fields>
+        <help><!-- Shipping And Handling Amount --></help>
+        <label><!-- Shipping And Handling --></label>
+        <name>fw1__Shipping_And_Handling__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipping City --></label>
+        <name>fw1__Shipping_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipping Country --></label>
+        <name>fw1__Shipping_Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipping State --></label>
+        <name>fw1__Shipping_State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipping Street --></label>
+        <name>fw1__Shipping_Street__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipping Zip --></label>
+        <name>fw1__Shipping_Zip__c</name>
+    </fields>
+    <fields>
+        <help><!-- Tax Percentage --></help>
+        <label><!-- Tax --></label>
+        <name>fw1__Tax__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates whether or not the customer has accepted the terms of the invoice. --></help>
+        <label><!-- Terms Accepted --></label>
+        <name>fw1__Terms_Accepted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Terms And Conditions Link --></label>
+        <name>fw1__Terms_And_Conditions_Link__c</name>
+    </fields>
+    <fields>
+        <label><!-- Terms And Conditions --></label>
+        <name>fw1__Terms_And_Conditions__c</name>
+    </fields>
+    <fields>
+        <help><!-- Days due from Invoice Date --></help>
+        <label><!-- Terms --></label>
+        <name>fw1__Terms__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Installment Amount --></label>
+        <name>fw1__Total_Installment_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Invoice Amount --></label>
+        <name>fw1__Total_Invoice_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Invoice Discount Amount --></label>
+        <name>fw1__Total_Invoice_Discount_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Lines Amount --></label>
+        <name>fw1__Total_Lines_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Lines Discount Amount --></label>
+        <name>fw1__Total_Lines_Discount_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Lines Discount Percentage --></label>
+        <name>fw1__Total_Lines_Discount_Percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Lines Discount Quantity --></label>
+        <name>fw1__Total_Lines_Discount_Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Non-Installment --></label>
+        <name>fw1__Total_Non_Installment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Paid Amount --></label>
+        <name>fw1__Total_Paid_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>fw2__Opportunity__c</name>
+        <relationshipLabel><!-- Invoices --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Quote --></label>
+        <name>fw2__Quote__c</name>
+        <relationshipLabel><!-- Invoices --></relationshipLabel>
+    </fields>
+    <recordTypes>
+        <label><!-- Invoice --></label>
+        <name>Invoice</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Locked Invoice --></label>
+        <name>Locked_Invoice</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- This record is closed and can&apos;t be edited. --></errorMessage>
+        <name>Locked_Invoice</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please include a void reason --></errorMessage>
+        <name>Void_Reason_Check</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Create_Credit_Memo_From_This_Invoice --></label>
+        <name>fw1__Create_Credit_Memo_From_This_Invoice</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Email_Invoice --></label>
+        <name>fw1__Email_Invoice</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Pay_Invoice --></label>
+        <name>fw1__Pay_Invoice</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Print_Batch_Invoice --></label>
+        <name>fw1__Print_Batch_Invoice</name>
+    </webLinks>
+</CustomObjectTranslation>

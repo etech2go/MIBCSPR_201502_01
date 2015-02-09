@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ACCOUNT_NAME</field>
+    </columns>
+    <columns>
+        <field>FULL_NAME</field>
+    </columns>
+    <columns>
+        <field>OPPORTUNITY_NAME</field>
+    </columns>
+    <columns>
+        <field>TYPE</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Commissionable_Potential__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Non_Commissionable_Potential__c</field>
+    </columns>
+    <columns>
+        <field>Account.Total_Renewal_Value__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Forecast_Value__c</field>
+    </columns>
+    <columns>
+        <field>AMOUNT</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Renewal_Due_Date__c</field>
+    </columns>
+    <columns>
+        <field>NEXT_STEP</field>
+    </columns>
+    <columns>
+        <field>STAGE_NAME</field>
+    </columns>
+    <columns>
+        <field>PROBABILITY</field>
+    </columns>
+    <filter>
+        <booleanFilter>(1 OR 3 OR 4) AND 2</booleanFilter>
+        <criteriaItems>
+            <column>OWNER_MANAGER</column>
+            <operator>equals</operator>
+            <value>Kathleen Umbriaco</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>STAGE_NAME</column>
+            <operator>equals</operator>
+            <value>Closed Won</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER_MANAGER</column>
+            <operator>equals</operator>
+            <value>Joseph Manzo</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OWNER_MANAGER</column>
+            <operator>equals</operator>
+            <value>Chris Vamos</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Majors/CR closed as Won</name>
+    <params>
+        <name>open</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Opportunity</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>FULL_NAME</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Opportunity.Renewal_Due_Date__c</dateColumn>
+        <endDate>2014-11-30</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2014-11-01</startDate>
+    </timeFrameFilter>
+</Report>

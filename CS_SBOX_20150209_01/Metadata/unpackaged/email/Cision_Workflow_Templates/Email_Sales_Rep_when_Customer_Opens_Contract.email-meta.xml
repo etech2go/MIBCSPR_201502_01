@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email Sales Rep when Customer Opens Contract</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Email Sales Rep when Customer Opens Contract</name>
+    <style>none</style>
+    <subject>The Contract for {!Opportunity.Account} was opened by your client.</subject>
+    <type>text</type>
+</EmailTemplate>

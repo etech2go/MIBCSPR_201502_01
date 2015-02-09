@@ -1,0 +1,5 @@
+Hi {!Case.OwnerFirstName},
+
+SSG has added a SD Ticket Number ({!Case.Service_Desk_Ticket_Number__c}) to your Case for {!Case.Account}.
+
+Please click here to see your Case: {!Case.Link}

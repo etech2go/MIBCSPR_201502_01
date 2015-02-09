@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Prepaid_Clip_Package__c.PrePaid_Package__c</field>
+    </columns>
+    <columns>
+        <field>Prepaid_Clip_Package__c.Total_Package_Amount__c</field>
+    </columns>
+    <columns>
+        <field>Prepaid_Clip_Package__c.Package_Depleted__c</field>
+    </columns>
+    <columns>
+        <field>Prepaid_Clip_Package__c.Number_of_Clips__c</field>
+    </columns>
+    <columns>
+        <field>Prepaid_Clip_Package__c.Remaining_Package_Clips__c</field>
+    </columns>
+    <columns>
+        <field>Prepaid_Clip_Package__c.Remaining_by_Percent__c</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <format>Tabular</format>
+    <name>All Clip Packages</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountCustomEntity$Prepaid_Clip_Package__c</reportType>
+    <scope>user</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

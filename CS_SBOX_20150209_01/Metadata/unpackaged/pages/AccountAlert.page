@@ -1,0 +1,68 @@
+<apex:page standardController="Account" extensions="AccountAlertExtension" showHeader="false" sidebar="false" title="Account Alert">		
+	<head>
+		<title>Account Alert</title>
+        <style type="css">
+		body{
+			font-size:12px;
+        }				
+		.boldText{
+			font-weight:bold;
+			padding:10px;
+		}					
+		.dialogtitleheader.ui-dialog-titlebar {
+			background-color:blue}
+		</style>
+	</head>	
+	<body></body>
+	<apex:form >
+	<table width="100%">
+		<tr>
+			<td>
+				<apex:pageBlock mode="detailBlock">
+					<apex:pageBlockSection title="Credit Hold Alert" rendered="{!acct.Credit_Hold__c}" columns="1">					
+						<b>CREDIT HOLD ALERT</b>  Contact {!acct.AR_Rep__c} to see what needs to be done to get this Account off credit hold.  You can't submit any
+						Opps for this Account until the credit hold issue has been resolved.  Do NOT create a new Account to bypass the Credit Hold.					
+					</apex:pageBlockSection>
+					<apex:pageBlockSection title="Do Not Sell" rendered="{!acct.Do_Not_Sell__c}" columns="1">					
+						Management has flagged this account as <b>DO NOT SELL</b>. Do not try to sell to them. Contact your manager with any questions.					
+					</apex:pageBlockSection>
+					<apex:pageBlockSection title="Renewal Period" rendered="{!acct.Renewal_Period__c}" columns="1">			
+							This is the Renewal Period.  New Biz can not contact.
+					</apex:pageBlockSection>    
+					<apex:pageBlockSection title="Renewal Info" rendered="{!acct.Renewal_Info__c != ''}" columns="1">			
+							{!acct.Renewal_Info__c}
+					</apex:pageBlockSection>
+					<apex:pageBlockSection title="Renewals Named Account" rendered="{!acct.Renewals_Named_Account_Rep__r.Name != ''}" columns="1">			
+							This is a Renewals Named Account owned by {!acct.Renewals_Named_Account_Rep__r.Name}.  Do not call. 
+					</apex:pageBlockSection>					
+					<apex:pageBlockSection title="Extensions Info" rendered="{!acct.Extensions_Info__c != ''}" columns="1">			
+							{!acct.Extensions_Info__c}
+					</apex:pageBlockSection>
+					<apex:pageBlockSection title="New Biz Info" rendered="{!acct.New_Biz_Info__c != ''}" columns="1">			
+							{!acct.New_Biz_Info__c}
+					</apex:pageBlockSection>
+					<apex:pageBlockSection title="New Biz Named Account" rendered="{!acct.New_Biz_Named_Account_Rep__r.Name != ''}" columns="1">			
+							This is a New Biz Named Account owned by {!acct.New_Biz_Named_Account_Rep__r.Name}.  Please do not call and refer any inquiries regarding the account to {!acct.New_Biz_Named_Account_Rep__r.Name} or a sales manager
+					</apex:pageBlockSection>
+					<apex:pageBlockSection title="Lexis Nexis" rendered="{!acct.LexisNexis_Named_Account__c}" columns="1">
+						{!acct.Name} is a <b>Lexis Nexis</b> Named Account.  You cannot propose eNews without contacting Sharifa Abubaker.
+					</apex:pageBlockSection>
+					<apex:pageBlockSection title="Lexis QuickShare" rendered="{!acct.QuickShare_Account__c}" columns="1">			
+							Do not sell <b>Lexis Quickshare</b> to this account.  Any questions, see Sharifa Abubaker.			
+					</apex:pageBlockSection>	
+					<apex:pageBlockSection title="P.O Required" rendered="{!acct.P_O_Required__c}" columns="1">			
+							All Opportunities for this Account will require a P.O. Number.
+					</apex:pageBlockSection>
+					<apex:pageBlockSection title="Client Services Info" rendered="{!acct.Client_Services_Info__c != ''}" columns="1">			
+							{!acct.Client_Services_Info__c}
+					</apex:pageBlockSection>
+					<apex:pageBlockSection title="Collections Info" rendered="{!acct.Collections_Info__c != ''}" columns="1">			
+							{!acct.Collections_Info__c}
+					</apex:pageBlockSection>																														 								
+				</apex:pageBlock>	
+			</td>
+		</tr>
+		<tr align="right"><td><apex:commandButton onclick="window.close()" value="Close" title="Close"></apex:commandButton></td></tr>
+	</table>
+	</apex:form>		
+</apex:page>

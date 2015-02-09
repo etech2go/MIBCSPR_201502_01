@@ -1,0 +1,5 @@
+Hi {!Case.Parent_Case_Owner__c},
+
+DCS needs more information in order to resolve your Case for {!Case.Account}.  Please update this DCS Case to provide more information.
+
+Please click here to see the DCS Case: {!Case.Link}

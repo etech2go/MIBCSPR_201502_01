@@ -1,0 +1,68 @@
+<apex:page showHeader="false">
+
+    <apex:stylesheet value="{!URLFOR($Resource.CisionChatResources,'Site.css')}"/>
+    
+    <!-- This script takes the endpoint URL parameter passed from the deployment page and makes
+    it the action for the form -->
+    <script type="text/javascript">
+        (function() { function handlePageLoad() {
+            var endpointMatcher = new RegExp("[\\?\\&]endpoint=([^&#]*)");
+            document.getElementById('prechatForm').setAttribute('action',
+            decodeURIComponent(endpointMatcher.exec(document.location.search)[1]));
+        } if (window.addEventListener) {
+        window.addEventListener('load', handlePageLoad, false);
+        } else { window.attachEvent('onload', handlePageLoad, false);   
+        }})();
+    </script>
+    
+    <form method='post' id='prechatForm'>
+                
+        <div id="wrappernobackground" style="width:400px!important; background-color:#FFFFFF">
+            <apex:pageMessages ></apex:pageMessages>
+            <img src="{!URLFOR($Resource.CisionChatResources,'clogo.gif')}" alt="logo" height="32" width="110" />
+            <div id="header">
+                <p style="text-align:center">Please enter your details and click 'Enter Chat' to start the Chat session</p>
+                    
+            <table>
+                <tr>
+                    <td width="100"><h2 style="margin-left:10px">Name:</h2></td>
+                    <td><input type='text' name='liveagent.prechat:Name' id='prechat_field' /></td>
+                </tr>
+                <tr>
+                    <td><h2 style="margin-left:10px">Company:</h2></td>
+                    <td><input type='text' name='liveagent.prechat:Company' id='prechat_field' width="100" /></td>
+                </tr>
+                <tr>
+                    <td><h2 style="margin-left:10px">Email:</h2></td>
+                    <td><input type='text' name='liveagent.prechat:Email' /></td>
+                </tr>
+            </table>
+            
+            <br/>
+                        
+            <table>
+                <tr>
+                    <td width="50%"></td>
+                    <td width="90"><input type='submit' value='Enter Chat' id='prechat_submit'/></td>
+                    <td width="50%"></td>
+                </tr>
+            </table>
+            
+            <!-- Creates an auto-query for a matching Contact record’s Email field based on the
+            value of the liveagent.prechat:Email field -->
+            <input type="hidden" name="liveagent.prechat.query:Email" value="Contact,Contact.Email" />
+           
+            <style type="text/css">
+                p {font-weight: bolder }
+            </style>
+        </div>
+                       
+       
+    </div>
+    </form>
+    
+    <script type='text/javascript'>
+        liveagent.setName('John Doe');
+    </script>
+    
+</apex:page>

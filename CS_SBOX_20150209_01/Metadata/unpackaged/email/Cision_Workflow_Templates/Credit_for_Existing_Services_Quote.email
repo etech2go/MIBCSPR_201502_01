@@ -1,0 +1,7 @@
+A new request for a credit for existing services quote has come in from {!Credit_for_Existing_Services_Quote__c.CreatedBy}.
+
+The New Contract Start Date is: {!Credit_for_Existing_Services_Quote__c.Start_Date_of_New_Contract__c}
+
+The Comments are: {!Credit_for_Existing_Services_Quote__c.Comments__c}
+
+{!Credit_for_Existing_Services_Quote__c.Link}

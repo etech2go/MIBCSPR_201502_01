@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- CRM Product Name --></label>
+        <name>CRM_Product_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Commissionable Product --></label>
+        <name>Commissionable_Product__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opp Type --></label>
+        <name>Opp_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Potential Adjustment Reason --></label>
+        <name>Potential_Adjustment_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Adjusted to 12 Month Pricing</masterLabel>
+            <translation><!-- Adjusted to 12 Month Pricing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agency not Renewing Monitoring</masterLabel>
+            <translation><!-- Agency not Renewing Monitoring --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Approval from Manager</masterLabel>
+            <translation><!-- Approval from Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bankruptcy</masterLabel>
+            <translation><!-- Bankruptcy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Broadcast</masterLabel>
+            <translation><!-- Broadcast --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CRM Error</masterLabel>
+            <translation><!-- CRM Error --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Collections</masterLabel>
+            <translation><!-- Collections --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credit for Existing Services</masterLabel>
+            <translation><!-- Credit for Existing Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Duplicate Opp/Line</masterLabel>
+            <translation><!-- Duplicate Opp/Line --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Early Renewal</masterLabel>
+            <translation><!-- Early Renewal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Early Termination</masterLabel>
+            <translation><!-- Early Termination --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Matched previous opp&apos;s pricing</masterLabel>
+            <translation><!-- Matched previous opp&apos;s pricing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Merged Accounts</masterLabel>
+            <translation><!-- Merged Accounts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mid-Cycle Upsell</masterLabel>
+            <translation><!-- Mid-Cycle Upsell --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Moved Opp to Other Country</masterLabel>
+            <translation><!-- Moved Opp to Other Country --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Paid Extension</masterLabel>
+            <translation><!-- Paid Extension --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Code Issue</masterLabel>
+            <translation><!-- Product Code Issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retired/Non-Renewable Product</masterLabel>
+            <translation><!-- Retired/Non-Renewable Product --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Potential Amount --></label>
+        <name>Potential_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Potential Changed By --></label>
+        <name>Potential_Changed_By__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Family --></label>
+        <name>Product_Family__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Subfamily --></label>
+        <name>Product_Subfamily__c</name>
+    </fields>
+    <fields>
+        <help><!-- Account that owns this subscription. This relationship is used for volume discount calculations. --></help>
+        <label><!-- Account --></label>
+        <name>SBQQ__Account__c</name>
+        <relationshipLabel><!-- Subscriptions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Number of associated contract. --></help>
+        <label><!-- Contract # --></label>
+        <name>SBQQ__ContractNumber__c</name>
+    </fields>
+    <fields>
+        <help><!-- Contract that governs this subscription. --></help>
+        <label><!-- Contract --></label>
+        <name>SBQQ__Contract__c</name>
+        <relationshipLabel><!-- Subscriptions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Credit Product Id --></label>
+        <name>SBQQ__CreditProductId__c</name>
+    </fields>
+    <fields>
+        <help><!-- Price paid for this subscription. --></help>
+        <label><!-- Customer Price --></label>
+        <name>SBQQ__CustomerPrice__c</name>
+    </fields>
+    <fields>
+        <help><!-- The last date this contract is valid. --></help>
+        <label><!-- End Date --></label>
+        <name>SBQQ__EndDate__c</name>
+    </fields>
+    <fields>
+        <help><!-- List price for this subscription product. --></help>
+        <label><!-- List Price --></label>
+        <name>SBQQ__ListPrice__c</name>
+    </fields>
+    <fields>
+        <help><!-- Net price for this subscription. --></help>
+        <label><!-- Net Price --></label>
+        <name>SBQQ__NetPrice__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Id --></label>
+        <name>SBQQ__ProductId__c</name>
+    </fields>
+    <fields>
+        <help><!-- Product used to sell this subscription. --></help>
+        <label><!-- Product --></label>
+        <name>SBQQ__Product__c</name>
+        <relationshipLabel><!-- Subscriptions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Calculated ratio used to compute prorated price. --></help>
+        <label><!-- Prorate Multiplier --></label>
+        <name>SBQQ__ProrateMultiplier__c</name>
+    </fields>
+    <fields>
+        <help><!-- Quantity of this subscription product purchased by the customer. --></help>
+        <label><!-- Quantity --></label>
+        <name>SBQQ__Quantity__c</name>
+    </fields>
+    <fields>
+        <help><!-- Quote line that generated this subscription. --></help>
+        <label><!-- Quote Line --></label>
+        <name>SBQQ__QuoteLine__c</name>
+        <relationshipLabel><!-- Subscriptions --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Enter renewal price to override default calculation. --></help>
+        <label><!-- Renewal Price --></label>
+        <name>SBQQ__RenewalPrice__c</name>
+    </fields>
+    <fields>
+        <help><!-- Product ID for the renewal subscription. --></help>
+        <label><!-- Renewal Product Id --></label>
+        <name>SBQQ__RenewalProductId__c</name>
+    </fields>
+    <fields>
+        <help><!-- Quantity of this subscription product that will be renewed. --></help>
+        <label><!-- Renewal Quantity --></label>
+        <name>SBQQ__RenewalQuantity__c</name>
+    </fields>
+    <fields>
+        <help><!-- Rate of renewal price increased --></help>
+        <label><!-- Renewal Uplift (%) --></label>
+        <name>SBQQ__RenewalUpliftRate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date this subscription was renewed. Blank means it has not been renewed. --></help>
+        <label><!-- Renewed Date --></label>
+        <name>SBQQ__RenewedDate__c</name>
+    </fields>
+    <fields>
+        <help><!-- The first date this subscription is in effect. --></help>
+        <label><!-- Start Date --></label>
+        <name>SBQQ__StartDate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date the subscription terminated. Automatically populated when covered asset is upgraded. --></help>
+        <label><!-- Terminated Date --></label>
+        <name>SBQQ__TerminatedDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- SFDC Contract # --></label>
+        <name>SFDC_Contract__c</name>
+    </fields>
+    <fields>
+        <label><!-- STX Contract # --></label>
+        <name>STX_Contract__c</name>
+    </fields>
+    <fields>
+        <label><!-- STX Service Detail Id --></label>
+        <name>STX_Service_Detail_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- STX Service End Date --></label>
+        <name>STX_Service_End_Date__c</name>
+    </fields>
+    <validationRules>
+        <errorMessage><!-- Potential Adjustment Reason is required for all Potential Amount changes --></errorMessage>
+        <name>Potential_Changes_req_Adjustment_Reason</name>
+    </validationRules>
+</CustomObjectTranslation>

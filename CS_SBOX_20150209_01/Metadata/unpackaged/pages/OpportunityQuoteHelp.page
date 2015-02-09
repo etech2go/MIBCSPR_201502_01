@@ -1,0 +1,127 @@
+<apex:page controller="OpportunityQuoteHelpExtension" showHeader="false">	
+	<body style="bgcolor:white">		
+	    <apex:form id="frmOppQuoteHelp">    
+	        <table width="100%">
+	            <tr>	             
+					<td>
+						<apex:outputLabel >Select Help Option: </apex:outputLabel>&nbsp; &nbsp;
+						<apex:actionRegion >
+							<apex:selectList id="OpportunityHelp" size="1" value="{!HelpOption}">
+								<apex:actionSupport event="onchange" action="{!RedirectToPage}" reRender="QuoteDetails"></apex:actionSupport>
+								<apex:selectOption itemValue="None" itemLabel="--None--"/>		
+								<apex:selectOption itemValue="SalesSupport" itemLabel="Sales Support"/>										
+								<apex:selectOption itemValue="Credit" itemLabel="Credit for Existing Services Quote"/>										
+								<apex:selectOption itemValue="International" itemLabel="International Print Quote"/>
+								<!--<apex:selectOption itemValue="Redline" itemLabel="Redlining Request"/>-->
+							</apex:selectList>	
+						</apex:actionRegion>
+						&nbsp;<apex:commandButton action="{!Save}" value="Save"/>
+				    </td>
+	            </tr>   
+			</table>		
+			<table width="100%">
+				<tr>
+					<td>						
+						<apex:pageBlock id="QuoteDetails" mode="edit">  				
+				            <apex:pageMessages id="MSG"/>								
+			                <apex:pageBlockSection title="{!HeaderTitle}" columns="1" rendered="{!showQuoteSection}">										
+								<tr>
+									<td><apex:inputField id="quoteContractStartDate" value="{!credit.Start_Date_of_New_Contract__c}" required="true"></apex:inputField></td>
+								</tr>
+								<tr>
+									<td><apex:inputField id="quoteComments" label="Comments" value="{!credit.Comments__c}" style="height: 60px; width: 250px;"></apex:inputField></td>
+								</tr>																													
+						 	</apex:pageBlockSection>							
+							<apex:pageBlockSection title="{!HeaderTitle}" columns="1" rendered="{!showInternationalPrintSection}">	
+								<tr>
+									<td><apex:inputField id="cisionPointId" value="{!ipq.CisionPoint_ID__c}" required="true"></apex:inputField></td>
+								</tr>
+								<tr>
+									<td><apex:inputField id="countries" value="{!ipq.Country_s__c}" style="height: 60px; width: 250px;" required="true"></apex:inputField></td>								
+								</tr>
+								<tr>
+									<td><apex:inputField id="coverageStartDate" value="{!ipq.Coverage_Start_Date__c}" required="true"></apex:inputField></td>
+								</tr>
+								<tr>
+									<td><apex:inputField id="coverageEndDate" value="{!ipq.Coverage_End_Date__c}" required="true"></apex:inputField></td>
+								</tr>
+								<tr>
+									<td><apex:inputField id="volumeOfSubscriptions" value="{!ipq.Volume_of_Subscriptions__c}" required="true"></apex:inputField></td>
+								</tr>
+								<tr>
+									<td><apex:inputField id="keywordSpecsOfSubscriptions" value="{!ipq.Keyword_Specs_per_Subscription__c}" style="height: 60px; width: 250px;" required="true"></apex:inputField></td>
+								</tr>
+								<tr>
+									<td><apex:inputField id="mediaSource" value="{!ipq.Media_Source__c}" required="true"></apex:inputField></td>
+								</tr>						
+							</apex:pageBlockSection>	
+							<!--Could revisit in Phase 2 -->
+							<!--<apex:pageBlockSection title="Finance" columns="1" rendered="{!showRedliningRequest}">
+								<tr>
+									<td><apex:inputField id="general4" value="{!rr.General_4_Fees_Payments__c}"	></apex:inputField></td>
+								</tr>
+								<tr>
+									<td><apex:inputField id="financeComments" value="{!rr.Finance_Comments__c}" style="height: 60px; width: 250px;"></apex:inputField></td>
+								</tr>									
+							</apex:pageBlockSection>
+							<apex:pageBlockSection title="Business" columns="1" rendered="{!showRedliningRequest}">
+								<tr>
+									<td><apex:inputField id="general5" value="{!rr.General_5_Term_Susp_Termination__c}"></apex:inputField></td>
+									<td><apex:inputField id="outclause" value="{!rr.Out_Clause_Type__c}"></apex:inputField></td>
+								</tr>
+								<tr>
+									<td><apex:inputField id="businessComments" value="{!rr.Business_Comments__c}" style="height: 60px; width: 250px;"></apex:inputField></td>
+								</tr>
+							</apex:pageBlockSection>
+							<apex:pageBlockSection title="Legal" columns="1" rendered="{!showRedliningRequest}">
+								<tr>
+									<td><apex:inputField id="general8" value="{!rr.General_8_Limitation_on_Liability__c}"></apex:inputField></td>
+									<td><apex:inputField id="general9" value="{!rr.General_9_Miscellaneous__c}"></apex:inputField></td>
+								</tr>
+								<tr>
+									<td><apex:inputField id="dates" value="{!rr.Dates__c}"></apex:inputField></td>
+								</tr>
+								<tr>
+									<td><apex:inputField id="addendum" value="{!rr.Addendum_Approval_Needed__c}"></apex:inputField></td>
+								</tr>
+								<tr>
+									<td><apex:inputField id="legalother" value="{!rr.Legal_Other__c}"></apex:inputField></td>
+								</tr>
+								<tr>
+									<td><apex:inputField id="legalComments" value="{!rr.Legal_Comments__c}" style="height: 60px; width: 250px;"></apex:inputField></td>
+								</tr>
+							</apex:pageBlockSection>							
+							<apex:pageBlockSection title="International Print/Evaluation Terms" columns="1" rendered="{!showRedliningRequest}">
+								<tr>
+									<td><apex:inputField id="terms" value="{!rr.International_Print_Evaluation_Terms__c}"></apex:inputField></td>
+								</tr>
+								<tr>
+									<td><apex:inputField id="intComments" value="{!rr.International_Print_Eval_Terms_Comments__c}" style="height: 60px; width: 250px;"></apex:inputField></td>
+								</tr>
+							</apex:pageBlockSection>
+							<apex:pageBlockSection title="Other" columns="1" rendered="{!showRedliningRequest}">
+								<tr>
+									<td><apex:inputField id="other" value="{!rr.Other__c}"></apex:inputField></td>
+								</tr>
+								<tr>
+									<td><apex:inputField id="otherComments" value="{!rr.Other_Comments__c}" style="height: 60px; width: 250px;"></apex:inputField></td>
+								</tr>
+							</apex:pageBlockSection>-->
+			         	</apex:pageBlock>     	
+					</td>
+				</tr>
+			 </table>	   								
+			 <table width="100%">
+				 <tr>
+					<td>
+						<apex:pageBlock >
+							<apex:pageblockbuttons location="bottom" >							
+								<apex:commandButton action="{!Save}" value="Save"/>
+							</apex:pageblockbuttons>
+						</apex:pageBlock>
+					</td>												
+				</tr>    								
+			</table>				
+		</apex:form>
+	</body>
+</apex:page>

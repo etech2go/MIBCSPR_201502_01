@@ -1,0 +1,55 @@
+<apex:page standardStylesheets="false" sidebar="false" showHeader="false">
+    
+    <apex:stylesheet value="{!URLFOR($Resource.CisionChatResources,'Site.css')}"/>
+     
+
+    <header>  
+        <logo title="Live Agent Demo" alt="Live Agent Demo"></logo>
+    </header>
+
+    
+    <apex:Form >
+            <div id="wrapper">
+                <div class="logo"><a href="/">Cision</a></div>
+                <br/><br/><br/>
+                      
+                <div class="content">
+                    <h1>Live Agent Demo</h1>
+                    <p class="subup">
+                    </p>
+    
+                    <p class="full">
+                        Ask your questions through our customer chat and get immediate assistance from Cision support.<br />
+                        We are online during normal business hours (8:30 - 17:30 Monday - Friday).<br />
+                    </p>
+                       
+                    <img id="liveagent_button_online_573q000000000CQ" style="display: none; border: 0px none; cursor: pointer" onclick="liveagent.startChat('573q000000000CQ')" src="{!URLFOR($Resource.CisionChatResources,'Online.gif')}" />
+                    <img id="liveagent_button_offline_573q000000000CQ" style="display: none; border: 0px none; " src="{!URLFOR($Resource.CisionChatResources,'Offline.gif')}" />
+                    
+                    <script type="text/javascript">
+                        if (!window._laq) { window._laq = []; }
+                            window._laq.push(function(){liveagent.showWhenOnline('573q000000000CQ', document.getElementById('liveagent_button_online_573q000000000CQ'));
+                            liveagent.showWhenOffline('573q000000000CQ', document.getElementById('liveagent_button_offline_573q000000000CQ'));
+                    });</script>                   
+
+				
+                    <br/><br/>
+                    <p class="full">
+                        Alternatively. If you would like to speak to a member of our Customer Services Team then please give us a call.<br/>
+                        
+                    </p>
+                    
+                </div>
+           
+            </div>
+    
+            <!-- Deployment code -->
+			<script type='text/javascript' src='https://c.la3-c1cs-was.salesforceliveagent.com/content/g/js/33.0/deployment.js'></script>
+			<script type='text/javascript'>
+				liveagent.init('https://d.la3-c1cs-was.salesforceliveagent.com/chat', '572q000000000AS', '00Dq0000000A0UX');
+			</script>
+           
+        </apex:Form>
+
+    
+</apex:page>

@@ -1,0 +1,6 @@
+<apex:page standardController="Opportunity" extensions="OpportunityFinalTaxInvoiceExtension" action="{!GenerateTaxAndInvoice}">
+	<apex:pageBlock title="{!ErrorMessage}"/>
+	<apex:form > 
+	<apex:commandButton action="{!Cancel}" value="Back"/>
+	</apex:form>
+</apex:page>

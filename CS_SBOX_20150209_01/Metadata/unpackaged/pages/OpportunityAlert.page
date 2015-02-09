@@ -1,0 +1,31 @@
+<apex:page standardController="Opportunity" extensions="OpportunityAlertExtension" showHeader="false" sidebar="false" title="Opportunity Alert">			
+	<head>
+		<title>Account Alert</title>
+        <style type="css">
+		body{
+			font-size:12px;
+        }				
+		.boldText{
+			font-weight:bold;
+			padding:10px;
+		}					
+		.dialogtitleheader.ui-dialog-titlebar {
+			background-color:blue}
+		</style>
+	</head>	
+	<body>	</body>
+	<apex:form >
+		<table width="100%">
+			<tr>				
+				<td>
+					<apex:pageBlock mode="detailBlock">
+						<apex:pageBlockSection title="Credit Hold Alert" rendered="{!acct.Credit_Hold__c}" columns="1">
+							<b>CREDIT HOLD ALERT</b>  Contact {!acct.AR_Rep__c} to see what needs to be done to get this Account off credit hold. <br/><br/> {!AlertMessage}							
+						</apex:pageBlockSection>						
+					</apex:pageBlock>
+				</td>
+			</tr>			
+			<tr align="right"><td><apex:commandButton onclick="window.close()" value="Close" title="Close"></apex:commandButton></td></tr>
+		</table>
+	</apex:form>
+</apex:page>

@@ -1,0 +1,6 @@
+{!Prepaid_Clip_Package__c.Sold_By__c},
+    {!Account.Name} has a Clip Package, {!Prepaid_Clip_Package__c.PrePaid_Package__c}. It currently has {!Prepaid_Clip_Package__c.Remaining_by_Percent__c}% of its original {!Prepaid_Clip_Package__c.Number_of_Clips__c} Clips. 
+
+
+Thank You,
+Salesforce Administration

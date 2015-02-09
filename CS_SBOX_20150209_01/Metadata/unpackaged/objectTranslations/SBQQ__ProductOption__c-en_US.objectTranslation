@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Check to immediately apply changes to this option. Use sparingly to avoid slow user experience. --></help>
+        <label><!-- Apply Immediately --></label>
+        <name>SBQQ__AppliedImmediately__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates that related product is bundled with the main product. Bundled options have fixed quantity and zero price as price is included in the main product. --></help>
+        <label><!-- Bundled --></label>
+        <name>SBQQ__Bundled__c</name>
+    </fields>
+    <fields>
+        <help><!-- Position of this component in generated product code for the configuration. --></help>
+        <label><!-- Component Code Position --></label>
+        <name>SBQQ__ComponentCodePosition__c</name>
+    </fields>
+    <fields>
+        <help><!-- Code for the component represented by this option. --></help>
+        <label><!-- Component Code --></label>
+        <name>SBQQ__ComponentCode__c</name>
+    </fields>
+    <fields>
+        <help><!-- Product SKU being configured with this option. --></help>
+        <label><!-- Configured SKU --></label>
+        <name>SBQQ__ConfiguredSKU__c</name>
+        <relationshipLabel><!-- Options --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Discount (Amt) --></label>
+        <name>SBQQ__DiscountAmount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Discount schedule to be applied to the product selected by this option. This overrides discount schedule selected on the product or feature. --></help>
+        <label><!-- Discount Schedule --></label>
+        <name>SBQQ__DiscountSchedule__c</name>
+        <relationshipLabel><!-- Product Options --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Discount (%) --></label>
+        <name>SBQQ__Discount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check to automatically apply additional discount from parent package to this component. Only percentage-based discount can be applied. --></help>
+        <label><!-- Discounted By Package --></label>
+        <name>SBQQ__DiscountedByPackage__c</name>
+    </fields>
+    <fields>
+        <help><!-- Existing quantity of this product. Computed by looking at the assets attached to the account. --></help>
+        <label><!-- Existing Quantity --></label>
+        <name>SBQQ__ExistingQuantity__c</name>
+    </fields>
+    <fields>
+        <help><!-- Feature that includes this option for selection. --></help>
+        <label><!-- Feature --></label>
+        <name>SBQQ__Feature__c</name>
+        <relationshipLabel><!-- Product Options --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Maximum quantity allowed for this option. --></help>
+        <label><!-- Max Quantity --></label>
+        <name>SBQQ__MaxQuantity__c</name>
+    </fields>
+    <fields>
+        <help><!-- Minimum quantity allowed for this option. --></help>
+        <label><!-- Min Quantity --></label>
+        <name>SBQQ__MinQuantity__c</name>
+    </fields>
+    <fields>
+        <help><!-- Display order of this option within the feature it&apos;s assigned to. --></help>
+        <label><!-- Number --></label>
+        <name>SBQQ__Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- Product SKU added when this option is selected. --></help>
+        <label><!-- Optional SKU --></label>
+        <name>SBQQ__OptionalSKU__c</name>
+        <relationshipLabel><!-- Optional For --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Brings over the value of Price Editable field on the optional SKU in order to avoid loading optional product just to know if the price is editable. --></help>
+        <label><!-- Price Editable --></label>
+        <name>SBQQ__PriceEditable__c</name>
+    </fields>
+    <fields>
+        <help><!-- Product Code for the optional product SKU. --></help>
+        <label><!-- Product Code --></label>
+        <name>SBQQ__ProductCode__c</name>
+    </fields>
+    <fields>
+        <help><!-- Pulls in the value of Configuration Type on Product object in order to avoid loading related product record. --></help>
+        <label><!-- Product Configuration Type --></label>
+        <name>SBQQ__ProductConfigurationType__c</name>
+    </fields>
+    <fields>
+        <help><!-- Description for the optional SKU. --></help>
+        <label><!-- Product Description --></label>
+        <name>SBQQ__ProductDescription__c</name>
+    </fields>
+    <fields>
+        <help><!-- Name for the optional SKU. --></help>
+        <label><!-- Product Name --></label>
+        <name>SBQQ__ProductName__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check to allow quantity to be edited even though it&apos;s specified on the option. --></help>
+        <label><!-- Quantity Editable --></label>
+        <name>SBQQ__QuantityEditable__c</name>
+    </fields>
+    <fields>
+        <help><!-- Quantity of the related product that should be added to the quote. --></help>
+        <label><!-- Quantity --></label>
+        <name>SBQQ__Quantity__c</name>
+    </fields>
+    <fields>
+        <help><!-- Configure visibility of quote line generated by this option. --></help>
+        <label><!-- Quote Line Visibility --></label>
+        <name>SBQQ__QuoteLineVisibility__c</name>
+        <picklistValues>
+            <masterLabel>Always</masterLabel>
+            <translation><!-- Always --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Editor Only</masterLabel>
+            <translation><!-- Editor Only --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Never</masterLabel>
+            <translation><!-- Never --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select if this product is required on the bundle. --></help>
+        <label><!-- Required --></label>
+        <name>SBQQ__Required__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select if this product option should be automatically selected by default. --></help>
+        <label><!-- Selected --></label>
+        <name>SBQQ__Selected__c</name>
+    </fields>
+    <fields>
+        <help><!-- Choose how this dynamic subscription determines target product set. Package is just the parent product. Components are the sibling components. Both is parents and sibling components. --></help>
+        <label><!-- Subscription Scope --></label>
+        <name>SBQQ__SubscriptionScope__c</name>
+        <picklistValues>
+            <masterLabel>Both</masterLabel>
+            <translation><!-- Both --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Components</masterLabel>
+            <translation><!-- Components --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Package</masterLabel>
+            <translation><!-- Package --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Check to indicate this option is managed by the system which makes it unavailable for user selection. --></help>
+        <label><!-- System --></label>
+        <name>SBQQ__System__c</name>
+    </fields>
+    <fields>
+        <help><!-- Use &quot;Component&quot; if this option, including quantity, is dependent on parent. Use&quot; Accessory&quot; if this option is dependent on parent but quantity is independent. Use &quot;Related Product&quot; for related but fully independent products. --></help>
+        <label><!-- Type --></label>
+        <name>SBQQ__Type__c</name>
+        <picklistValues>
+            <masterLabel>Accessory</masterLabel>
+            <translation><!-- Accessory --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Component</masterLabel>
+            <translation><!-- Component --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Related Product</masterLabel>
+            <translation><!-- Related Product --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Unit price for this option. This will override the value from price book. --></help>
+        <label><!-- Unit Price --></label>
+        <name>SBQQ__UnitPrice__c</name>
+    </fields>
+</CustomObjectTranslation>

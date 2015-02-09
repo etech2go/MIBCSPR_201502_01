@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Passed to GP --></label>
+        <name>Passed_to_GP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Void Passed to GP --></label>
+        <name>Void_Passed_to_GP__c</name>
+    </fields>
+    <fields>
+        <label><!-- API Payment --></label>
+        <name>fw1__API_Payment__c</name>
+    </fields>
+    <fields>
+        <label><!-- AVS Code --></label>
+        <name>fw1__AVS_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>fw1__Account__c</name>
+        <relationshipLabel><!-- Payments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Additional Payment Method --></label>
+        <name>fw1__Additional_Payment_Method__c</name>
+        <picklistValues>
+            <masterLabel>Cash</masterLabel>
+            <translation><!-- Cash --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wire Transfer</masterLabel>
+            <translation><!-- Wire Transfer --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Amount --></label>
+        <name>fw1__Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Attach Terms And Conditions --></label>
+        <name>fw1__Attach_Terms_And_Conditions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Auto-BillPay --></label>
+        <name>fw1__Auto_BillPay__c</name>
+    </fields>
+    <fields>
+        <help><!-- Bank Routing Number --></help>
+        <label><!-- Bank ABA Code --></label>
+        <name>fw1__Bank_Aba_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bank Account Number --></label>
+        <name>fw1__Bank_Account_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bank Account Type --></label>
+        <name>fw1__Bank_Account_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bank Name --></label>
+        <name>fw1__Bank_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing City --></label>
+        <name>fw1__Billing_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Country --></label>
+        <name>fw1__Billing_Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing State --></label>
+        <name>fw1__Billing_State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Street --></label>
+        <name>fw1__Billing_Street__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Zip --></label>
+        <name>fw1__Billing_Zip__c</name>
+    </fields>
+    <fields>
+        <label><!-- CVV2 Match --></label>
+        <name>fw1__CVV2_Match__c</name>
+    </fields>
+    <fields>
+        <label><!-- CVV2 --></label>
+        <name>fw1__CVV2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company Name --></label>
+        <name>fw1__Company_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>fw1__Contact__c</name>
+        <relationshipLabel><!-- Payments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Create Token --></label>
+        <name>fw1__Create_Token__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Card Number --></label>
+        <name>fw1__Credit_Card_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Card Type --></label>
+        <name>fw1__Credit_Card_Type__c</name>
+        <picklistValues>
+            <masterLabel>Amex</masterLabel>
+            <translation><!-- Amex --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Discover</masterLabel>
+            <translation><!-- Discover --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MasterCard</masterLabel>
+            <translation><!-- MasterCard --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Visa</masterLabel>
+            <translation><!-- Visa --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Credit Memo --></label>
+        <name>fw1__Credit_Memo__c</name>
+        <relationshipLabel><!-- Payments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Custom Lookup Field --></label>
+        <name>fw1__Custom_Lookup_Field__c</name>
+    </fields>
+    <fields>
+        <label><!-- Custom Lookup Object --></label>
+        <name>fw1__Custom_Lookup_Object__c</name>
+    </fields>
+    <fields>
+        <label><!-- Custom Paid Amount Field --></label>
+        <name>fw1__Custom_Paid_Amount_Field__c</name>
+    </fields>
+    <fields>
+        <label><!-- Domain Name --></label>
+        <name>fw1__Domain_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Electronic Signature --></label>
+        <name>fw1__Electronic_Signature__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email Currency Symbol --></label>
+        <name>fw1__Email_Currency_Symbol__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email Footer --></label>
+        <name>fw1__Email_Footer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email --></label>
+        <name>fw1__Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expiry Month --></label>
+        <name>fw1__Expiry_Month__c</name>
+        <picklistValues>
+            <masterLabel>01</masterLabel>
+            <translation><!-- 01 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>02</masterLabel>
+            <translation><!-- 02 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>03</masterLabel>
+            <translation><!-- 03 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>04</masterLabel>
+            <translation><!-- 04 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>05</masterLabel>
+            <translation><!-- 05 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>06</masterLabel>
+            <translation><!-- 06 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>07</masterLabel>
+            <translation><!-- 07 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>08</masterLabel>
+            <translation><!-- 08 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>09</masterLabel>
+            <translation><!-- 09 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10</masterLabel>
+            <translation><!-- 10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>11</masterLabel>
+            <translation><!-- 11 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>12</masterLabel>
+            <translation><!-- 12 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Expiry Year --></label>
+        <name>fw1__Expiry_Year__c</name>
+    </fields>
+    <fields>
+        <label><!-- First Name --></label>
+        <name>fw1__First_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- IP Address --></label>
+        <name>fw1__IP_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice --></label>
+        <name>fw1__Invoice__c</name>
+        <relationshipLabel><!-- Payments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Pending Settlement --></label>
+        <name>fw1__Is_Pending_Settlement__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Captured Amount --></label>
+        <name>fw1__Last_Captured_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Name --></label>
+        <name>fw1__Last_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name On Account --></label>
+        <name>fw1__Name_On_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>fw1__Opportunity__c</name>
+        <relationshipLabel><!-- Payments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- PaymentSource --></label>
+        <name>fw1__PaymentSource__c</name>
+        <picklistValues>
+            <masterLabel>Account</masterLabel>
+            <translation><!-- Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contact</masterLabel>
+            <translation><!-- Contact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Opportunity</masterLabel>
+            <translation><!-- Opportunity --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Payment Date --></label>
+        <name>fw1__Payment_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Method --></label>
+        <name>fw1__Payment_Method__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Processor --></label>
+        <name>fw1__Payment_Processor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Receipt Email Message --></label>
+        <name>fw1__Payment_Receipt_Email_Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Receipt Email Subject --></label>
+        <name>fw1__Payment_Receipt_Email_Subject__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Recipient Account --></label>
+        <name>fw1__Payment_Recipient_Account__c</name>
+        <relationshipLabel><!-- Payments (Payment Recipient Account) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Payment Recipient Contact --></label>
+        <name>fw1__Payment_Recipient_Contact__c</name>
+        <relationshipLabel><!-- Payments (Payment Recipient Contact) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Payment Result --></label>
+        <name>fw1__Payment_Result__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment To --></label>
+        <name>fw1__Payment_To__c</name>
+        <picklistValues>
+            <masterLabel>Account</masterLabel>
+            <translation><!-- Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contact</masterLabel>
+            <translation><!-- Contact --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Recurring Invoice --></label>
+        <name>fw1__Recurring_Invoice__c</name>
+        <relationshipLabel><!-- Payments --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Other reference information, i.e. Check Number --></help>
+        <label><!-- Reference --></label>
+        <name>fw1__Reference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Request Token --></label>
+        <name>fw1__Request_Token__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipping City --></label>
+        <name>fw1__Shipping_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipping Country --></label>
+        <name>fw1__Shipping_Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipping State --></label>
+        <name>fw1__Shipping_State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipping Street --></label>
+        <name>fw1__Shipping_Street__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipping Zip --></label>
+        <name>fw1__Shipping_Zip__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>fw1__Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Terms And Conditions ID --></label>
+        <name>fw1__Terms_And_Conditions_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Token Display Name --></label>
+        <name>fw1__Token_Display_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Token --></label>
+        <name>fw1__Token__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Captured Amount --></label>
+        <name>fw1__Total_Captured_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Paid Amount --></label>
+        <name>fw1__Total_Paid_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Refunded Amount --></label>
+        <name>fw1__Total_Refunded_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transaction ID --></label>
+        <name>fw1__Transaction_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>fw1__Type__c</name>
+        <picklistValues>
+            <masterLabel>Authorization</masterLabel>
+            <translation><!-- Authorization --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Charge</masterLabel>
+            <translation><!-- Charge --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- User Agent --></label>
+        <name>fw1__User_Agent__c</name>
+    </fields>
+    <fields>
+        <label><!-- eCheck Type --></label>
+        <name>fw1__eCheck_Type__c</name>
+    </fields>
+    <validationRules>
+        <errorMessage><!-- Credit Card Invalid --></errorMessage>
+        <name>fw1__CreditCard</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Capture --></label>
+        <name>fw1__Capture</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Refund --></label>
+        <name>fw1__Refund</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Void --></label>
+        <name>fw1__Void</name>
+    </webLinks>
+</CustomObjectTranslation>

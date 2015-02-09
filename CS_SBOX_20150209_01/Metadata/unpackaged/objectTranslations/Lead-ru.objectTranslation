@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Areas of Interest --></label>
+        <name>Areas_of_Interest__c</name>
+        <picklistValues>
+            <masterLabel>Analyze</masterLabel>
+            <translation><!-- Analyze --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Broadcast</masterLabel>
+            <translation><!-- Broadcast --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Connect</masterLabel>
+            <translation><!-- Connect --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Content Marketing</masterLabel>
+            <translation><!-- Content Marketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monitor</masterLabel>
+            <translation><!-- Monitor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plan</masterLabel>
+            <translation><!-- Plan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Social Media</masterLabel>
+            <translation><!-- Social Media --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- CRM Lead ID --></label>
+        <name>CRM_Lead_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Function/Department --></label>
+        <name>Function_Department__c</name>
+        <picklistValues>
+            <masterLabel>Accounting/Finance</masterLabel>
+            <translation><!-- Accounting/Finance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Planning</masterLabel>
+            <translation><!-- Business Planning --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Community Development</masterLabel>
+            <translation><!-- Community Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fundraising</masterLabel>
+            <translation><!-- Fundraising --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Human Resources</masterLabel>
+            <translation><!-- Human Resources --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Information Technology</masterLabel>
+            <translation><!-- Information Technology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Investor Relations</masterLabel>
+            <translation><!-- Investor Relations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing</masterLabel>
+            <translation><!-- Marketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Membership Development</masterLabel>
+            <translation><!-- Membership Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PR/Corporate Communications</masterLabel>
+            <translation><!-- PR/Corporate Communications --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales</masterLabel>
+            <translation><!-- Sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Social Media</masterLabel>
+            <translation><!-- Social Media --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Google Analytic Campaign --></help>
+        <label><!-- GA Campaign --></label>
+        <name>GA_Campaign__c</name>
+    </fields>
+    <fields>
+        <help><!-- Google Analytic Content --></help>
+        <label><!-- GA Content --></label>
+        <name>GA_Content__c</name>
+    </fields>
+    <fields>
+        <help><!-- Google Analytic Medium --></help>
+        <label><!-- GA Medium --></label>
+        <name>GA_Medium__c</name>
+    </fields>
+    <fields>
+        <help><!-- Google Analytic Source --></help>
+        <label><!-- GA Source --></label>
+        <name>GA_Source__c</name>
+    </fields>
+    <fields>
+        <help><!-- Google Analytic Term --></help>
+        <label><!-- GA Term --></label>
+        <name>GA_Term__c</name>
+    </fields>
+    <fields>
+        <name>Industry</name>
+        <picklistValues>
+            <masterLabel>Agriculture</masterLabel>
+            <translation><!-- Agriculture --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Apparel</masterLabel>
+            <translation><!-- Apparel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Banking</masterLabel>
+            <translation><!-- Banking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Biotechnology</masterLabel>
+            <translation><!-- Biotechnology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chemicals</masterLabel>
+            <translation><!-- Chemicals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Communications</masterLabel>
+            <translation><!-- Communications --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Construction</masterLabel>
+            <translation><!-- Construction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consulting</masterLabel>
+            <translation><!-- Consulting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Education</masterLabel>
+            <translation><!-- Education --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Electronics</masterLabel>
+            <translation><!-- Electronics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Energy</masterLabel>
+            <translation><!-- Energy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Engineering</masterLabel>
+            <translation><!-- Engineering --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Entertainment</masterLabel>
+            <translation><!-- Entertainment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Environmental</masterLabel>
+            <translation><!-- Environmental --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finance</masterLabel>
+            <translation><!-- Finance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Food &amp; Beverage</masterLabel>
+            <translation><!-- Food &amp; Beverage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Government</masterLabel>
+            <translation><!-- Government --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Healthcare</masterLabel>
+            <translation><!-- Healthcare --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hospitality</masterLabel>
+            <translation><!-- Hospitality --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Insurance</masterLabel>
+            <translation><!-- Insurance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Legal</masterLabel>
+            <translation><!-- Legal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Machinery</masterLabel>
+            <translation><!-- Machinery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manufacturing</masterLabel>
+            <translation><!-- Manufacturing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Media</masterLabel>
+            <translation><!-- Media --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not For Profit</masterLabel>
+            <translation><!-- Not For Profit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recreation</masterLabel>
+            <translation><!-- Recreation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retail</masterLabel>
+            <translation><!-- Retail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shipping</masterLabel>
+            <translation><!-- Shipping --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technology</masterLabel>
+            <translation><!-- Technology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Telecommunications</masterLabel>
+            <translation><!-- Telecommunications --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transportation</masterLabel>
+            <translation><!-- Transportation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Utilities</masterLabel>
+            <translation><!-- Utilities --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Job Role --></label>
+        <name>Job_Role__c</name>
+        <picklistValues>
+            <masterLabel>Account Executive</masterLabel>
+            <translation><!-- Account Executive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Administrator</masterLabel>
+            <translation><!-- Administrator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Assistant/Coordinator</masterLabel>
+            <translation><!-- Assistant/Coordinator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Associate</masterLabel>
+            <translation><!-- Associate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C Level</masterLabel>
+            <translation><!-- C Level --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consultant</masterLabel>
+            <translation><!-- Consultant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Director</masterLabel>
+            <translation><!-- Director --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Freelancer</masterLabel>
+            <translation><!-- Freelancer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Intern</masterLabel>
+            <translation><!-- Intern --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Journalist</masterLabel>
+            <translation><!-- Journalist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manager</masterLabel>
+            <translation><!-- Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Owner/Principal</masterLabel>
+            <translation><!-- Owner/Principal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>President</masterLabel>
+            <translation><!-- President --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Professor/Dean</masterLabel>
+            <translation><!-- Professor/Dean --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Specialist</masterLabel>
+            <translation><!-- Specialist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Student</masterLabel>
+            <translation><!-- Student --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vice President</masterLabel>
+            <translation><!-- Vice President --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <name>LeadSource</name>
+        <picklistValues>
+            <masterLabel>Direct Mail</masterLabel>
+            <translation><!-- Direct Mail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email</masterLabel>
+            <translation><!-- Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Event</masterLabel>
+            <translation><!-- Event --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal</masterLabel>
+            <translation><!-- Internal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OLA</masterLabel>
+            <translation><!-- OLA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Referral</masterLabel>
+            <translation><!-- Referral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SEM</masterLabel>
+            <translation><!-- SEM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Social</masterLabel>
+            <translation><!-- Social --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Webinar</masterLabel>
+            <translation><!-- Webinar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Website</masterLabel>
+            <translation><!-- Website --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Lead Created Date/Time --></label>
+        <name>Lead_Created_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead Pass Date --></label>
+        <name>Lead_Pass_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead Pass Rep --></label>
+        <name>Lead_Pass_Rep__c</name>
+        <relationshipLabel><!-- Leads --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Lead Score --></label>
+        <name>Lead_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead Source – Most Recent --></label>
+        <name>Lead_Source_Most_Recent__c</name>
+        <picklistValues>
+            <masterLabel>Direct Mail</masterLabel>
+            <translation><!-- Direct Mail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email</masterLabel>
+            <translation><!-- Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Event</masterLabel>
+            <translation><!-- Event --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal</masterLabel>
+            <translation><!-- Internal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OLA</masterLabel>
+            <translation><!-- OLA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Referral</masterLabel>
+            <translation><!-- Referral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SEM</masterLabel>
+            <translation><!-- SEM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Social</masterLabel>
+            <translation><!-- Social --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Webinar</masterLabel>
+            <translation><!-- Webinar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Website</masterLabel>
+            <translation><!-- Website --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Lead Substatus --></label>
+        <name>Lead_Substatus__c</name>
+        <picklistValues>
+            <masterLabel>Bad Info</masterLabel>
+            <translation><!-- Bad Info --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Competitor</masterLabel>
+            <translation><!-- Competitor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Content Collector</masterLabel>
+            <translation><!-- Content Collector --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Student</masterLabel>
+            <translation><!-- Student --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unable to Contact</masterLabel>
+            <translation><!-- Unable to Contact --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- New Biz Source --></label>
+        <name>New_Biz_Source__c</name>
+        <picklistValues>
+            <masterLabel>Cold Call Prospecting</masterLabel>
+            <translation><!-- Cold Call Prospecting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inbound Lead</masterLabel>
+            <translation><!-- Inbound Lead --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Opp Record Type --></label>
+        <name>Opp_Record_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- PR Activities --></label>
+        <name>PR_Activities__c</name>
+        <picklistValues>
+            <masterLabel>Nothing</masterLabel>
+            <translation><!-- Nothing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Use Agency</masterLabel>
+            <translation><!-- Use Agency --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Use Cision</masterLabel>
+            <translation><!-- Use Cision --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Use Competitor</masterLabel>
+            <translation><!-- Use Competitor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Use Free Service</masterLabel>
+            <translation><!-- Use Free Service --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- PR Department Size --></label>
+        <name>PR_Department_Size__c</name>
+        <picklistValues>
+            <masterLabel>It&apos;s just me</masterLabel>
+            <translation><!-- It&apos;s just me --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>There are a few of us</masterLabel>
+            <translation><!-- There are a few of us --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>There is a whole bunch of us</masterLabel>
+            <translation><!-- There is a whole bunch of us --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>There is no PR department</masterLabel>
+            <translation><!-- There is no PR department --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <name>Rating</name>
+        <picklistValues>
+            <masterLabel>Hot</masterLabel>
+            <translation><!-- Hot --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Warm</masterLabel>
+            <translation><!-- Warm --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <name>Status</name>
+        <picklistValues>
+            <masterLabel>Contacted</masterLabel>
+            <translation><!-- Contacted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Qualified</masterLabel>
+            <translation><!-- Qualified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unable to Contact</masterLabel>
+            <translation><!-- Unable to Contact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unqualified</masterLabel>
+            <translation><!-- Unqualified --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Web Employees --></label>
+        <name>Web_Employees__c</name>
+        <picklistValues>
+            <masterLabel>Fewer than 1,000</masterLabel>
+            <translation><!-- Fewer than 1,000 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>More than 1,000</masterLabel>
+            <translation><!-- More than 1,000 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Small Business</masterLabel>
+            <translation><!-- Small Business --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Web Revenue --></label>
+        <name>Web_Revenue__c</name>
+        <picklistValues>
+            <masterLabel>Greater than $150 Million</masterLabel>
+            <translation><!-- Greater than $150 Million --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Less than $150 Million</masterLabel>
+            <translation><!-- Less than $150 Million --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Small Business</masterLabel>
+            <translation><!-- Small Business --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- OSKeyID --></label>
+        <name>iSell__OSKeyID__c</name>
+    </fields>
+    <fields>
+        <help><!-- If you enter text into this field the text will be displayed in a pop-up message whenever someone views this record. --></help>
+        <label><!-- Alert Message --></label>
+        <name>rrpu__Alert_Message__c</name>
+    </fields>
+    <validationRules>
+        <errorMessage><!-- The Address must be filled in on Qualified Leads. --></errorMessage>
+        <name>Address_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Lead Substatus is required when the Lead Status is &quot;Unqualified&quot;. --></errorMessage>
+        <name>Unqualified_Reason_Required</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- AltavistaNews --></label>
+        <name>AltavistaNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleNews --></label>
+        <name>GoogleNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- HooversProfile --></label>
+        <name>HooversProfile</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Pass_Lead --></label>
+        <name>Pass_Lead</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SendGmail --></label>
+        <name>SendGmail</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- YahooMaps --></label>
+        <name>YahooMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_with_DocuSign --></label>
+        <name>dsfs__Send_with_DocuSign</name>
+    </webLinks>
+</CustomObjectTranslation>

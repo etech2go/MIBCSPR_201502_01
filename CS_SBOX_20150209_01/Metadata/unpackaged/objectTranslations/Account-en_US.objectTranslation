@@ -1,0 +1,1737 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- AR Rep --></label>
+        <name>AR_Rep__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date and Time Billing Address was last validated.  Cannot Be Edited. --></help>
+        <label><!-- Last Validated --></label>
+        <name>AVA_SFCORE__Billing_Last_Validated__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date and Time Shipping Address was last validated.  Cannot be Edited. --></help>
+        <label><!-- Last Validated --></label>
+        <name>AVA_SFCORE__Shipping_Last_Validated__c</name>
+    </fields>
+    <fields>
+        <name>AccountSource</name>
+        <picklistValues>
+            <masterLabel>Direct Mail</masterLabel>
+            <translation><!-- Direct Mail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email</masterLabel>
+            <translation><!-- Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Event</masterLabel>
+            <translation><!-- Event --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal</masterLabel>
+            <translation><!-- Internal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OLA</masterLabel>
+            <translation><!-- OLA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Referral</masterLabel>
+            <translation><!-- Referral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SEM</masterLabel>
+            <translation><!-- SEM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Social</masterLabel>
+            <translation><!-- Social --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Webinar</masterLabel>
+            <translation><!-- Webinar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Website</masterLabel>
+            <translation><!-- Website --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The color system is based on the Account&apos;s level of satisfaction and likeliness to renew (set by Sales/CS): 
+Red = at risk, high maintenance 
+Yellow = have some issues, but manageable and can be worked out
+Green = love Cision (even if a needier client) --></help>
+        <label><!-- Account Health Color --></label>
+        <name>Account_Health_Color__c</name>
+    </fields>
+    <fields>
+        <help><!-- The color system  is based on the Account&apos;s level of satisfaction and likeliness to renew (set by Sales/CS):
+Red = at risk, high maintenance
+Yellow = have some issues, but manageable and can be worked out
+Green = love Cision (even if a needier client) --></help>
+        <label><!-- Account Health --></label>
+        <name>Account_Health__c</name>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation><!-- Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation><!-- Red --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yellow</masterLabel>
+            <translation><!-- Yellow --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- This field is the percentage that will be applied to all Broadcast Items purchased by this Account. --></help>
+        <label><!-- Account Level Discount --></label>
+        <name>Account_Level_Discount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Ownership History --></label>
+        <name>Account_Ownership_History__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Profile Notes --></label>
+        <name>Account_Profile_Notes__c</name>
+    </fields>
+    <fields>
+        <help><!-- The account&apos;s renewal tier (based on the annual renewal amount). --></help>
+        <label><!-- PH2-Account Tier --></label>
+        <name>Account_Tier__c</name>
+        <picklistValues>
+            <masterLabel>Basic</masterLabel>
+            <translation><!-- Basic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client</masterLabel>
+            <translation><!-- Client --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Major</masterLabel>
+            <translation><!-- Major --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>National</masterLabel>
+            <translation><!-- National --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- 12 Month  Rolling Total of All Invoices --></help>
+        <label><!-- PH2-Account Value --></label>
+        <name>Account_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- CPS Advanced Analytics --></label>
+        <name>Advanced_Analytics__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Agency field creates a relationship with this Account (a client) and the Agency that represents it. Sometimes we will do business with the Agency; sometimes we do business directly with the client. --></help>
+        <label><!-- Agency --></label>
+        <name>Agency__c</name>
+        <relationshipLabel><!-- Agency Clients --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Alias Account Name 1 --></label>
+        <name>Alias_Account_Name_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Alias Account Name 2 --></label>
+        <name>Alias_Account_Name_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Alias Account Name 3 --></label>
+        <name>Alias_Account_Name_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Alias Account Name 4 --></label>
+        <name>Alias_Account_Name_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Analysis Customer --></label>
+        <name>Analysis_Customer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Analysis Lead --></label>
+        <name>Analysis_Lead__c</name>
+        <relationshipLabel><!-- Accounts (Analysis Lead) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- CPS Analyze Tab --></label>
+        <name>Analyze_Tab__c</name>
+    </fields>
+    <fields>
+        <label><!-- Annua lRevenue Groupings --></label>
+        <name>Annua_lRevenue_Groupings__c</name>
+        <picklistValues>
+            <masterLabel>$10M-$25M</masterLabel>
+            <translation><!-- $10M-$25M --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$150M-$500M</masterLabel>
+            <translation><!-- $150M-$500M --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$1B+</masterLabel>
+            <translation><!-- $1B+ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$25M-$50M</masterLabel>
+            <translation><!-- $25M-$50M --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$50-150M</masterLabel>
+            <translation><!-- $50-150M --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$500M-$1B</masterLabel>
+            <translation><!-- $500M-$1B --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>&lt;$10M</masterLabel>
+            <translation><!-- &lt;$10M --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Assets (In Native Country Currency) --></label>
+        <name>Assets_In_Native_Country_Currency__c</name>
+    </fields>
+    <fields>
+        <help><!-- 12 Month Rolling Total of Broadcast Invoices from NetSuite --></help>
+        <label><!-- PH2-Broadcast Account Value --></label>
+        <name>Broadcast_Account_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Broadcast Customer --></label>
+        <name>Broadcast_Customer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Broadcast Last Touched Date --></label>
+        <name>Broadcast_Last_Touched_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- CPS Broadcast Monitoring --></label>
+        <name>Broadcast_Monitoring__c</name>
+    </fields>
+    <fields>
+        <label><!-- Broadcast Rep --></label>
+        <name>Broadcast_Rep__c</name>
+        <relationshipLabel><!-- Accounts (Broadcast Rep) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Burrelles: Print Customer --></label>
+        <name>Burrelles_Print_Customer__c</name>
+    </fields>
+    <fields>
+        <help><!-- Used to track clients that are at agencies whose monitoring has transferred to Burrelles. --></help>
+        <label><!-- PH2-Burrelles: Track Clients At Agencies --></label>
+        <name>Burrelles_Track_Clients_At_Agencies__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Entity Type --></label>
+        <name>Business_Entity_Type__c</name>
+        <picklistValues>
+            <masterLabel>Branch</masterLabel>
+            <translation><!-- Branch --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Independent</masterLabel>
+            <translation><!-- Independent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Parent</masterLabel>
+            <translation><!-- Parent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Subsidiary</masterLabel>
+            <translation><!-- Subsidiary --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- CRM Account ID --></label>
+        <name>CRM_Account_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Client Support team assigned to this account. --></help>
+        <label><!-- CS Tier --></label>
+        <name>CS_Tier__c</name>
+        <picklistValues>
+            <masterLabel>CP Support</masterLabel>
+            <translation><!-- CP Support --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>International - Tier2</masterLabel>
+            <translation><!-- International - Tier2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>News Consultants</masterLabel>
+            <translation><!-- News Consultants --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Setup Team</masterLabel>
+            <translation><!-- Setup Team --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tier1</masterLabel>
+            <translation><!-- Tier1 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- CPS Canada --></label>
+        <name>Canada__c</name>
+    </fields>
+    <fields>
+        <label><!-- Category --></label>
+        <name>Category__c</name>
+        <picklistValues>
+            <masterLabel>Agency</masterLabel>
+            <translation><!-- Agency --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Association</masterLabel>
+            <translation><!-- Association --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consumer</masterLabel>
+            <translation><!-- Consumer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corporate</masterLabel>
+            <translation><!-- Corporate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Education</masterLabel>
+            <translation><!-- Education --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Government</masterLabel>
+            <translation><!-- Government --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NDS</masterLabel>
+            <translation><!-- NDS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-Profit</masterLabel>
+            <translation><!-- Non-Profit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner</masterLabel>
+            <translation><!-- Partner --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- CisionPoint ID --></label>
+        <name>CisionPoint_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- PH2-CisionWire Rep --></label>
+        <name>CisionWire_Rep__c</name>
+        <relationshipLabel><!-- Accounts (PH2-CisionWire Rep) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Client Services Info Exp Date --></label>
+        <name>Client_Services_Info_Exp_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client Services Info --></label>
+        <name>Client_Services_Info__c</name>
+    </fields>
+    <fields>
+        <help><!-- Client supplied shipping number in order to send products via their shipping account. --></help>
+        <label><!-- Client Shipping Account # --></label>
+        <name>Client_Shipping_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Collection Info Exp Date --></label>
+        <name>Collection_Info_Exp_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Collections Info Exp Date --></label>
+        <name>Collections_Info_Exp_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Collections Info --></label>
+        <name>Collections_Info__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company Description --></label>
+        <name>Company_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company Size --></label>
+        <name>Company_Size__c</name>
+        <picklistValues>
+            <masterLabel>Enterprise</masterLabel>
+            <translation><!-- Enterprise --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mid</masterLabel>
+            <translation><!-- Mid --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Small</masterLabel>
+            <translation><!-- Small --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Competitor Info --></label>
+        <name>Competitor_Info__c</name>
+    </fields>
+    <fields>
+        <label><!-- Connect Customer --></label>
+        <name>Connect_Customer__c</name>
+    </fields>
+    <fields>
+        <label><!-- CPS Content Marketing --></label>
+        <name>Content_Marketing__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check this box to copy your Billing Address to the Shipping Address. --></help>
+        <label><!-- Copy Billing Address to Shipping Address --></label>
+        <name>Copy_Billing_Address_to_Shipping_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Hold --></label>
+        <name>Credit_Hold__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Limit --></label>
+        <name>Credit_Limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Reference --></label>
+        <name>Credit_Reference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Risk Values Date --></label>
+        <name>Credit_Risk_Values_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Risk --></label>
+        <name>Credit_Risk__c</name>
+        <picklistValues>
+            <masterLabel>High</masterLabel>
+            <translation><!-- High --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low</masterLabel>
+            <translation><!-- Low --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- DMA ID --></label>
+        <name>DMA_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- DMA --></label>
+        <name>DMA__c</name>
+    </fields>
+    <fields>
+        <label><!-- DUNS Number --></label>
+        <name>DUNS_Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- Denotes an account identified as a top prospect by New Business Sales. --></help>
+        <label><!-- PH2-Designated Account --></label>
+        <name>Designated_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- CPS Directories --></label>
+        <name>Directories__c</name>
+    </fields>
+    <fields>
+        <label><!-- CPS Distribution --></label>
+        <name>Distribution__c</name>
+    </fields>
+    <fields>
+        <label><!-- Do Not Sell --></label>
+        <name>Do_Not_Sell__c</name>
+    </fields>
+    <fields>
+        <label><!-- Early Term Reason --></label>
+        <name>Early_Term_Reason__c</name>
+    </fields>
+    <fields>
+        <label><!-- Early Term? --></label>
+        <name>Early_Term__c</name>
+    </fields>
+    <fields>
+        <label><!-- CPS Electronic Monitoring --></label>
+        <name>Electronic_Monitoring__c</name>
+    </fields>
+    <fields>
+        <label><!-- Employees 1 Year Growth (Percent) --></label>
+        <name>Employees_1_Year_Growth_Percent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enterprise Account --></label>
+        <name>Enterprise_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Extensions Info Exp Date --></label>
+        <name>Extensions_Info_Exp_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Extensions Info --></label>
+        <name>Extensions_Info__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fiscal Year End --></label>
+        <name>Fiscal_Year_End__c</name>
+    </fields>
+    <fields>
+        <label><!-- PH2-Fortune 1000 Company --></label>
+        <name>Fortune_1000_Company__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fortune 1000 Ranking --></label>
+        <name>Fortune_1000_Ranking__c</name>
+    </fields>
+    <fields>
+        <label><!-- GP Cust ID --></label>
+        <name>GP_Cust_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- GP Integration Number --></label>
+        <name>GP_Integration_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- CPS Global Analysts --></label>
+        <name>Global_Analysts__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gorkana Account Type --></label>
+        <name>Gorkana_Account_Type__c</name>
+        <picklistValues>
+            <masterLabel>Customer</masterLabel>
+            <translation><!-- Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prospect</masterLabel>
+            <translation><!-- Prospect --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Gorkana SFDC Account ID --></label>
+        <name>Gorkana_SFDC_Account_ID__c</name>
+    </fields>
+    <fields>
+        <name>Industry</name>
+        <picklistValues>
+            <masterLabel>Agriculture</masterLabel>
+            <translation><!-- Agriculture --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Apparel</masterLabel>
+            <translation><!-- Apparel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Banking</masterLabel>
+            <translation><!-- Banking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Biotechnology</masterLabel>
+            <translation><!-- Biotechnology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chemicals</masterLabel>
+            <translation><!-- Chemicals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Communications</masterLabel>
+            <translation><!-- Communications --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Construction</masterLabel>
+            <translation><!-- Construction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consulting</masterLabel>
+            <translation><!-- Consulting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Education</masterLabel>
+            <translation><!-- Education --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Electronics</masterLabel>
+            <translation><!-- Electronics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Energy</masterLabel>
+            <translation><!-- Energy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Engineering</masterLabel>
+            <translation><!-- Engineering --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Entertainment</masterLabel>
+            <translation><!-- Entertainment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Environmental</masterLabel>
+            <translation><!-- Environmental --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finance</masterLabel>
+            <translation><!-- Finance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Food &amp; Beverage</masterLabel>
+            <translation><!-- Food &amp; Beverage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Government</masterLabel>
+            <translation><!-- Government --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Healthcare</masterLabel>
+            <translation><!-- Healthcare --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hospitality</masterLabel>
+            <translation><!-- Hospitality --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Insurance</masterLabel>
+            <translation><!-- Insurance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Legal</masterLabel>
+            <translation><!-- Legal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Machinery</masterLabel>
+            <translation><!-- Machinery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manufacturing</masterLabel>
+            <translation><!-- Manufacturing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Media</masterLabel>
+            <translation><!-- Media --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not For Profit</masterLabel>
+            <translation><!-- Not For Profit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recreation</masterLabel>
+            <translation><!-- Recreation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retail</masterLabel>
+            <translation><!-- Retail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shipping</masterLabel>
+            <translation><!-- Shipping --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technology</masterLabel>
+            <translation><!-- Technology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Telecommunications</masterLabel>
+            <translation><!-- Telecommunications --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transportation</masterLabel>
+            <translation><!-- Transportation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Utilities</masterLabel>
+            <translation><!-- Utilities --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Industry Group Name --></label>
+        <name>Industry_Group_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Industry Sector Name --></label>
+        <name>Industry_Sector_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- CPS International Database --></label>
+        <name>International_Database__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Count --></label>
+        <name>Invoice_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Early Term Date --></label>
+        <name>Last_Early_Term_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Purchase Date --></label>
+        <name>Last_Purchase_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicator of  an account exclusive to LexisNexis. Cision may not propose eNews to this account without executive approval. --></help>
+        <label><!-- LexisNexis Named Account --></label>
+        <name>LexisNexis_Named_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lexis WSK? --></label>
+        <name>Lexis_WSK__c</name>
+    </fields>
+    <fields>
+        <label><!-- LinkedIn --></label>
+        <name>LinkedIn__c</name>
+    </fields>
+    <fields>
+        <help><!-- For Parent-Child Accounts where Location is the reason for the Parent-Child relationship. --></help>
+        <label><!-- Location --></label>
+        <name>Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- MSA Signed On --></label>
+        <name>MSA_Signed_On__c</name>
+    </fields>
+    <fields>
+        <label><!-- CPS Managed Services --></label>
+        <name>Managed_Services__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monitoring Customer --></label>
+        <name>Monitoring_Customer__c</name>
+    </fields>
+    <fields>
+        <label><!-- NAAT --></label>
+        <name>NAAT__c</name>
+    </fields>
+    <fields>
+        <label><!-- NAICS Code 1 Description --></label>
+        <name>NAICS_Code_1_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- NAICS Code 1 --></label>
+        <name>NAICS_Code_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- NAICS Code 2 Description --></label>
+        <name>NAICS_Code_2_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- NAICS Code 2 --></label>
+        <name>NAICS_Code_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- NAICS Code 3 Description --></label>
+        <name>NAICS_Code_3_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- NAICS Code 3 --></label>
+        <name>NAICS_Code_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Named Account Rep --></label>
+        <name>Named_Account_Rep__c</name>
+        <relationshipLabel><!-- Accounts (Named Account Rep) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Named Account --></label>
+        <name>Named_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Net Income 1 Year Growth (Percent) --></label>
+        <name>Net_Income_1_Year_Growth_Percent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Net Income (In Native Country Currency) --></label>
+        <name>Net_Income_In_Native_Country_Currency__c</name>
+    </fields>
+    <fields>
+        <label><!-- New Biz Info Exp Date --></label>
+        <name>New_Biz_Info_Exp_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- New Biz Info --></label>
+        <name>New_Biz_Info__c</name>
+    </fields>
+    <fields>
+        <label><!-- New Biz Last Touched Date --></label>
+        <name>New_Biz_Last_Touched_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- The New Biz Named Account Rep owns this Account.  There is no requirement for the New Biz Named Account Rep to do any activity on the Account in order to &quot;keep&quot; the account .  Each night, the New Biz Named Account Rep will overwrite the New Biz Rep field. --></help>
+        <label><!-- New Biz Named Account Rep --></label>
+        <name>New_Biz_Named_Account_Rep__c</name>
+        <relationshipLabel><!-- Accounts (New Biz Named Account Rep) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- This field shows the last New Biz Rep who has modified the Account or any related Contact, Opp, or Activity in the last 60 days.  The New Biz Named Account Rep, if there is one, will overwrite the New Biz Rep field each night. --></help>
+        <label><!-- New Biz Rep --></label>
+        <name>New_Biz_Rep__c</name>
+        <relationshipLabel><!-- Accounts (New Biz Rep) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- New Biz Sales Territory --></label>
+        <name>New_Biz_Sales_Territory__c</name>
+        <picklistValues>
+            <masterLabel>East</masterLabel>
+            <translation><!-- East --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>West</masterLabel>
+            <translation><!-- West --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Num of Invoices --></label>
+        <name>Num_of_Invoices__c</name>
+    </fields>
+    <fields>
+        <label><!-- Num of Opps --></label>
+        <name>Num_of_Opps__c</name>
+    </fields>
+    <fields>
+        <label><!-- OS2010 Industry Name --></label>
+        <name>OS2010_Industry_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- OldOwnership --></label>
+        <name>OldOwnership__c</name>
+        <picklistValues>
+            <masterLabel>Non-Corporates</masterLabel>
+            <translation><!-- Non-Corporates --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nonprofit</masterLabel>
+            <translation><!-- Nonprofit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partnership</masterLabel>
+            <translation><!-- Partnership --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Private</masterLabel>
+            <translation><!-- Private --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Public</masterLabel>
+            <translation><!-- Public --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Public Sector (Central &amp; Local Government)</masterLabel>
+            <translation><!-- Public Sector (Central &amp; Local Government) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Public Sector (Other)</masterLabel>
+            <translation><!-- Public Sector (Other) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>State-Owned</masterLabel>
+            <translation><!-- State-Owned --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- OneSource Company Name --></label>
+        <name>OneSource_Company_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- OneSource Parent Key Id --></label>
+        <name>OneSource_Parent_Key_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- OneSource Parent Name --></label>
+        <name>OneSource_Parent_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- OneSource Ultimate Key Id --></label>
+        <name>OneSource_Ultimate_Key_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- OneSource Verification Date --></label>
+        <name>OneSource_Verification_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Count --></label>
+        <name>Opportunity_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- CPS Other Monitoring Services --></label>
+        <name>Other_Monitoring_Services__c</name>
+    </fields>
+    <fields>
+        <help><!-- An outgoing communication has been made to the Prospect by Sales. --></help>
+        <label><!-- PH2-Outreach Made --></label>
+        <name>Outreach_Made__c</name>
+    </fields>
+    <fields>
+        <name>Ownership</name>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Private</masterLabel>
+            <translation><!-- Private --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Public</masterLabel>
+            <translation><!-- Public --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Subsidiary</masterLabel>
+            <translation><!-- Subsidiary --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Ownership --></label>
+        <name>Ownership__c</name>
+        <picklistValues>
+            <masterLabel>Non-Corporates</masterLabel>
+            <translation><!-- Non-Corporates --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nonprofit</masterLabel>
+            <translation><!-- Nonprofit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partnership</masterLabel>
+            <translation><!-- Partnership --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Private</masterLabel>
+            <translation><!-- Private --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Public</masterLabel>
+            <translation><!-- Public --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Public Sector (Central &amp; Local Government)</masterLabel>
+            <translation><!-- Public Sector (Central &amp; Local Government) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Public Sector (Other)</masterLabel>
+            <translation><!-- Public Sector (Other) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>State-Owned</masterLabel>
+            <translation><!-- State-Owned --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- P.O. Required --></label>
+        <name>P_O_Required__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Account Type --></label>
+        <name>Parent_Account_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Paydex # --></label>
+        <name>Paydex__c</name>
+    </fields>
+    <fields>
+        <label><!-- CPS Plan Additional Users --></label>
+        <name>Plan_Additional_Users__c</name>
+    </fields>
+    <fields>
+        <label><!-- Plan Customer --></label>
+        <name>Plan_Customer__c</name>
+    </fields>
+    <fields>
+        <label><!-- CPS Plan Database --></label>
+        <name>Plan_Database__c</name>
+    </fields>
+    <fields>
+        <label><!-- CPS Plan Email/Fax Points --></label>
+        <name>Plan_Email_Fax_Points__c</name>
+    </fields>
+    <fields>
+        <label><!-- CPS Plan Premium Data/Add-Ons --></label>
+        <name>Plan_Premium_Data_Add_Ons__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary ISIC Rev4 Desc --></label>
+        <name>Primary_ISIC_Rev4_Desc__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary ISIC Rev4 --></label>
+        <name>Primary_ISIC_Rev4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Print Monitoring Subscription Customer --></label>
+        <name>Print_Monitoring_Subscription_Customer__c</name>
+    </fields>
+    <fields>
+        <label><!-- CPS Print Monitoring --></label>
+        <name>Print_Monitoring__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Lead --></label>
+        <name>Project_Lead__c</name>
+        <relationshipLabel><!-- Accounts (Project Lead) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Indicator of  an account exclusive to LexisNexis. Cision may not propose QuickShare to this account without executive approval. --></help>
+        <label><!-- QuickShare Account --></label>
+        <name>QuickShare_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCN: Additional Recurring Client Needs --></label>
+        <name>RCN_Additional_Recurring_Client_Needs__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCN: Client Emails --></label>
+        <name>RCN_Client_Emails__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCN: Clip Format --></label>
+        <name>RCN_Clip_Format__c</name>
+        <picklistValues>
+            <masterLabel>AVI (720x480)</masterLabel>
+            <translation><!-- AVI (720x480) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DVD</masterLabel>
+            <translation><!-- DVD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FLV (320x240)</masterLabel>
+            <translation><!-- FLV (320x240) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FLV (720x480)</masterLabel>
+            <translation><!-- FLV (720x480) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MPEG1 (320x240)</masterLabel>
+            <translation><!-- MPEG1 (320x240) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MPEG2(720x480)</masterLabel>
+            <translation><!-- MPEG2(720x480) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>QT (320x240)</masterLabel>
+            <translation><!-- QT (320x240) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>QT (720x480)</masterLabel>
+            <translation><!-- QT (720x480) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WMV (320x240)</masterLabel>
+            <translation><!-- WMV (320x240) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WMV (720x480)</masterLabel>
+            <translation><!-- WMV (720x480) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- RCN: Incidental Fee --></label>
+        <name>RCN_Incidental_Fee__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>See RCN: Recurring Client Needs</masterLabel>
+            <translation><!-- See RCN: Recurring Client Needs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- RCN: Post Location --></label>
+        <name>RCN_Post_Location__c</name>
+        <picklistValues>
+            <masterLabel>Ad Hoc CP</masterLabel>
+            <translation><!-- Ad Hoc CP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Box.com</masterLabel>
+            <translation><!-- Box.com --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cision FTP Site</masterLabel>
+            <translation><!-- Cision FTP Site --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client CisionPoint</masterLabel>
+            <translation><!-- Client CisionPoint --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Direct Link</masterLabel>
+            <translation><!-- Direct Link --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Specific client needs and order instructions that should be followed on all transactions for this client. --></help>
+        <label><!-- RCN: Recurring Client Needs --></label>
+        <name>RCN_Recurring_Client_Needs__c</name>
+    </fields>
+    <fields>
+        <name>Rating</name>
+        <picklistValues>
+            <masterLabel>Hot</masterLabel>
+            <translation><!-- Hot --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Warm</masterLabel>
+            <translation><!-- Warm --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Renewal Info Exp Date --></label>
+        <name>Renewal_Info_Exp_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Renewal Info --></label>
+        <name>Renewal_Info__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Renewal Period is anytime in the period of time 90 days BEFORE the Renewal Due Date through 60 days AFTER the Renewal Due Date (or 60 days after after Closed Renewal). --></help>
+        <label><!-- Renewal Period --></label>
+        <name>Renewal_Period__c</name>
+    </fields>
+    <fields>
+        <label><!-- Renewal Rep --></label>
+        <name>Renewal_Rep__c</name>
+        <relationshipLabel><!-- Accounts (Renewal Rep) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The account&apos;s renewal tier (based on the annual renewal amount). --></help>
+        <label><!-- Renewal Sales Territory --></label>
+        <name>Renewal_Sales_Territory__c</name>
+        <picklistValues>
+            <masterLabel>Basic</masterLabel>
+            <translation><!-- Basic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client</masterLabel>
+            <translation><!-- Client --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Major</masterLabel>
+            <translation><!-- Major --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>National</masterLabel>
+            <translation><!-- National --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- 15 Month Rolling Value of all Current Renewal Opps --></help>
+        <label><!-- PH2-Renewal Value --></label>
+        <name>Renewal_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Renewals Named Account Rep --></label>
+        <name>Renewals_Named_Account_Rep__c</name>
+        <relationshipLabel><!-- Accounts (Renewals Named Account Rep) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Required Invoice Contact Email --></label>
+        <name>Required_Invoice_Contact_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Required Invoice Contact Name --></label>
+        <name>Required_Invoice_Contact_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Option to combine quantities of multiple assets for the same product into one line when renewal quote is generated. --></help>
+        <label><!-- Combine Asset Quantities --></label>
+        <name>SBQQ__AssetQuantitiesCombined__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enable to combine assets and subscriptions from multiple co-termed contracts. By default, each co-termed contract generates a separate group on renewal quote. --></help>
+        <label><!-- Combine Co-Termed Contracts --></label>
+        <name>SBQQ__CoTermedContractsCombined__c</name>
+    </fields>
+    <fields>
+        <help><!-- Determines when contracts are co-terminated. --></help>
+        <label><!-- Co-Termination Event --></label>
+        <name>SBQQ__CoTerminationEvent__c</name>
+        <picklistValues>
+            <masterLabel>Add-on</masterLabel>
+            <translation><!-- Add-on --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renewal</masterLabel>
+            <translation><!-- Renewal --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Determines how service and subscription contracts for this customer are co-terminated. --></help>
+        <label><!-- Contract Co-Termination --></label>
+        <name>SBQQ__ContractCoTermination__c</name>
+        <picklistValues>
+            <masterLabel>Always</masterLabel>
+            <translation><!-- Always --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Never</masterLabel>
+            <translation><!-- Never --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prompt</masterLabel>
+            <translation><!-- Prompt --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Default opportunity for this account used by an e-Commerce module to obtain the customer&apos;s price book and associate with &quot;shopping cart&quot; quotes. --></help>
+        <label><!-- Default Opportunity --></label>
+        <name>SBQQ__DefaultOpportunity__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Enter date until which the prices must be held. --></help>
+        <label><!-- Price Hold End --></label>
+        <name>SBQQ__PriceHoldEnd__c</name>
+    </fields>
+    <fields>
+        <help><!-- Use &quot;Same&quot; to keep the same price paid last time. Use &quot;List&quot; to use current list price. Use &quot;Uplift&quot; to use the price paid last time plus some uplift. --></help>
+        <label><!-- Renewal Pricing Method --></label>
+        <name>SBQQ__RenewalPricingMethod__c</name>
+        <picklistValues>
+            <masterLabel>List</masterLabel>
+            <translation><!-- List --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Same</masterLabel>
+            <translation><!-- Same --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Uplift</masterLabel>
+            <translation><!-- Uplift --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sales 1 Year Growth (Percent) --></label>
+        <name>Sales_1_Year_Growth_Percent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales (In Native Country Currency) --></label>
+        <name>Sales_In_Native_Country_Currency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales (In USD) --></label>
+        <name>Sales_In_USD__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Last Touched Date --></label>
+        <name>Sales_Last_Touched_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- PH2-Sales Last Touched On --></label>
+        <name>Sales_Last_Touched_On__c</name>
+    </fields>
+    <fields>
+        <label><!-- PH2-Segmentation Category --></label>
+        <name>Segmentation_Category__c</name>
+        <picklistValues>
+            <masterLabel>AGENCY_MGMTCONSULT</masterLabel>
+            <translation><!-- AGENCY_MGMTCONSULT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ARCH_ENGINEER</masterLabel>
+            <translation><!-- ARCH_ENGINEER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BANK_INVEST_FINANCE</masterLabel>
+            <translation><!-- BANK_INVEST_FINANCE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CONSUMER_RTL_MFG</masterLabel>
+            <translation><!-- CONSUMER_RTL_MFG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EDUCATION</masterLabel>
+            <translation><!-- EDUCATION --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ENERGY</masterLabel>
+            <translation><!-- ENERGY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ENTERTAINMENT</masterLabel>
+            <translation><!-- ENTERTAINMENT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GOVERNMENT</masterLabel>
+            <translation><!-- GOVERNMENT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HOSPITAL</masterLabel>
+            <translation><!-- HOSPITAL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INSURANCE</masterLabel>
+            <translation><!-- INSURANCE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LEGAL</masterLabel>
+            <translation><!-- LEGAL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LIBRARIES_AND_ARCHIVES</masterLabel>
+            <translation><!-- LIBRARIES_AND_ARCHIVES --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MISC</masterLabel>
+            <translation><!-- MISC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MISC_LIB_ZOO</masterLabel>
+            <translation><!-- MISC_LIB_ZOO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MISC_MEDICAL</masterLabel>
+            <translation><!-- MISC_MEDICAL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MISC_MFG</masterLabel>
+            <translation><!-- MISC_MFG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OIL_MINING</masterLabel>
+            <translation><!-- OIL_MINING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ORGANIZATIONS</masterLabel>
+            <translation><!-- ORGANIZATIONS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PHARMA</masterLabel>
+            <translation><!-- PHARMA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PUBLISHING</masterLabel>
+            <translation><!-- PUBLISHING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>REALESTATE_CONTRACTOR</masterLabel>
+            <translation><!-- REALESTATE_CONTRACTOR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SCIENCE_AERO</masterLabel>
+            <translation><!-- SCIENCE_AERO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TECHNOLOGY</masterLabel>
+            <translation><!-- TECHNOLOGY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TELECOM</masterLabel>
+            <translation><!-- TELECOM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TRAVELHOTEL</masterLabel>
+            <translation><!-- TRAVELHOTEL --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- ShowID --></label>
+        <name>ShowID__c</name>
+    </fields>
+    <fields>
+        <label><!-- CPS Social Media Monitoring CP --></label>
+        <name>Social_Media_Monitoring_CP__c</name>
+    </fields>
+    <fields>
+        <label><!-- CPS Social Media Monitoring Dashboard --></label>
+        <name>Social_Media_Monitoring_Dashboard__c</name>
+    </fields>
+    <fields>
+        <label><!-- CPS Social Media Monitoring Other --></label>
+        <name>Social_Media_Monitoring_Other__c</name>
+    </fields>
+    <fields>
+        <label><!-- CPS Social Newsroom --></label>
+        <name>Social_Newsroom__c</name>
+    </fields>
+    <fields>
+        <label><!-- State Tax Exempt --></label>
+        <name>State_Tax_Exempt__c</name>
+    </fields>
+    <fields>
+        <help><!-- Federal Tax Exempt status of the Account --></help>
+        <label><!-- Federal Tax Exempt --></label>
+        <name>Tax_Exempt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Terms --></label>
+        <name>Terms__c</name>
+        <picklistValues>
+            <masterLabel>Net 30</masterLabel>
+            <translation><!-- Net 30 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net 45</masterLabel>
+            <translation><!-- Net 45 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net 60</masterLabel>
+            <translation><!-- Net 60 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prepaid</masterLabel>
+            <translation><!-- Prepaid --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Total Assets 1 Year Growth (Percent) --></label>
+        <name>Total_Assets_1_Year_Growth_Percent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Renewal Value --></label>
+        <name>Total_Renewal_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Spend (Broadcast) --></label>
+        <name>Total_Spend_Broadcast__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Spend (Non-Broadcast) --></label>
+        <name>Total_Spend_Non_Broadcast__c</name>
+    </fields>
+    <fields>
+        <label><!-- CPS Training --></label>
+        <name>Training__c</name>
+    </fields>
+    <fields>
+        <name>Type</name>
+        <picklistValues>
+            <masterLabel>Broadcast Ad-Hoc Requests</masterLabel>
+            <translation><!-- Broadcast Ad-Hoc Requests --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer</masterLabel>
+            <translation><!-- Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Distribution Only Customer</masterLabel>
+            <translation><!-- Distribution Only Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lapsed Customer</masterLabel>
+            <translation><!-- Lapsed Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prospect</masterLabel>
+            <translation><!-- Prospect --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Test Account</masterLabel>
+            <translation><!-- Test Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transactional Broadcast</masterLabel>
+            <translation><!-- Transactional Broadcast --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Broadcast Clients that have undergone an extensive examination to determine if they warrant more attention than a normal client and are approved by Sales Management. --></help>
+        <label><!-- VIP Client --></label>
+        <name>VIP_Client__c</name>
+    </fields>
+    <fields>
+        <label><!-- Verified? --></label>
+        <name>Verified__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vocus Account Type --></label>
+        <name>Vocus_Account_Type__c</name>
+        <picklistValues>
+            <masterLabel>Customer</masterLabel>
+            <translation><!-- Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prospect</masterLabel>
+            <translation><!-- Prospect --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Vocus Org Id --></label>
+        <name>Vocus_Org_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vocus SFDC Account ID --></label>
+        <name>Vocus_SFDC_Account_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- PH2-Web Employees --></label>
+        <name>Web_Employees__c</name>
+        <picklistValues>
+            <masterLabel>Over 1000 Employees</masterLabel>
+            <translation><!-- Over 1000 Employees --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Under 1000 Employees</masterLabel>
+            <translation><!-- Under 1000 Employees --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- PH2-Web Revenue --></label>
+        <name>Web_Revenue__c</name>
+        <picklistValues>
+            <masterLabel>Over 200Mil</masterLabel>
+            <translation><!-- Over 200Mil --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Under 200Mil</masterLabel>
+            <translation><!-- Under 200Mil --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- CPS Web/Wire Distribution --></label>
+        <name>Web_Wire_Distribution__c</name>
+    </fields>
+    <fields>
+        <label><!-- Won Subscription Opps Count --></label>
+        <name>Won_Subscription_Opps_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Year Founded --></label>
+        <name>Year_Founded__c</name>
+    </fields>
+    <fields>
+        <label><!-- Active --></label>
+        <name>fw1__Active__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Customer Priority --></label>
+        <name>fw1__CustomerPriority__c</name>
+        <picklistValues>
+            <masterLabel>High</masterLabel>
+            <translation><!-- High --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low</masterLabel>
+            <translation><!-- Low --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medium</masterLabel>
+            <translation><!-- Medium --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Number of Locations --></label>
+        <name>fw1__NumberofLocations__c</name>
+    </fields>
+    <fields>
+        <label><!-- SLA Expiration Date --></label>
+        <name>fw1__SLAExpirationDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- SLA Serial Number --></label>
+        <name>fw1__SLASerialNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- SLA --></label>
+        <name>fw1__SLA__c</name>
+        <picklistValues>
+            <masterLabel>Bronze</masterLabel>
+            <translation><!-- Bronze --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gold</masterLabel>
+            <translation><!-- Gold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Platinum</masterLabel>
+            <translation><!-- Platinum --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Silver</masterLabel>
+            <translation><!-- Silver --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Upsell Opportunity --></label>
+        <name>fw1__UpsellOpportunity__c</name>
+        <picklistValues>
+            <masterLabel>Maybe</masterLabel>
+            <translation><!-- Maybe --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- OSKeyID --></label>
+        <name>iSell__OSKeyID__c</name>
+    </fields>
+    <fields>
+        <help><!-- If you enter text into this field the text will be displayed in a pop-up message whenever someone views this record. --></help>
+        <label><!-- Alert Message --></label>
+        <name>rrpu__Alert_Message__c</name>
+    </fields>
+    <validationRules>
+        <errorMessage><!-- Please enter the applicable 3-character country code. Common country codes are USA, CAN, GBR. Full reference: http://en.wikipedia.org/wiki/ISO_3166-1_alpha-3 --></errorMessage>
+        <name>BillingCountry_Enforce_Country_Code</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Billing Address City, State, Zip/Postal Code, and Country are required --></errorMessage>
+        <name>Billing_Address_Required_Fields</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Billing Country needs to be the 3 letter ISO code.  (For example, USA for United States, CAN for Canada, GBR for the United Kingdom, SWE for Sweden).  Google for the correct code if you don&apos;t know it or chatter @SFDC Admin to ask for help. --></errorMessage>
+        <name>Billing_Country_ISO_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Billing State needs to be the 2 letter postal code for USA and CAN addresses.  Google for the correct code if you don&apos;t know it or chatter @SFDC Admin to ask for help. --></errorMessage>
+        <name>Billing_State_Abbr_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A Client Services Info Expiration Date is required when leaving a Client Services Info Alert. --></errorMessage>
+        <name>Client_Services_Info_Exp_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A Collections Info Expiration Date is required when leaving a Collections Info Alert. --></errorMessage>
+        <name>Collections_Info_Exp_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- All Credit Hold changes must be done in GP. --></errorMessage>
+        <name>Credit_Hold_Lock_Down</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please contact @Billing to make changes to the Account Name for this Account. --></errorMessage>
+        <name>Customer_Lockdown</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Phone Number is required in order to make the Account Verified --></errorMessage>
+        <name>DEACTVIATED_Phone_Number_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If you are marking this as an Early Term Account, you need to update the Last Early Term Date and include an Early Term Reason. --></errorMessage>
+        <name>Early_Term_Fields</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- An Extensions Info Expiration Date is required when leaving an Extensions Info Alert. --></errorMessage>
+        <name>Extensions_Info_Exp_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only a System Administrator can change a GP Cust Id. --></errorMessage>
+        <name>GP_Cust_ID_Lockdown</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please contact @Billing to make changes to the Account Name for this Account. --></errorMessage>
+        <name>Name_Change_Lockdown</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A New Biz Info Expiration Date is required when leaving a New Biz Info Alert. --></errorMessage>
+        <name>New_Biz_Info_Exp_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A Renewal Info Expiration Date is required when leaving a Renewal Info Alert. --></errorMessage>
+        <name>Renewal_Info_Exp_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If you are using the Required Invoice Contact fields, BOTH must be filled out. --></errorMessage>
+        <name>Required_Invoice_fields</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter the applicable 3-character country code. Common country codes are USA, CAN, GBR. Full reference: http://en.wikipedia.org/wiki/ISO_3166-1_alpha-3 --></errorMessage>
+        <name>ShippingCountry_Enforce_Country_Code</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Shipping Country needs to be the 3 letter ISO code.  (For example, USA for United States, CAN for Canada, GBR for the United Kingdom, SWE for Sweden).  Google for the correct code if you don&apos;t know it or chatter @SFDC Admin to ask for help. --></errorMessage>
+        <name>Shipping_Country_ISO_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Shipping State needs to be the 2 letter postal code for USA and CAN addresses.  Google for the correct code if you don&apos;t know it or chatter @SFDC Admin to ask for help. --></errorMessage>
+        <name>Shipping_State_Abbr_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please contact @Billing to make changes to the Addresses for this Account. --></errorMessage>
+        <name>Verified_Address_Lockdown</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Billing --></label>
+        <name>AVA_SFCORE__Billing</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Validate_Billing_Address --></label>
+        <name>AVA_SFCORE__Validate_Billing_Address</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Validate_Shipping_Address --></label>
+        <name>AVA_SFCORE__Validate_Shipping_Address</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Account_Alerts --></label>
+        <name>Account_Alerts</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- AltavistaNews --></label>
+        <name>AltavistaNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleNews --></label>
+        <name>GoogleNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- HooversProfile --></label>
+        <name>HooversProfile</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Sales_Support --></label>
+        <name>Sales_Support</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Test_bDialog --></label>
+        <name>Test_bDialog</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- YahooMaps --></label>
+        <name>YahooMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_with_DocuSign --></label>
+        <name>dsfs__Send_with_DocuSign</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Statement --></label>
+        <name>fw1__Statement</name>
+    </webLinks>
+</CustomObjectTranslation>

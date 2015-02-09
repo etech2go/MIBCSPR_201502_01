@@ -1,0 +1,2 @@
+<apex:page standardController="Opportunity" extensions="NewOpportunityController" action="{!nullValue(NewOppPage.url, urlFor($Action.Opportunity.New, null, null, true))}"> 
+</apex:page>

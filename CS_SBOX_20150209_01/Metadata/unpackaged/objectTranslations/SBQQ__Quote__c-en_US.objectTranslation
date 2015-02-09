@@ -1,0 +1,1448 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Account_MSA_Signed_On --></label>
+        <name>Account_MSA_Signed_On__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account_Name --></label>
+        <name>Account_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account_Phone --></label>
+        <name>Account_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Addl. Disc. Amount - For Template --></label>
+        <name>Addl_Disc_Amount_For_Template__c</name>
+    </fields>
+    <fields>
+        <label><!-- Annual - Customer Total Rollup --></label>
+        <name>Annual_Customer_Total_Rollup__c</name>
+    </fields>
+    <fields>
+        <label><!-- Annual - Customer Total --></label>
+        <name>Annual_Customer_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- Annual - Customer Total with Broadcast --></label>
+        <name>Annual_Customer_Total_with_Broadcast__c</name>
+    </fields>
+    <fields>
+        <label><!-- Annual - Existing Fee Sum --></label>
+        <name>Annual_Existing_Fee_Sum__c</name>
+    </fields>
+    <fields>
+        <label><!-- Annual - List Total Rollup --></label>
+        <name>Annual_List_Total_Rollup__c</name>
+    </fields>
+    <fields>
+        <label><!-- Annual - List Total --></label>
+        <name>Annual_List_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- Annual - Net Copyright Fees Rollup --></label>
+        <name>Annual_Net_Copyright_Fees_Rollup__c</name>
+    </fields>
+    <fields>
+        <label><!-- Annual - Net Copyright Fees --></label>
+        <name>Annual_Net_Copyright_Fees__c</name>
+    </fields>
+    <fields>
+        <label><!-- Annual - Total Discount --></label>
+        <name>Annual_Total_Discount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Annual - Total Negative Discount --></label>
+        <name>Annual_Total_Negative_Discount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approval Rejected Flag --></label>
+        <name>Approval_Rejected_Flag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Start Date --></label>
+        <name>Billing_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Broadcast Customer Total --></label>
+        <name>Broadcast_Customer_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- Broadcast List Total --></label>
+        <name>Broadcast_List_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- Broadcast Total Discount --></label>
+        <name>Broadcast_Total_Discount__c</name>
+    </fields>
+    <fields>
+        <label><!-- CA Rep --></label>
+        <name>CA_Rep__c</name>
+    </fields>
+    <fields>
+        <label><!-- Card Expiration Date Month --></label>
+        <name>Card_Expiration_Date_Month__c</name>
+        <picklistValues>
+            <masterLabel>April</masterLabel>
+            <translation><!-- April --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>August</masterLabel>
+            <translation><!-- August --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>December</masterLabel>
+            <translation><!-- December --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>February</masterLabel>
+            <translation><!-- February --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>January</masterLabel>
+            <translation><!-- January --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>July</masterLabel>
+            <translation><!-- July --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>June</masterLabel>
+            <translation><!-- June --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>March</masterLabel>
+            <translation><!-- March --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>May</masterLabel>
+            <translation><!-- May --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>November</masterLabel>
+            <translation><!-- November --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>October</masterLabel>
+            <translation><!-- October --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>September</masterLabel>
+            <translation><!-- September --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Card Expiration Date Year --></label>
+        <name>Card_Expiration_Date_Year__c</name>
+        <picklistValues>
+            <masterLabel>2014</masterLabel>
+            <translation><!-- 2014 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2015</masterLabel>
+            <translation><!-- 2015 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2016</masterLabel>
+            <translation><!-- 2016 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2017</masterLabel>
+            <translation><!-- 2017 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2018</masterLabel>
+            <translation><!-- 2018 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2019</masterLabel>
+            <translation><!-- 2019 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2020</masterLabel>
+            <translation><!-- 2020 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Card Name --></label>
+        <name>Card_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Card Number --></label>
+        <name>Card_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Card Type --></label>
+        <name>Card_Type__c</name>
+        <picklistValues>
+            <masterLabel>Amex</masterLabel>
+            <translation><!-- Amex --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Discover</masterLabel>
+            <translation><!-- Discover --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MasterCard</masterLabel>
+            <translation><!-- MasterCard --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Visa</masterLabel>
+            <translation><!-- Visa --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Card Verification Number --></label>
+        <name>Card_Verification_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Change Billing City --></label>
+        <name>Change_Billing_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Change Billing Country --></label>
+        <name>Change_Billing_Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Change Billing State --></label>
+        <name>Change_Billing_State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Change Billing Street --></label>
+        <name>Change_Billing_Street__c</name>
+    </fields>
+    <fields>
+        <label><!-- Change Billing Zip --></label>
+        <name>Change_Billing_Zip__c</name>
+    </fields>
+    <fields>
+        <label><!-- Change Invoice Contact Email --></label>
+        <name>Change_Invoice_Contact_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Change Invoice Contact Name --></label>
+        <name>Change_Invoice_Contact_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Change Invoice Contact Phone --></label>
+        <name>Change_Invoice_Contact_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Close Won Date Time --></label>
+        <name>Close_Won_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Commissionable Potential --></label>
+        <name>Commissionable_Potential__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contract Opened --></label>
+        <name>Contract_Opened__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contract Rejected --></label>
+        <name>Contract_Rejected__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contract Sent --></label>
+        <name>Contract_Sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contract Signed --></label>
+        <name>Contract_Signed__c</name>
+    </fields>
+    <fields>
+        <help><!-- Sums up the discount amount for Copyright Fee products. --></help>
+        <label><!-- Copyright Fee Discount Amount --></label>
+        <name>Copyright_Fee_Discount_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Count Credit for Existing Services --></label>
+        <name>Count_Credit_for_Existing_Services__c</name>
+    </fields>
+    <fields>
+        <label><!-- Count Training --></label>
+        <name>Count_Training__c</name>
+    </fields>
+    <fields>
+        <label><!-- Count of Optional Items --></label>
+        <name>Count_of_Optional_Items__c</name>
+    </fields>
+    <fields>
+        <label><!-- Count of Unit Fees --></label>
+        <name>Count_of_Unit_Fees__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Risk --></label>
+        <name>Credit_Risk__c</name>
+    </fields>
+    <fields>
+        <label><!-- Custom Payment Plan Desc. --></label>
+        <name>Custom_Payment_Plan_Desc__c</name>
+    </fields>
+    <fields>
+        <label><!-- Discount Amount for Approval --></label>
+        <name>Discount_Amount_for_Approval__c</name>
+    </fields>
+    <fields>
+        <label><!-- Discount Approval AP1 10P 1K-5K --></label>
+        <name>Discount_Approval_AP1_10P_1K_5K__c</name>
+    </fields>
+    <fields>
+        <label><!-- Discount Approval AP2 10P 5K-15K --></label>
+        <name>Discount_Approval_AP2_10P_5K_15K__c</name>
+    </fields>
+    <fields>
+        <label><!-- Discount Approval AP3 10P 15K PLUS --></label>
+        <name>Discount_Approval_AP3_10P_15K_PLUS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Discount Approval AP4 10P-20P 5K --></label>
+        <name>Discount_Approval_AP4_10P_20P_5K__c</name>
+    </fields>
+    <fields>
+        <label><!-- Discount Approval AP5 10P-20P 5K-15K --></label>
+        <name>Discount_Approval_AP5_10P_20P_5K_15K__c</name>
+    </fields>
+    <fields>
+        <label><!-- Discount Approval AP6 10P-20P 15K PLUS --></label>
+        <name>Discount_Approval_AP6_10P_20P_15K_PLUS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Discount Approval AP7 20P-30P 15K --></label>
+        <name>Discount_Approval_AP7_20P_30P_15K__c</name>
+    </fields>
+    <fields>
+        <label><!-- Discount Approval AP8 20P-30P 15K PLUS --></label>
+        <name>Discount_Approval_AP8_20P_30P_15K_PLUS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Discount Approval AP9 30P --></label>
+        <name>Discount_Approval_AP9_30P__c</name>
+    </fields>
+    <fields>
+        <label><!-- Discount Approval High --></label>
+        <name>Discount_Approval_High__c</name>
+    </fields>
+    <fields>
+        <label><!-- Discount Approval Low 2nd Tier --></label>
+        <name>Discount_Approval_Low_2nd_Tier__c</name>
+    </fields>
+    <fields>
+        <label><!-- Discount Approval Low --></label>
+        <name>Discount_Approval_Low__c</name>
+    </fields>
+    <fields>
+        <label><!-- Discount Approval Mid --></label>
+        <name>Discount_Approval_Mid__c</name>
+    </fields>
+    <fields>
+        <label><!-- Discount MONCPPRINTINTL --></label>
+        <name>Discount_MONCPPRINTINTL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Discount Percent for Approval --></label>
+        <name>Discount_Percent_for_Approval__c</name>
+    </fields>
+    <fields>
+        <label><!-- Discount RESCPDIST --></label>
+        <name>Discount_RESCPDIST__c</name>
+    </fields>
+    <fields>
+        <label><!-- Docusign Envelope Id --></label>
+        <name>Docusign_Envelope_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Docusign Status --></label>
+        <name>Docusign_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Does Not Require PO --></label>
+        <name>Does_Not_Require_PO__c</name>
+    </fields>
+    <fields>
+        <label><!-- Don&apos;t Create Renewal Opp --></label>
+        <name>Don_t_Create_Renewal_Opp__c</name>
+    </fields>
+    <fields>
+        <label><!-- EditLinesFieldSetName --></label>
+        <name>EditLinesFieldSetName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Include - Annual - Copyright Fees --></label>
+        <name>Include_Annual_Copyright_Fees__c</name>
+    </fields>
+    <fields>
+        <label><!-- Include Annual Cust Total with Broadcast --></label>
+        <name>Include_Annual_Cust_Total_with_Broadcast__c</name>
+    </fields>
+    <fields>
+        <label><!-- Include - Annual - Discount --></label>
+        <name>Include_Annual_Discount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Include - Annual - Existing Fees --></label>
+        <name>Include_Annual_Existing_Fees__c</name>
+    </fields>
+    <fields>
+        <label><!-- Include - Annual --></label>
+        <name>Include_Annual__c</name>
+    </fields>
+    <fields>
+        <label><!-- Include Broadcast Discount --></label>
+        <name>Include_Broadcast_Discount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Include Broadcast Totals --></label>
+        <name>Include_Broadcast_Totals__c</name>
+    </fields>
+    <fields>
+        <label><!-- Include - Cover Letter --></label>
+        <name>Include_Cover_Letter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Include - Cover Page --></label>
+        <name>Include_Cover_Page__c</name>
+    </fields>
+    <fields>
+        <label><!-- Include - MSA Paragrah --></label>
+        <name>Include_MSA_Paragrah__c</name>
+    </fields>
+    <fields>
+        <label><!-- Include - MSA --></label>
+        <name>Include_MSA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Include - Monthly - Copyright Fees --></label>
+        <name>Include_Monthly_Copyright_Fees__c</name>
+    </fields>
+    <fields>
+        <label><!-- Include - Monthly - Discount --></label>
+        <name>Include_Monthly_Discount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Include - Monthly --></label>
+        <name>Include_Monthly__c</name>
+    </fields>
+    <fields>
+        <label><!-- Include Signature --></label>
+        <name>Include_Signature__c</name>
+    </fields>
+    <fields>
+        <label><!-- Include Upsell Cover Page --></label>
+        <name>Include_Upsell_Cover_Page__c</name>
+    </fields>
+    <fields>
+        <label><!-- Installment Amount --></label>
+        <name>Installment_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- *Integration Failure* --></label>
+        <name>Integration_Failure__c</name>
+        <picklistValues>
+            <masterLabel>Contract Shell</masterLabel>
+            <translation><!-- Contract Shell --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Missing Line</masterLabel>
+            <translation><!-- Missing Line --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Data</masterLabel>
+            <translation><!-- No Data --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Invoice Contact Email --></label>
+        <name>Invoice_Contact_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Contact Name --></label>
+        <name>Invoice_Contact_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Contact Phone --></label>
+        <name>Invoice_Contact_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Annual Billing --></label>
+        <name>Is_Annual_Billing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Annual Credit Card Custom Plan --></label>
+        <name>Is_Annual_Credit_Card_Custom_Plan__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Annual Credit Card no Plan --></label>
+        <name>Is_Annual_Credit_Card_no_Plan__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Annual Credit Card with Plan --></label>
+        <name>Is_Annual_Credit_Card_with_Plan__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Annual Invoice Custom Plan --></label>
+        <name>Is_Annual_Invoice_Custom_Plan__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Annual Invoice no Plan --></label>
+        <name>Is_Annual_Invoice_no_Plan__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Annual Invoice with Plan --></label>
+        <name>Is_Annual_Invoice_with_Plan__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Global Analysis --></label>
+        <name>Is_Global_Analysis__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Manager VP --></label>
+        <name>Is_Manager_VP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Mixed Billing --></label>
+        <name>Is_Mixed_Billing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Mixed Credit Card Custom Plan --></label>
+        <name>Is_Mixed_Credit_Card_Custom_Plan__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Mixed Credit Card no Plan --></label>
+        <name>Is_Mixed_Credit_Card_no_Plan__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Mixed Credit Card with Plan --></label>
+        <name>Is_Mixed_Credit_Card_with_Plan__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Mixed Invoice Custom Plan --></label>
+        <name>Is_Mixed_Invoice_Custom_Plan__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Mixed Invoice no Plan --></label>
+        <name>Is_Mixed_Invoice_no_Plan__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Mixed Invoice with Plan --></label>
+        <name>Is_Mixed_Invoice_with_Plan__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Monitoring or Broadcasting Services --></label>
+        <name>Is_Monitoring_or_Broadcasting_Services__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Monthly Billing Via Credit Card --></label>
+        <name>Is_Monthly_Billing_Via_Credit_Card__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Monthly Billing via Invoice --></label>
+        <name>Is_Monthly_Billing_via_Invoice__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Not Monitoring or Broadcasting Srv --></label>
+        <name>Is_Not_Monitoring_or_Broadcasting_Srv__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Not Plan Services --></label>
+        <name>Is_Not_Plan_Services__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Only Monitoring or Broadcasting Srv --></label>
+        <name>Is_Only_Monitoring_or_Broadcasting_Srv__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Only Plan Services --></label>
+        <name>Is_Only_Plan_Services__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Plan Services --></label>
+        <name>Is_Plan_Services__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Product Discounted Below Cost --></label>
+        <name>Is_Product_Discounted_Below_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Renewal --></label>
+        <name>Is_Renewal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Workflow International Print --></label>
+        <name>Is_Workflow_International_Print__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Workflow Managed Services --></label>
+        <name>Is_Workflow_Managed_Services__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Years Spend --></label>
+        <name>Last_Years_Spend__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Years Values Match --></label>
+        <name>Last_Years_Values_Match__c</name>
+    </fields>
+    <fields>
+        <label><!-- Legal Review? --></label>
+        <name>Legal_Review__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monitoring Billing --></label>
+        <name>Monitoring_Billing__c</name>
+        <picklistValues>
+            <masterLabel>Annual</masterLabel>
+            <translation><!-- Annual --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monthly</masterLabel>
+            <translation><!-- Monthly --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Monthly - Discount --></label>
+        <name>Monthly_Discount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monthly - List Total Rollup --></label>
+        <name>Monthly_List_Total_Rollup__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monthly - List Total --></label>
+        <name>Monthly_List_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monthly - Net Copyright Fees Rollup --></label>
+        <name>Monthly_Net_Copyright_Fees_Rollup__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monthly - Net Copyright Fees --></label>
+        <name>Monthly_Net_Copyright_Fees__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monthly - Net Total Rollup --></label>
+        <name>Monthly_Net_Total_Rollup__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monthly - Net Total --></label>
+        <name>Monthly_Net_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monthly - Total Negative Discount Rollup --></label>
+        <name>Monthly_Total_Negative_Discount_Rollup__c</name>
+    </fields>
+    <fields>
+        <label><!-- Needs Approval from Next Level Manager --></label>
+        <name>Needs_Approval_from_Next_Level_Manager__c</name>
+    </fields>
+    <fields>
+        <label><!-- Net Amount Sans Copyright --></label>
+        <name>Net_Amount_Sans_Copyright__c</name>
+    </fields>
+    <fields>
+        <label><!-- Null --></label>
+        <name>Null__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opp Stage --></label>
+        <name>Opp_Stage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity_Account_Billing_Addres --></label>
+        <name>Opportunity_Account_Billing_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Account Billing Country --></label>
+        <name>Opportunity_Account_Billing_Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity_Account_Name --></label>
+        <name>Opportunity_Account_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity_Contact_Name_Attention --></label>
+        <name>Opportunity_Contact_Name_Attention__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Invoice CC Recipients --></label>
+        <name>Opportunity_Invoice_CC_Recipients__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Invoice Contact Email --></label>
+        <name>Opportunity_Invoice_Contact_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Invoice Contact Name --></label>
+        <name>Opportunity_Invoice_Contact_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Invoice Contact Phone --></label>
+        <name>Opportunity_Invoice_Contact_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Name --></label>
+        <name>Opportunity_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity_Owner_User_Address --></label>
+        <name>Opportunity_Owner_User_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity_Owner_User_Email --></label>
+        <name>Opportunity_Owner_User_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity_Owner_User_Name --></label>
+        <name>Opportunity_Owner_User_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity_Owner_User_Phone --></label>
+        <name>Opportunity_Owner_User_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity_Owner_User_Title --></label>
+        <name>Opportunity_Owner_User_Title__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity_Renewal_Due_Date --></label>
+        <name>Opportunity_Renewal_Due_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity_Ship_To_Address --></label>
+        <name>Opportunity_Ship_To_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Shipping Address Line 1 --></label>
+        <name>Opportunity_Shipping_Address_Line_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Shipping Address Line 2 --></label>
+        <name>Opportunity_Shipping_Address_Line_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity_Shipping_Address --></label>
+        <name>Opportunity_Shipping_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Shipping Country --></label>
+        <name>Opportunity_Shipping_Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Out Clause --></label>
+        <name>Out_Clause__c</name>
+    </fields>
+    <fields>
+        <label><!-- Output Quote Status Message --></label>
+        <name>Output_Quote_Status_Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- PO Required --></label>
+        <name>PO_Required__c</name>
+    </fields>
+    <fields>
+        <label><!-- P.O. Number --></label>
+        <name>P_O_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Package Deal Boolean --></label>
+        <name>Package_Deal_Boolean__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Plan Text Box Credit Card --></label>
+        <name>Payment_Plan_Text_Box_Credit_Card__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Plan Text Box Invoice --></label>
+        <name>Payment_Plan_Text_Box_Invoice__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Plan --></label>
+        <name>Payment_Plan__c</name>
+        <picklistValues>
+            <masterLabel>3 Equal Payments</masterLabel>
+            <translation><!-- 3 Equal Payments --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6 Equal Payments</masterLabel>
+            <translation><!-- 6 Equal Payments --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Annual</masterLabel>
+            <translation><!-- Annual --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Biannual</masterLabel>
+            <translation><!-- Biannual --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Custom</masterLabel>
+            <translation><!-- Custom --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monthly</masterLabel>
+            <translation><!-- Monthly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quarterly</masterLabel>
+            <translation><!-- Quarterly --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Payment Type --></label>
+        <name>Payment_Type__c</name>
+        <picklistValues>
+            <masterLabel>Credit Card</masterLabel>
+            <translation><!-- Credit Card --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Invoice</masterLabel>
+            <translation><!-- Invoice --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Primary Contact Email --></label>
+        <name>Primary_Contact_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Contact First Name --></label>
+        <name>Primary_Contact_First_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Contact Full Name --></label>
+        <name>Primary_Contact_Full_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Contact Phone --></label>
+        <name>Primary_Contact_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Name Contains Mon --></label>
+        <name>Product_Name_Contains_Mon__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Overview Title --></label>
+        <name>Product_Overview_Title__c</name>
+    </fields>
+    <fields>
+        <label><!-- Promotional Discount Amount --></label>
+        <name>Promotional_Discount_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quote_Expires_On --></label>
+        <name>Quote_Expires_On__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the Printed Signature Name on the Quote --></help>
+        <label><!-- Quote Signature Name --></label>
+        <name>Quote_Signature_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quote Template Order Form Header --></label>
+        <name>Quote_Template_Order_Form_Header__c</name>
+    </fields>
+    <fields>
+        <label><!-- Renewal Approval Required --></label>
+        <name>Renewal_Approval_Required__c</name>
+    </fields>
+    <fields>
+        <label><!-- Renewal List Price --></label>
+        <name>Renewal_List_Price__c</name>
+    </fields>
+    <fields>
+        <label><!-- Require Contract Extension Approval CGA --></label>
+        <name>Require_Contract_Extension_Approval_CGA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Require Contract Extension Approval Intl --></label>
+        <name>Require_Contract_Extension_Approval_Intl__c</name>
+    </fields>
+    <fields>
+        <label><!-- Require Contract Extension Approval MS --></label>
+        <name>Require_Contract_Extension_Approval_MS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Require Contract Extension Approval --></label>
+        <name>Require_Contract_Extension_Approval__c</name>
+    </fields>
+    <fields>
+        <label><!-- Require Copyright Fee Discount Approval --></label>
+        <name>Require_Copyright_Fee_Discount_Approval__c</name>
+    </fields>
+    <fields>
+        <label><!-- Require Credit Risk Approval Caroline --></label>
+        <name>Require_Credit_Risk_Approval_Caroline__c</name>
+    </fields>
+    <fields>
+        <label><!-- Require Credit Risk Approval --></label>
+        <name>Require_Credit_Risk_Approval__c</name>
+    </fields>
+    <fields>
+        <label><!-- Require Credit for Services Approval --></label>
+        <name>Require_Credit_for_Services_Approval__c</name>
+    </fields>
+    <fields>
+        <label><!-- Require Discount Approval Caroline --></label>
+        <name>Require_Discount_Approval_Caroline__c</name>
+    </fields>
+    <fields>
+        <label><!-- Require Discount Approval Dawn --></label>
+        <name>Require_Discount_Approval_Dawn__c</name>
+    </fields>
+    <fields>
+        <label><!-- Require Discount Approval Sales Manager --></label>
+        <name>Require_Discount_Approval_Sales_Manager__c</name>
+    </fields>
+    <fields>
+        <label><!-- Require Discount Approval Sales VP --></label>
+        <name>Require_Discount_Approval_Sales_VP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Require Discount Approval --></label>
+        <name>Require_Discount_Approval__c</name>
+    </fields>
+    <fields>
+        <label><!-- Require Discount Post-App Caroline --></label>
+        <name>Require_Discount_Post_App_Caroline__c</name>
+    </fields>
+    <fields>
+        <label><!-- Require Discount Post-App Sales Manager --></label>
+        <name>Require_Discount_Post_App_Sales_Manager__c</name>
+    </fields>
+    <fields>
+        <label><!-- Require Discount Post-App Sales VP --></label>
+        <name>Require_Discount_Post_App_Sales_VP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Require Email Points Discount Approval --></label>
+        <name>Require_Email_Points_Discount_Approval__c</name>
+    </fields>
+    <fields>
+        <label><!-- Require Future Start Billing Approval --></label>
+        <name>Require_Future_Start_Billing_Approval__c</name>
+    </fields>
+    <fields>
+        <label><!-- Require International Address Approval --></label>
+        <name>Require_International_Address_Approval__c</name>
+    </fields>
+    <fields>
+        <label><!-- Require Intl Print Discount Approval --></label>
+        <name>Require_Intl_Print_Discount_Approval__c</name>
+    </fields>
+    <fields>
+        <label><!-- Require Payment Plan Approval --></label>
+        <name>Require_Payment_Plan_Approval__c</name>
+    </fields>
+    <fields>
+        <label><!-- Require Payment Terms Approval --></label>
+        <name>Require_Payment_Terms_Approval__c</name>
+    </fields>
+    <fields>
+        <label><!-- Require Payment Type Approval --></label>
+        <name>Require_Payment_Type_Approval__c</name>
+    </fields>
+    <fields>
+        <label><!-- Require Product Below Cost Approval --></label>
+        <name>Require_Product_Below_Cost_Approval__c</name>
+    </fields>
+    <fields>
+        <label><!-- Require Subscription Term Approval --></label>
+        <name>Require_Subscription_Term_Approval__c</name>
+    </fields>
+    <fields>
+        <label><!-- Require Training Approval --></label>
+        <name>Require_Training_Approval__c</name>
+    </fields>
+    <fields>
+        <help><!-- Customer account for this quote. Defaults to the account for the opportunity when creating a quote. --></help>
+        <label><!-- Account --></label>
+        <name>SBQQ__Account__c</name>
+        <relationshipLabel><!-- Quotes --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Amount additionally discounted on this quote manually. --></help>
+        <label><!-- Addl. Disc. Amount --></label>
+        <name>SBQQ__AdditionalDiscountAmount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Average customer discount (in percent) for this quote. --></help>
+        <label><!-- Avg. Customer Disc. (%) --></label>
+        <name>SBQQ__AverageCustomerDiscount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Average partner discount (in percent) for this quote. --></help>
+        <label><!-- Avg. Partner Disc. (%) --></label>
+        <name>SBQQ__AveragePartnerDiscount__c</name>
+    </fields>
+    <fields>
+        <help><!-- City of the Bill To address for this quote. --></help>
+        <label><!-- Bill To City --></label>
+        <name>SBQQ__BillingCity__c</name>
+    </fields>
+    <fields>
+        <help><!-- Country of the Bill To address for this quote. --></help>
+        <label><!-- Bill To Country --></label>
+        <name>SBQQ__BillingCountry__c</name>
+    </fields>
+    <fields>
+        <help><!-- Name for the Bil To address. --></help>
+        <label><!-- Bill To Name --></label>
+        <name>SBQQ__BillingName__c</name>
+    </fields>
+    <fields>
+        <help><!-- Postal Code of the Bill To address for this quote. --></help>
+        <label><!-- Bill To Postal Code --></label>
+        <name>SBQQ__BillingPostalCode__c</name>
+    </fields>
+    <fields>
+        <help><!-- State/Province of the Bill To address for this quote. --></help>
+        <label><!-- Bill To State --></label>
+        <name>SBQQ__BillingState__c</name>
+    </fields>
+    <fields>
+        <help><!-- Street portion of the billing address for this quote. --></help>
+        <label><!-- Bill To Street --></label>
+        <name>SBQQ__BillingStreet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Amount --></label>
+        <name>SBQQ__CustomerAmount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Additional discount extended to the customer on this quote. You&apos;ll be able to override this value at individual line item level. Any line items that don&apos;t have additional discount explicitly specified will default to this value. --></help>
+        <label><!-- Additional  Disc. (%) --></label>
+        <name>SBQQ__CustomerDiscount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of days the quote has been opened. --></help>
+        <label><!-- Days Quote Open --></label>
+        <name>SBQQ__DaysQuoteOpen__c</name>
+    </fields>
+    <fields>
+        <help><!-- Template that should be used with this quote. QuoteQuickly automatically selects the template specified here when you click &quot;Generate Document&quot; --></help>
+        <label><!-- Default Template --></label>
+        <name>SBQQ__DefaultTemplate__c</name>
+        <relationshipLabel><!-- Quotes --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Method used to deliver products on this quote. --></help>
+        <label><!-- Delivery Method --></label>
+        <name>SBQQ__DeliveryMethod__c</name>
+        <picklistValues>
+            <masterLabel>Download</masterLabel>
+            <translation><!-- Download --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ship</masterLabel>
+            <translation><!-- Ship --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Distributor discount that applies to this quote unless overridden on line item level. --></help>
+        <label><!-- Distributor Discount --></label>
+        <name>SBQQ__DistributorDiscount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Distributor for this quote. Defaulted from partner on opportunity with role of &quot;Distributor&quot;. --></help>
+        <label><!-- Distributor --></label>
+        <name>SBQQ__Distributor__c</name>
+        <relationshipLabel><!-- Distributor Quotes --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- If you have a specific email template to use for documents generated and emailed from this quote, enter the email template ID here. --></help>
+        <label><!-- Email Template Id --></label>
+        <name>SBQQ__EmailTemplateId__c</name>
+    </fields>
+    <fields>
+        <help><!-- End date for subscriptions in this group. --></help>
+        <label><!-- End Date --></label>
+        <name>SBQQ__EndDate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date after which the Quote is no longer valid --></help>
+        <label><!-- Expires On --></label>
+        <name>SBQQ__ExpirationDate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Introduction that can be printed on the generated PDF document. --></help>
+        <label><!-- Introduction --></label>
+        <name>SBQQ__Introduction__c</name>
+    </fields>
+    <fields>
+        <help><!-- Internal unique key used for identifying &quot;shopping cart&quot; quotes without relying on internal IDs --></help>
+        <label><!-- Key --></label>
+        <name>SBQQ__Key__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of line items in this quote. --></help>
+        <label><!-- Line Item Count --></label>
+        <name>SBQQ__LineItemCount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this option to use SolutionGroups(TM) or add your own groups on the Edit Lines page to categorize and subtotal quote line items. --></help>
+        <label><!-- Group Line Items --></label>
+        <name>SBQQ__LineItemsGrouped__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select to print individual line items on the generated PDF quote document. --></help>
+        <label><!-- Print Line Items --></label>
+        <name>SBQQ__LineItemsPrinted__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total List Amount of each non-optional line item in this quote. --></help>
+        <label><!-- List Amount --></label>
+        <name>SBQQ__ListAmount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Default markup rate applied to line items on this quote. You&apos;ll be able to override this value on group and line item level. --></help>
+        <label><!-- Markup (%) --></label>
+        <name>SBQQ__MarkupRate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Master contract with which subscription products in this quote are to be co-terminated. --></help>
+        <label><!-- Master Contract --></label>
+        <name>SBQQ__MasterContract__c</name>
+        <relationshipLabel><!-- Co-Terminated Quotes --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Total Net Amount of each non-optional line item in this quote. --></help>
+        <label><!-- Net Amount --></label>
+        <name>SBQQ__NetAmount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Notes printed on the generated PDF document. --></help>
+        <label><!-- Notes --></label>
+        <name>SBQQ__Notes__c</name>
+    </fields>
+    <fields>
+        <help><!-- Opportunity being quoted. --></help>
+        <label><!-- Opportunity --></label>
+        <name>SBQQ__Opportunity__c</name>
+        <relationshipLabel><!-- Quotes --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- If this Quote record represents a change order, use this field to link back to the original quote. --></help>
+        <label><!-- Original Quote --></label>
+        <name>SBQQ__OriginalQuote__c</name>
+        <relationshipLabel><!-- Change Orders --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Discount extended to the partner on this opportunity. --></help>
+        <label><!-- Partner Discount --></label>
+        <name>SBQQ__PartnerDiscount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Primary partner on this deal (if any). This field defaults to the partner marked as primary in the Partners related list on the opportunity. --></help>
+        <label><!-- Partner --></label>
+        <name>SBQQ__Partner__c</name>
+        <relationshipLabel><!-- Partner Quotes --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Terms that govern payment of the items in this quote. --></help>
+        <label><!-- Payment Terms --></label>
+        <name>SBQQ__PaymentTerms__c</name>
+        <picklistValues>
+            <masterLabel>Due on receipt</masterLabel>
+            <translation><!-- Due on receipt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net 15</masterLabel>
+            <translation><!-- Net 15 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net 30</masterLabel>
+            <translation><!-- Net 30 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net 45</masterLabel>
+            <translation><!-- Net 45 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net 60</masterLabel>
+            <translation><!-- Net 60 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net 90</masterLabel>
+            <translation><!-- Net 90 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Primary contact for the quote. This person&apos;s name will appear on generated quote document. --></help>
+        <label><!-- Primary Contact --></label>
+        <name>SBQQ__PrimaryContact__c</name>
+        <relationshipLabel><!-- Quotes --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Select this checkbox to designate this quote as the primary one on the opportunity and sync quote line items with opportunity line items. --></help>
+        <label><!-- Primary --></label>
+        <name>SBQQ__Primary__c</name>
+    </fields>
+    <fields>
+        <help><!-- Guided selling process ID to use with this quote, if any. --></help>
+        <label><!-- Quote Process Id --></label>
+        <name>SBQQ__QuoteProcessId__c</name>
+    </fields>
+    <fields>
+        <help><!-- Stores a quote template ID if one is specified to use when generating quote PDF documents. --></help>
+        <label><!-- Quote Template Id --></label>
+        <name>SBQQ__QuoteTemplateId__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total amount of non-optional line times before additional discounts are applied. --></help>
+        <label><!-- Regular Amount --></label>
+        <name>SBQQ__RegularAmount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Sales rep responsible for this quote if different from the user who owns the Quote record. --></help>
+        <label><!-- Sales Rep --></label>
+        <name>SBQQ__SalesRep__c</name>
+        <relationshipLabel><!-- Quotes --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- City on the Ship To address for this quote. --></help>
+        <label><!-- Ship To City --></label>
+        <name>SBQQ__ShippingCity__c</name>
+    </fields>
+    <fields>
+        <help><!-- Country on the Ship To address for this quote. --></help>
+        <label><!-- Ship To Country --></label>
+        <name>SBQQ__ShippingCountry__c</name>
+    </fields>
+    <fields>
+        <help><!-- Name on the Ship To address for this quote. --></help>
+        <label><!-- Ship To Name --></label>
+        <name>SBQQ__ShippingName__c</name>
+    </fields>
+    <fields>
+        <help><!-- Postal Code on the Ship To address for this quote. --></help>
+        <label><!-- Ship To Postal Code --></label>
+        <name>SBQQ__ShippingPostalCode__c</name>
+    </fields>
+    <fields>
+        <help><!-- State/Province on the Ship To address for this quote. --></help>
+        <label><!-- Ship To State --></label>
+        <name>SBQQ__ShippingState__c</name>
+    </fields>
+    <fields>
+        <help><!-- Street on the Ship To address for this quote. --></help>
+        <label><!-- Ship To Street --></label>
+        <name>SBQQ__ShippingStreet__c</name>
+    </fields>
+    <fields>
+        <help><!-- If cloned, this references the original quote cloned. --></help>
+        <label><!-- Source --></label>
+        <name>SBQQ__Source__c</name>
+        <relationshipLabel><!-- Quotes (Source) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Start date for subscriptions in this quote. --></help>
+        <label><!-- Start Date --></label>
+        <name>SBQQ__StartDate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Status indicating where quote is in its lifecycle. --></help>
+        <label><!-- Status --></label>
+        <name>SBQQ__Status__c</name>
+        <picklistValues>
+            <masterLabel>Accepted</masterLabel>
+            <translation><!-- Accepted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Denied</masterLabel>
+            <translation><!-- Denied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Draft</masterLabel>
+            <translation><!-- Draft --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Review</masterLabel>
+            <translation><!-- In Review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Presented</masterLabel>
+            <translation><!-- Presented --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Subscription term used to prorate eligible products. --></help>
+        <label><!-- Subscription Term --></label>
+        <name>SBQQ__SubscriptionTerm__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter desired customer amount to automatically calculate additional discount on discountable line items. --></help>
+        <label><!-- Target Customer Amount --></label>
+        <name>SBQQ__TargetCustomerAmount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total amount of customer discount. This includes any contracted, volume, compound rate and additional discounts. --></help>
+        <label><!-- Total Customer Disc. Amount --></label>
+        <name>SBQQ__TotalCustomerDiscountAmount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Type of quote --></help>
+        <label><!-- Type --></label>
+        <name>SBQQ__Type__c</name>
+        <picklistValues>
+            <masterLabel>Change Order</masterLabel>
+            <translation><!-- Change Order --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quote</masterLabel>
+            <translation><!-- Quote --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renewal</masterLabel>
+            <translation><!-- Renewal --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- STX Contract Id --></label>
+        <name>STX_Contract_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- STX Contract Number --></label>
+        <name>STX_Contract_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- STX: Use Existing Contract Number? --></label>
+        <name>STX_Use_Existing_Contract_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Rep STX Territory --></label>
+        <name>Sales_Rep_STX_Territory__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scribe Quote Number --></label>
+        <name>Scribe_Quote_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Subscription Term --></label>
+        <name>Subscription_Term__c</name>
+    </fields>
+    <fields>
+        <label><!-- System Manager Email Address --></label>
+        <name>System_Manager_Email_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- System Manager Name --></label>
+        <name>System_Manager_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tax Exempt --></label>
+        <name>Tax_Exempt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total_Discount --></label>
+        <name>Total_Discount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Uplift Amount --></label>
+        <name>Total_Uplift_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Uplift Percent --></label>
+        <name>Total_Uplift_Percent__c</name>
+    </fields>
+    <fields>
+        <label><!-- today --></label>
+        <name>today__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- Admin --></label>
+        <name>Admin</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- After Approvals --></label>
+        <name>After_Approvals</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Before Approvals --></label>
+        <name>Before_Approvals</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Closed --></label>
+        <name>Closed</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- New Quote --></label>
+        <name>New_Quote</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Post Signature --></label>
+        <name>Post_Signature</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- nonAdmin --></label>
+        <name>nonAdmin</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Annual Payment Plans can not be selected for Subscription Terms of less than 12 months. --></errorMessage>
+        <name>Annual_Subscription_Terms_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Amex Card Number must be 15 characters long --></errorMessage>
+        <name>Credit_Card_Length_Amex</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Card Number must be 16 characters long for Visa, Discover, and MasterCard. --></errorMessage>
+        <name>Credit_Card_Length_NonAmex</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot save a High Risk customer without a Credit Card. --></errorMessage>
+        <name>High_Risk_credit_with_out_credit_card</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must have a Master Contract selected when checking STX: Use Existing Contract Number. --></errorMessage>
+        <name>Require_Contract_with_Use_Existing</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot delete or change line Items on Approved quote --></errorMessage>
+        <name>Restrict_Line_Item_edits_For_Recordtype</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Close_as_Won --></label>
+        <name>Close_as_Won</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- DocuSign --></label>
+        <name>DocuSign</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- New_Quote --></label>
+        <name>New_Quote</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- EditLines --></label>
+        <name>SBQQ__EditLines</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GenerateDocument --></label>
+        <name>SBQQ__GenerateDocument</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- PreviewDocument --></label>
+        <name>SBQQ__PreviewDocument</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Submit_Quote --></label>
+        <name>Submit_Quote</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Unlock_Quote --></label>
+        <name>Unlock_Quote</name>
+    </webLinks>
+</CustomObjectTranslation>

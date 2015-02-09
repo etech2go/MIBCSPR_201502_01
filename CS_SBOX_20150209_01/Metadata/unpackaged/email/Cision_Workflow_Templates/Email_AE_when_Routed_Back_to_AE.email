@@ -1,0 +1,3 @@
+The opp for {!Opportunity.Account} (Opp Number:  {!Opportunity.Name}) has been routed back to AE.  Please review and take appropriate action.
+
+{!Opportunity.Link}

@@ -1,0 +1,7 @@
+Analysis Services Information:
+
+Account Name: {!Opportunity.Account}
+Date Opportunity Closed: {!Opportunity.CloseDate}
+Salesperson: {!Opportunity.OwnerFullName}
+Opportunity Type: {!Opportunity.Type}
+Click here to view the Opportunity: {!Opportunity.Link}

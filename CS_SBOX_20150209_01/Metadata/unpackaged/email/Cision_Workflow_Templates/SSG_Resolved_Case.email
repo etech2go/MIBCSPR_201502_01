@@ -1,0 +1,5 @@
+Hi {!Case.OwnerFirstName},
+
+SSG has resolved your Case for {!Case.Account} with an Issue Status of {!Case.Issue_Status__c}.
+
+Please click here to see your Case: {!Case.Link}

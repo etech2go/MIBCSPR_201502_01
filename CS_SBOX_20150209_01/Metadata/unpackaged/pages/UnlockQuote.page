@@ -1,0 +1,34 @@
+<apex:page standardController="SBQQ__Quote__c" extensions="UnlockQuoteExtension" showHeader="false" sidebar="false">
+	<head>
+		<script>
+			function init()
+		    {
+				window.resizeTo(500,350);
+	        }
+
+			function closeRefresh() 
+			{ 
+				window.parent.location.replace('/{!$CurrentPage.parameters.id}');
+				window.top.close();
+			}
+		</script>
+	</head>
+	
+	<body onload="init()"> 
+		<apex:form >
+			<center><h1>Are you sure you wish to unlock Quote - {!q.Name}</h1></center>
+			<center><h2>Unlocking the Quote will perform the following Actions</h2></center>
+			<br/>
+			<p>1. If the Quote has been Submitted for Approval, the approval request will be cancelled.</p>
+			<p>2. If the Quote has been Approved or Rejected by a prevous Approval, the status of the Quote and the Opportunity will be reset.</p>
+			<p>3. When a Contract has been sent to a Client, the status of the Quote and Opportunity will be reset</p>
+			<p>4. When the Quote is either being reviewed or has been Rejected by Contract Administration, the status of the Quote and the Opportunity will be reset.</p>
+			<br/>
+			<center><apex:outputPanel >
+				<apex:commandButton value="Unlock Quote" action="{!UnlockQuote}" oncomplete="closeRefresh();"/>
+				<apex:commandButton onclick="window.top.close()" value="Cancel"/>	
+			</apex:outputPanel></center>
+			
+		</apex:form>
+	</body>
+</apex:page>

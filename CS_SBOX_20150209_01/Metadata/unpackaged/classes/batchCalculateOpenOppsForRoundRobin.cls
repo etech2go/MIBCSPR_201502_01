@@ -1,0 +1,76 @@
+global class batchCalculateOpenOppsForRoundRobin implements Database.Batchable<sObject>, Schedulable
+{
+	global final String Query;
+	
+	global batchCalculateOpenOppsForRoundRobin(string q)     
+  	{
+  		Query = q;
+	}
+	
+	global Database.QueryLocator start(Database.BatchableContext BC)         
+    {
+    	return Database.getQueryLocator(Query);
+    }
+     
+    global void finish(Database.BatchableContext bc)
+	{
+	}  
+	 
+	global void execute(Database.BatchableContext bc, List<Round_Robin__c> scope)
+	{
+		Date startOfMonth = Date.today().ToStartOfMonth();
+		Date endOfMonth = Date.today().addMonths(1).ToStartOfMonth().addDays(-1);
+		Date startOfMonthNextYear = Date.today().addYears(1).ToStartOfMonth();
+		Date endOfMonthNextYear = Date.today().addMonths(13).ToStartOfMonth().addDays(-1);
+		
+		// Get all the relevent opps for the Round robin records that we are about to process
+		Set<ID> userIds = new Set<ID>();
+		Map<ID, List<Opportunity>> userOppsMap = new Map<ID, List<Opportunity>>();
+		
+		for (Round_Robin__c rr : scope)
+		{
+			userIds.add(rr.User__c);	
+		}
+		
+		List<Opportunity> oppsList = [Select Id, OwnerId from Opportunity where OwnerId IN :userIds and IsClosed = false and ((Renewal_Due_Date__c >= :startOfMonth and Renewal_Due_Date__c <= :endOfMonth) or (Renewal_Due_Date__c >= :startOfMonthNextYear and Renewal_Due_Date__c <= :endOfMonthNextYear))];
+	
+		for (Opportunity opp : oppsList)
+		{
+			if (userOppsMap.containsKey(opp.OwnerId))
+			{
+				userOppsMap.get(opp.OwnerId).add(opp);
+			}
+			else
+			{
+				List<Opportunity> tempList = new List<Opportunity>();
+				tempList.add(opp);
+				userOppsMap.put(opp.OwnerId, tempList);
+			}
+		}
+		
+		for (Round_Robin__c rr : scope)
+		{
+			// Get the Opps List for this User
+			List<Opportunity> opps = userOppsMap.get(rr.User__c);
+			
+			if (opps != null)
+			{
+				rr.Open_Opps__c = opps.size();
+			}
+			else
+			{
+				rr.Open_Opps__c = 0;
+			}
+		}
+		
+		update scope;
+	}
+	
+	global void execute(SchedulableContext SC) 
+    {  
+		string SOQL = 'Select Id, User__c, Open_Opps__c from Round_Robin__c';
+    	Database.executeBatch(new batchCalculateOpenOppsForRoundRobin(SOQL),20); 
+    }
+	
+
+}

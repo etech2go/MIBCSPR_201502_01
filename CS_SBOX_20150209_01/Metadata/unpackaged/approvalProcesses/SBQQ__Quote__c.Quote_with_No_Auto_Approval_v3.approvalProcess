@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <allowRecall>false</allowRecall>
+    <allowedSubmitters>
+        <type>owner</type>
+    </allowedSubmitters>
+    <approvalPageFields>
+        <field>Name</field>
+        <field>Total_Uplift_Amount__c</field>
+        <field>Total_Uplift_Percent__c</field>
+    </approvalPageFields>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <type>userHierarchyField</type>
+            </approver>
+        </assignedApprover>
+        <description>Approval required from direct manager.</description>
+        <entryCriteria>
+            <booleanFilter>1 OR 2 OR 3 OR 4 OR 5 OR 6</booleanFilter>
+            <criteriaItems>
+                <field>SBQQ__Quote__c.Require_Discount_Approval_Sales_Manager__c</field>
+                <operation>equals</operation>
+                <value>Yes</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>SBQQ__Quote__c.Require_Payment_Plan_Approval__c</field>
+                <operation>equals</operation>
+                <value>Yes</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>SBQQ__Quote__c.Require_Payment_Terms_Approval__c</field>
+                <operation>equals</operation>
+                <value>Yes</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>SBQQ__Quote__c.Require_Subscription_Term_Approval__c</field>
+                <operation>equals</operation>
+                <value>Yes</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>SBQQ__Quote__c.Require_Credit_Risk_Approval__c</field>
+                <operation>equals</operation>
+                <value>Yes</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>SBQQ__Quote__c.Require_Future_Start_Billing_Approval__c</field>
+                <operation>equals</operation>
+                <value>Yes</value>
+            </criteriaItems>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>Direct Manager</label>
+        <name>Direct_Manager</name>
+        <rejectionActions>
+            <action>
+                <name>Approval_Rejected</name>
+                <type>Alert</type>
+            </action>
+            <action>
+                <name>Approval_Rejected_Field_Update_Trigger</name>
+                <type>FieldUpdate</type>
+            </action>
+        </rejectionActions>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <type>userHierarchyField</type>
+            </approver>
+        </assignedApprover>
+        <description>Approval required from Next Level Manager</description>
+        <entryCriteria>
+            <booleanFilter>(1 OR 2 OR 3 OR 4 OR 5 OR 6 OR 7) AND 8</booleanFilter>
+            <criteriaItems>
+                <field>SBQQ__Quote__c.Require_Discount_Approval_Sales_VP__c</field>
+                <operation>equals</operation>
+                <value>Yes</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>SBQQ__Quote__c.Require_Payment_Plan_Approval__c</field>
+                <operation>equals</operation>
+                <value>Yes</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>SBQQ__Quote__c.Require_Payment_Terms_Approval__c</field>
+                <operation>equals</operation>
+                <value>Yes</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>SBQQ__Quote__c.Require_Subscription_Term_Approval__c</field>
+                <operation>equals</operation>
+                <value>Yes</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>SBQQ__Quote__c.Require_Future_Start_Billing_Approval__c</field>
+                <operation>equals</operation>
+                <value>Yes</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>SBQQ__Quote__c.Require_Product_Below_Cost_Approval__c</field>
+                <operation>equals</operation>
+                <value>Yes</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>SBQQ__Quote__c.Require_Credit_Risk_Approval__c</field>
+                <operation>equals</operation>
+                <value>Yes</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>SBQQ__Quote__c.Is_Manager_VP__c</field>
+                <operation>equals</operation>
+                <value>No</value>
+            </criteriaItems>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>Next Level Manager</label>
+        <name>Next_Level_Manager</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+        <rejectionActions>
+            <action>
+                <name>Approval_Rejected_Field_Update_Trigger</name>
+                <type>FieldUpdate</type>
+            </action>
+        </rejectionActions>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>uscabilling.us@cision.com</name>
+                <type>user</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <description>Approval required from Billing</description>
+        <entryCriteria>
+            <criteriaItems>
+                <field>SBQQ__Quote__c.Require_Credit_for_Services_Approval__c</field>
+                <operation>equals</operation>
+                <value>Yes</value>
+            </criteriaItems>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>Billing</label>
+        <name>Billing</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>caroline.mallady@cision.com</name>
+                <type>user</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <description>Approval required from Caroline Mallady</description>
+        <entryCriteria>
+            <booleanFilter>(1 OR 2 OR 3 OR 4 OR 5 OR 6 OR 7 OR 8) OR 9</booleanFilter>
+            <criteriaItems>
+                <field>SBQQ__Quote__c.Require_Payment_Plan_Approval__c</field>
+                <operation>equals</operation>
+                <value>Yes</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>SBQQ__Quote__c.Require_Payment_Terms_Approval__c</field>
+                <operation>equals</operation>
+                <value>Yes</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>SBQQ__Quote__c.Require_Discount_Approval_Caroline__c</field>
+                <operation>equals</operation>
+                <value>Yes</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>SBQQ__Quote__c.Require_Credit_for_Services_Approval__c</field>
+                <operation>equals</operation>
+                <value>Yes</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>SBQQ__Quote__c.Require_Credit_Risk_Approval__c</field>
+                <operation>equals</operation>
+                <value>Yes</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>SBQQ__Quote__c.Require_Credit_Risk_Approval_Caroline__c</field>
+                <operation>equals</operation>
+                <value>Yes</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>SBQQ__Quote__c.Require_Future_Start_Billing_Approval__c</field>
+                <operation>equals</operation>
+                <value>Yes</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>SBQQ__Quote__c.Require_International_Address_Approval__c</field>
+                <operation>equals</operation>
+                <value>Yes</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>User.Is_VP__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </criteriaItems>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>Caroline Mallady</label>
+        <name>Caroline_Mallady</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+        <rejectionActions>
+            <action>
+                <name>Approval_Rejected_Field_Update_Trigger</name>
+                <type>FieldUpdate</type>
+            </action>
+        </rejectionActions>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>dawn.conway@cision.com</name>
+                <type>user</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <description>Approval required from Dawn Conway</description>
+        <entryCriteria>
+            <booleanFilter>1 OR 2 OR 3</booleanFilter>
+            <criteriaItems>
+                <field>SBQQ__Quote__c.Require_Discount_Approval_Dawn__c</field>
+                <operation>equals</operation>
+                <value>Yes</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>SBQQ__Quote__c.Require_Product_Below_Cost_Approval__c</field>
+                <operation>equals</operation>
+                <value>Yes</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>SBQQ__Quote__c.Require_Subscription_Term_Approval__c</field>
+                <operation>equals</operation>
+                <value>Yes</value>
+            </criteriaItems>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>Dawn Conway</label>
+        <name>Dawn_Conway</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+        <rejectionActions>
+            <action>
+                <name>Approval_Rejected_Field_Update_Trigger</name>
+                <type>FieldUpdate</type>
+            </action>
+        </rejectionActions>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>vanessa.bugasch@cision.com</name>
+                <type>user</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <description>Approval required from Vanessa Bugash</description>
+        <entryCriteria>
+            <booleanFilter>1 OR 2</booleanFilter>
+            <criteriaItems>
+                <field>SBQQ__Quote__c.Require_Copyright_Fee_Discount_Approval__c</field>
+                <operation>equals</operation>
+                <value>Yes</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>SBQQ__Quote__c.Require_Product_Below_Cost_Approval__c</field>
+                <operation>equals</operation>
+                <value>YES</value>
+            </criteriaItems>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>Vanessa Bugash</label>
+        <name>Vanessa_Bugash</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>arvind.stokes@cision.com</name>
+                <type>user</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <description>Approval required from Arvind Stokes</description>
+        <entryCriteria>
+            <booleanFilter>1 OR 2</booleanFilter>
+            <criteriaItems>
+                <field>SBQQ__Quote__c.Require_Intl_Print_Discount_Approval__c</field>
+                <operation>equals</operation>
+                <value>Yes</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>SBQQ__Quote__c.Require_Contract_Extension_Approval_Intl__c</field>
+                <operation>equals</operation>
+                <value>Yes</value>
+            </criteriaItems>
+        </entryCriteria>
+        <ifCriteriaNotMet>ApproveRecord</ifCriteriaNotMet>
+        <label>Arvind Stokes</label>
+        <name>Arvind_Stokes</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>cision@steelbrick.com</name>
+                <type>user</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <description>Approval required from Analysis Support</description>
+        <entryCriteria>
+            <criteriaItems>
+                <field>SBQQ__Quote__c.Require_Contract_Extension_Approval_CGA__c</field>
+                <operation>equals</operation>
+                <value>Yes</value>
+            </criteriaItems>
+        </entryCriteria>
+        <ifCriteriaNotMet>ApproveRecord</ifCriteriaNotMet>
+        <label>Analysis Support</label>
+        <name>Analysis_Support</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>cision@steelbrick.com</name>
+                <type>user</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <description>Approval required from Managed Services</description>
+        <entryCriteria>
+            <criteriaItems>
+                <field>SBQQ__Quote__c.Require_Contract_Extension_Approval_MS__c</field>
+                <operation>equals</operation>
+                <value>Yes</value>
+            </criteriaItems>
+        </entryCriteria>
+        <ifCriteriaNotMet>ApproveRecord</ifCriteriaNotMet>
+        <label>Managed Services</label>
+        <name>Managed_Services</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>cision@steelbrick.com</name>
+                <type>user</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <description>Approval required from Bryan Lehner</description>
+        <entryCriteria>
+            <criteriaItems>
+                <field>SBQQ__Quote__c.Require_Contract_Extension_Approval__c</field>
+                <operation>equals</operation>
+                <value>Yes</value>
+            </criteriaItems>
+        </entryCriteria>
+        <label>Bryan Lehner</label>
+        <name>Bryan_Lehner</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <description>Quote approval process with no auto-approval path. At least one type of approval is required.
+
+NOTE 1: this process is mutually exclusive with the one with auto-approval.
+NOTE 2: this process must come second in the chain.</description>
+    <emailTemplate>Cision_Workflow_Templates/Quote_Approval_Request_Notification</emailTemplate>
+    <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
+    <entryCriteria>
+        <formula>(Require_Discount_Approval_Sales_Manager__c = &quot;Yes&quot;
+||
+Require_Discount_Approval_Sales_VP__c = &quot;Yes&quot;
+||
+Require_Discount_Approval_Caroline__c = &quot;Yes&quot;
+||
+Require_Discount_Approval_Dawn__c = &quot;Yes&quot;
+||
+Require_Intl_Print_Discount_Approval__c = &quot;Yes&quot;
+||
+Require_Credit_for_Services_Approval__c = &quot;Yes&quot;
+||
+Require_Payment_Plan_Approval__c = &quot;Yes&quot;
+||
+Require_Payment_Terms_Approval__c = &quot;Yes&quot;
+||
+Require_Subscription_Term_Approval__c = &quot;Yes&quot;
+||
+Require_Credit_Risk_Approval__c = &quot;Yes&quot;
+||
+Require_Credit_Risk_Approval_Caroline__c = &quot;Yes&quot;
+||
+Require_Future_Start_Billing_Approval__c = &quot;Yes&quot;
+||
+Require_International_Address_Approval__c = &quot;Yes&quot;
+||
+Require_Product_Below_Cost_Approval__c = &quot;Yes&quot;
+||
+Require_Contract_Extension_Approval__c = &quot;Yes&quot;)
+&amp;&amp; 
+Opp_Stage__c = &quot;APP: Pending Approval&quot;</formula>
+    </entryCriteria>
+    <finalApprovalActions>
+        <action>
+            <name>QQ_Set_Quote_Status_to_Approved</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Quote_Approved</name>
+            <type>Alert</type>
+        </action>
+    </finalApprovalActions>
+    <finalApprovalRecordLock>false</finalApprovalRecordLock>
+    <finalRejectionActions>
+        <action>
+            <name>Approval_Rejected</name>
+            <type>Alert</type>
+        </action>
+        <action>
+            <name>QQ_Set_Quote_Status_to_Approval_Rejected</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalRejectionActions>
+    <finalRejectionRecordLock>false</finalRejectionRecordLock>
+    <initialSubmissionActions>
+        <action>
+            <name>QQ_Set_Quote_Status_to_Review</name>
+            <type>FieldUpdate</type>
+        </action>
+    </initialSubmissionActions>
+    <label>Quote with No Auto-Approval (Pre APP)</label>
+    <nextAutomatedApprover>
+        <useApproverFieldOfRecordOwner>true</useApproverFieldOfRecordOwner>
+        <userHierarchyField>Manager</userHierarchyField>
+    </nextAutomatedApprover>
+    <recallActions>
+        <action>
+            <name>QQ_Set_Quote_Status_to_Draft</name>
+            <type>FieldUpdate</type>
+        </action>
+    </recallActions>
+    <recordEditability>AdminOnly</recordEditability>
+    <showApprovalHistory>true</showApprovalHistory>
+</ApprovalProcess>

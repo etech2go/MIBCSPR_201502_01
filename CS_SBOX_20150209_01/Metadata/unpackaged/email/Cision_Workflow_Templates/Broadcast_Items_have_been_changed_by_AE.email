@@ -1,0 +1,10 @@
+Opportunity {!Broadcast_Item__c.Opportunity__c}'s Item # {!Broadcast_Item__c.ItemNumber__c} has had a change made to one of the following fields:
+
+Shipping Method: {!Broadcast_Item__c.Shipping_Method__c}
+Format: {!Broadcast_Item__c.Format_Options__c}
+Air Date: {!Broadcast_Item__c.Air_Date__c}
+Air Time: {!Broadcast_Item__c.Air_Time__c}
+Subject: {!Broadcast_Item__c.Subject_Description__c}
+
+
+{!Broadcast_Item__c.Link}

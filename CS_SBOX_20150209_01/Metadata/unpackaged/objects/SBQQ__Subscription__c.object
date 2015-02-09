@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>Subscription to a product or service currently or previously owned by a customer.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fieldSets>
+        <fullName>SBQQ__SubscriptionSearchFilters</fullName>
+        <availableFields>
+            <field>SBQQ__ContractNumber__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>CreatedDate</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Name</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>SBQQ__Product__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <description>Fields used as filters in Subscription Lookup page.</description>
+        <displayedFields>
+            <field>SBQQ__Contract__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>SBQQ__EndDate__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Subscription Search Filters</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>SBQQ__SubscriptionSearchResults</fullName>
+        <availableFields>
+            <field>SBQQ__Contract__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>SBQQ__Product__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>SBQQ__Quantity__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>SBQQ__RenewalUpliftRate__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <description>Fields displayed in search results in Subscription Lookup page.</description>
+        <displayedFields>
+            <field>SBQQ__ContractNumber__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>SBQQ__RenewalProductId__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>SBQQ__RenewalQuantity__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>SBQQ__StartDate__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>SBQQ__EndDate__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Subscription Search Results</label>
+    </fieldSets>
+    <fields>
+        <fullName>CRM_Product_Name__c</fullName>
+        <description>Created by LM on 2/25/2014 for Phase2</description>
+        <externalId>false</externalId>
+        <label>CRM Product Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Commissionable_Product__c</fullName>
+        <externalId>false</externalId>
+        <formula>SBQQ__Product__r.Commissionable_Product__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Commissionable Product</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Opp_Type__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(SBQQ__QuoteLine__r.SBQQ__Quote__r.SBQQ__Opportunity__r.Type)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Opp Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Potential_Adjustment_Reason__c</fullName>
+        <description>Created by LM on 11/18/2013 for Phase2 rollout</description>
+        <externalId>false</externalId>
+        <label>Potential Adjustment Reason</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Adjusted to 12 Month Pricing</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Agency not Renewing Monitoring</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Approval from Manager</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Bankruptcy</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Broadcast</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Collections</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Credit for Existing Services</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CRM Error</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Duplicate Opp/Line</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Early Renewal</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Early Termination</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Matched previous opp&apos;s pricing</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Merged Accounts</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Mid-Cycle Upsell</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Moved Opp to Other Country</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Paid Extension</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Product Code Issue</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Retired/Non-Renewable Product</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Potential_Amount__c</fullName>
+        <description>Created by LM on 3/5/2014 for Phase2</description>
+        <externalId>false</externalId>
+        <label>Potential Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Potential_Changed_By__c</fullName>
+        <description>Created by LM on 3/5/2014 for Phase2</description>
+        <externalId>false</externalId>
+        <label>Potential Changed By</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product_Family__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(SBQQ__Product__r.Family)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Product Family</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product_Subfamily__c</fullName>
+        <externalId>false</externalId>
+        <formula>Text(SBQQ__Product__r.Sub_Family__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Product Subfamily</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Account that owns this subscription. This relationship is used for volume discount calculations.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Account that owns this subscription. This relationship is used for volume discount calculations.</inlineHelpText>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Subscriptions</relationshipLabel>
+        <relationshipName>Subscriptions</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__ContractNumber__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Number of associated contract.</description>
+        <externalId>false</externalId>
+        <formula>SBQQ__Contract__r.ContractNumber</formula>
+        <inlineHelpText>Number of associated contract.</inlineHelpText>
+        <label>Contract #</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Contract__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Contract which parents this subscription</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Contract that governs this subscription.</inlineHelpText>
+        <label>Contract</label>
+        <referenceTo>Contract</referenceTo>
+        <relationshipLabel>Subscriptions</relationshipLabel>
+        <relationshipName>Subscriptions</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__CreditProductId__c</fullName>
+        <deprecated>false</deprecated>
+        <description>ID of upgrade credit product for this subscription.</description>
+        <externalId>false</externalId>
+        <formula>SBQQ__Product__r.SBQQ__UpgradeCredit__c</formula>
+        <label>Credit Product Id</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__CustomerPrice__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Price the end user paid for this subscription.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Price paid for this subscription.</inlineHelpText>
+        <label>Customer Price</label>
+        <precision>14</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__EndDate__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>SBQQ__Contract__r.EndDate</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>The last date this contract is valid.</inlineHelpText>
+        <label>End Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__ListPrice__c</fullName>
+        <deprecated>false</deprecated>
+        <description>List price for this subscription product.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>List price for this subscription product.</inlineHelpText>
+        <label>List Price</label>
+        <precision>14</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__NetPrice__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Net price for this subscription.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Net price for this subscription.</inlineHelpText>
+        <label>Net Price</label>
+        <precision>14</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__ProductId__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Convenience field to support integration with Service Cloud</description>
+        <externalId>false</externalId>
+        <formula>SBQQ__Product__c</formula>
+        <label>Product Id</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Product__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Product used to sell this subscription.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Product used to sell this subscription.</inlineHelpText>
+        <label>Product</label>
+        <referenceTo>Product2</referenceTo>
+        <relationshipLabel>Subscriptions</relationshipLabel>
+        <relationshipName>Subscriptions</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__ProrateMultiplier__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Calculated ratio used to compute prorated price.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Calculated ratio used to compute prorated price.</inlineHelpText>
+        <label>Prorate Multiplier</label>
+        <precision>8</precision>
+        <required>false</required>
+        <scale>4</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__Quantity__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Quantity of this subscription product purchased by the customer.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Quantity of this subscription product purchased by the customer.</inlineHelpText>
+        <label>Quantity</label>
+        <precision>12</precision>
+        <required>true</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__QuoteLine__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Quote line that generated this subscription.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Quote line that generated this subscription.</inlineHelpText>
+        <label>Quote Line</label>
+        <referenceTo>SBQQ__QuoteLine__c</referenceTo>
+        <relationshipLabel>Subscriptions</relationshipLabel>
+        <relationshipName>Subscriptions</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__RenewalPrice__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Renewal price for this subscription. Overrides default renewal price computation based on account&apos;s Renewal Pricing field.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter renewal price to override default calculation.</inlineHelpText>
+        <label>Renewal Price</label>
+        <precision>14</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__RenewalProductId__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Exists for convenience of not having to run relationship queries.</description>
+        <externalId>false</externalId>
+        <formula>IF(ISBLANK(SBQQ__Product__r.SBQQ__RenewalProduct__c),SBQQ__Product__c,SBQQ__Product__r.SBQQ__RenewalProduct__c)</formula>
+        <inlineHelpText>Product ID for the renewal subscription.</inlineHelpText>
+        <label>Renewal Product Id</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__RenewalQuantity__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Quantity of this subscription product that will be renewed.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Quantity of this subscription product that will be renewed.</inlineHelpText>
+        <label>Renewal Quantity</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__RenewalUpliftRate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Rate of renewal price increases.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Rate of renewal price increased</inlineHelpText>
+        <label>Renewal Uplift (%)</label>
+        <precision>11</precision>
+        <required>false</required>
+        <scale>3</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__RenewedDate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Date this subscription was renewed as determined by date the renewal opportunity was contracted.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Date this subscription was renewed. Blank means it has not been renewed.</inlineHelpText>
+        <label>Renewed Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__StartDate__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>SBQQ__Contract__r.StartDate</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>The first date this subscription is in effect.</inlineHelpText>
+        <label>Start Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__TerminatedDate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Date on which this subscription terminated.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Date the subscription terminated. Automatically populated when covered asset is upgraded.</inlineHelpText>
+        <label>Terminated Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>SFDC_Contract__c</fullName>
+        <externalId>false</externalId>
+        <formula>SBQQ__ContractNumber__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>SFDC Contract #</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>STX_Contract__c</fullName>
+        <externalId>false</externalId>
+        <formula>SBQQ__Contract__r.STX_Contract_Number__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>STX Contract #</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>STX_Service_Detail_Id__c</fullName>
+        <description>Created by LM on 12/12/13 for da rollout</description>
+        <externalId>true</externalId>
+        <label>STX Service Detail Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>STX_Service_End_Date__c</fullName>
+        <description>Created by LM on 10/29/2013 for Phase 2 rollout</description>
+        <externalId>false</externalId>
+        <label>STX Service End Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <label>Subscription</label>
+    <nameField>
+        <displayFormat>SUB-{0000000}</displayFormat>
+        <label>Subscription #</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Subscriptions</pluralLabel>
+    <searchLayouts>
+        <searchFilterFields>STX_Contract__c</searchFilterFields>
+        <searchFilterFields>STX_Service_Detail_Id__c</searchFilterFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>Potential_Changes_req_Adjustment_Reason</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(ISPICKVAL(Potential_Adjustment_Reason__c,&apos;&apos;),
+ISCHANGED(Potential_Amount__c)
+)</errorConditionFormula>
+        <errorDisplayField>Potential_Adjustment_Reason__c</errorDisplayField>
+        <errorMessage>Potential Adjustment Reason is required for all Potential Amount changes</errorMessage>
+    </validationRules>
+</CustomObject>

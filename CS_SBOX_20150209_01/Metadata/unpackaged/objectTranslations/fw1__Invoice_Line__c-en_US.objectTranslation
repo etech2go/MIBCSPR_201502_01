@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Air Date --></label>
+        <name>Air_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Air Time --></label>
+        <name>Air_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Locked --></label>
+        <name>Locked__c</name>
+    </fields>
+    <fields>
+        <label><!-- Market and Station --></label>
+        <name>Market_and_Station__c</name>
+    </fields>
+    <fields>
+        <label><!-- Program Title --></label>
+        <name>Program_Title__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount --></label>
+        <name>fw1__Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Discount Amount --></label>
+        <name>fw1__Discount_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Discount Percentage --></label>
+        <name>fw1__Discount_Percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Discount Quantity --></label>
+        <name>fw1__Discount_Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice --></label>
+        <name>fw1__Invoice__c</name>
+        <relationshipLabel><!-- Invoice Lines --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Item Description --></label>
+        <name>fw1__Item_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- License Term (Years) --></label>
+        <name>fw1__License_Term_Years__c</name>
+    </fields>
+    <fields>
+        <label><!-- Net Amount --></label>
+        <name>fw1__Net_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Non-Installment --></label>
+        <name>fw1__Non_Installment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Note 1 --></label>
+        <name>fw1__Note_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Note 2 --></label>
+        <name>fw1__Note_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Paid Amount --></label>
+        <name>fw1__Paid_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>fw1__Product2__c</name>
+        <relationshipLabel><!-- Invoice Lines --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Quantity --></label>
+        <name>fw1__Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Recurring Invoice Line --></label>
+        <name>fw1__Recurring_Invoice_Line__c</name>
+        <relationshipLabel><!-- Invoice Lines --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sales Tax Rate --></label>
+        <name>fw1__Sales_Tax_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Tax --></label>
+        <name>fw1__Sales_Tax__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipping And Handling --></label>
+        <name>fw1__Shipping_And_Handling__c</name>
+    </fields>
+    <fields>
+        <label><!-- Taxable --></label>
+        <name>fw1__Taxable__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Discount Amount --></label>
+        <name>fw1__Total_Discount_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unit Price --></label>
+        <name>fw1__Unit_Price__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>fw2__Product__c</name>
+        <relationshipLabel><!-- Invoice Lines --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Quote Line Item --></label>
+        <name>fw2__Quote_Line_Item__c</name>
+        <relationshipLabel><!-- Invoice Lines --></relationshipLabel>
+    </fields>
+    <recordTypes>
+        <label><!-- Invoice Line --></label>
+        <name>Invoice_Line</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Locked Invoice Line --></label>
+        <name>Locked_Invoice_Line</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- This record is closed and can&apos;t be edited. --></errorMessage>
+        <name>Locked_Invoice_Line</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Add_Products --></label>
+        <name>fw1__Add_Products</name>
+    </webLinks>
+</CustomObjectTranslation>

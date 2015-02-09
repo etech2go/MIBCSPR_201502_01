@@ -1,0 +1,5 @@
+Hi {!Opportunity.OwnerFirstName},
+
+This is to let you know that the contract you emailed to {!Opportunity.Account} has been signed by the client.  Your quote has now been sent for post-signing approvals.
+
+Click here to go to the Opportunity: {!Opportunity.Link}

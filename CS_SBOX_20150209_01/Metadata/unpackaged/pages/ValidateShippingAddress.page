@@ -1,0 +1,32 @@
+<apex:page standardController="Opportunity" extensions="ValidateShippingAddressExtension">
+    <apex:pageBlock title="Verify Shipping Address Replacement Opportunity: {!opp.Name}">
+    
+	<apex:form >
+			<table border="0" width="70%" cellpadding="5">
+				<col width="2%"/><col width="28%"/><col width="10%"/><col width="2%"/><col width="28%"/>
+				<tr><th><h1>Current Address</h1></th><th/><th/><th><h1>Validated/Standardized Address</h1></th></tr>
+				<tr>
+					<td><h1>Line 1:</h1></td><td><apex:outputText value="{!opp.Shipping_Street__c}" /></td><td/>
+					<td><h1>Line 1:</h1></td><td><apex:outputText value="{!validatedAddress.Line1}" /></td>
+				</tr>
+				<tr>
+					<td><h1>City, State, Zip:</h1></td>
+					<td><apex:outputText value="{!opp.Shipping_City__c}, {!opp.Shipping_State__c} {!opp.Shipping_Zip__c}" /></td><td/>
+					<td><h1>City, State, Zip:</h1></td>
+					<td><apex:outputText value="{!validatedAddress.City}, {!validatedAddress.Region} {!validatedAddress.PostalCode}" /></td>
+				</tr>
+				<tr>
+					<td><h1>Country:</h1></td>
+					<td><apex:outputText value="{!opp.Shipping_Country__c}" /></td><td/>
+					<td><h1>Country:</h1></td>
+					<td><apex:outputText value="{!validatedAddress.Country}" /></td>
+				</tr>
+				<tr>
+					<td><apex:commandButton action="{!AddressValidate}" value="Validate Address" /></td><td/><td/>
+					<td><apex:commandButton action="{!UpdateAddress}" value="Update Address" />
+						<apex:commandButton action="{!Cancel}" value="Cancel" /></td><td/>
+				</tr>
+		</table>
+	</apex:form>
+    </apex:pageBlock>
+</apex:page>

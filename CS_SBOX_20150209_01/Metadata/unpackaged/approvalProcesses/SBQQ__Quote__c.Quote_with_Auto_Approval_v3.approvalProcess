@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <allowRecall>false</allowRecall>
+    <allowedSubmitters>
+        <type>owner</type>
+    </allowedSubmitters>
+    <approvalPageFields>
+        <field>Name</field>
+    </approvalPageFields>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>joshua.hicks@cision.com</name>
+                <type>user</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <criteriaItems>
+                <field>SBQQ__Quote__c.Require_Intl_Print_Discount_Approval__c</field>
+                <operation>equals</operation>
+                <value>Yes</value>
+            </criteriaItems>
+        </entryCriteria>
+        <ifCriteriaNotMet>ApproveRecord</ifCriteriaNotMet>
+        <label>Joshua Hicks</label>
+        <name>Joshua_Hicks</name>
+    </approvalStep>
+    <description>Quote approval process with auto-approval path:
+No approval required for anything else but International Print Discount. If that approval is not required, auto-approve.
+
+NOTE 1: this process is mutually exclusive with the one with no auto-approval.
+NOTE 2: This process must come first in the chain.</description>
+    <emailTemplate>Cision_Workflow_Templates/Quote_Approval_Request_Notification</emailTemplate>
+    <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
+    <entryCriteria>
+        <formula>Require_Discount_Approval_Sales_Manager__c = &quot;No&quot;
+&amp;&amp;
+Require_Discount_Approval_Sales_VP__c = &quot;No&quot;
+&amp;&amp;
+Require_Discount_Approval_Caroline__c = &quot;No&quot;
+&amp;&amp;
+Require_Discount_Approval_Dawn__c = &quot;No&quot;
+&amp;&amp;
+Require_Intl_Print_Discount_Approval__c = &quot;No&quot;
+&amp;&amp;
+Require_Credit_for_Services_Approval__c = &quot;No&quot;
+&amp;&amp;
+Require_Payment_Plan_Approval__c = &quot;No&quot;
+&amp;&amp;
+Require_Payment_Terms_Approval__c = &quot;No&quot;
+&amp;&amp;
+Require_Subscription_Term_Approval__c = &quot;No&quot;
+&amp;&amp;
+Require_Credit_Risk_Approval__c = &quot;No&quot;
+&amp;&amp;
+Require_Credit_Risk_Approval_Caroline__c = &quot;No&quot;
+&amp;&amp;
+Require_Future_Start_Billing_Approval__c = &quot;No&quot;
+&amp;&amp;
+Require_International_Address_Approval__c = &quot;No&quot;
+&amp;&amp;
+Require_Product_Below_Cost_Approval__c = &quot;No&quot;
+&amp;&amp;
+Require_Contract_Extension_Approval__c = &quot;No&quot;
+&amp;&amp;
+Opp_Stage__c = &quot;APP: Pending Approval&quot;</formula>
+    </entryCriteria>
+    <finalApprovalActions>
+        <action>
+            <name>QQ_Set_Quote_Status_to_Approved</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Quote_Approved</name>
+            <type>Alert</type>
+        </action>
+    </finalApprovalActions>
+    <finalApprovalRecordLock>false</finalApprovalRecordLock>
+    <finalRejectionActions>
+        <action>
+            <name>Approval_Rejected</name>
+            <type>Alert</type>
+        </action>
+        <action>
+            <name>QQ_Set_Quote_Status_to_Approval_Rejected</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalRejectionActions>
+    <finalRejectionRecordLock>false</finalRejectionRecordLock>
+    <initialSubmissionActions>
+        <action>
+            <name>QQ_Set_Quote_Status_to_Review</name>
+            <type>FieldUpdate</type>
+        </action>
+    </initialSubmissionActions>
+    <label>Quote with Auto-Approval (Pre APP)</label>
+    <nextAutomatedApprover>
+        <useApproverFieldOfRecordOwner>true</useApproverFieldOfRecordOwner>
+        <userHierarchyField>Manager</userHierarchyField>
+    </nextAutomatedApprover>
+    <recallActions>
+        <action>
+            <name>QQ_Set_Quote_Status_to_Draft</name>
+            <type>FieldUpdate</type>
+        </action>
+    </recallActions>
+    <recordEditability>AdminOrCurrentApprover</recordEditability>
+    <showApprovalHistory>false</showApprovalHistory>
+</ApprovalProcess>

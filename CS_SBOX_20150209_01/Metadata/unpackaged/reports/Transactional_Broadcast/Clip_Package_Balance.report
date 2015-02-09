@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Prepaid_Clip_Package__c.Sold_By__c</field>
+    </columns>
+    <columns>
+        <field>Prepaid_Clip_Package__c.Purchase_Date__c</field>
+    </columns>
+    <columns>
+        <field>Prepaid_Clip_Package__c.Expiration_Date__c</field>
+    </columns>
+    <columns>
+        <field>Prepaid_Clip_Package__c.Number_of_Clips__c</field>
+    </columns>
+    <columns>
+        <field>Prepaid_Clip_Package__c.Remaining_Package_Clips__c</field>
+    </columns>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>ACCOUNT.NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>TS: Clip Package Balance</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountCustomEntity$Prepaid_Clip_Package__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>DUE_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

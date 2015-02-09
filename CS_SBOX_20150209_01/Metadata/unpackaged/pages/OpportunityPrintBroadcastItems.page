@@ -1,0 +1,28 @@
+<apex:page standardController="Opportunity" extensions="OpportunityPrintBroadcastItemsExtension" showHeader="false" sidebar="false" standardStylesheets="true" renderAs="pdf">
+	<head>
+		<style>  body {font-family: Arial Unicode MS;font-size:12px;}
+     			.header {
+    				font-weight:bold;
+    				font-size:20px;}  	
+		</style>
+	</head>
+	<apex:form >		
+    	<apex:variable value="{!1}" var="counter"/>
+		<table width="100%" title="Test" border="0">
+				<tr><td><apex:OutputText styleclass="header" value="{!BroadcastItemListHeader}" /></td></tr>
+        		<tr>            
+					<apex:repeat value="{!lineItemsList}" var="lineitem">						
+		                <td width="50%">							
+						 	<apex:OutputText value="{!lineItem.ItemNumber__c}"/>) &nbsp;
+		            		<apex:OutputText value="{!lineItem.Market_Station__c}"/><br/>
+							<apex:OutputText value="{!lineItem.Program_Title__c}"/><br/>
+							<apex:OutputText value="{!lineItem.Air_Date_Time__c}"/><br/>
+							(<apex:OutputText value="{!lineItem.TRT__c}"/>)<br/><br/>							
+						</td>          						
+						<apex:outputText rendered="{!AND((MOD(counter, 2) == 0), (counter < lineItemsList.size))}" value="</tr><tr>" escape="false"/>							
+	                	<apex:variable var="counter" value="{!counter + 1}"/>						
+					</apex:repeat>
+        		</tr>		 		
+    	</table>		
+	</apex:form>
+</apex:page>

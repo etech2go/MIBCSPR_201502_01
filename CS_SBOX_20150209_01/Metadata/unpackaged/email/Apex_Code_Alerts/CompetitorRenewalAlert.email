@@ -1,0 +1,13 @@
+Hi <br/>
+<br/>
+The Account <a href="https://cs9.salesforce.com/{!Competitor__c.AccountId__c}"> {!Competitor__c.Account__c}</a> has a contract with a Competitor that is expiring in 3 months.<br/>
+<br/>
+<B>Competitor Name</B> : {!Competitor__c.Competitor_Name__c}<br/>
+<B>Service Provided</B> : {!Competitor__c.Service_Provided__c}<br/>
+<B>Service Expiration Date</B> : {!Competitor__c.Service_Expiration_Date__c}<br/>
+<B>Competitive Spend</B> : {!Competitor__c.Competitive_Spend__c}<br/>
+<B>Competitor Notes</B> : {!Competitor__c.Competitor_Notes__c}<br/>
+<br/>
+You can view the Competitor Record <a href="{!Competitor__c.Link}">here</a><br/>
+<br/>
+Many Thanks

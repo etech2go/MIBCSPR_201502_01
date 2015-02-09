@@ -1,0 +1,7 @@
+Your Account - {!Account.Name} - has gone on Credit Hold. 
+
+The GP# for this account is {!Account.GP_Cust_ID__c}.
+
+Follow up with {!Account.AR_Rep__c}, if you have any questions.
+
+{!Account.Link}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>This Email gets sent once a Case has been assigned to a user</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Case Assigned</name>
+    <style>none</style>
+    <subject>{!Case.Subject}</subject>
+    <textOnly>Hi {!Case.OwnerFullName}
+
+You have a new case awaiting your expertise!
+
+Please click on the link below to view the details of the Case
+
+{!Case.Link}</textOnly>
+    <type>custom</type>
+</EmailTemplate>
