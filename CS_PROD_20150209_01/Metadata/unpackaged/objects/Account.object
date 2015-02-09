@@ -1,0 +1,3906 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>CallHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EmailHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EnableCustomerPortalUser</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ListClean</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>MapHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>NewsHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>RequestUpdate</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewCustomerPortalUser</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>WebsiteHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <fields>
+        <fullName>AR_Rep__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(NAAT__c=TRUE, &quot;Sue Mierop&quot;, IF(BEGINS(Name, &quot;G&quot;), &quot;Diana Rene&quot;, IF(BEGINS(Name, &quot;H&quot;), &quot;Diana Rene&quot;, IF(BEGINS(Name, &quot;I&quot;), &quot;Diana Rene&quot;, IF(BEGINS(Name, &quot;J&quot;), &quot;Diana Rene&quot;, IF(BEGINS(Name, &quot;K&quot;), &quot;Diana Rene&quot;, IF(BEGINS(Name, &quot;L&quot;), &quot;Diana Rene&quot;, IF(BEGINS(Name, &quot;M&quot;), &quot;Diana Rene&quot;, IF(BEGINS(Name, &quot;N&quot;), &quot;Diana Rene&quot;, IF(BEGINS(Name, &quot;O&quot;), &quot;Diana Rene&quot;, IF(BEGINS(Name, &quot;P&quot;), &quot;Tony Mace&quot;, IF(BEGINS(Name, &quot;Q&quot;), &quot;Tony Mace&quot;, IF(BEGINS(Name, &quot;R&quot;), &quot;Tony Mace&quot;, IF(BEGINS(Name, &quot;S&quot;), &quot;Tony Mace&quot;, IF(BEGINS(Name, &quot;T&quot;), &quot;Tony Mace&quot;, IF(BEGINS(Name, &quot;U&quot;), &quot;Tony Mace&quot;, IF(BEGINS(Name, &quot;V&quot;), &quot;Tony Mace&quot;, IF(BEGINS(Name, &quot;W&quot;), &quot;Tony Mace&quot;, IF(BEGINS(Name, &quot;X&quot;), &quot;Tony Mace&quot;, IF(BEGINS(Name, &quot;Y&quot;), &quot;Tony Mace&quot;, IF(BEGINS(Name, &quot;Z&quot;), &quot;Tony Mace&quot;, &quot;Richard Micus&quot;)))))))))))))))))))))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>AR Rep</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>AVA_SFCORE__Billing_Last_Validated__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Date and Time Billing Address was last validated.  Cannot Be Edited.</inlineHelpText>
+        <label>Last Validated</label>
+        <length>20</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>AVA_SFCORE__Shipping_Last_Validated__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Date and Time Shipping Address was last validated.  Cannot be Edited.</inlineHelpText>
+        <label>Last Validated</label>
+        <length>20</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>AccountNumber</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>AccountSource</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>Direct Mail</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Event</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Internal</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>OLA</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Referral</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SEM</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Social</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Webinar</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Website</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Account_Health_Color__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(TEXT(Account_Health__c)=&quot;Red&quot;,IMAGE(&quot;/img/samples/color_red.gif&quot;, &quot;red&quot;, 30, 30),
+IF(TEXT(Account_Health__c)=&quot;Yellow&quot;,IMAGE(&quot;/img/samples/color_yellow.gif&quot;, &quot;yellow&quot;, 30, 30),IF(TEXT(Account_Health__c)=&quot;Green&quot;,IMAGE(&quot;/img/samples/color_green.gif&quot;, &quot;green&quot;, 30, 30),&quot;&quot;)))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>The color system is based on the Account&apos;s level of satisfaction and likeliness to renew (set by Sales/CS): 
+Red = at risk, high maintenance 
+Yellow = have some issues, but manageable and can be worked out
+Green = love Cision (even if a needier client)</inlineHelpText>
+        <label>Account Health Color</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_Health__c</fullName>
+        <description>Created by LM on 8/26/2013 for Phase 2 rollout</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The color system  is based on the Account&apos;s level of satisfaction and likeliness to renew (set by Sales/CS):
+Red = at risk, high maintenance
+Yellow = have some issues, but manageable and can be worked out
+Green = love Cision (even if a needier client)</inlineHelpText>
+        <label>Account Health</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Red</fullName>
+                <color>#FF0000</color>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Yellow</fullName>
+                <color>#FFFF66</color>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Green</fullName>
+                <color>#33CC00</color>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Account_Level_Discount__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is the percentage that will be applied to all Broadcast Items purchased by this Account.</inlineHelpText>
+        <label>Account Level Discount</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Account_Ownership_History__c</fullName>
+        <description>Created by LM on 4/4/14 for Phase2</description>
+        <externalId>false</externalId>
+        <label>Account Ownership History</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Account_Profile_Notes__c</fullName>
+        <description>Created by LM on 8/26/2013 for Phase 2 rollout</description>
+        <externalId>false</externalId>
+        <label>Account Profile Notes</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Account_Tier__c</fullName>
+        <description>Added by LM on 2/6/2013; New for SFDC rollout</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The account&apos;s renewal tier (based on the annual renewal amount).</inlineHelpText>
+        <label>PH2-Account Tier</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Client</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Major</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>National</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Basic</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Account_Value__c</fullName>
+        <description>Added by LM on 2/7/2013; From MS CRM</description>
+        <externalId>false</externalId>
+        <inlineHelpText>12 Month  Rolling Total of All Invoices</inlineHelpText>
+        <label>PH2-Account Value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Advanced_Analytics__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Created by LM on 10/29/2013 for Phase 2 rollout</description>
+        <externalId>false</externalId>
+        <label>CPS Advanced Analytics</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Agency__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Added by LM on 2/6/2013; New for SFDC rollout</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The Agency field creates a relationship with this Account (a client) and the Agency that represents it. Sometimes we will do business with the Agency; sometimes we do business directly with the client.</inlineHelpText>
+        <label>Agency</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Account.Category__c</field>
+                <operation>equals</operation>
+                <value>Agency</value>
+            </filterItems>
+            <infoMessage>Choose an Agency</infoMessage>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Agency Clients</relationshipLabel>
+        <relationshipName>Accounts</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Alias_Account_Name_1__c</fullName>
+        <description>Added by LM on 2/7/2013; From MS CRM</description>
+        <externalId>false</externalId>
+        <label>Alias Account Name 1</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Alias_Account_Name_2__c</fullName>
+        <description>Added by LM on 2/7/2013; From MS CRM</description>
+        <externalId>false</externalId>
+        <label>Alias Account Name 2</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Alias_Account_Name_3__c</fullName>
+        <description>Added by LM on 2/7/2013; From MS CRM</description>
+        <externalId>false</externalId>
+        <label>Alias Account Name 3</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Alias_Account_Name_4__c</fullName>
+        <description>Added by LM on 2/7/2013; From MS CRM</description>
+        <externalId>false</externalId>
+        <label>Alias Account Name 4</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Analysis_Customer__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Created by LM on 10/11/2013 for Phase 2 rollout</description>
+        <externalId>false</externalId>
+        <label>Analysis Customer</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Analysis_Lead__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Added by LM on 2/7/2013; From MS CRM</description>
+        <externalId>false</externalId>
+        <label>Analysis Lead</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Accounts5</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Analyze_Tab__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Created by LM on 10/29/2013 for Phase 2 rollout</description>
+        <externalId>false</externalId>
+        <label>CPS Analyze Tab</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Annua_lRevenue_Groupings__c</fullName>
+        <externalId>false</externalId>
+        <label>Annua lRevenue Groupings</label>
+        <picklist>
+            <picklistValues>
+                <fullName>&lt;$10M</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>$10M-$25M</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>$25M-$50M</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>$50-150M</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>$150M-$500M</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>$500M-$1B</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>$1B+</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>AnnualRevenue</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Assets_In_Native_Country_Currency__c</fullName>
+        <description>Added by LM on 2/8/2013; From MS CRM</description>
+        <externalId>false</externalId>
+        <label>Assets (In Native Country Currency)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BillingAddress</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Broadcast_Account_Value__c</fullName>
+        <description>Added by LM on 2/7/2013; From MS CRM</description>
+        <externalId>false</externalId>
+        <inlineHelpText>12 Month Rolling Total of Broadcast Invoices from NetSuite</inlineHelpText>
+        <label>PH2-Broadcast Account Value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Broadcast_Customer__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Created by LM on 10/11/2013 for Phase 2 rollout</description>
+        <externalId>false</externalId>
+        <label>Broadcast Customer</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Broadcast_Last_Touched_Date__c</fullName>
+        <description>Created by LM on 2/17/14 for Phase2</description>
+        <externalId>false</externalId>
+        <label>Broadcast Last Touched Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Broadcast_Monitoring__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Created by LM on 10/29/2013 for Phase 2 rollout</description>
+        <externalId>false</externalId>
+        <label>CPS Broadcast Monitoring</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Broadcast_Rep__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Added by LM on 2/7/2013; From MS CRM</description>
+        <externalId>false</externalId>
+        <label>Broadcast Rep</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Accounts1</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Burrelles_Print_Customer__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Added by LM on 2/8/2013; From MS CRM</description>
+        <externalId>false</externalId>
+        <label>Burrelles: Print Customer</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Burrelles_Track_Clients_At_Agencies__c</fullName>
+        <description>Added by LM on 2/8/2013; From MS CRM</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Used to track clients that are at agencies whose monitoring has transferred to Burrelles.</inlineHelpText>
+        <label>PH2-Burrelles: Track Clients At Agencies</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Business_Entity_Type__c</fullName>
+        <description>Added by LM on 2/8/2013; From MS CRM</description>
+        <externalId>false</externalId>
+        <label>Business Entity Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Parent</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Subsidiary</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Branch</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Independent</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>CRM_Account_ID__c</fullName>
+        <description>Created by LM on 12/2/2013 for Phase2</description>
+        <externalId>true</externalId>
+        <label>CRM Account ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CS_Tier__c</fullName>
+        <description>Added by LM on 2/7/2013; From MS CRM</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Client Support team assigned to this account.</inlineHelpText>
+        <label>CS Tier</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Tier1</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Tier2</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Tier3</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Agency</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>International - Tier2</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Setup Team</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Canada__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Created by LM on 10/29/2013 for Phase 2 rollout</description>
+        <externalId>false</externalId>
+        <label>CPS Canada</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Category__c</fullName>
+        <description>Added by LM on 2/6/2013; From NetSuite</description>
+        <externalId>false</externalId>
+        <label>Category</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Agency</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Association</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Consumer</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Corporate</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Education</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Government</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Non-Profit</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>NDS</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Partner</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>CisionPoint_ID__c</fullName>
+        <description>Added by LM on 2/28/2013; From NetSuite</description>
+        <externalId>false</externalId>
+        <label>CisionPoint ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CisionWire_Rep__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Added by LM on 2/7/2013; From MS CRM</description>
+        <externalId>false</externalId>
+        <label>PH2-CisionWire Rep</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Accounts3</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CleanStatus</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Client_Services_Info_Exp_Date__c</fullName>
+        <description>Created by LM on 8/26/2013 for Phase 2 rollout</description>
+        <externalId>false</externalId>
+        <label>Client Services Info Exp Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Client_Services_Info__c</fullName>
+        <description>Created by LM on 8/26/2013 for Phase 2 rollout</description>
+        <externalId>false</externalId>
+        <label>Client Services Info</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Client_Shipping_Account__c</fullName>
+        <description>Added by LM on 2/7/2013; From NetSuite</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Client supplied shipping number in order to send products via their shipping account.</inlineHelpText>
+        <label>Client Shipping Account #</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Collection_Info_Exp_Date__c</fullName>
+        <description>Created by LM on 8/26/2013 for Phase 2 rollout</description>
+        <externalId>false</externalId>
+        <label>Collection Info Exp Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Collections_Info_Exp_Date__c</fullName>
+        <description>Created by LM on 8/26/2013 for Phase 2 rollout</description>
+        <externalId>false</externalId>
+        <label>Collections Info Exp Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Collections_Info__c</fullName>
+        <description>Created by LM on 8/26/2013 for Phase 2 rollout</description>
+        <externalId>false</externalId>
+        <label>Collections Info</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Company_Description__c</fullName>
+        <description>Added by LM on 2/8/2013; From MS CRM</description>
+        <externalId>false</externalId>
+        <label>Company Description</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Company_Size__c</fullName>
+        <description>Added by LM on 2/7/2013; From MS CRM</description>
+        <externalId>false</externalId>
+        <label>Company Size</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Small</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Mid</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Enterprise</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Competitor_Info__c</fullName>
+        <description>Added by MD on 09/05/2013 as part of the Phase 2 development</description>
+        <externalId>false</externalId>
+        <label>Competitor Info</label>
+        <length>10000</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Connect_Customer__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Created by LM on 10/11/2013 for Phase 2 rollout</description>
+        <externalId>false</externalId>
+        <label>Connect Customer</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Content_Marketing__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Created by LM on 10/29/2013 for Phase 2 rollout</description>
+        <externalId>false</externalId>
+        <label>CPS Content Marketing</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Copy_Billing_Address_to_Shipping_Address__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Check this box to copy your Billing Address to the Shipping Address.</inlineHelpText>
+        <label>Copy Billing Address to Shipping Address</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Credit_Hold__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Added by LM on 2/7/2013; From MS CRM</description>
+        <externalId>false</externalId>
+        <label>Credit Hold</label>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Credit_Limit__c</fullName>
+        <description>Created by LM on 8/26/2013 for Phase 2 rollout</description>
+        <externalId>false</externalId>
+        <label>Credit Limit</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Credit_Reference__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Checkbox indicating whether a credit reference has been obtained</description>
+        <externalId>false</externalId>
+        <label>Credit Reference</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Credit_Risk_Values_Date__c</fullName>
+        <description>Created by LM on 3/6/2014 for Phase2</description>
+        <externalId>false</externalId>
+        <label>Credit Risk Values Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Credit_Risk__c</fullName>
+        <externalId>false</externalId>
+        <label>Credit Risk</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>High</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>DMA_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>DMA ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DMA__c</fullName>
+        <externalId>false</externalId>
+        <label>DMA</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DUNS_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>DUNS Number</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DandbCompanyId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Designated_Account__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Added by LM on 2/7/2013; From MS CRM</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Denotes an account identified as a top prospect by New Business Sales.</inlineHelpText>
+        <label>PH2-Designated Account</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Directories__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Created by LM on 10/29/2013 for Phase 2 rollout</description>
+        <externalId>false</externalId>
+        <label>CPS Directories</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Distribution__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Created by LM on 10/29/2013 for Phase 2 rollout</description>
+        <externalId>false</externalId>
+        <label>CPS Distribution</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Do_Not_Sell__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Created by LM on 10/7/2014 for Phase2</description>
+        <externalId>false</externalId>
+        <label>Do Not Sell</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>DunsNumber</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Early_Term_Reason__c</fullName>
+        <description>Created by LM on 3/14/2014 for Phase2</description>
+        <externalId>false</externalId>
+        <label>Early Term Reason</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Early_Term__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Created by LM on 314/2014 for Phase2</description>
+        <externalId>false</externalId>
+        <label>Early Term?</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Electronic_Monitoring__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Created by LM on 10/29/2013 for Phase 2 rollout</description>
+        <externalId>false</externalId>
+        <label>CPS Electronic Monitoring</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Employees_1_Year_Growth_Percent__c</fullName>
+        <description>Added by LM on 2/8/2013; From MS CRM</description>
+        <externalId>false</externalId>
+        <label>Employees 1 Year Growth (Percent)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Enterprise_Account__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Created by LM on 11/18/2013 for Phase 2 rollout</description>
+        <externalId>false</externalId>
+        <label>Enterprise Account</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Extensions_Info_Exp_Date__c</fullName>
+        <description>Created by LM on 8/26/2013 for Phase 2 rollout</description>
+        <externalId>false</externalId>
+        <label>Extensions Info Exp Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Extensions_Info__c</fullName>
+        <description>Created by LM on 8/26/2013 for Phase 2 rollout</description>
+        <externalId>false</externalId>
+        <label>Extensions Info</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Fax</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Fiscal_Year_End__c</fullName>
+        <description>Added by LM on 2/8/2013; From MS CRM</description>
+        <externalId>false</externalId>
+        <label>Fiscal Year End</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Fortune_1000_Company__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Added by LM on 2/7/2013; From MS CRM</description>
+        <externalId>false</externalId>
+        <label>PH2-Fortune 1000 Company</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Fortune_1000_Ranking__c</fullName>
+        <description>Added by LM on 2/8/2013; From MS CRM</description>
+        <externalId>false</externalId>
+        <label>Fortune 1000 Ranking</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>GP_Cust_ID__c</fullName>
+        <description>Added by LM on 2/7/2013; From MS CRM</description>
+        <externalId>false</externalId>
+        <label>GP Cust ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>GP_Integration_Number__c</fullName>
+        <description>Used for GP Integration because SFDC &quot;GUID&quot; is too long for Lon&apos;s code</description>
+        <displayFormat>SF-{000000}</displayFormat>
+        <externalId>false</externalId>
+        <label>GP Integration Number</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </fields>
+    <fields>
+        <fullName>Global_Analysts__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Created by LM on 10/29/2013 for Phase 2 rollout</description>
+        <externalId>false</externalId>
+        <label>CPS Global Analysts</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Gorkana_Account_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Gorkana Account Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Customer</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Prospect</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Gorkana_SFDC_Account_ID__c</fullName>
+        <externalId>true</externalId>
+        <label>Gorkana SFDC Account ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Industry</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>Agriculture</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Apparel</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Banking</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Biotechnology</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Chemicals</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Communications</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Construction</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Consulting</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Education</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Electronics</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Energy</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Engineering</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Entertainment</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Environmental</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Finance</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Food &amp; Beverage</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Government</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Healthcare</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Hospitality</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Insurance</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Legal</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Machinery</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Manufacturing</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Media</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Not For Profit</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Recreation</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Retail</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Shipping</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Technology</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Telecommunications</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Transportation</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Utilities</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Industry_Group_Name__c</fullName>
+        <description>Added by LM on 2/8/2013; From MS CRM</description>
+        <externalId>false</externalId>
+        <label>Industry Group Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Industry_Sector_Name__c</fullName>
+        <description>Added by LM on 2/8/2013; From MS CRM</description>
+        <externalId>false</externalId>
+        <label>Industry Sector Name</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>International_Database__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Created by LM on 10/29/2013 for Phase 2 rollout</description>
+        <externalId>false</externalId>
+        <label>CPS International Database</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Invoice_Count__c</fullName>
+        <externalId>false</externalId>
+        <label>Invoice Count</label>
+        <summaryFilterItems>
+            <field>Opportunity.Opportunity_Status__c</field>
+            <operation>equals</operation>
+            <value>Invoiced</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Opportunity.AccountId</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Jigsaw</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Last_Early_Term_Date__c</fullName>
+        <description>Created by LM on 3/14/2014 for Phase2</description>
+        <externalId>false</externalId>
+        <label>Last Early Term Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Last_Purchase_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Last Purchase Date</label>
+        <summarizedField>Opportunity.CloseDate</summarizedField>
+        <summaryFilterItems>
+            <field>Opportunity.Opportunity_Status__c</field>
+            <operation>equals</operation>
+            <value>Pending Invoicing, Invoiced, Payment Error, Closed</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Opportunity.AccountId</summaryForeignKey>
+        <summaryOperation>max</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>LexisNexis_Named_Account__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Added by LM on 2/7/2013; From MS CRM</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicator of  an account exclusive to LexisNexis. Cision may not propose eNews to this account without executive approval.</inlineHelpText>
+        <label>LexisNexis Named Account</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Lexis_WSK__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Added by LM on 2/6/2014 for Phase2 rollout</description>
+        <externalId>false</externalId>
+        <label>Lexis WSK?</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>LinkedIn__c</fullName>
+        <description>Created by LM on 8/26/2013 for Phase 2 rollout</description>
+        <externalId>false</externalId>
+        <label>LinkedIn</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Location__c</fullName>
+        <description>Added by LM on 3/11/2013; New for SFDC rollout</description>
+        <externalId>false</externalId>
+        <inlineHelpText>For Parent-Child Accounts where Location is the reason for the Parent-Child relationship.</inlineHelpText>
+        <label>Location</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MSA_Signed_On__c</fullName>
+        <description>Created by LM on 8/26/2013 for Phase 2 rollout</description>
+        <externalId>false</externalId>
+        <label>MSA Signed On</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Managed_Services__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Created by LM on 10/29/2013 for Phase 2 rollout</description>
+        <externalId>false</externalId>
+        <label>CPS Managed Services</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Monitoring_Customer__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Created by LM on 10/11/2013 for Phase 2 rollout</description>
+        <externalId>false</externalId>
+        <label>Monitoring Customer</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>NAAT__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>NAAT</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>NAICS_Code_1_Description__c</fullName>
+        <description>Added by LM on 2/8/2013; From MS CRM</description>
+        <externalId>false</externalId>
+        <label>NAICS Code 1 Description</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>NAICS_Code_1__c</fullName>
+        <description>Added by LM on 2/8/2013; From MS CRM</description>
+        <externalId>false</externalId>
+        <label>NAICS Code 1</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>NAICS_Code_2_Description__c</fullName>
+        <description>Added by LM on 2/8/2013; From MS CRM</description>
+        <externalId>false</externalId>
+        <label>NAICS Code 2 Description</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>NAICS_Code_2__c</fullName>
+        <description>Added by LM on 2/8/2013; From MS CRM</description>
+        <externalId>false</externalId>
+        <label>NAICS Code 2</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>NAICS_Code_3_Description__c</fullName>
+        <description>Added by LM on 2/8/2013; From MS CRM</description>
+        <externalId>false</externalId>
+        <label>NAICS Code 3 Description</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>NAICS_Code_3__c</fullName>
+        <description>Added by LM on 2/8/2013; From MS CRM</description>
+        <externalId>false</externalId>
+        <label>NAICS Code 3</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>NaicsCode</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>NaicsDesc</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Name</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Named_Account_Rep__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Named Account Rep</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>NamedAccounts</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Named_Account__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Created by LM on 11/18/2013 for Phase 2 rollout</description>
+        <externalId>false</externalId>
+        <label>Named Account</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Net_Income_1_Year_Growth_Percent__c</fullName>
+        <description>Added by LM on 2/8/2013; From MS CRM</description>
+        <externalId>false</externalId>
+        <label>Net Income 1 Year Growth (Percent)</label>
+        <length>10</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Net_Income_In_Native_Country_Currency__c</fullName>
+        <description>Added by LM on 2/8/2013; From MS CRM</description>
+        <externalId>false</externalId>
+        <label>Net Income (In Native Country Currency)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>New_Biz_Info_Exp_Date__c</fullName>
+        <description>Created by LM on 9/11/2013 for Phase 2 rollout</description>
+        <externalId>false</externalId>
+        <label>New Biz Info Exp Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>New_Biz_Info__c</fullName>
+        <description>Created by LM on 9/11/2013 for Phase 2 rollout</description>
+        <externalId>false</externalId>
+        <label>New Biz Info</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>New_Biz_Last_Touched_Date__c</fullName>
+        <description>Added by LM on 1/17/14 for Phase2</description>
+        <externalId>false</externalId>
+        <label>New Biz Last Touched Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>New_Biz_Named_Account_Rep__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Created by LM on 1/22/2014 for Phase2</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The New Biz Named Account Rep owns this Account.  There is no requirement for the New Biz Named Account Rep to do any activity on the Account in order to &quot;keep&quot; the account .  Each night, the New Biz Named Account Rep will overwrite the New Biz Rep field.</inlineHelpText>
+        <label>New Biz Named Account Rep</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>User.Profile.Name</field>
+                <operation>contains</operation>
+                <value>New Biz</value>
+            </filterItems>
+            <filterItems>
+                <field>User.IsActive</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>User</referenceTo>
+        <relationshipName>AccountsNewBizNamedAccountRep</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>New_Biz_Rep__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Added by LM on 2/7/2013; From MS CRM</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field shows the last New Biz Rep who has modified the Account or any related Contact, Opp, or Activity in the last 60 days.  The New Biz Named Account Rep, if there is one, will overwrite the New Biz Rep field each night.</inlineHelpText>
+        <label>New Biz Rep</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Accounts</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>New_Biz_Sales_Territory__c</fullName>
+        <description>Created by LM on 8/26/2013 for Phase 2 rollout</description>
+        <externalId>false</externalId>
+        <label>New Biz Sales Territory</label>
+        <picklist>
+            <picklistValues>
+                <fullName>East</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>West</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Num_of_Invoices__c</fullName>
+        <externalId>false</externalId>
+        <formula>Invoice_Count__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Num of Invoices</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Num_of_Opps__c</fullName>
+        <externalId>false</externalId>
+        <formula>Opportunity_Count__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Num of Opps</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>NumberOfEmployees</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>OS2010_Industry_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>OS2010 Industry Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>OldOwnership__c</fullName>
+        <description>Added by LM on 2/7/2013; From MS CRM</description>
+        <externalId>false</externalId>
+        <label>OldOwnership</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Non-Corporates</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Nonprofit</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Partnership</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Private</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Public</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Public Sector (Central &amp; Local Government)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Public Sector (Other)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>State-Owned</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>OneSource_Company_Name__c</fullName>
+        <description>Added by LM on 2/8/2013; From MS CRM</description>
+        <externalId>false</externalId>
+        <label>OneSource Company Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>OneSource_Parent_Key_Id__c</fullName>
+        <description>Added by LM on 2/8/2013; From MS CRM</description>
+        <externalId>false</externalId>
+        <label>OneSource Parent Key Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>OneSource_Parent_Name__c</fullName>
+        <description>Added by LM on 2/8/2013; From MS CRM</description>
+        <externalId>false</externalId>
+        <label>OneSource Parent Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>OneSource_Ultimate_Key_Id__c</fullName>
+        <description>Added by LM on 2/8/2013; From MS CRM</description>
+        <externalId>false</externalId>
+        <label>OneSource Ultimate Key Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>OneSource_Verification_Date__c</fullName>
+        <description>Added by LM on 2/8/2013; From MS CRM</description>
+        <externalId>false</externalId>
+        <label>OneSource Verification Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Opportunity_Count__c</fullName>
+        <externalId>false</externalId>
+        <label>Opportunity Count</label>
+        <summaryForeignKey>Opportunity.AccountId</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Other_Monitoring_Services__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Created by LM on 10/29/2013 for Phase 2 rollout</description>
+        <externalId>false</externalId>
+        <label>CPS Other Monitoring Services</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Outreach_Made__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Added by LM on 2/7/2013; From MS CRM</description>
+        <externalId>false</externalId>
+        <inlineHelpText>An outgoing communication has been made to the Prospect by Sales.</inlineHelpText>
+        <label>PH2-Outreach Made</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Ownership</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>Public</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Private</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Subsidiary</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Ownership__c</fullName>
+        <description>Added by LM on 2/7/2013; From MS CRM</description>
+        <externalId>false</externalId>
+        <label>Ownership</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Non-Corporates</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Nonprofit</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Partnership</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Private</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Public</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Public Sector (Central &amp; Local Government)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Public Sector (Other)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>State-Owned</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>P_O_Required__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Added by LM on 3/15/2013; From MS CRM</description>
+        <externalId>false</externalId>
+        <label>P.O. Required</label>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ParentId</fullName>
+        <inlineHelpText>The Parent Account field creates a relationship where the Parent Account sits above this Account (now called the Child Account) in a hierarchy. For example, Edelman is the Parent Account for Edelman Chicago. Honest Tea is a Child Account of Coca-Cola.</inlineHelpText>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Hierarchy</type>
+    </fields>
+    <fields>
+        <fullName>Parent_Account_Type__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(Parent.Type)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Parent Account Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Paydex__c</fullName>
+        <description>Created by LM on 3/6/2014 for Phase2</description>
+        <externalId>false</externalId>
+        <label>Paydex #</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Phone</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Plan_Additional_Users__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Created by LM on 10/29/2013 for Phase 2 rollout</description>
+        <externalId>false</externalId>
+        <label>CPS Plan Additional Users</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Plan_Customer__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Created by LM on 10/11/2013 for Phase 2 rollout</description>
+        <externalId>false</externalId>
+        <label>Plan Customer</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Plan_Database__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Created by LM on 10/29/2013 for Phase 2 rollout</description>
+        <externalId>false</externalId>
+        <label>CPS Plan Database</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Plan_Email_Fax_Points__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Created by LM on 10/29/2013 for Phase 2 rollout</description>
+        <externalId>false</externalId>
+        <label>CPS Plan Email/Fax Points</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Plan_Premium_Data_Add_Ons__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Created by LM on 10/29/2013 for Phase 2 rollout</description>
+        <externalId>false</externalId>
+        <label>CPS Plan Premium Data/Add-Ons</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Primary_ISIC_Rev4_Desc__c</fullName>
+        <externalId>false</externalId>
+        <label>Primary ISIC Rev4 Desc</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Primary_ISIC_Rev4__c</fullName>
+        <externalId>false</externalId>
+        <label>Primary ISIC Rev4</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Print_Monitoring_Subscription_Customer__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Added by LM on 2/8/2013; From MS CRM</description>
+        <externalId>false</externalId>
+        <label>Print Monitoring Subscription Customer</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Print_Monitoring__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Created by LM on 10/29/2013 for Phase 2 rollout</description>
+        <externalId>false</externalId>
+        <label>CPS Print Monitoring</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Project_Lead__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Added by LM on 2/7/2013; From MS CRM</description>
+        <externalId>false</externalId>
+        <label>Project Lead</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Accounts2</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>QuickShare_Account__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Added by LM on 2/7/2013; From MS CRM</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicator of  an account exclusive to LexisNexis. Cision may not propose QuickShare to this account without executive approval.</inlineHelpText>
+        <label>QuickShare Account</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>RCN_Additional_Recurring_Client_Needs__c</fullName>
+        <description>Added by LM on 5/13/2013 per Laura J request</description>
+        <externalId>false</externalId>
+        <label>RCN: Additional Recurring Client Needs</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RCN_Client_Emails__c</fullName>
+        <description>Added by LM on 3/18/2013; New for SFDC rollout</description>
+        <externalId>false</externalId>
+        <label>RCN: Client Emails</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RCN_Clip_Format__c</fullName>
+        <description>Added by LM on 3/18/2013; New for SFDC rollout</description>
+        <externalId>false</externalId>
+        <label>RCN: Clip Format</label>
+        <picklist>
+            <picklistValues>
+                <fullName>WMV (320x240)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>QT (320x240)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>FLV (320x240)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>MPEG1 (320x240)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>MPEG2(720x480)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>AVI (720x480)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>WMV (720x480)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>QT (720x480)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>FLV (720x480)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>DVD</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>RCN_Incidental_Fee__c</fullName>
+        <description>Added by LM on 3/18/2013; New for SFDC rollout</description>
+        <externalId>false</externalId>
+        <label>RCN: Incidental Fee</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>See RCN: Recurring Client Needs</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>RCN_Post_Location__c</fullName>
+        <description>Added by LM on 3/18/2013; New for SFDC rollout</description>
+        <externalId>false</externalId>
+        <label>RCN: Post Location</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Ad Hoc CP</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Box.com</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cision FTP Site</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Client CisionPoint</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Direct Link</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>RCN_Recurring_Client_Needs__c</fullName>
+        <description>Added by LM on 2/7/2013; From NetSuite</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Specific client needs and order instructions that should be followed on all transactions for this client.</inlineHelpText>
+        <label>RCN: Recurring Client Needs</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Rating</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>Hot</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Warm</fullName>
+                <default>true</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Renewal_Info_Exp_Date__c</fullName>
+        <description>Created by LM on 8/26/2013 for Phase 2 rollout</description>
+        <externalId>false</externalId>
+        <label>Renewal Info Exp Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Renewal_Info__c</fullName>
+        <description>Created by LM on 8/26/2013 for Phase 2 rollout</description>
+        <externalId>false</externalId>
+        <label>Renewal Info</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Renewal_Period__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Created by LM on 11/4/2013 for Phase 2 rollout</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The Renewal Period is anytime in the period of time 90 days BEFORE the Renewal Due Date through 60 days AFTER the Renewal Due Date (or 60 days after after Closed Renewal).</inlineHelpText>
+        <label>Renewal Period</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Renewal_Rep__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Added by LM on 2/7/2013; From MS CRM</description>
+        <externalId>false</externalId>
+        <label>Renewal Rep</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Accounts4</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Renewal_Sales_Territory__c</fullName>
+        <description>Added by LM on 2/6/2013; New for SFDC rollout</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The account&apos;s renewal tier (based on the annual renewal amount).</inlineHelpText>
+        <label>Renewal Sales Territory</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Client</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Major</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>National</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Basic</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Renewal_Value__c</fullName>
+        <description>Added by LM on 2/7/2013; From MS CRM</description>
+        <externalId>false</externalId>
+        <inlineHelpText>15 Month Rolling Value of all Current Renewal Opps</inlineHelpText>
+        <label>PH2-Renewal Value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Renewals_Named_Account_Rep__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Created by LM on 1/22/2014 for Phase2</description>
+        <externalId>false</externalId>
+        <label>Renewals Named Account Rep</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>User.Profile.Name</field>
+                <operation>contains</operation>
+                <value>Renewal</value>
+            </filterItems>
+            <filterItems>
+                <field>User.IsActive</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>User</referenceTo>
+        <relationshipName>AccountsRenewalsNamedAccountRep</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Required_Invoice_Contact_Email__c</fullName>
+        <description>Created by LM on 9/4/2013 for Phase 1 rollout</description>
+        <externalId>false</externalId>
+        <label>Required Invoice Contact Email</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Required_Invoice_Contact_Name__c</fullName>
+        <description>Created by LM on 9/4/2013 for Phase 1 rollout</description>
+        <externalId>false</externalId>
+        <label>Required Invoice Contact Name</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SBQQ__AssetQuantitiesCombined__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Option to combine quantities of multiple assets for the same product into one line when renewal quote is generated.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Option to combine quantities of multiple assets for the same product into one line when renewal quote is generated.</inlineHelpText>
+        <label>Combine Asset Quantities</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__CoTermedContractsCombined__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Flag that controls whether assets and subscriptions from multiple co-teremed contracts are rolled up together. By default, each co-termed contract generates a separate group on renewal quote.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enable to combine assets and subscriptions from multiple co-termed contracts. By default, each co-termed contract generates a separate group on renewal quote.</inlineHelpText>
+        <label>Combine Co-Termed Contracts</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__CoTerminationEvent__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Determines when contracts are co-terminated.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Determines when contracts are co-terminated.</inlineHelpText>
+        <label>Co-Termination Event</label>
+        <picklist>
+            <controllingField>SBQQ__ContractCoTermination__c</controllingField>
+            <picklistValues>
+                <fullName>Add-on</fullName>
+                <controllingFieldValues>Always</controllingFieldValues>
+                <controllingFieldValues>Prompt</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Renewal</fullName>
+                <controllingFieldValues>Always</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__ContractCoTermination__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Determines how service and subscription contracts for this customer are co-terminated.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Determines how service and subscription contracts for this customer are co-terminated.</inlineHelpText>
+        <label>Contract Co-Termination</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Never</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Always</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Prompt</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__DefaultOpportunity__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Default opportunity for this account used by an e-Commerce module to obtain the customer&apos;s price book and associate with &quot;shopping cart&quot; quotes.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Default opportunity for this account used by an e-Commerce module to obtain the customer&apos;s price book and associate with &quot;shopping cart&quot; quotes.</inlineHelpText>
+        <label>Default Opportunity</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipLabel>Accounts</relationshipLabel>
+        <relationshipName>WebAccounts</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__PriceHoldEnd__c</fullName>
+        <deprecated>false</deprecated>
+        <description>End date for any price hold that may be in effect.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter date until which the prices must be held.</inlineHelpText>
+        <label>Price Hold End</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>SBQQ__RenewalPricingMethod__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Method for pricing products on renewal.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Use &quot;Same&quot; to keep the same price paid last time. Use &quot;List&quot; to use current list price. Use &quot;Uplift&quot; to use the price paid last time plus some uplift.</inlineHelpText>
+        <label>Renewal Pricing Method</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Same</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>List</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Uplift</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Sales_1_Year_Growth_Percent__c</fullName>
+        <description>Added by LM on 2/8/2013; From MS CRM</description>
+        <externalId>false</externalId>
+        <label>Sales 1 Year Growth (Percent)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sales_In_Native_Country_Currency__c</fullName>
+        <description>Added by LM on 2/8/2013; From MS CRM</description>
+        <externalId>false</externalId>
+        <label>Sales (In Native Country Currency)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Sales_In_USD__c</fullName>
+        <description>Added by LM on 2/8/2013; From MS CRM</description>
+        <externalId>false</externalId>
+        <label>Sales (In USD)</label>
+        <precision>15</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Sales_Last_Touched_Date__c</fullName>
+        <description>Added by LM on 2/8/2013; From MS CRM</description>
+        <externalId>false</externalId>
+        <label>Sales Last Touched Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Sales_Last_Touched_On__c</fullName>
+        <description>Added by LM on 2/8/2013; From MS CRM</description>
+        <externalId>false</externalId>
+        <label>PH2-Sales Last Touched On</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Segmentation_Category__c</fullName>
+        <description>Added by LM on 2/8/2013; From MS CRM</description>
+        <externalId>false</externalId>
+        <label>PH2-Segmentation Category</label>
+        <picklist>
+            <picklistValues>
+                <fullName>AGENCY_MGMTCONSULT</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ARCH_ENGINEER</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BANK_INVEST_FINANCE</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CONSUMER_RTL_MFG</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>EDUCATION</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ENERGY</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ENTERTAINMENT</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>GOVERNMENT</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>HOSPITAL</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>INSURANCE</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>LEGAL</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>LIBRARIES_AND_ARCHIVES</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>MISC</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>MISC_MEDICAL</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>MISC_MFG</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>MISC_LIB_ZOO</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>OIL_MINING</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ORGANIZATIONS</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PHARMA</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PUBLISHING</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>REALESTATE_CONTRACTOR</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SCIENCE_AERO</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>TECHNOLOGY</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>TELECOM</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>TRAVELHOTEL</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>ShippingAddress</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>ShowID__c</fullName>
+        <externalId>false</externalId>
+        <formula>Id</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>ShowID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sic</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>SicDesc</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Site</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Social_Media_Monitoring_CP__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Created by LM on 10/29/2013 for Phase 2 rollout</description>
+        <externalId>false</externalId>
+        <label>CPS Social Media Monitoring CP</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Social_Media_Monitoring_Dashboard__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Created by LM on 10/29/2013 for Phase 2 rollout</description>
+        <externalId>false</externalId>
+        <label>CPS Social Media Monitoring Dashboard</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Social_Media_Monitoring_Other__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Created by LM on 10/29/2013 for Phase 2 rollout</description>
+        <externalId>false</externalId>
+        <label>CPS Social Media Monitoring Other</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Social_Newsroom__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Created by LM on 10/29/2013 for Phase 2 rollout</description>
+        <externalId>false</externalId>
+        <label>CPS Social Newsroom</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>State_Tax_Exempt__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Created by LM on 3/25/2014 for Phase2</description>
+        <externalId>false</externalId>
+        <label>State Tax Exempt</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Tax_Exempt__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Added by LM on 2/6/2013; From MS CRM</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Federal Tax Exempt status of the Account</inlineHelpText>
+        <label>Federal Tax Exempt</label>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Terms__c</fullName>
+        <description>Added by LM on 2/22/2013; From NetSuite</description>
+        <externalId>false</externalId>
+        <label>Billing Terms</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Net 30</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Net 45</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Net 60</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Prepaid</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>TickerSymbol</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Total_Assets_1_Year_Growth_Percent__c</fullName>
+        <description>Added by LM on 2/8/2013; From MS CRM</description>
+        <externalId>false</externalId>
+        <label>Total Assets 1 Year Growth (Percent)</label>
+        <length>10</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Renewal_Value__c</fullName>
+        <description>Created by LM on 8/26/2013 for Phase 2 rollout</description>
+        <externalId>false</externalId>
+        <label>Total Renewal Value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Spend_Broadcast__c</fullName>
+        <description>Created by LM on 8/26/2013 for Phase 2 rollout</description>
+        <externalId>false</externalId>
+        <label>Total Spend (Broadcast)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Spend_Non_Broadcast__c</fullName>
+        <description>Created by LM on 8/26/2013 for Phase 2 rollout</description>
+        <externalId>false</externalId>
+        <label>Total Spend (Non-Broadcast)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Tradestyle</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Training__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Created by LM on 10/29/2013 for Phase 2 rollout</description>
+        <externalId>false</externalId>
+        <label>CPS Training</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Type</fullName>
+        <inlineHelpText>The type of Account (previously called Account Category in CRM)</inlineHelpText>
+        <picklist>
+            <picklistValues>
+                <fullName>Prospect</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Customer</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Transactional Broadcast</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Distribution Only Customer</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Broadcast Ad-Hoc Requests</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Lapsed Customer</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Test Account</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>VIP_Client__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Added by LM on 2/7/2013; From NetSuite</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Broadcast Clients that have undergone an extensive examination to determine if they warrant more attention than a normal client and are approved by Sales Management.</inlineHelpText>
+        <label>VIP Client</label>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Verified__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Verified?</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Vocus_Account_Type__c</fullName>
+        <description>Vocus Account Type</description>
+        <externalId>false</externalId>
+        <label>Vocus Account Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Customer</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Prospect</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Vocus_Org_Id__c</fullName>
+        <description>Vocus Org Id</description>
+        <externalId>true</externalId>
+        <label>Vocus Org Id</label>
+        <length>40</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Vocus_SFDC_Account_ID__c</fullName>
+        <description>Vocus SFDC Account ID</description>
+        <externalId>true</externalId>
+        <label>Vocus SFDC Account ID</label>
+        <length>40</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Web_Employees__c</fullName>
+        <description>Added by LM on 2/8/2013; From MS CRM</description>
+        <externalId>false</externalId>
+        <label>PH2-Web Employees</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Under 1000 Employees</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Over 1000 Employees</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Web_Revenue__c</fullName>
+        <description>Added by LM on 2/8/2013; From MS CRM</description>
+        <externalId>false</externalId>
+        <label>PH2-Web Revenue</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Under 200Mil</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Over 200Mil</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Web_Wire_Distribution__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Created by LM on 10/29/2013 for Phase 2 rollout</description>
+        <externalId>false</externalId>
+        <label>CPS Web/Wire Distribution</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Website</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Won_Subscription_Opps_Count__c</fullName>
+        <externalId>false</externalId>
+        <label>Won Subscription Opps Count</label>
+        <summaryFilterItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Closed Won</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>Opportunity.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Renewals, New Biz</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Opportunity.AccountId</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>YearStarted</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Year_Founded__c</fullName>
+        <description>Added by LM on 2/8/2013; From MS CRM</description>
+        <externalId>false</externalId>
+        <label>Year Founded</label>
+        <length>4</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>fw1__Active__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Active</label>
+        <picklist>
+            <picklistValues>
+                <fullName>No</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>fw1__CustomerPriority__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Customer Priority</label>
+        <picklist>
+            <picklistValues>
+                <fullName>High</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Medium</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>fw1__NumberofLocations__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Number of Locations</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>fw1__SLAExpirationDate__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>SLA Expiration Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>fw1__SLASerialNumber__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>SLA Serial Number</label>
+        <length>10</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>fw1__SLA__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>SLA</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Gold</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Silver</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Platinum</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Bronze</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>fw1__UpsellOpportunity__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Upsell Opportunity</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Maybe</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>iSell__OSKeyID__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The OSKeyID is OneSource’s unique company identifier. It is a required field and, in Salesforce Professional Edition, must be visible and available on page layouts for all users.</description>
+        <externalId>true</externalId>
+        <label>OSKeyID</label>
+        <length>16</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rrpu__Alert_Message__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is installed by Riptide Pop-up Alerts and is used in conjunction with the Pop-up Alert S-Control.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If you enter text into this field the text will be displayed in a pop-up message whenever someone views this record.</inlineHelpText>
+        <label>Alert Message</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>TextArea</type>
+    </fields>
+    <listViews>
+        <fullName>Agencies</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>ACCOUNT.ADDRESS1_CITY</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE</columns>
+        <columns>Category__c</columns>
+        <columns>ACCOUNT.PHONE1</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CREATEDBY_USER.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Category__c</field>
+            <operation>equals</operation>
+            <value>Agency</value>
+        </filters>
+        <label>Agencies</label>
+    </listViews>
+    <listViews>
+        <fullName>AllAccounts</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>Location__c</columns>
+        <columns>PARENT_NAME</columns>
+        <columns>Agency__c</columns>
+        <columns>VIP_Client__c</columns>
+        <columns>GP_Cust_ID__c</columns>
+        <columns>CisionPoint_ID__c</columns>
+        <columns>ACCOUNT.TYPE</columns>
+        <columns>ACCOUNT.CREATED_DATE</columns>
+        <columns>ACCOUNT.ADDRESS1_CITY</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE</columns>
+        <columns>ACCOUNT.PHONE1</columns>
+        <columns>Opportunity_Count__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>ACCOUNT.ADDRESS1_STREET</field>
+            <operation>contains</operation>
+            <value>866 united</value>
+        </filters>
+        <label>All Accounts</label>
+    </listViews>
+    <listViews>
+        <fullName>Consumer_Accounts</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>Verified__c</columns>
+        <columns>ACCOUNT.ADDRESS1_CITY</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE</columns>
+        <columns>Category__c</columns>
+        <columns>ACCOUNT.PHONE1</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CREATEDBY_USER.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Category__c</field>
+            <operation>equals</operation>
+            <value>Consumer</value>
+        </filters>
+        <label>Consumer Accounts</label>
+    </listViews>
+    <listViews>
+        <fullName>Last_Purchase_Date</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE</columns>
+        <columns>ACCOUNT.PHONE1</columns>
+        <columns>ACCOUNT.TYPE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>Last_Purchase_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Last_Purchase_Date__c</field>
+            <operation>notEqual</operation>
+        </filters>
+        <label>Last Purchase Date</label>
+    </listViews>
+    <listViews>
+        <fullName>On_Credit_Hold_Accounts</fullName>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>ACCOUNT.LAST_UPDATE</columns>
+        <columns>Opportunity_Count__c</columns>
+        <columns>AR_Rep__c</columns>
+        <columns>rrpu__Alert_Message__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Credit_Hold__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>rrpu__Alert_Message__c</field>
+            <operation>notEqual</operation>
+        </filters>
+        <label>On Credit Hold Accounts</label>
+    </listViews>
+    <listViews>
+        <fullName>VIP_Accounts</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE</columns>
+        <columns>ACCOUNT.PHONE1</columns>
+        <columns>ACCOUNT.TYPE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>VIP_Client__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>VIP Accounts</label>
+    </listViews>
+    <listViews>
+        <fullName>Verified_Accounts</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>GP_Cust_ID__c</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE</columns>
+        <columns>Location__c</columns>
+        <columns>ACCOUNT.PHONE1</columns>
+        <columns>ACCOUNT.TYPE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>Opportunity_Count__c</columns>
+        <columns>Invoice_Count__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Verified__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Verified Accounts</label>
+    </listViews>
+    <searchLayouts>
+        <customTabListAdditionalFields>ACCOUNT.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>GP_Cust_ID__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Location__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>PARENT_NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Agency__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ACCOUNT.PHONE1</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CORE.USERS.ALIAS</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CisionPoint_ID__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>VIP_Client__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ACCOUNT.LAST_ACTIVITY</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Location__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>PARENT_NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Agency__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.SITE</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.PHONE1</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CORE.USERS.ALIAS</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>GP_Cust_ID__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CisionPoint_ID__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>VIP_Client__c</lookupDialogsAdditionalFields>
+        <lookupFilterFields>ACCOUNT.NAME</lookupFilterFields>
+        <lookupFilterFields>00Nd0000006QRAu</lookupFilterFields>
+        <lookupFilterFields>PARENT_NAME</lookupFilterFields>
+        <lookupFilterFields>00Nd0000006Pexm</lookupFilterFields>
+        <lookupFilterFields>ACCOUNT.SITE</lookupFilterFields>
+        <lookupFilterFields>ACCOUNT.PHONE1</lookupFilterFields>
+        <lookupFilterFields>CORE.USERS.ALIAS</lookupFilterFields>
+        <lookupFilterFields>00Nd0000006Pj7r</lookupFilterFields>
+        <lookupFilterFields>00Nd0000006QIVX</lookupFilterFields>
+        <lookupFilterFields>00Nd0000006Pl4V</lookupFilterFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Location__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>PARENT_NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.SITE</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CORE.USERS.ALIAS</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CisionPoint_ID__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.PHONE1</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>VIP_Client__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Location__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>PARENT_NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>GP_Cust_ID__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CisionPoint_ID__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.ADDRESS1_CITY</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.ADDRESS1_STATE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>New_Biz_Rep__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Renewal_Rep__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>Billing_Address_Required_Fields</fullName>
+        <active>false</active>
+        <errorConditionFormula>OR(CONTAINS(BillingPostalCode,&quot;TBD&quot;),CONTAINS(BillingCity,&quot;TBD&quot;),CONTAINS(BillingCountry ,&quot;TBD&quot;), CONTAINS(BillingState,&quot;TBD&quot;),CONTAINS(BillingPostalCode,&quot;tbd&quot;),CONTAINS(BillingCity,&quot;tbd&quot;),CONTAINS(BillingCountry ,&quot;tbd&quot;), CONTAINS(BillingState,&quot;tbd&quot;),ISBLANK(BillingPostalCode), ISBLANK( BillingCity), ISBLANK( BillingCountry ), ISBLANK( BillingState)) &amp;&amp; $User.Bypass_Validation__c = FALSE</errorConditionFormula>
+        <errorMessage>Please enter a valid billing and/or shipping address.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Billing_Country_ISO_Check</fullName>
+        <active>false</active>
+        <description>Billing Country should be 3 letter ISO code.</description>
+        <errorConditionFormula>AND(
+NOT(ISBLANK(BillingCountry)),
+LEN(BillingCountry)&lt;&gt;3
+)</errorConditionFormula>
+        <errorMessage>The Billing Country needs to be the 3 letter ISO code.  (For example, USA for United States, CAN for Canada, GBR for the United Kingdom, SWE for Sweden).  Google for the correct code if you don&apos;t know it or chatter @SFDC Admin to ask for help.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Billing_State_Abbr_Check</fullName>
+        <active>false</active>
+        <description>Billing State should be abbreviated for USA and CAN</description>
+        <errorConditionFormula>AND(
+NOT(ISBLANK(BillingState)),
+LEN(BillingState)&lt;&gt;2,
+OR(BillingCountry=&apos;USA&apos;,BillingCountry=&apos;CAN&apos;)
+)</errorConditionFormula>
+        <errorMessage>The Billing State needs to be the 2 letter postal code for USA and CAN addresses.  Google for the correct code if you don&apos;t know it or chatter @SFDC Admin to ask for help.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Client_Services_Info_Exp_Date</fullName>
+        <active>true</active>
+        <description>A Client Services Info Expiration Date is required when leaving a Client Services Info Alert.</description>
+        <errorConditionFormula>AND(
+NOT(ISBLANK(Client_Services_Info__c)),
+ISBLANK(Client_Services_Info_Exp_Date__c) 
+)</errorConditionFormula>
+        <errorMessage>A Client Services Info Expiration Date is required when leaving a Client Services Info Alert.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Collections_Info_Exp_Date</fullName>
+        <active>true</active>
+        <description>A Collections Info Expiration Date is required when leaving a Collections Info Alert.</description>
+        <errorConditionFormula>AND(
+NOT(ISBLANK(Collections_Info__c)),
+ISBLANK(Collections_Info_Exp_Date__c) 
+)</errorConditionFormula>
+        <errorMessage>A Collections Info Expiration Date is required when leaving a Collections Info Alert.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Credit_Hold_Lock_Down</fullName>
+        <active>false</active>
+        <errorConditionFormula>AND(ISCHANGED(Credit_Hold__c), NOT($User.Alias=&quot;sadmi&quot;))</errorConditionFormula>
+        <errorDisplayField>Credit_Hold__c</errorDisplayField>
+        <errorMessage>All Credit Hold changes must be done in GP.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Customer_Lockdown</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND 
+( 
+NOT(OR($Profile.Name = &quot;System Administrator&quot;, 
+$Profile.Name = &quot;Billing&quot;, 
+$Profile.Name = &quot;Contract Administration&quot;)), 
+ISCHANGED(Name),
+NOT(ISBLANK(GP_Cust_ID__c)) 
+)</errorConditionFormula>
+        <errorMessage>Please contact @Billing to make changes to the Account Name for this Account.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>DEACTVIATED_Phone_Number_Required</fullName>
+        <active>false</active>
+        <description>Created by LM on 9/11/2013 for Phase 2 rollout for Client Services</description>
+        <errorConditionFormula>AND(Verified__c=TRUE, ISBLANK(Phone))</errorConditionFormula>
+        <errorDisplayField>Phone</errorDisplayField>
+        <errorMessage>Phone Number is required in order to make the Account Verified</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Early_Term_Fields</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(Early_Term__c=TRUE,
+ISBLANK(Early_Term_Reason__c),
+ISBLANK(Last_Early_Term_Date__c)
+)</errorConditionFormula>
+        <errorMessage>If you are marking this as an Early Term Account, you need to update the Last Early Term Date and include an Early Term Reason.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Extensions_Info_Exp_Date</fullName>
+        <active>true</active>
+        <description>An Extensions Info Expiration Date is required when leaving an Extensions Info Alert.</description>
+        <errorConditionFormula>AND(
+NOT(ISBLANK(Extensions_Info__c)),
+ISBLANK(Extensions_Info_Exp_Date__c) 
+)</errorConditionFormula>
+        <errorMessage>An Extensions Info Expiration Date is required when leaving an Extensions Info Alert.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>GP_Cust_ID_Lockdown</fullName>
+        <active>true</active>
+        <description>Only a System Administrator can change a GP Cust Id.</description>
+        <errorConditionFormula>AND 
+( 
+NOT($Profile.Name = &quot;System Administrator&quot;), 
+ISCHANGED(GP_Cust_ID__c),
+ISBLANK(PRIORVALUE(GP_Cust_ID__c))=FALSE
+)</errorConditionFormula>
+        <errorMessage>Only a System Administrator can change a GP Cust Id.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Name_Change_Lockdown</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND 
+( 
+NOT(OR($Profile.Name = &quot;System Administrator&quot;, 
+$Profile.Name = &quot;Billing&quot;)),  
+ISCHANGED(Name),
+NOT(ISBLANK(GP_Cust_ID__c))  
+)</errorConditionFormula>
+        <errorDisplayField>Account_Health__c</errorDisplayField>
+        <errorMessage>Please contact @Billing to make changes to the Account Name for this Account.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>New_Biz_Info_Exp_Date</fullName>
+        <active>true</active>
+        <description>A New Biz Info Expiration Date is required when leaving a New Biz Info Alert.</description>
+        <errorConditionFormula>AND(
+NOT(ISBLANK(New_Biz_Info__c)),
+ISBLANK(New_Biz_Info_Exp_Date__c) 
+)</errorConditionFormula>
+        <errorMessage>A New Biz Info Expiration Date is required when leaving a New Biz Info Alert.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Renewal_Info_Exp_Date</fullName>
+        <active>true</active>
+        <description>A Renewal Info Expiration Date is required when leaving a Renewal Info Alert.</description>
+        <errorConditionFormula>AND(
+NOT(ISBLANK(Renewal_Info__c)),
+ISBLANK(Renewal_Info_Exp_Date__c) 
+)</errorConditionFormula>
+        <errorMessage>A Renewal Info Expiration Date is required when leaving a Renewal Info Alert.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Required_Invoice_fields</fullName>
+        <active>true</active>
+        <description>Required Invoice fields are a pair. If one is filled out, the other must be, too.</description>
+        <errorConditionFormula>OR(AND(NOT(ISBLANK(Required_Invoice_Contact_Email__c)), 
+ISBLANK(Required_Invoice_Contact_Name__c)), 
+
+AND(NOT(ISBLANK(Required_Invoice_Contact_Name__c)), 
+ISBLANK(Required_Invoice_Contact_Email__c)))</errorConditionFormula>
+        <errorDisplayField>Required_Invoice_Contact_Email__c</errorDisplayField>
+        <errorMessage>If you are using the Required Invoice Contact fields, BOTH must be filled out.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Shipping_Country_ISO_Check</fullName>
+        <active>false</active>
+        <description>Shipping Country should be 3 letter ISO code.</description>
+        <errorConditionFormula>AND(
+NOT(ISBLANK(ShippingCountry)),
+LEN(ShippingCountry)&lt;&gt;3
+)</errorConditionFormula>
+        <errorMessage>The Shipping Country needs to be the 3 letter ISO code.  (For example, USA for United States, CAN for Canada, GBR for the United Kingdom, SWE for Sweden).  Google for the correct code if you don&apos;t know it or chatter @SFDC Admin to ask for help.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Shipping_State_Abbr_Check</fullName>
+        <active>false</active>
+        <description>Shipping State should be abbreviated for USA and CAN</description>
+        <errorConditionFormula>AND(
+NOT(ISBLANK(ShippingState)),
+LEN(ShippingState)&lt;&gt;2,
+OR(ShippingCountry=&apos;USA&apos;,ShippingCountry=&apos;CAN&apos;)
+)</errorConditionFormula>
+        <errorMessage>The Shipping State needs to be the 2 letter postal code for USA and CAN addresses.  Google for the correct code if you don&apos;t know it or chatter @SFDC Admin to ask for help.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Verified_Address_Lockdown</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND 
+( 
+NOT(OR($Profile.Name = &quot;System Administrator&quot;, 
+$Profile.Name = &quot;Billing&quot;, 
+$Profile.Name = &quot;Contract Administration&quot;)), 
+OR(ISCHANGED( BillingStreet ), 
+ISCHANGED( BillingCity ), 
+ISCHANGED( BillingState ), 
+ISCHANGED( BillingPostalCode ), 
+ISCHANGED( BillingCountry ), 
+ISCHANGED( ShippingStreet ), 
+ISCHANGED( ShippingCity ), 
+ISCHANGED( ShippingState ), 
+ISCHANGED( ShippingPostalCode ), 
+ISCHANGED( ShippingCountry )),
+Verified__c =TRUE 
+)</errorConditionFormula>
+        <errorMessage>Please contact @Billing to make changes to the Addresses for this Account.</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>AVA_SFCORE__Billing</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>true</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>true</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Billing</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>true</showsLocation>
+        <showsStatus>true</showsStatus>
+        <url>http://www.genwatt.com/genwatt/billing.htm?actname={!Account.Name}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>AVA_SFCORE__Validate_Billing_Address</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Validate Billing Address</masterLabel>
+        <openType>sidebar</openType>
+        <page>AVA_SFCORE__Account_ValidateBillingAddress_Handler</page>
+        <protected>false</protected>
+    </webLinks>
+    <webLinks>
+        <fullName>AVA_SFCORE__Validate_Shipping_Address</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Validate Shipping Address</masterLabel>
+        <openType>sidebar</openType>
+        <page>AVA_SFCORE__Account_ValidateShippingAddress_Handler</page>
+        <protected>false</protected>
+    </webLinks>
+    <webLinks>
+        <fullName>Account_Alerts</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Account Alerts</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>alert(&apos;test&apos;);</url>
+    </webLinks>
+    <webLinks>
+        <fullName>AltavistaNews</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>true</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>true</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Altavista News</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>true</showsLocation>
+        <showsStatus>true</showsStatus>
+        <url>http://news.altavista.com/search?nc=0&amp;q={!Account_Name}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>GoogleMaps</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Google Maps</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>http://maps.google.com/maps?f=q&amp;hl=en&amp;q={!Account_BillingStreet}+{!Account_BillingCity}+{!Account_BillingState}&amp;om=1</url>
+    </webLinks>
+    <webLinks>
+        <fullName>GoogleNews</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Google News</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>http://www.google.com/news?&amp;q={!Account_Name}&amp;btnG=Search+News</url>
+    </webLinks>
+    <webLinks>
+        <fullName>GoogleSearch</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Google Search</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>http://www.google.com/search?q={!Account_Name}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>HooversProfile</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Hoovers Profile</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>http://search.hoovers.com/cgi-bin/hol_search?which=company&amp;query_string={!Account_Name}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Sales_Support</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Help</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&apos;/soap/ajax/28.0/connection.js&apos;)}
+{!REQUIRESCRIPT(&apos;/js/functions.js&apos;)}
+{!REQUIRESCRIPT(&apos;/resource/jQuery/jquery-1.8.2.min.js&apos;)}
+{!REQUIRESCRIPT(&apos;/resource/jQuery/ui/jquery-ui-1.9.1.custom.min.js&apos;)}
+{!REQUIRESCRIPT(&apos;/resource/CisionStyle.css&apos;)}
+
+requireCssFile(&apos;/resource/jQuery/ui/css/ui-lightness/jquery-ui-1.9.1.custom.min.css&apos;);
+
+function requireCssFile(filename) {
+    var fileref = document.createElement(&apos;link&apos;);
+    fileref.setAttribute(&apos;rel&apos;, &apos;stylesheet&apos;);
+    fileref.setAttribute(&apos;type&apos;, &apos;text/css&apos;);
+    fileref.setAttribute(&apos;href&apos;, filename);
+    document.getElementsByTagName(&apos;head&apos;)[0].appendChild(fileref);
+}
+
+function Save(){          
+    //CaseSupportExtension.Save(function(result, event){});    
+    var url  = window.location.protocol + &apos;//&apos; + window.location.host + &apos;/apex/CaseSupportExtension?id={!Case.Id}&amp;scontrolCaching=1&apos;;
+    //alert(url);   
+    //$(&apos;#frmCaseSupport&apos;).submit();
+}
+
+//$(&quot;#ui-dialog-titlebar&quot;).css({&quot;backgroundColor&quot;: &quot;blue&quot;,&quot;color&quot;: &quot;white&quot;});
+
+var query = &quot;Select R.Name, R.Id, R.DeveloperName from RecordType R where Name=&apos;Sales Support Broadcast Quote&apos;&quot;; 
+
+var result = sforce.connection.query(query); 
+var arrayResults = result.getArray(&quot;records&quot;); 
+var j$ = jQuery.noConflict(); 
+var recordTypeId = arrayResults[0].Id; 
+var acctId = &quot;{!Account.Id}&quot;;
+
+//alert(recordTypeId);
+var iframe_url = &apos;{!URLFOR(&quot;/apex/CaseSupport&quot;)}&apos;;
+iframe_url = iframe_url  + &quot;?aid=&quot; + acctId + &quot;&amp;rtid=&quot; + recordTypeId;
+
+var j$modalDialog = j$(&apos;&lt;div&gt;&lt;/div&gt;&apos;)
+       .html(&apos;&lt;iframe id=&quot;iframeContentId&quot; src=&quot;&apos; + iframe_url + &apos;&quot; frameborder=&quot;0&quot; height=&quot;100%&quot; width=&quot;100%&quot; marginheight=&quot;0&quot; marginwidth=&quot;0&quot; scrolling=&quot;auto&quot; /&gt;&apos;)
+       .dialog({
+            autoOpen: false,            
+            resizable: false,
+            title: &apos;Sales Support&apos;,
+            width: 700,
+            height: 600,
+            autoResize: true,		
+            show: &apos;blind&apos;,	
+            dialogClass: &apos;&apos;,
+            modal: true,
+            draggable: true,
+            buttons: {&quot;Close&quot;: function() {
+                     location.reload(true);
+                     j$modalDialog.dialog(&apos;close&apos;);
+                     }   
+           }
+});
+
+j$modalDialog.dialog(&apos;open&apos;);</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Test_bDialog</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Test bDialog</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>alert(&apos;test&apos;);
+{!REQUIRESCRIPT(&apos;/resource/bigiant_dialog__bDialogJs&apos;)}
+BIGIANT_DIALOG.init(this, &apos;AccountAlert&apos;);</url>
+    </webLinks>
+    <webLinks>
+        <fullName>YahooMaps</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>true</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>true</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Yahoo Maps</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>true</showsLocation>
+        <showsStatus>true</showsStatus>
+        <url>http://maps.yahoo.com/py/maps.py?cn={!Account_BillingCountry}&amp;csz={!Account_BillingCity}+{!Account_BillingState}+{!Account_BillingPostalCode}+&amp;addr={!Account_BillingAddress}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>dsfs__Send_with_DocuSign</fullName>
+        <availability>online</availability>
+        <description>This button will initiate a DocuSign Envelope that will be linked to the Account.</description>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Send with DocuSign</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/apex/dsfs__DocuSign_JavaScript&quot;)}
+DocuSign_CreateEnvelope();</url>
+    </webLinks>
+    <webLinks>
+        <fullName>fw1__Statement</fullName>
+        <availability>online</availability>
+        <description>This button allows the user to search and send statements to related contact</description>
+        <displayType>button</displayType>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>900</height>
+        <isResizable>true</isResizable>
+        <linkType>page</linkType>
+        <masterLabel>Statement</masterLabel>
+        <openType>newWindow</openType>
+        <page>fw1__Statement</page>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <width>1300</width>
+    </webLinks>
+</CustomObject>

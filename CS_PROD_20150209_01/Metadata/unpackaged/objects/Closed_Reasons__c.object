@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <customSettingsVisibility>Public</customSettingsVisibility>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Lost__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Should this item be displayed if the Opp is Lost</description>
+        <externalId>false</externalId>
+        <label>Lost</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Won__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Should this item be displayed if the Opp is Won</description>
+        <externalId>false</externalId>
+        <label>Won</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>Closed Reasons</label>
+</CustomObject>

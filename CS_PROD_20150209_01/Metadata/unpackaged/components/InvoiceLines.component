@@ -1,0 +1,293 @@
+<apex:component controller="PaymentReceiptPDFCntroller" access="global">
+
+<apex:attribute type="String" name="invId" assignTo="{!InvoiceId}" description="Value to pass into the controller"/>
+ 
+<br/>
+
+<table style="border-collapse:collapse;" width="100%">
+    <tr style="background-color: #3090C7; color:white;">
+        <th style="padding: 4px;border-bottom: 1px solid #808080;font-family:'Arial' 'Sans-Serif';font-size:10pt;text-align: left;">Item</th>
+        <th style="padding: 4px;border-bottom: 1px solid #808080;font-family:'Arial' 'Sans-Serif';font-size:10pt;text-align: left;">Air Date:Time</th>
+        <th style="padding: 4px;border-bottom: 1px solid #808080;font-family:'Arial' 'Sans-Serif';font-size:10pt;text-align: left;">Market:Station</th>
+        <th style="padding: 4px;border-bottom: 1px solid #808080;font-family:'Arial' 'Sans-Serif';font-size:10pt;text-align: left;">Program Title</th>
+        <!--
+        <th style="padding: 4px;border-bottom: 1px solid #808080;font-family:'Arial' 'Sans-Serif';font-size:10pt;text-align: right;">Quantity</th>
+        <th style="padding: 4px;border-bottom: 1px solid #808080;font-family:'Arial' 'Sans-Serif';font-size:10pt;text-align: right;">
+            <apex:outputPanel rendered="{!Invoice.fw1__Total_Lines_Discount_Quantity__c > 0}">
+                Discount Quantity
+            </apex:outputPanel>
+        </th>
+        <th style="padding: 4px;border-bottom: 1px solid #808080;font-family:'Arial' 'Sans-Serif';font-size:10pt;text-align: right;">Unit Price</th>
+        <th style="padding: 4px;border-bottom: 1px solid #808080;font-family:'Arial' 'Sans-Serif';font-size:10pt;text-align: right;">
+            <apex:outputPanel rendered="{!Invoice.fw1__Total_Lines_Discount_Percentage__c > 0}">
+                Discount %
+            </apex:outputPanel>
+        </th>
+        <th style="padding: 4px;border-bottom: 1px solid #808080;font-family:'Arial' 'Sans-Serif';font-size:10pt;text-align: right;">
+            <apex:outputPanel rendered="{!Invoice.fw1__Total_Lines_Discount_Amount__c > 0}">
+                Discount Amount
+            </apex:outputPanel>
+        </th>
+        <th style="padding: 4px;border-bottom: 1px solid #808080;font-family:'Arial' 'Sans-Serif';font-size:10pt;text-align: right;">
+            <apex:outputPanel rendered="{!Invoice.fw1__Total_Lines_Discount_Percentage__c > 0}">
+                Total Discount Amount
+            </apex:outputPanel>
+        </th>
+        <th style="padding: 4px;border-bottom: 1px solid #808080;font-family:'Arial' 'Sans-Serif';font-size:10pt;text-align: right;">Amount</th>
+        -->
+    </tr>
+    <apex:repeat var="invLine" value="{!InvoiceLines}">
+        <tr>
+            <td style="padding: 4px;font-family:'Arial' 'Sans-Serif';font-size:10pt;"> <apex:outputText value="{!invLine.name}"/> </td>
+            <td style="padding: 4px;font-family:'Arial' 'Sans-Serif';font-size:10pt;"> 
+                <apex:outputText style="font-family:'Arial' 'Sans-Serif';font-size:10pt;" value="{0,date,MM'/'dd'/'yyyy}">
+                    <apex:param value="{!invLine.Air_Date__c}" /> 
+                </apex:outputText>
+                <apex:outputText value=":" rendered="{!invLine.Air_Time__c != null}"/>
+                <apex:outputText value="{!invLine.Air_Time__c}"/> 
+            </td>
+            <td style="padding: 4px;font-family:'Arial' 'Sans-Serif';font-size:10pt;"> <apex:outputText value="{!invLine.Market_and_Station__c}"/> </td>
+            <td style="padding: 4px;font-family:'Arial' 'Sans-Serif';font-size:10pt;"> <apex:outputText value="{!invLine.Program_Title__c}"/> </td>
+            <!--
+            <td style="padding: 4px;font-family:'Arial' 'Sans-Serif';font-size:10pt;right">
+                <apex:outputText value="{0, number, ###,###,###,###,##0.00}">
+                    <apex:param value="{!invLine.fw1__Quantity__c}"/>
+                </apex:outputText>
+            </td>
+            <td style="padding: 4px;font-family:'Arial' 'Sans-Serif';text-align: right;font-size:10pt;">
+                <apex:outputPanel rendered="{!Invoice.fw1__Total_Lines_Discount_Quantity__c > 0}">
+                    <apex:outputText value="{0, number, ###,###,###,###,##0.00}">
+                        <apex:param value="{!invLine.fw1__Discount_Quantity__c}"/>
+                    </apex:outputText>
+                </apex:outputPanel>
+            </td>
+            <td style="padding: 4px;font-family:'Arial' 'Sans-Serif';text-align: right;font-size:10pt;">
+                <apex:outputText >{!Invoice.fw1__Email_Currency_Symbol__c}</apex:outputText>
+                <apex:outputText value="{0, number, ###,###,###,###,##0.00}">
+                    <apex:param value="{!invLine.fw1__Unit_Price__c}"/>
+                </apex:outputText>
+            </td>
+            <td style="padding: 4px;font-family:'Arial' 'Sans-Serif';text-align: right;font-size:10pt;">
+                <apex:outputPanel rendered="{!Invoice.fw1__Total_Lines_Discount_Percentage__c > 0}">
+                    <apex:outputText value="{0, number, ###,###,###,###,##0.00}">
+                        <apex:param value="{!invLine.fw1__Discount_Percentage__c}"/>
+                    </apex:outputText>
+                    <apex:outputText value=" %" rendered="{!invLine.fw1__Discount_Percentage__c > 0 || invLine.fw1__Discount_Percentage__c != null}"/>
+                </apex:outputPanel>
+            </td>
+            <td style="padding: 4px;font-family:'Arial' 'Sans-Serif';text-align: right;font-size:10pt;">
+                <apex:outputPanel rendered="{!Invoice.fw1__Total_Lines_Discount_Amount__c > 0}">
+                    <apex:outputText rendered="{!invLine.fw1__Discount_Amount__c > 0 || invLine.fw1__Discount_Amount__c != null}" value="{!Invoice.fw1__Email_Currency_Symbol__c}"></apex:outputText>
+                    <apex:outputText value="{0, number, ###,###,###,###,##0.00}">
+                        <apex:param value="{!invLine.fw1__Discount_Amount__c}"/>
+                    </apex:outputText>
+                </apex:outputPanel>
+            </td>
+            <td style="padding: 4px;font-family:'Arial' 'Sans-Serif';text-align: right;font-size:10pt;">
+                <apex:outputPanel rendered="{!Invoice.fw1__Total_Lines_Discount_Percentage__c > 0}">
+                    <apex:outputText >{!Invoice.fw1__Email_Currency_Symbol__c}</apex:outputText>
+                    <apex:outputText value="{0, number, ###,###,###,###,##0.00}">
+                        <apex:param value="{!invLine.fw1__Total_Discount_Amount__c}"/>
+                    </apex:outputText>
+                </apex:outputPanel>
+            </td>
+            <td style="padding: 4px;font-family:'Arial' 'Sans-Serif';text-align: right;font-size:10pt;" width="100">
+                <apex:outputText >{!Invoice.fw1__Email_Currency_Symbol__c}</apex:outputText>
+                <apex:outputText value="{0, number, ###,###,###,###,##0.00}">
+                    <apex:param value="{!invLine.fw1__Amount__c}"/>
+                </apex:outputText>
+            </td>    
+            -->        
+        </tr>
+        <tr>
+            <td colspan="4" style="padding-left: 4px;border-bottom: 1px solid #808080;font-family:'Arial' 'Sans-Serif';font-size:10pt;color:#808080;">
+                <apex:outputText >{!invLine.fw1__Item_Description__c}</apex:outputText>
+            </td>
+        </tr>
+    </apex:repeat> 
+</table>
+            
+<table style="border-collapse:collapse;" width="100%">
+    <tr>
+    <td style="color:white;">************ ***********</td>
+    <td>
+        <apex:panelGrid columns="2" style="text-align: right;" width="100%">
+            
+            <apex:outputText rendered="{!Invoice.fw1__Invoice_Discount_Amount__c != 0 || Invoice.fw1__Invoice_Discount_Amount__c != null ||
+                                         Invoice.fw1__Invoice_Discount_Percentage__c != 0 || Invoice.fw1__Invoice_Discount_Percentage__c != null ||
+                                         Invoice.fw1__Tax__c != 0 || Invoice.fw1__Tax__c != null ||
+                                         Invoice.fw1__Shipping_And_Handling__c != 0 || Invoice.fw1__Shipping_And_Handling__c != null}" 
+                             style="font-family:'Arial' 'Sans-Serif';font-size:10pt;" 
+                             value="Subtotal"/>
+            <apex:outputpanel rendered="{!Invoice.fw1__Invoice_Discount_Amount__c != 0 || Invoice.fw1__Invoice_Discount_Amount__c != null ||
+                                          Invoice.fw1__Invoice_Discount_Percentage__c != 0 || Invoice.fw1__Invoice_Discount_Percentage__c != null ||
+                                          Invoice.fw1__Tax__c != 0 || Invoice.fw1__Tax__c != null ||
+                                          Invoice.fw1__Shipping_And_Handling__c != 0 || Invoice.fw1__Shipping_And_Handling__c != null}"
+                              style="font-family:'Arial' 'Sans-Serif';font-size:10pt;">
+                <apex:outputText value="{!Invoice.fw1__Email_Currency_Symbol__c}"/>
+                <apex:outputText value="{0, number, ###,###,###,###,##0.00}">
+                    <apex:param value="{!Invoice.fw1__Total_Lines_Amount__c}"/>
+                </apex:outputText>
+            </apex:outputpanel>
+            
+             
+            <apex:outputPanel style="font-family:'Arial' 'Sans-Serif';font-size:10pt;"
+                              rendered="{!Invoice.fw1__Invoice_Discount_Percentage__c != 0 || Invoice.fw1__Invoice_Discount_Percentage__c != null}">
+                Discount (
+                <apex:outputText value="{0, number, ###,###,###,###,##0.00}">
+                    <apex:param value="{!Invoice.fw1__Invoice_Discount_Percentage__c}"/>
+                </apex:outputText>
+                % )
+            </apex:outputPanel>
+            <apex:outputPanel style="font-family:'Arial' 'Sans-Serif';font-size:10pt;"
+                              rendered="{!Invoice.fw1__Invoice_Discount_Percentage__c != 0 || Invoice.fw1__Invoice_Discount_Percentage__c != null}">
+                <apex:outputText >{!Invoice.fw1__Email_Currency_Symbol__c}</apex:outputText>
+                <apex:outputText value="{0, number, ###,###,###,###,##0.00}">
+                    <apex:param value="{!(Invoice.fw1__Total_Lines_Amount__c * Invoice.fw1__Invoice_Discount_Percentage__c) / 100 }"/>
+                </apex:outputText>
+            </apex:outputPanel>
+            
+             
+            <apex:outputText style="font-family:'Arial' 'Sans-Serif';font-size:10pt;" value="Discount Amount"
+                             rendered="{!Invoice.fw1__Invoice_Discount_Amount__c != 0 || Invoice.fw1__Invoice_Discount_Amount__c != null}"/>
+            <apex:outputpanel rendered="{!Invoice.fw1__Invoice_Discount_Amount__c != 0 || Invoice.fw1__Invoice_Discount_Amount__c != null}">
+                <apex:outputText >{!Invoice.fw1__Email_Currency_Symbol__c}</apex:outputText>
+                <apex:outputText value="{0, number, ###,###,###,###,##0.00}">
+                    <apex:param value="{!Invoice.fw1__Invoice_Discount_Amount__c}"/>
+                </apex:outputText>
+            </apex:outputpanel>
+            
+            
+            <apex:outputText style="font-family:'Arial' 'Sans-Serif';font-size:10pt;font-style:italic;" value="Net Amount"
+                             rendered="{!(Invoice.fw1__Invoice_Discount_Amount__c != 0 || Invoice.fw1__Invoice_Discount_Amount__c != null ||
+                                          Invoice.fw1__Invoice_Discount_Percentage__c != 0 || Invoice.fw1__Invoice_Discount_Percentage__c != null) &&
+                                         (Invoice.fw1__Tax__c != 0 || Invoice.fw1__Tax__c != null ||
+                                          Invoice.fw1__Shipping_And_Handling__c != 0 || Invoice.fw1__Shipping_And_Handling__c != null)}"/>
+            <apex:outputpanel style="font-family:'Arial' 'Sans-Serif';font-size:10pt;font-style:italic;" 
+                              rendered="{!(Invoice.fw1__Invoice_Discount_Amount__c != 0 || Invoice.fw1__Invoice_Discount_Amount__c != null ||
+                                           Invoice.fw1__Invoice_Discount_Percentage__c != 0 || Invoice.fw1__Invoice_Discount_Percentage__c != null) &&
+                                          (Invoice.fw1__Tax__c != 0 || Invoice.fw1__Tax__c != null ||
+                                           Invoice.fw1__Shipping_And_Handling__c != 0 || Invoice.fw1__Shipping_And_Handling__c != null)}">
+                <apex:outputText >{!Invoice.fw1__Email_Currency_Symbol__c}</apex:outputText>
+                <apex:outputText value="{0, number, ###,###,###,###,##0.00}"> 
+                    <apex:param value="{!Invoice.fw1__Net_Amount__c}"/> 
+                </apex:outputText>
+            </apex:outputpanel>
+            
+             
+            <apex:outputpanel style="font-family:'Arial' 'Sans-Serif';font-size:10pt;"
+                              rendered="{!Invoice.fw1__Tax__c != 0 || Invoice.fw1__Tax__c != null}">
+                Tax (
+                <apex:outputText value="{0, number, ###,###,###,###,##0.00}">
+                    <apex:param value="{!Invoice.fw1__Tax__c}"/>
+                </apex:outputText>
+                % )
+            </apex:outputpanel>
+            <apex:outputpanel style="font-family:'Arial' 'Sans-Serif';font-size:10pt;"
+                              rendered="{!Invoice.fw1__Tax__c != 0 || Invoice.fw1__Tax__c != null}">
+                <apex:outputText >{!Invoice.fw1__Email_Currency_Symbol__c}</apex:outputText>
+                <apex:outputText value="{0, number, ###,###,###,###,##0.00}">
+                    <apex:param value="{!(Invoice.fw1__Net_Amount__c * Invoice.fw1__Tax__c) / 100 }"/>
+                </apex:outputText>
+            </apex:outputpanel>
+            
+             
+            <apex:outputtext style="font-family:'Arial' 'Sans-Serif';font-size:10pt;" value="Shipping and Handling"
+                             rendered="{!Invoice.fw1__Shipping_And_Handling__c != 0 || Invoice.fw1__Shipping_And_Handling__c != null}"/>
+            <apex:outputpanel style="font-family:'Arial' 'Sans-Serif';font-size:10pt;"
+                              rendered="{!Invoice.fw1__Shipping_And_Handling__c != 0 || Invoice.fw1__Shipping_And_Handling__c != null}">
+                <apex:outputText >{!Invoice.fw1__Email_Currency_Symbol__c}</apex:outputText>
+                <apex:outputText value="{0, number, ###,###,###,###,##0.00}"> 
+                    <apex:param value="{!Invoice.fw1__Shipping_And_Handling__c}"/> 
+                </apex:outputText>
+            </apex:outputpanel>
+            
+            
+            <apex:outputpanel style="font-family:'Arial' 'Sans-Serif';font-weight: bold;font-size:10pt;">
+                <apex:outputText rendered="{!Invoice.fw1__Total_Paid_Amount__c != 0 || Invoice.fw1__Total_Paid_Amount__c != null || 
+                                             Invoice.fw1__Authorized_Amount__c != 0 || Invoice.fw1__Authorized_Amount__c != null}" value="Total"/>
+                <apex:outputText rendered="{!!(Invoice.fw1__Total_Paid_Amount__c != 0 || Invoice.fw1__Total_Paid_Amount__c != null || 
+                                               Invoice.fw1__Authorized_Amount__c != 0 || Invoice.fw1__Authorized_Amount__c != null)}" value="Total"/>
+            </apex:outputpanel>
+            <apex:outputPanel style="font-family:'Arial' 'Sans-Serif';font-weight: bold;font-size:10pt;">
+                <apex:outputText >{!Invoice.fw1__Email_Currency_Symbol__c}</apex:outputText>
+                <apex:outputText value="{0, number, ###,###,###,###,##0.00}"> 
+                    <apex:param value="{!Invoice.fw1__Total_Invoice_Amount__c}"/> 
+                </apex:outputText>
+            </apex:outputPanel>
+            
+             
+            <apex:outputtext style="font-family:'Arial' 'Sans-Serif';font-size:10pt;" value="Authorized Amount"
+                             rendered="{!Invoice.fw1__Authorized_Amount__c != 0 || Invoice.fw1__Authorized_Amount__c != null}"/>
+            <apex:outputpanel style="font-family:'Arial' 'Sans-Serif';font-size:10pt;"
+                              rendered="{!Invoice.fw1__Authorized_Amount__c != 0 || Invoice.fw1__Authorized_Amount__c != null}">
+                <apex:outputText >{!Invoice.fw1__Email_Currency_Symbol__c}</apex:outputText>
+                <apex:outputText value="{0, number, ###,###,###,###,##0.00}">
+                    <apex:param value="{!Invoice.fw1__Authorized_Amount__c}"/>
+                </apex:outputText>
+            </apex:outputpanel>
+            
+             
+            <apex:outputtext style="font-family:'Arial' 'Sans-Serif';font-size:10pt;" value="Paid Amount"
+                             rendered="{!Invoice.fw1__Total_Paid_Amount__c != 0 || Invoice.fw1__Total_Paid_Amount__c != null}"/>
+            <apex:outputpanel style="font-family:'Arial' 'Sans-Serif';font-size:10pt;"
+                              rendered="{!Invoice.fw1__Total_Paid_Amount__c != 0 || Invoice.fw1__Total_Paid_Amount__c != null}">
+                <apex:outputText >{!Invoice.fw1__Email_Currency_Symbol__c}</apex:outputText>
+                <apex:outputText value="{0, number, ###,###,###,###,##0.00}">
+                    <apex:param value="{!Invoice.fw1__Total_Paid_Amount__c}"/>
+                </apex:outputText>
+            </apex:outputpanel>
+            
+             
+            <apex:outputtext style="font-family:'Arial' 'Sans-Serif';font-weight: bold;font-size:10pt;" value="Balance Due"
+                             rendered="{!Invoice.fw1__Total_Paid_Amount__c != 0 || Invoice.fw1__Total_Paid_Amount__c != null ||
+                                         Invoice.fw1__Authorized_Amount__c != 0 || Invoice.fw1__Authorized_Amount__c != null}"/>
+            <apex:outputpanel style="font-family:'Arial' 'Sans-Serif';font-weight: bold;font-size:10pt;"
+                              rendered="{!Invoice.fw1__Total_Paid_Amount__c != 0 || Invoice.fw1__Total_Paid_Amount__c != null ||
+                                          Invoice.fw1__Authorized_Amount__c != 0 || Invoice.fw1__Authorized_Amount__c != null}">
+                <apex:outputText >{!Invoice.fw1__Email_Currency_Symbol__c}</apex:outputText>
+                <apex:outputText value="{0, number, ###,###,###,###,##0.00}"> 
+                    <apex:param value="{!Invoice.fw1__Balance_Due__c}"/> 
+                </apex:outputText>
+            </apex:outputpanel>
+            
+             
+            <apex:outputpanel style="font-family:'Arial' 'Sans-Serif';font-weight: bold;font-size:10pt;"
+                              rendered="{!((Invoice.fw1__Total_Paid_Amount__c < (Invoice.fw1__Total_Invoice_Amount__c * (Invoice.fw1__Required_Down_Payment__c / 100)))) && (Invoice.fw1__Required_Down_Payment_Amount__c == null && Invoice.fw1__Required_Down_Payment__c > 0)}">
+                Required Down Payment (
+                <apex:outputText value="{0, number, ###,###,###,###,##0.00}"> 
+                    <apex:param value="{!Invoice.fw1__Required_Down_Payment__c}"/> 
+                </apex:outputText>
+                % )
+            </apex:outputpanel>
+            <apex:outputpanel style="font-family:'Arial' 'Sans-Serif';font-weight: bold;font-size:10pt;"
+                              rendered="{!((Invoice.fw1__Total_Paid_Amount__c < (Invoice.fw1__Total_Invoice_Amount__c * (Invoice.fw1__Required_Down_Payment__c / 100)))) && (Invoice.fw1__Required_Down_Payment_Amount__c == null && Invoice.fw1__Required_Down_Payment__c > 0)}">
+                <apex:outputText >{!Invoice.fw1__Email_Currency_Symbol__c}</apex:outputText>
+                <apex:outputText value="{0, number, ###,###,###,###,##0.00}"> 
+                    <apex:param value="{!(Invoice.fw1__Total_Invoice_Amount__c * (Invoice.fw1__Required_Down_Payment__c / 100)) - Invoice.fw1__Total_Paid_Amount__c}"/> 
+                </apex:outputText>
+            </apex:outputpanel>
+            
+            <apex:outputpanel style="font-family:'Arial' 'Sans-Serif';font-weight: bold;font-size:10pt;"
+                              rendered="{!(Invoice.fw1__Total_Paid_Amount__c < Invoice.fw1__Required_Down_Payment_Amount__c) && (Invoice.fw1__Required_Down_Payment_Amount__c > 0)}">
+                Required Down Payment (
+                <apex:outputText value="{0, number, ###,###,###,###,##0.00}"> 
+                    <apex:param value="{!Invoice.fw1__Required_Down_Payment__c}"/> 
+                </apex:outputText>
+                % )
+            </apex:outputpanel>
+            <apex:outputpanel style="font-family:'Arial' 'Sans-Serif';font-weight: bold;font-size:10pt;"
+                              rendered="{!(Invoice.fw1__Total_Paid_Amount__c < Invoice.fw1__Required_Down_Payment_Amount__c) && (Invoice.fw1__Required_Down_Payment_Amount__c > 0)}">
+                <apex:outputText >{!Invoice.fw1__Email_Currency_Symbol__c}</apex:outputText>
+                <apex:outputText value="{0, number, ###,###,###,###,##0.00}"> 
+                    <apex:param value="{!Invoice.fw1__Required_Down_Payment_Amount__c - Invoice.fw1__Total_Paid_Amount__c}"/> 
+                </apex:outputText>
+            </apex:outputpanel>
+            
+        </apex:panelGrid>
+    </td>
+    </tr>
+</table>      
+
+
+</apex:component>

@@ -1,0 +1,8 @@
+Hi {!Case.OwnerFullName}<br/><br/>
+
+<B>Case Number</B>   {!Case.CaseNumber}<br/>
+<B>Subject</B>   {!Case.Subject}<br/><br/>
+
+Has been opened for 5 days. Please review this case by clicking <a href="{!Case.Link}">here.</a><br/><br/>
+
+Many Thanks

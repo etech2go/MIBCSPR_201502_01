@@ -1,0 +1,3 @@
+<apex:page >
+<apex:outputLink value="{!URLFOR($Action.Broadcast_Item__c.ChangeOwner)}">Mass Update Owner</apex:outputLink>
+</apex:page>

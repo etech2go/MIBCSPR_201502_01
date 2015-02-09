@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>This Email template is used by the Support Auto Response Rules for Cases</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Client_Services_LetterHead</letterhead>
+    <name>Support Auto Response</name>
+    <style>freeForm</style>
+    <subject>Thank you for contacting Cision Client Services!</subject>
+    <textOnly>Dear {!Case.Contact}
+
+Thank you for contacting Cision! We&apos;ve received your inquiry and a member of the Client Services team will return your message within one hour. If your request is urgent, you are welcome to contact us by phone at (800) 588-3827. We value your business and look forward to assisting you soon!
+
+Your Case Number is {!Case.CaseNumber}. Please quote this in any correspondence.
+
+-Cision Client Support
+
+
+Cision. Power Your Story.</textOnly>
+    <type>html</type>
+</EmailTemplate>

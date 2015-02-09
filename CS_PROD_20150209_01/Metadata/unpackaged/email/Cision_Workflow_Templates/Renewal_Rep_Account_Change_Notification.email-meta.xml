@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>To notify Renewal Reps of Account Changes</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Renewal Rep: Account Change Notification</name>
+    <style>none</style>
+    <subject>The Account {!Renewal_Rep_History__c.Account__c} has changed hands.</subject>
+    <type>text</type>
+</EmailTemplate>

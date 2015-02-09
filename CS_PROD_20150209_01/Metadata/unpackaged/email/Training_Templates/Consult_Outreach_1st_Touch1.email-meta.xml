@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Training template to send to new and renewal clients that are in need of training</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Client_Services_LetterHead</letterhead>
+    <name>Consult Outreach - 1st Touch</name>
+    <style>promotionRight</style>
+    <subject>Cision Training - {!Account.Name}</subject>
+    <textOnly>Hi {!Contact.FirstName} -
+
+I hope this finds you well! My name is {!Case.OwnerFirstName} and I am a Training Consultant here at Cision. I wanted to reach out on behalf of our training team about your Cision account. Would you or any of your colleagues be interested in setting up a training consultation on your account?
+
+Our trainings are completely complementary and would be held in a virtual meeting environment. If you are interested in scheduling the training, could you please reply to this note with the following:
+
+Day/time(s) that you have in mind for the training (the session will last 1 hour)*
+Your current timezone
+Areas of CisionPoint that you would like to cover (ex: List Building, Monitoring, etc)
+How many people will be attending the session
+
+*Please note that our team works on a first come, first served basis. If you are interested in locking-in the above time, please let us know as soon as possible.
+
+In addition, you can always access our full suite of complimentary training resources (including weekly webinars, small group sessions, onboarding materials, pdf reference guides and self-paced videos) here http://www.cision.com/us/support/client-training/
+
+I look forward to connecting with you soon!
+
+Best,
+{!Case.OwnerFullName}</textOnly>
+    <type>html</type>
+</EmailTemplate>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>An Alert that gets sent to the Account Manager 3 months prior to a Competitor Renewal Date</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>CompetitorRenewalAlert</name>
+    <style>none</style>
+    <subject>Competitive Steal Opportunity: {!Competitor__c.Account__c}’s contract with {!Competitor__c.Competitor_Name__c} is expiring in 3 months</subject>
+    <textOnly>Hi
+
+The Account  {!Competitor__c.Account__c} has a contract with a Competitor that is expiring in 3 months.
+
+Competitor Name : {!Competitor__c.Competitor_Name__c}
+Service Provided : {!Competitor__c.Service_Provided__c}
+Service Expiration Date : {!Competitor__c.Service_Expiration_Date__c}
+Competitive Spend : {!Competitor__c.Competitive_Spend__c}
+Competitor Notes : {!Competitor__c.Competitor_Notes__c}
+
+You can view the Competitor Record here
+
+Many Thanks</textOnly>
+    <type>custom</type>
+</EmailTemplate>

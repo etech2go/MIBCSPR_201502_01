@@ -1,0 +1,88 @@
+<apex:page standardController="Case" extensions="CaseSupportExtension" showHeader="false">
+     <head>           	
+		<!--<apex:stylesheet value="{!$Resource.CisionStyle}"></apex:stylesheet>		-->        
+        <style type="css">
+            .boldText
+            {
+                font-weight:bold;
+                padding:10px;
+            }       
+            .textAreaWidth
+            {
+                width:150px;                
+            }                                     	
+        </style>
+    </head>         
+	<body style="bgcolor:white">		
+	    <apex:form id="frmCaseSupport">    
+	        <table width="100%">
+	            <tr>
+	                <td>                                        
+	                    <apex:outputLabel rendered="{!caseDropdown}">Select Case Type: </apex:outputLabel>&nbsp; &nbsp;
+	                    <apex:actionRegion rendered="{!caseDropdown}">                   
+	                         <apex:inputField id="caseField" value="{!Case.Type}">							 
+	                         <apex:actionSupport event="onchange" action="{!GetCaseFieldSet}" reRender="caseDetails"></apex:actionSupport>                      
+	                         </apex:inputField>                    
+	                    </apex:actionRegion>
+						&nbsp;<apex:commandButton id="btnSave" rendered="{!caseDropdown}" action="{!Save}" value="Save"/>
+	                </td>   
+					<td>
+						<apex:outputLabel rendered="{!trainingDropdown}">Select Case Type: </apex:outputLabel>&nbsp; &nbsp;
+						<apex:actionRegion rendered="{!trainingDropdown}"> 
+						<apex:selectList value="{!Case.Type}" size="1" multiselect="false">
+							<apex:selectOption itemValue="None" itemLabel="--None--"/>		
+							<apex:selectOption itemValue="Training" itemLabel="Internal Training Request"/>	
+							<!--<apex:selectOptions value="{!CaseTypes}"></apex:selectOptions>-->
+							<apex:actionSupport action="{!GetCaseFieldSet}" event="onchange" reRender="caseDetails"/>
+						</apex:selectList>
+						</apex:actionRegion> 
+						&nbsp;<apex:commandButton rendered="{!trainingDropdown}" action="{!Save}" value="Save"/>
+				    </td>
+	            </tr>   
+			</table>
+			<table width="100%">					
+				<tr>
+					<td>
+						<apex:pageBlock id="caseDetails" mode="edit">  
+				            <apex:pageMessages id="MSG"/>	 	
+			                <apex:pageBlockSection title="{!headerTitle}" columns="1">									
+								<apex:repeat value="{!CustomFieldSetList}" var="fm">                               
+			                         <apex:inputField id="caseField" value="{!cs[fm.fieldPath]}" required="{!OR(fm.required, fm.dbrequired)}" style="{!IF(fm.type = 'textarea', 'height: 60px; width: 250px;', '')}"></apex:inputField>							 
+			                     </apex:repeat>		
+								 <apex:pageBlockSectionItem rendered="{!filteredBroadcastLink}">								
+									 <apex:outputLabel value="Filtered Broadcast Link"></apex:outputLabel>
+									 <apex:outputLink id="filteredbroadcast"  target="_blank" rendered="true" value="http://beqa.multivisioninc.com/be/ReportsServices/ReportRequestForm.html">http://beqa.multivisioninc.com/be/ReportsServices/ReportRequestForm.html</apex:outputLink>								 
+								 </apex:pageBlockSectionItem>
+						 	</apex:pageBlockSection>                       
+				         </apex:pageBlock>        			
+					</td>
+				</tr>					
+			 </table>
+	        <table width="100%">		
+				<tr>
+					<td>
+						<apex:pageBlock id="attachDetails"> <!--rendered="{!showAttachment}"-->                     
+	                        <apex:pageBlockSection title="Add Attachments to Case" rendered="{!IF(FileCount != null && FileCount != '', true , false)}">  
+	                            <apex:repeat value="{!allFileList}" var="AFL">  
+	                                <apex:inputfile value="{!AFL.body}" filename="{!AFL.Name}" />                                             
+	                            </apex:repeat>  
+	                        </apex:pageBlockSection>  
+	                    </apex:pageBlock>  
+					</td>
+				</tr>	                           
+	        </table> 
+			<table width="100%">
+				 <tr>
+					<td>
+						<apex:pageBlock >
+							<apex:pageblockbuttons location="bottom">							
+								<apex:commandButton action="{!Save}" value="Save" rendered="{!showSave}"/>
+							</apex:pageblockbuttons>
+						</apex:pageBlock>
+					</td>												
+				</tr>    				
+				
+			</table>
+	    </apex:form>    		
+	</body>
+</apex:page>

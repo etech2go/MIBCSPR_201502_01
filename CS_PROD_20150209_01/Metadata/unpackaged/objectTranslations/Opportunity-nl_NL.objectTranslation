@@ -1,0 +1,3318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Avalara Company Code to reference for Tax Calculation for This Opportunity.  If Not populated, uses Default Company Code specified in the currently active TaxNowSettings. --></help>
+        <label><!-- Avalara Company Code --></label>
+        <name>AVA_SFCORE__Avalara_Company_Code__c</name>
+    </fields>
+    <fields>
+        <help><!-- Default Value = Opportunity ID.
+This is the invoice number for Avalara.  If the opportunity&apos;s Avalara Status is &quot;Saved&quot;, &quot;Committed&quot;, or &quot;Void&quot;, the invoice with the corresponding Avalara Doc Code can be viewed in the Avalara Dashboard. --></help>
+        <label><!-- Avalara Doc Code --></label>
+        <name>AVA_SFCORE__Avalara_Doc_Code__c</name>
+    </fields>
+    <fields>
+        <help><!-- Temporary = Opportunity Not Saved to Dashboard
+Saved = Opportunity Saved to Dashboard
+Committed = Opportunity Committed to Dashboard (Finalized) 
+Void = Opportunity Voided in Dashboard
+
+Field Value Cannot Be Edited --></help>
+        <label><!-- Avalara Status --></label>
+        <name>AVA_SFCORE__Avalara_Status__c</name>
+    </fields>
+    <fields>
+        <help><!-- If &quot;Use Billing Address&quot; is checked in the currently active TaxNow Settings, this is the address that is used for the destination address for sales tax calculations. --></help>
+        <label><!-- Billing Address --></label>
+        <name>AVA_SFCORE__Billing_Address__c</name>
+    </fields>
+    <fields>
+        <help><!-- If this is checked, the entire oportunity will be calculated as exempt from tax.
+
+Note:  If Exemption Certificate Management System (ECMS) is enabled, and the Setting is &apos;Required&apos; in your Avalara Dashboard, this checkbox will have no effect. --></help>
+        <label><!-- Non Taxable --></label>
+        <name>AVA_SFCORE__NonTaxable__c</name>
+    </fields>
+    <fields>
+        <help><!-- Default value is current date.  This is the invoice date for reporting purposes, and if the tax date is not entered, also the tax date. --></help>
+        <label><!-- Opportunity Date --></label>
+        <name>AVA_SFCORE__Opportunity_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Sum of Line Item Sales Tax Amounts, not including S&amp;H --></help>
+        <label><!-- Sales Tax --></label>
+        <name>AVA_SFCORE__Sales_Tax__c</name>
+    </fields>
+    <fields>
+        <help><!-- Account Shipping Address Used for destination in Sales Tax Calculations unless Use Billing Address is checked in TaxNowSettings. --></help>
+        <label><!-- Shipping Address --></label>
+        <name>AVA_SFCORE__ShippingAddress__c</name>
+    </fields>
+    <fields>
+        <help><!-- Sales Tax on Shipping and Handling --></help>
+        <label><!-- ShippingTax --></label>
+        <name>AVA_SFCORE__ShippingTax__c</name>
+    </fields>
+    <fields>
+        <help><!-- Shipping and Handling amount --></help>
+        <label><!-- Shipping and Handling --></label>
+        <name>AVA_SFCORE__Shipping__c</name>
+    </fields>
+    <fields>
+        <help><!-- If this field has a date entered, the sales tax calculation will use the rates that were applicable on the tax Date, else the rates that are effective as of the quote date are used. --></help>
+        <label><!-- Tax Date --></label>
+        <name>AVA_SFCORE__Tax_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- &apos;Not Calculated&apos; = Sales Tax Not Calculated
+&apos;Modified&apos; = Opportunity Has Changed Since Last Tax Calc
+&apos;Finalized&apos; = Opportunity is Finalized and May Not Be Changed
+&apos;Calculated&apos; = Sales Tax Calculated &amp; Up To Date
+
+Field Value Cannot Be Edited --></help>
+        <label><!-- Tax Now Status --></label>
+        <name>AVA_SFCORE__Tax_Now_Status__c</name>
+    </fields>
+    <fields>
+        <help><!-- Order Total, including S&amp;H and Sales Tax --></help>
+        <label><!-- Total --></label>
+        <name>AVA_SFCORE__Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- Access to Decision Maker --></label>
+        <name>Access_to_Decision_Maker__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Credit Reference --></label>
+        <name>Account_Credit_Reference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Level Discount --></label>
+        <name>Account_Level_Discount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Ownership History --></label>
+        <name>Account_Ownership_History__c</name>
+    </fields>
+    <fields>
+        <label><!-- Age --></label>
+        <name>Age__c</name>
+    </fields>
+    <fields>
+        <label><!-- At Risk? --></label>
+        <name>At_Risk__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- BDC 3 Month Call Completed --></label>
+        <name>BDC_3_Month_Call_Completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- BDC 3 Month Call Grade --></label>
+        <name>BDC_3_Month_Call_Grade__c</name>
+        <picklistValues>
+            <masterLabel>A</masterLabel>
+            <translation><!-- A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>A+</masterLabel>
+            <translation><!-- A+ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>A-</masterLabel>
+            <translation><!-- A- --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B</masterLabel>
+            <translation><!-- B --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B+</masterLabel>
+            <translation><!-- B+ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B-</masterLabel>
+            <translation><!-- B- --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C</masterLabel>
+            <translation><!-- C --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C+</masterLabel>
+            <translation><!-- C+ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C-</masterLabel>
+            <translation><!-- C- --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D</masterLabel>
+            <translation><!-- D --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>F</masterLabel>
+            <translation><!-- F --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- BDC 6 Month Call Completed --></label>
+        <name>BDC_6_Month_Call_Completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- BDC 6 Month Call Grade --></label>
+        <name>BDC_6_Month_Call_Grade__c</name>
+        <picklistValues>
+            <masterLabel>A</masterLabel>
+            <translation><!-- A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>A+</masterLabel>
+            <translation><!-- A+ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>A-</masterLabel>
+            <translation><!-- A- --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B</masterLabel>
+            <translation><!-- B --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B+</masterLabel>
+            <translation><!-- B+ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B-</masterLabel>
+            <translation><!-- B- --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C</masterLabel>
+            <translation><!-- C --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C+</masterLabel>
+            <translation><!-- C+ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C-</masterLabel>
+            <translation><!-- C- --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D</masterLabel>
+            <translation><!-- D --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>F</masterLabel>
+            <translation><!-- F --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- BDC 9 Month Call Completed --></label>
+        <name>BDC_9_Month_Call_Completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- BDC 9 Month Call Grade --></label>
+        <name>BDC_9_Month_Call_Grade__c</name>
+        <picklistValues>
+            <masterLabel>A</masterLabel>
+            <translation><!-- A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>A+</masterLabel>
+            <translation><!-- A+ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>A-</masterLabel>
+            <translation><!-- A- --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B</masterLabel>
+            <translation><!-- B --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B+</masterLabel>
+            <translation><!-- B+ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B-</masterLabel>
+            <translation><!-- B- --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C</masterLabel>
+            <translation><!-- C --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C+</masterLabel>
+            <translation><!-- C+ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C-</masterLabel>
+            <translation><!-- C- --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D</masterLabel>
+            <translation><!-- D --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>F</masterLabel>
+            <translation><!-- F --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- BDC Introduction Call Completed --></label>
+        <name>BDC_Introduction_Call_Completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- BDC Introduction Call Grade --></label>
+        <name>BDC_Introduction_Call_Grade__c</name>
+        <picklistValues>
+            <masterLabel>A</masterLabel>
+            <translation><!-- A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>A+</masterLabel>
+            <translation><!-- A+ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>A-</masterLabel>
+            <translation><!-- A- --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B</masterLabel>
+            <translation><!-- B --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B+</masterLabel>
+            <translation><!-- B+ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B-</masterLabel>
+            <translation><!-- B- --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C</masterLabel>
+            <translation><!-- C --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C+</masterLabel>
+            <translation><!-- C+ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C-</masterLabel>
+            <translation><!-- C- --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D</masterLabel>
+            <translation><!-- D --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>F</masterLabel>
+            <translation><!-- F --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- BDC New Biz Rep Call Completed --></label>
+        <name>BDC_New_Biz_Rep_Call_Completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- BDC New Biz Rep Call Grade --></label>
+        <name>BDC_New_Biz_Rep_Call_Grade__c</name>
+        <picklistValues>
+            <masterLabel>A</masterLabel>
+            <translation><!-- A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>A+</masterLabel>
+            <translation><!-- A+ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>A-</masterLabel>
+            <translation><!-- A- --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B</masterLabel>
+            <translation><!-- B --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B+</masterLabel>
+            <translation><!-- B+ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B-</masterLabel>
+            <translation><!-- B- --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C</masterLabel>
+            <translation><!-- C --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C+</masterLabel>
+            <translation><!-- C+ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C-</masterLabel>
+            <translation><!-- C- --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D</masterLabel>
+            <translation><!-- D --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>F</masterLabel>
+            <translation><!-- F --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Billing Address --></label>
+        <name>Billing_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing City --></label>
+        <name>Billing_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Country --></label>
+        <name>Billing_Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Start Date --></label>
+        <name>Billing_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing State --></label>
+        <name>Billing_State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Street --></label>
+        <name>Billing_Street__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Zip --></label>
+        <name>Billing_Zip__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bookings --></label>
+        <name>Bookings__c</name>
+    </fields>
+    <fields>
+        <help><!-- This total=Last Year&apos;s Broadcast Renewable Products-Last Year&apos;s Broadcast Non-Commissionable Products --></help>
+        <label><!-- Broadcast Commissionable Potential --></label>
+        <name>Broadcast_Commissionable_Potential__c</name>
+    </fields>
+    <fields>
+        <help><!-- Free-form field for Broadcast Renewals to indicate the Forecast value for Reports --></help>
+        <label><!-- Broadcast Forecast Value --></label>
+        <name>Broadcast_Forecast_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- # of Items --></label>
+        <name>Broadcast_Item_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Broadcast Joint Deal --></label>
+        <name>Broadcast_Joint_Deal__c</name>
+    </fields>
+    <fields>
+        <help><!-- This total=Last Year&apos;s Broadcast Renewable Products-Last Year&apos;s Broadcast Commissionable Products --></help>
+        <label><!-- Broadcast Non-Commissionable Potential --></label>
+        <name>Broadcast_Non_Commissionable_Potential__c</name>
+    </fields>
+    <fields>
+        <label><!-- Budget Known --></label>
+        <name>Budget_Known__c</name>
+    </fields>
+    <fields>
+        <label><!-- Budget --></label>
+        <name>Budget__c</name>
+    </fields>
+    <fields>
+        <label><!-- Burrelles Total Value --></label>
+        <name>Burrelles_Total_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Buying Process Known --></label>
+        <name>Buying_Process_Known__c</name>
+    </fields>
+    <fields>
+        <label><!-- CA Rep --></label>
+        <name>CA_Rep__c</name>
+        <relationshipLabel><!-- Opportunities (CA Rep) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- CRM Amount --></label>
+        <name>CRM_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- CRM Commissionable Potential --></label>
+        <name>CRM_Commissionable_Potential__c</name>
+    </fields>
+    <fields>
+        <label><!-- CRM Non-Commissionable Potential --></label>
+        <name>CRM_Non_Commissionable_Potential__c</name>
+    </fields>
+    <fields>
+        <label><!-- CRM Opportunity ID --></label>
+        <name>CRM_Opportunity_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- CRM Original Owner --></label>
+        <name>CRM_Original_Owner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Change Shipping City --></label>
+        <name>Change_Shipping_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Change Shipping Country --></label>
+        <name>Change_Shipping_Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Change Shipping Email --></label>
+        <name>Change_Shipping_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Change Shipping First Name --></label>
+        <name>Change_Shipping_First_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Change Shipping Last Name --></label>
+        <name>Change_Shipping_Last_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Change Shipping Phone --></label>
+        <name>Change_Shipping_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Change Shipping State --></label>
+        <name>Change_Shipping_State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Change Shipping Street --></label>
+        <name>Change_Shipping_Street__c</name>
+    </fields>
+    <fields>
+        <label><!-- Change Shipping Zip --></label>
+        <name>Change_Shipping_Zip__c</name>
+    </fields>
+    <fields>
+        <label><!-- Checked By --></label>
+        <name>Checked_By__c</name>
+        <picklistValues>
+            <masterLabel>*AE</masterLabel>
+            <translation><!-- *AE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>*Other</masterLabel>
+            <translation><!-- *Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>*Unassigned</masterLabel>
+            <translation><!-- *Unassigned --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CH-Aper, C.</masterLabel>
+            <translation><!-- CH-Aper, C. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CH-Bleizeffer, S.</masterLabel>
+            <translation><!-- CH-Bleizeffer, S. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CH-Gardner, E.</masterLabel>
+            <translation><!-- CH-Gardner, E. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CH-Gilbert, J.</masterLabel>
+            <translation><!-- CH-Gilbert, J. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CH-Hawkins, T.</masterLabel>
+            <translation><!-- CH-Hawkins, T. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CH-McIlrath, C.</masterLabel>
+            <translation><!-- CH-McIlrath, C. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CH-Moore, K.</masterLabel>
+            <translation><!-- CH-Moore, K. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CH-Novak, P.</masterLabel>
+            <translation><!-- CH-Novak, P. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CH-Perkins, J.</masterLabel>
+            <translation><!-- CH-Perkins, J. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CH-Reyes, P.</masterLabel>
+            <translation><!-- CH-Reyes, P. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CH-Robinson, K.</masterLabel>
+            <translation><!-- CH-Robinson, K. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CH-Schoening, Y.</masterLabel>
+            <translation><!-- CH-Schoening, Y. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CH-Smith, D.</masterLabel>
+            <translation><!-- CH-Smith, D. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CH-Tye, D.</masterLabel>
+            <translation><!-- CH-Tye, D. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CH-Waters, B.</masterLabel>
+            <translation><!-- CH-Waters, B. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Creat-Hansen, T.</masterLabel>
+            <translation><!-- Creat-Hansen, T. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MR-Buenavista, J.</masterLabel>
+            <translation><!-- MR-Buenavista, J. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MR-Ellis, L.</masterLabel>
+            <translation><!-- MR-Ellis, L. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MR-Ream, L.</masterLabel>
+            <translation><!-- MR-Ream, L. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MR-Samperisi, C.</masterLabel>
+            <translation><!-- MR-Samperisi, C. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NY-Amyot, B.</masterLabel>
+            <translation><!-- NY-Amyot, B. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NY-Codner, S.</masterLabel>
+            <translation><!-- NY-Codner, S. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NY-Lee, D.</masterLabel>
+            <translation><!-- NY-Lee, D. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NY-Leslie, L.</masterLabel>
+            <translation><!-- NY-Leslie, L. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NY-Liatsis, M.</masterLabel>
+            <translation><!-- NY-Liatsis, M. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NY-McKeon, E.</masterLabel>
+            <translation><!-- NY-McKeon, E. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NY-Regan, K.</masterLabel>
+            <translation><!-- NY-Regan, K. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rpts-Johnson, C.</masterLabel>
+            <translation><!-- Rpts-Johnson, C. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rpts-Support Specialist</masterLabel>
+            <translation><!-- Rpts-Support Specialist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rpts-Support Specialist II</masterLabel>
+            <translation><!-- Rpts-Support Specialist II --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rpts-Support Specialist III</masterLabel>
+            <translation><!-- Rpts-Support Specialist III --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rpts-Wilson, S.</masterLabel>
+            <translation><!-- Rpts-Wilson, S. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SF-Bell, S.</masterLabel>
+            <translation><!-- SF-Bell, S. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SF-Cruz, C.</masterLabel>
+            <translation><!-- SF-Cruz, C. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SF-Hamel, G.</masterLabel>
+            <translation><!-- SF-Hamel, G. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SF-Ho, R.</masterLabel>
+            <translation><!-- SF-Ho, R. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SF-Keeney, B.</masterLabel>
+            <translation><!-- SF-Keeney, B. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SF-Melero, E.</masterLabel>
+            <translation><!-- SF-Melero, E. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SF-Pickett, K.</masterLabel>
+            <translation><!-- SF-Pickett, K. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SF-Ryan, J.</masterLabel>
+            <translation><!-- SF-Ryan, J. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SF-Thompson, N.</masterLabel>
+            <translation><!-- SF-Thompson, N. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SF-Vetter, S.</masterLabel>
+            <translation><!-- SF-Vetter, S. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SF-Vieira, A.</masterLabel>
+            <translation><!-- SF-Vieira, A. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TR-Amyot, B.</masterLabel>
+            <translation><!-- TR-Amyot, B. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TR-Bell, S.</masterLabel>
+            <translation><!-- TR-Bell, S. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TR-Hamel, G.</masterLabel>
+            <translation><!-- TR-Hamel, G. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Traffic-Crowell, S.</masterLabel>
+            <translation><!-- Traffic-Crowell, S. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Traffic-Sanders, D.</masterLabel>
+            <translation><!-- Traffic-Sanders, D. --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- CisionPoint ID --></label>
+        <name>CisionPoint_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client Account # --></label>
+        <name>Client_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client Services Tasks Created --></label>
+        <name>Client_Services_Tasks_Created__c</name>
+    </fields>
+    <fields>
+        <label><!-- Close Reason (Other) --></label>
+        <name>Close_Reason_Other__c</name>
+    </fields>
+    <fields>
+        <label><!-- Close Reasons --></label>
+        <name>Close_Reasons_del__c</name>
+        <picklistValues>
+            <masterLabel>Auto-Closed</masterLabel>
+            <translation><!-- Auto-Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Company Reputation</masterLabel>
+            <translation><!-- Company Reputation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Content Quality</masterLabel>
+            <translation><!-- Content Quality --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Content: Monitoring</masterLabel>
+            <translation><!-- Content: Monitoring --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Content: Research</masterLabel>
+            <translation><!-- Content: Research --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Service</masterLabel>
+            <translation><!-- Customer Service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Did Not Use Product</masterLabel>
+            <translation><!-- Did Not Use Product --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Eliminated/Reduced PR Budget</masterLabel>
+            <translation><!-- Eliminated/Reduced PR Budget --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hired Agency</masterLabel>
+            <translation><!-- Hired Agency --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Integrated Services Solution</masterLabel>
+            <translation><!-- Integrated Services Solution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Media Analysis Methodology</masterLabel>
+            <translation><!-- Media Analysis Methodology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Needed Full Text</masterLabel>
+            <translation><!-- Needed Full Text --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Response From Customer</masterLabel>
+            <translation><!-- No Response From Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-Payment/Collections</masterLabel>
+            <translation><!-- Non-Payment/Collections --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Out of Business/Merger</masterLabel>
+            <translation><!-- Out of Business/Merger --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payment Plan</masterLabel>
+            <translation><!-- Payment Plan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Price</masterLabel>
+            <translation><!-- Price --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Secured 2 yr deal (CA use only)</masterLabel>
+            <translation><!-- Secured 2 yr deal (CA use only) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service Quality</masterLabel>
+            <translation><!-- Service Quality --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Software Functionality</masterLabel>
+            <translation><!-- Software Functionality --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unqualified Lead</masterLabel>
+            <translation><!-- Unqualified Lead --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Closed Won Date Time --></label>
+        <name>Closed_Won_Date_Time__c</name>
+    </fields>
+    <fields>
+        <help><!-- This total=Last Year&apos;s Renewable Products-Last Year&apos;s Non-Commissionable Products --></help>
+        <label><!-- Commissionable Potential --></label>
+        <name>Commissionable_Potential__c</name>
+    </fields>
+    <fields>
+        <label><!-- Competition Involved --></label>
+        <name>Competition_Involved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Competitor Info --></label>
+        <name>Competitor_Info__c</name>
+    </fields>
+    <fields>
+        <help><!-- A Competitor Name must be selected when Closing an Opportunity and the Close Reason is &quot;Competitor&quot; --></help>
+        <label><!-- Competitor --></label>
+        <name>Competitor_Name__c</name>
+        <picklistValues>
+            <masterLabel>Agency</masterLabel>
+            <translation><!-- Agency --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BurrellesLuce</masterLabel>
+            <translation><!-- BurrellesLuce --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Wire</masterLabel>
+            <translation><!-- Business Wire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Carma</masterLabel>
+            <translation><!-- Carma --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client Won&apos;t Say/Don&apos;t Know</masterLabel>
+            <translation><!-- Client Won&apos;t Say/Don&apos;t Know --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Critical Mention</masterLabel>
+            <translation><!-- Critical Mention --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dow Jones Factiva</masterLabel>
+            <translation><!-- Dow Jones Factiva --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GlobeNewswire/NASDAQ</masterLabel>
+            <translation><!-- GlobeNewswire/NASDAQ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GoogleNews</masterLabel>
+            <translation><!-- GoogleNews --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketwired</masterLabel>
+            <translation><!-- Marketwired --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meltwater</masterLabel>
+            <translation><!-- Meltwater --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Moreover</masterLabel>
+            <translation><!-- Moreover --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MyMediaInfo (MMI)</masterLabel>
+            <translation><!-- MyMediaInfo (MMI) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Competitor</masterLabel>
+            <translation><!-- No Competitor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PR Newswire (Agility)</masterLabel>
+            <translation><!-- PR Newswire (Agility) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Radian6</masterLabel>
+            <translation><!-- Radian6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sysomos</masterLabel>
+            <translation><!-- Sysomos --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TVEyes</masterLabel>
+            <translation><!-- TVEyes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Universal</masterLabel>
+            <translation><!-- Universal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vocus</masterLabel>
+            <translation><!-- Vocus --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Confirmed in STX? --></label>
+        <name>Confirmed_in_STX__c</name>
+    </fields>
+    <fields>
+        <label><!-- Connect Competitor Exp Date --></label>
+        <name>Connect_Competitor_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Connect Competitor --></label>
+        <name>Connect_Competitor__c</name>
+        <picklistValues>
+            <masterLabel>Vocus</masterLabel>
+            <translation><!-- Vocus --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- For Fed Ex --></help>
+        <label><!-- Contact Name/Attention --></label>
+        <name>Contact_Name_Attention__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contract Id --></label>
+        <name>Contract_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contract Length in Months --></label>
+        <name>Contract_Length_in_Months__c</name>
+        <picklistValues>
+            <masterLabel>12</masterLabel>
+            <translation><!-- 12 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>13</masterLabel>
+            <translation><!-- 13 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>14</masterLabel>
+            <translation><!-- 14 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>15</masterLabel>
+            <translation><!-- 15 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>16</masterLabel>
+            <translation><!-- 16 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>18</masterLabel>
+            <translation><!-- 18 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>24</masterLabel>
+            <translation><!-- 24 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Contract Number --></label>
+        <name>Contract_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contract Sent Date --></label>
+        <name>Contract_Sent_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contract Sent --></label>
+        <name>Contract_Sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contract Signer --></label>
+        <name>Contract_Signer__c</name>
+        <relationshipLabel><!-- Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Contract Stx Number Total --></label>
+        <name>Contract_Stx_Number_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- Copy Billing Address to Shipping Address --></label>
+        <name>Copy_Billing_Address_to_Shipping_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- CreatedTime Minus 55 Minutes --></label>
+        <name>CreatedTime_Minus_55_Minutes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created Date/Time --></label>
+        <name>Created_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created Time --></label>
+        <name>Created_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Risk Case Created --></label>
+        <name>Credit_Risk_Case_Created__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Competitor Contract Exp Date --></label>
+        <name>Current_Competitor_Contract_Exp_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Competitor Contract --></label>
+        <name>Current_Competitor_Contract__c</name>
+        <picklistValues>
+            <masterLabel>Agency</masterLabel>
+            <translation><!-- Agency --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Biz360</masterLabel>
+            <translation><!-- Biz360 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Blinkx</masterLabel>
+            <translation><!-- Blinkx --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BurrellesLuce</masterLabel>
+            <translation><!-- BurrellesLuce --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Wire</masterLabel>
+            <translation><!-- Business Wire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CCN Matthews</masterLabel>
+            <translation><!-- CCN Matthews --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Canadian Newswire</masterLabel>
+            <translation><!-- Canadian Newswire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Carma</masterLabel>
+            <translation><!-- Carma --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cedrom-SNi</masterLabel>
+            <translation><!-- Cedrom-SNi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client Won&apos;t Say/Don&apos;t Know</masterLabel>
+            <translation><!-- Client Won&apos;t Say/Don&apos;t Know --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Critical Mention</masterLabel>
+            <translation><!-- Critical Mention --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CustomScoop</masterLabel>
+            <translation><!-- CustomScoop --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CyberAlert</masterLabel>
+            <translation><!-- CyberAlert --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cymfony</masterLabel>
+            <translation><!-- Cymfony --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Blitz</masterLabel>
+            <translation><!-- Data Blitz --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dateline Media, Honolulu</masterLabel>
+            <translation><!-- Dateline Media, Honolulu --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Demo</masterLabel>
+            <translation><!-- Demo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FP Infomart</masterLabel>
+            <translation><!-- FP Infomart --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Factiva</masterLabel>
+            <translation><!-- Factiva --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GlobeNewswire/NASDAQ/Glide Technologies</masterLabel>
+            <translation><!-- GlobeNewswire/NASDAQ/Glide Technologies --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GoogleNews</masterLabel>
+            <translation><!-- GoogleNews --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gorkana</masterLabel>
+            <translation><!-- Gorkana --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Group High</masterLabel>
+            <translation><!-- Group High --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Influence</masterLabel>
+            <translation><!-- Influence --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>J&amp;A</masterLabel>
+            <translation><!-- J&amp;A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KD Paine</masterLabel>
+            <translation><!-- KD Paine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LexisNexus</masterLabel>
+            <translation><!-- LexisNexus --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Listlogix</masterLabel>
+            <translation><!-- Listlogix --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Local Provider</masterLabel>
+            <translation><!-- Local Provider --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MYPRGenie</masterLabel>
+            <translation><!-- MYPRGenie --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketwire</masterLabel>
+            <translation><!-- Marketwire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Matchpoint</masterLabel>
+            <translation><!-- Matchpoint --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MediaMiser</masterLabel>
+            <translation><!-- MediaMiser --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meltwater</masterLabel>
+            <translation><!-- Meltwater --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Moreover</masterLabel>
+            <translation><!-- Moreover --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MyMediaInfo/Thomson Reuters</masterLabel>
+            <translation><!-- MyMediaInfo/Thomson Reuters --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>National Aircheck</masterLabel>
+            <translation><!-- National Aircheck --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Competitor</masterLabel>
+            <translation><!-- No Competitor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PIMS</masterLabel>
+            <translation><!-- PIMS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PR Newswire/MediAtlas</masterLabel>
+            <translation><!-- PR Newswire/MediAtlas --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prime Media</masterLabel>
+            <translation><!-- Prime Media --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prime Research</masterLabel>
+            <translation><!-- Prime Research --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Public Relay</masterLabel>
+            <translation><!-- Public Relay --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Radian6</masterLabel>
+            <translation><!-- Radian6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ShadowTV</masterLabel>
+            <translation><!-- ShadowTV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sysomos</masterLabel>
+            <translation><!-- Sysomos --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TVEyes</masterLabel>
+            <translation><!-- TVEyes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UNK</masterLabel>
+            <translation><!-- UNK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Visible Tech</masterLabel>
+            <translation><!-- Visible Tech --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vocus/PRWeb</masterLabel>
+            <translation><!-- Vocus/PRWeb --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wildfire</masterLabel>
+            <translation><!-- Wildfire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>dna13</masterLabel>
+            <translation><!-- dna13 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>unknown</masterLabel>
+            <translation><!-- unknown --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>webclipping.com</masterLabel>
+            <translation><!-- webclipping.com --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Deal In Date --></label>
+        <name>Deal_In_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Demonstration --></label>
+        <name>Demonstration__c</name>
+    </fields>
+    <fields>
+        <help><!-- For Broadcast Sales, you can put the description of your Opp here. --></help>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Difficult Account --></label>
+        <name>Difficult_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Digital Exemption Criteria --></label>
+        <name>Digital_Exemption_Criteria__c</name>
+        <picklistValues>
+            <masterLabel>Delay - Ad Hoc Upload</masterLabel>
+            <translation><!-- Delay - Ad Hoc Upload --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delay - CisionPoint Issue</masterLabel>
+            <translation><!-- Delay - CisionPoint Issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delay - Critical Mention Content</masterLabel>
+            <translation><!-- Delay - Critical Mention Content --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delay - IQ</masterLabel>
+            <translation><!-- Delay - IQ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delay - Other See Order Log</masterLabel>
+            <translation><!-- Delay - Other See Order Log --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delay - Showroom Issue</masterLabel>
+            <translation><!-- Delay - Showroom Issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delay - Technical Issue</masterLabel>
+            <translation><!-- Delay - Technical Issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delay - Workload</masterLabel>
+            <translation><!-- Delay - Workload --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exempt - 1 clip exceeding 30 minute TRT</masterLabel>
+            <translation><!-- Exempt - 1 clip exceeding 30 minute TRT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exempt - 2 clips exceeding 20 minute TRT</masterLabel>
+            <translation><!-- Exempt - 2 clips exceeding 20 minute TRT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exempt - 3 or 4 clips exceeding 15 minute TRT</masterLabel>
+            <translation><!-- Exempt - 3 or 4 clips exceeding 15 minute TRT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exempt - 5 or more clips on a single order</masterLabel>
+            <translation><!-- Exempt - 5 or more clips on a single order --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exempt - Advance</masterLabel>
+            <translation><!-- Exempt - Advance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exempt - Cision Canada</masterLabel>
+            <translation><!-- Exempt - Cision Canada --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exempt - Format (AVI)</masterLabel>
+            <translation><!-- Exempt - Format (AVI) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exempt - Format (Flash)</masterLabel>
+            <translation><!-- Exempt - Format (Flash) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exempt - Format (H.264)</masterLabel>
+            <translation><!-- Exempt - Format (H.264) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exempt - Format (HiRes QT)</masterLabel>
+            <translation><!-- Exempt - Format (HiRes QT) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exempt - Format (HiRes WMV)</masterLabel>
+            <translation><!-- Exempt - Format (HiRes WMV) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exempt - Format (MP4)</masterLabel>
+            <translation><!-- Exempt - Format (MP4) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exempt - Format (MPEG)</masterLabel>
+            <translation><!-- Exempt - Format (MPEG) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exempt - Format (MPEG2)</masterLabel>
+            <translation><!-- Exempt - Format (MPEG2) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exempt - HD Digital</masterLabel>
+            <translation><!-- Exempt - HD Digital --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exempt - See Feed (or Chatter)</masterLabel>
+            <translation><!-- Exempt - See Feed (or Chatter) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exempt - Social Media Snapshot</masterLabel>
+            <translation><!-- Exempt - Social Media Snapshot --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exempt - Waiting on AE for additional information</masterLabel>
+            <translation><!-- Exempt - Waiting on AE for additional information --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exempt - Waiting on product</masterLabel>
+            <translation><!-- Exempt - Waiting on product --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exempt - Web clip</masterLabel>
+            <translation><!-- Exempt - Web clip --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Digital Notification Email --></label>
+        <name>Digital_Notification_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Digital Post Date/Time --></label>
+        <name>Digital_Post_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Discount Amount --></label>
+        <name>Discount_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check this if it is a foreign address or valid address and it will override the address validation --></help>
+        <label><!-- Do Not Validate Address --></label>
+        <name>Do_Not_Validate_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Do they want to go with Cision? --></label>
+        <name>Do_they_want_to_go_with_Cision__c</name>
+    </fields>
+    <fields>
+        <label><!-- Do they want to purchase this month? --></label>
+        <name>Do_they_want_to_purchase_this_month__c</name>
+    </fields>
+    <fields>
+        <label><!-- DocuSign Contract Opened --></label>
+        <name>DocuSign_Contract_Opened__c</name>
+    </fields>
+    <fields>
+        <label><!-- DocuSign Contract Received --></label>
+        <name>DocuSign_Contract_Received__c</name>
+    </fields>
+    <fields>
+        <label><!-- DocuSign Contract Rejected --></label>
+        <name>DocuSign_Contract_Rejected__c</name>
+    </fields>
+    <fields>
+        <label><!-- DocuSign Contract Signed --></label>
+        <name>DocuSign_Contract_Signed__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please indicate any changes you have made to the contract here. --></help>
+        <label><!-- Document Changes --></label>
+        <name>Document_Changes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Due Date --></label>
+        <name>Due_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Editor --></label>
+        <name>Editor__c</name>
+        <picklistValues>
+            <masterLabel>*AE</masterLabel>
+            <translation><!-- *AE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>*Other</masterLabel>
+            <translation><!-- *Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>*Unassigned</masterLabel>
+            <translation><!-- *Unassigned --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CH-Aper, C.</masterLabel>
+            <translation><!-- CH-Aper, C. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CH-Bleizeffer, S.</masterLabel>
+            <translation><!-- CH-Bleizeffer, S. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CH-Gardner, E.</masterLabel>
+            <translation><!-- CH-Gardner, E. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CH-Gilbert, J.</masterLabel>
+            <translation><!-- CH-Gilbert, J. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CH-Hawkins, T.</masterLabel>
+            <translation><!-- CH-Hawkins, T. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CH-McIlrath, C.</masterLabel>
+            <translation><!-- CH-McIlrath, C. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CH-Moore, K.</masterLabel>
+            <translation><!-- CH-Moore, K. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CH-Novak, P.</masterLabel>
+            <translation><!-- CH-Novak, P. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CH-Perkins, J.</masterLabel>
+            <translation><!-- CH-Perkins, J. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CH-Reyes, P.</masterLabel>
+            <translation><!-- CH-Reyes, P. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CH-Robinson, K.</masterLabel>
+            <translation><!-- CH-Robinson, K. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CH-Schoening, Y.</masterLabel>
+            <translation><!-- CH-Schoening, Y. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CH-Smith, D.</masterLabel>
+            <translation><!-- CH-Smith, D. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CH-Tye, D.</masterLabel>
+            <translation><!-- CH-Tye, D. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CH-Waters, B.</masterLabel>
+            <translation><!-- CH-Waters, B. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Creat-Hansen, T.</masterLabel>
+            <translation><!-- Creat-Hansen, T. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lauren Hales</masterLabel>
+            <translation><!-- Lauren Hales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Luke Rogers</masterLabel>
+            <translation><!-- Luke Rogers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MR-Buenavista, J.</masterLabel>
+            <translation><!-- MR-Buenavista, J. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MR-Cantero, A.</masterLabel>
+            <translation><!-- MR-Cantero, A. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MR-Ellis, L.</masterLabel>
+            <translation><!-- MR-Ellis, L. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MR-Ream, L.</masterLabel>
+            <translation><!-- MR-Ream, L. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MR-Samperisi, C.</masterLabel>
+            <translation><!-- MR-Samperisi, C. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NY-Amyot, B.</masterLabel>
+            <translation><!-- NY-Amyot, B. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NY-Codner, S.</masterLabel>
+            <translation><!-- NY-Codner, S. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NY-Lee, D.</masterLabel>
+            <translation><!-- NY-Lee, D. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NY-Leslie, L.</masterLabel>
+            <translation><!-- NY-Leslie, L. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NY-Liatsis, M.</masterLabel>
+            <translation><!-- NY-Liatsis, M. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NY-McKeon, E.</masterLabel>
+            <translation><!-- NY-McKeon, E. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NY-Regan, K.</masterLabel>
+            <translation><!-- NY-Regan, K. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rpts-Johnson, C.</masterLabel>
+            <translation><!-- Rpts-Johnson, C. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rpts-Support Specialist</masterLabel>
+            <translation><!-- Rpts-Support Specialist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rpts-Support Specialist II</masterLabel>
+            <translation><!-- Rpts-Support Specialist II --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rpts-Support Specialist III</masterLabel>
+            <translation><!-- Rpts-Support Specialist III --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rpts-Wilson, S.</masterLabel>
+            <translation><!-- Rpts-Wilson, S. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SF-Bell, S.</masterLabel>
+            <translation><!-- SF-Bell, S. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SF-Cruz, C.</masterLabel>
+            <translation><!-- SF-Cruz, C. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SF-Hamel, G.</masterLabel>
+            <translation><!-- SF-Hamel, G. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SF-Ho, R.</masterLabel>
+            <translation><!-- SF-Ho, R. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SF-Keeney, B.</masterLabel>
+            <translation><!-- SF-Keeney, B. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SF-Melero, E.</masterLabel>
+            <translation><!-- SF-Melero, E. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SF-Pickett, K.</masterLabel>
+            <translation><!-- SF-Pickett, K. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SF-Ryan, J.</masterLabel>
+            <translation><!-- SF-Ryan, J. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SF-Thompson, N.</masterLabel>
+            <translation><!-- SF-Thompson, N. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SF-Vieira, A.</masterLabel>
+            <translation><!-- SF-Vieira, A. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TR-Amyot, B.</masterLabel>
+            <translation><!-- TR-Amyot, B. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TR-Bell, S.</masterLabel>
+            <translation><!-- TR-Bell, S. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TR-Hamel, G.</masterLabel>
+            <translation><!-- TR-Hamel, G. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Traffic-Crowell, S.</masterLabel>
+            <translation><!-- Traffic-Crowell, S. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Traffic-Sanders, D.</masterLabel>
+            <translation><!-- Traffic-Sanders, D. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transcriptionists</masterLabel>
+            <translation><!-- Transcriptionists --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Forecast Value --></label>
+        <name>Forecast_Value_Formula__c</name>
+    </fields>
+    <fields>
+        <help><!-- Free-form field for Renewals to indicate the Forecast value for Reports --></help>
+        <label><!-- Forecast Value --></label>
+        <name>Forecast_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fulfillment Date --></label>
+        <name>Fulfillment_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fulfillment Status --></label>
+        <name>Fulfillment_Status__c</name>
+        <picklistValues>
+            <masterLabel>**CA-NA DNR Reroute RUSH**</masterLabel>
+            <translation><!-- **CA-NA DNR Reroute RUSH** --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>**HD**</masterLabel>
+            <translation><!-- **HD** --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>**Route to MR**</masterLabel>
+            <translation><!-- **Route to MR** --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>**Split Required**</masterLabel>
+            <translation><!-- **Split Required** --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>**TR-Review**</masterLabel>
+            <translation><!-- **TR-Review** --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Advance</masterLabel>
+            <translation><!-- Advance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DNA</masterLabel>
+            <translation><!-- DNA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DNR</masterLabel>
+            <translation><!-- DNR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hold</masterLabel>
+            <translation><!-- Hold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mis-Routed</masterLabel>
+            <translation><!-- Mis-Routed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Missed Due Date</masterLabel>
+            <translation><!-- Missed Due Date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monitor Footage Acquired</masterLabel>
+            <translation><!-- Monitor Footage Acquired --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Need Internal Transfer</masterLabel>
+            <translation><!-- Need Internal Transfer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Need More Info</masterLabel>
+            <translation><!-- Need More Info --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Order Entry Request</masterLabel>
+            <translation><!-- Order Entry Request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Order Revised</masterLabel>
+            <translation><!-- Order Revised --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other - See Chatter</masterLabel>
+            <translation><!-- Other - See Chatter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Unavailable</masterLabel>
+            <translation><!-- Product Unavailable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Questionable Quality</masterLabel>
+            <translation><!-- Questionable Quality --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>R*U*S*H</masterLabel>
+            <translation><!-- R*U*S*H --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>R*U*S*H - Advance</masterLabel>
+            <translation><!-- R*U*S*H - Advance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Special Record</masterLabel>
+            <translation><!-- Special Record --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Temporary VIP</masterLabel>
+            <translation><!-- Temporary VIP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waiting on Product</masterLabel>
+            <translation><!-- Waiting on Product --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>in Production Process</masterLabel>
+            <translation><!-- in Production Process --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- GAS or Managed Service Check --></label>
+        <name>GAS_or_Managed_Service_Check__c</name>
+    </fields>
+    <fields>
+        <label><!-- GP Cust ID --></label>
+        <name>GP_Cust_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gone Silent Date --></label>
+        <name>Gone_Silent_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gone Silent --></label>
+        <name>Gone_Silent__c</name>
+    </fields>
+    <fields>
+        <label><!-- If Unable To Meet Due Date --></label>
+        <name>If_Unable_To_Meet_Due_Date__c</name>
+        <picklistValues>
+            <masterLabel>Delay Order</masterLabel>
+            <translation><!-- Delay Order --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Route back to AE</masterLabel>
+            <translation><!-- Route back to AE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Split Order</masterLabel>
+            <translation><!-- Split Order --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Invoice CC Recipients --></label>
+        <name>Invoice_CC_Recipients__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please input the email address for the Invoice Contact above. --></help>
+        <label><!-- Invoice Contact Email --></label>
+        <name>Invoice_Contact_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Contact Name --></label>
+        <name>Invoice_Contact_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice Contact Phone --></label>
+        <name>Invoice_Contact_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice # --></label>
+        <name>Invoice__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Address Valid --></label>
+        <name>Is_Address_Valid__c</name>
+    </fields>
+    <fields>
+        <label><!-- JavaScriptSafeName --></label>
+        <name>JavaScriptSafeName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Key Contact/Power User --></label>
+        <name>Key_Contact_Power_User__c</name>
+        <relationshipLabel><!-- Opportunities (Key Contact/Power User) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Key users are recommending Cision --></label>
+        <name>Key_users_are_recommending_Cision__c</name>
+    </fields>
+    <fields>
+        <help><!-- For assigning Renewals only --></help>
+        <label><!-- Last Year Owner --></label>
+        <name>Last_Year_Owner__c</name>
+        <relationshipLabel><!-- Opportunities (Last Year Owner) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Last Year Spend --></label>
+        <name>Last_Year_Spend__c</name>
+    </fields>
+    <fields>
+        <help><!-- All products purchased last year. (Renewable and Non-Renewable) --></help>
+        <label><!-- Last Year Total Spend --></label>
+        <name>Last_Year_Total_Spend__c</name>
+    </fields>
+    <fields>
+        <name>LeadSource</name>
+        <picklistValues>
+            <masterLabel>Direct Mail</masterLabel>
+            <translation><!-- Direct Mail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email</masterLabel>
+            <translation><!-- Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Event</masterLabel>
+            <translation><!-- Event --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal</masterLabel>
+            <translation><!-- Internal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OLA</masterLabel>
+            <translation><!-- OLA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Referral</masterLabel>
+            <translation><!-- Referral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SEM</masterLabel>
+            <translation><!-- SEM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Social</masterLabel>
+            <translation><!-- Social --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Webinar</masterLabel>
+            <translation><!-- Webinar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Website</masterLabel>
+            <translation><!-- Website --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Lead Opp Record Type --></label>
+        <name>Lead_Opp_Record_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Legal Process Known --></label>
+        <name>Legal_Process_Known__c</name>
+    </fields>
+    <fields>
+        <label><!-- Locked --></label>
+        <name>Locked__c</name>
+    </fields>
+    <fields>
+        <label><!-- Manager&apos;s Notes --></label>
+        <name>Manager_s_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Migrated --></label>
+        <name>Migrated__c</name>
+    </fields>
+    <fields>
+        <label><!-- Multi-Year Deal Opps --></label>
+        <name>Multi_Year_Deal_Opps__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mutual Close Plan --></label>
+        <name>Mutual_Close_Plan__c</name>
+    </fields>
+    <fields>
+        <label><!-- Needs Analysis --></label>
+        <name>Needs_Analysis__c</name>
+    </fields>
+    <fields>
+        <label><!-- New Biz Engagement Date --></label>
+        <name>New_Biz_Engagement_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- New Biz Source --></label>
+        <name>New_Biz_Source__c</name>
+        <picklistValues>
+            <masterLabel>Cold Call Prospecting</masterLabel>
+            <translation><!-- Cold Call Prospecting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inbound Lead</masterLabel>
+            <translation><!-- Inbound Lead --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Referral</masterLabel>
+            <translation><!-- Referral --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- New Renewal Customer --></label>
+        <name>New_Renewal_Customer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Next Steps Date --></label>
+        <name>Next_Steps_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Next Steps --></label>
+        <name>Next_Steps__c</name>
+        <picklistValues>
+            <masterLabel>Contract</masterLabel>
+            <translation><!-- Contract --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deal In</masterLabel>
+            <translation><!-- Deal In --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Demo</masterLabel>
+            <translation><!-- Demo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Follow Up Attempt</masterLabel>
+            <translation><!-- Follow Up Attempt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inbound Communication</masterLabel>
+            <translation><!-- Inbound Communication --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Initial Attempt</masterLabel>
+            <translation><!-- Initial Attempt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Legal Procurement</masterLabel>
+            <translation><!-- Legal Procurement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Needs Analysis</masterLabel>
+            <translation><!-- Needs Analysis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Onsite Meeting</masterLabel>
+            <translation><!-- Onsite Meeting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Outbound Communication</masterLabel>
+            <translation><!-- Outbound Communication --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Proposal</masterLabel>
+            <translation><!-- Proposal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rescheduled Meeting</masterLabel>
+            <translation><!-- Rescheduled Meeting --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- This total=Last Year&apos;s Renewable Products-Last Year&apos;s Commissionable Products --></help>
+        <label><!-- Non-Commissionable Potential --></label>
+        <name>Non_Commissionable_Potential__c</name>
+    </fields>
+    <fields>
+        <label><!-- Non Commissional Total --></label>
+        <name>Non_Commissional_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Analysis Services Products --></label>
+        <name>Number_of_Analysis_Services_Products__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Managed Services Products --></label>
+        <name>Number_of_Managed_Services_Products__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Products --></label>
+        <name>Number_of_Products__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Renewable Products --></label>
+        <name>Number_of_Renewable_Products__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of quotes that are Approved --></label>
+        <name>Number_of_quotes_that_are_Approved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of quotes that are Rejected --></label>
+        <name>Number_of_quotes_that_are_Rejected__c</name>
+    </fields>
+    <fields>
+        <label><!-- On-Hold Reason --></label>
+        <name>On_Hold_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Incorrect Account</masterLabel>
+            <translation><!-- Incorrect Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Negative Total</masterLabel>
+            <translation><!-- Negative Total --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Opportunity Owner Validation</masterLabel>
+            <translation><!-- Opportunity Owner Validation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Research Shipping Address</masterLabel>
+            <translation><!-- Research Shipping Address --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Changed Hands Date --></label>
+        <name>Opportunity_Changed_Hands_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Number --></label>
+        <name>Opportunity_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Shipping Email --></label>
+        <name>Opportunity_Shipping_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Status --></label>
+        <name>Opportunity_Status__c</name>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation><!-- Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Invoiced</masterLabel>
+            <translation><!-- Invoiced --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payment Error</masterLabel>
+            <translation><!-- Payment Error --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending Fulfillment</masterLabel>
+            <translation><!-- Pending Fulfillment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending Invoicing</masterLabel>
+            <translation><!-- Pending Invoicing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending Sale</masterLabel>
+            <translation><!-- Pending Sale --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Voided</masterLabel>
+            <translation><!-- Voided --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Instructions --></label>
+        <name>Order_Instructions__c</name>
+    </fields>
+    <fields>
+        <help><!-- For Split Opportunities and Redo Opportunities, put in the Opp Number of the Original Opp. --></help>
+        <label><!-- Original Opportunity # --></label>
+        <name>Original_Opportunity__c</name>
+        <relationshipLabel><!-- Split Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Owners Profile When Opportunity Created --></label>
+        <name>Owners_Profile_When_Opportunity_Created__c</name>
+    </fields>
+    <fields>
+        <label><!-- P.O. Number --></label>
+        <name>P_O_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Package Deal --></label>
+        <name>Package_Deal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Passed to Softrax? --></label>
+        <name>Passed_to_Softrax__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Profile --></label>
+        <name>Payment_Profile__c</name>
+        <relationshipLabel><!-- Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- PinPoint Notes --></label>
+        <name>PinPoint_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Plan Competitor Exp Date --></label>
+        <name>Plan_Competitor_Exp_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Plan Competitor --></label>
+        <name>Plan_Competitor__c</name>
+        <picklistValues>
+            <masterLabel>Vocus</masterLabel>
+            <translation><!-- Vocus --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- For assigning Renewals only: this is the Last Year Spend value on the previous year&apos;s Renewal Opp. --></help>
+        <label><!-- Previous Year’s Last Year Spend --></label>
+        <name>Previous_Year_s_Last_Year_Spend__c</name>
+    </fields>
+    <fields>
+        <label><!-- Promo --></label>
+        <name>Promo__c</name>
+        <picklistValues>
+            <masterLabel>HD Promo</masterLabel>
+            <translation><!-- HD Promo --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Proposal Amount --></label>
+        <name>Proposal_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Proposal Sent Date --></label>
+        <name>Proposal_Sent_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Proposal Sent --></label>
+        <name>Proposal_Sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Proposed Solution has been presented --></label>
+        <name>Proposed_Solution_has_been_presented__c</name>
+    </fields>
+    <fields>
+        <label><!-- Push Counter --></label>
+        <name>Push_Counter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quote Payment Plan --></label>
+        <name>Quote_Payment_Plan__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quote Payment Terms --></label>
+        <name>Quote_Payment_Terms__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quote Payment Type --></label>
+        <name>Quote_Payment_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCN: Additional Recurring Client Needs --></label>
+        <name>RCN_Additional_Recurring_Client_Needs__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCN: Client Emails --></label>
+        <name>RCN_Client_Emails__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCN: Clip Format --></label>
+        <name>RCN_Clip_Format__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCN: Incidental Fee --></label>
+        <name>RCN_Incidental_Fee__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCN: Post Location --></label>
+        <name>RCN_Post_Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCN: Recurring Client Needs --></label>
+        <name>RCN_Recurring_Client_Needs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ready for Billing? --></label>
+        <name>Ready_for_Billing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reason - At Risk --></label>
+        <name>Reason__c</name>
+        <picklistValues>
+            <masterLabel>Budget Objection</masterLabel>
+            <translation><!-- Budget Objection --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Change in User</masterLabel>
+            <translation><!-- Change in User --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Competitor Threat</masterLabel>
+            <translation><!-- Competitor Threat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credit Hold</masterLabel>
+            <translation><!-- Credit Hold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Issue</masterLabel>
+            <translation><!-- Data Issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low Usage</masterLabel>
+            <translation><!-- Low Usage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monitoring Issues</masterLabel>
+            <translation><!-- Monitoring Issues --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Usage</masterLabel>
+            <translation><!-- No Usage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-Responsive</masterLabel>
+            <translation><!-- Non-Responsive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other (See Notes)</masterLabel>
+            <translation><!-- Other (See Notes) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Software Functionality</masterLabel>
+            <translation><!-- Software Functionality --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technical Issue</masterLabel>
+            <translation><!-- Technical Issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Training Issue</masterLabel>
+            <translation><!-- Training Issue --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- For Redo Opportunities --></help>
+        <label><!-- Redo Item(s) --></label>
+        <name>Redo_Item_s__c</name>
+    </fields>
+    <fields>
+        <label><!-- Redo Reasons --></label>
+        <name>Redo_Reasons__c</name>
+        <picklistValues>
+            <masterLabel>Cision error - AE</masterLabel>
+            <translation><!-- Cision error - AE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cision error - Production</masterLabel>
+            <translation><!-- Cision error - Production --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client error - Format</masterLabel>
+            <translation><!-- Client error - Format --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client error - Manager Comp</masterLabel>
+            <translation><!-- Client error - Manager Comp --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Renewal Completed --></label>
+        <name>Renewal_Completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Renewal Due Date --></label>
+        <name>Renewal_Due_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Renewal Rep Assigned --></label>
+        <name>Renewal_Rep_Assigned__c</name>
+    </fields>
+    <fields>
+        <label><!-- Renewal Tasks Completed --></label>
+        <name>Renewal_Tasks_Completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Renewal Type --></label>
+        <name>Renewal_Type__c</name>
+        <picklistValues>
+            <masterLabel>Broadcast Renewal</masterLabel>
+            <translation><!-- Broadcast Renewal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Joint Renewal</masterLabel>
+            <translation><!-- Joint Renewal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renewal</masterLabel>
+            <translation><!-- Renewal --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Route Date/Time --></label>
+        <name>Route_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Route To Email --></label>
+        <name>Route_To_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Route To --></label>
+        <name>Route_To__c</name>
+        <picklistValues>
+            <masterLabel>**CH**</masterLabel>
+            <translation><!-- **CH** --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>**NY**</masterLabel>
+            <translation><!-- **NY** --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>*Trans*</masterLabel>
+            <translation><!-- *Trans* --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AE</masterLabel>
+            <translation><!-- AE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cision Hero</masterLabel>
+            <translation><!-- Cision Hero --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Creat Svcs</masterLabel>
+            <translation><!-- Creat Svcs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DNR</masterLabel>
+            <translation><!-- DNR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Early Renewal</masterLabel>
+            <translation><!-- Early Renewal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketwired</masterLabel>
+            <translation><!-- Marketwired --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Med Rel</masterLabel>
+            <translation><!-- Med Rel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Media Monkey</masterLabel>
+            <translation><!-- Media Monkey --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>National Accounts</masterLabel>
+            <translation><!-- National Accounts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-National Accounts</masterLabel>
+            <translation><!-- Non-National Accounts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On Hold</masterLabel>
+            <translation><!-- On Hold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending Orders</masterLabel>
+            <translation><!-- Pending Orders --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reports</masterLabel>
+            <translation><!-- Reports --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reports Trial</masterLabel>
+            <translation><!-- Reports Trial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Self Service</masterLabel>
+            <translation><!-- Self Service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Traffic</masterLabel>
+            <translation><!-- Traffic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WOP - SR</masterLabel>
+            <translation><!-- WOP - SR --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Routing Time - Hour --></label>
+        <name>Routing_Time_Hour__c</name>
+    </fields>
+    <fields>
+        <help><!-- To communicate to the Operations Team that this is a Rush Order --></help>
+        <label><!-- Rush Order? --></label>
+        <name>Rush_Order__c</name>
+    </fields>
+    <fields>
+        <help><!-- QuoteQuickly uses this field to automatically convert assets and subscriptions. --></help>
+        <label><!-- Contracted --></label>
+        <name>SBQQ__Contracted__c</name>
+    </fields>
+    <fields>
+        <help><!-- QuoteQuickly uses this to point to the primary quote on this opportunity. --></help>
+        <label><!-- Primary Quote --></label>
+        <name>SBQQ__PrimaryQuote__c</name>
+        <relationshipLabel><!-- Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Counts the number of quotes for this opportunity. --></help>
+        <label><!-- Quote Count --></label>
+        <name>SBQQ__QuoteCount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quote Pricebook Id --></label>
+        <name>SBQQ__QuotePricebookId__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates this opportunity is a renewal opportunity. --></help>
+        <label><!-- Renewal --></label>
+        <name>SBQQ__Renewal__c</name>
+    </fields>
+    <fields>
+        <help><!-- Contract being renewed by this renewal opportunity. If the several contracts roll up to this opportunity, this points at the master contract. --></help>
+        <label><!-- Renewed Contract --></label>
+        <name>SBQQ__RenewedContract__c</name>
+        <relationshipLabel><!-- Renewal Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sales Last Touched Date --></label>
+        <name>Sales_Last_Touched_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field rolls up all the Sales Tax from all related Broadcast Items. --></help>
+        <label><!-- Sales Tax --></label>
+        <name>Sales_Tax__c</name>
+    </fields>
+    <fields>
+        <label><!-- Search Request Status --></label>
+        <name>Search_Request_Status__c</name>
+        <picklistValues>
+            <masterLabel>Found</masterLabel>
+            <translation><!-- Found --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Found</masterLabel>
+            <translation><!-- Not Found --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Search Request --></label>
+        <name>Search_Request__c</name>
+    </fields>
+    <fields>
+        <label><!-- Services Interested In --></label>
+        <name>Services_Interested_In__c</name>
+        <picklistValues>
+            <masterLabel>Analysis</masterLabel>
+            <translation><!-- Analysis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Broadcast</masterLabel>
+            <translation><!-- Broadcast --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Connect</masterLabel>
+            <translation><!-- Connect --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monitoring</masterLabel>
+            <translation><!-- Monitoring --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plan</masterLabel>
+            <translation><!-- Plan --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Shipping Address --></label>
+        <name>Shipping_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipping City --></label>
+        <name>Shipping_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipping Company Name --></label>
+        <name>Shipping_Company_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipping Cost --></label>
+        <name>Shipping_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipping Country --></label>
+        <name>Shipping_Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipping Method --></label>
+        <name>Shipping_Method__c</name>
+        <picklistValues>
+            <masterLabel>CLIENT: California Overnight</masterLabel>
+            <translation><!-- CLIENT: California Overnight --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CLIENT: DHL/Airborne Ground</masterLabel>
+            <translation><!-- CLIENT: DHL/Airborne Ground --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CLIENT: DHL/Airborne Next Day</masterLabel>
+            <translation><!-- CLIENT: DHL/Airborne Next Day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CLIENT: FedEx 1st by 8AM</masterLabel>
+            <translation><!-- CLIENT: FedEx 1st by 8AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CLIENT: FedEx 2 Day</masterLabel>
+            <translation><!-- CLIENT: FedEx 2 Day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CLIENT: FedEx 3 Day</masterLabel>
+            <translation><!-- CLIENT: FedEx 3 Day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CLIENT: FedEx Alaska-Hawaii</masterLabel>
+            <translation><!-- CLIENT: FedEx Alaska-Hawaii --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CLIENT: FedEx Canada</masterLabel>
+            <translation><!-- CLIENT: FedEx Canada --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CLIENT: FedEx Ground</masterLabel>
+            <translation><!-- CLIENT: FedEx Ground --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CLIENT: FedEx International</masterLabel>
+            <translation><!-- CLIENT: FedEx International --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CLIENT: FedEx Priority</masterLabel>
+            <translation><!-- CLIENT: FedEx Priority --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CLIENT: FedEx Saturday</masterLabel>
+            <translation><!-- CLIENT: FedEx Saturday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CLIENT: FedEx Standard</masterLabel>
+            <translation><!-- CLIENT: FedEx Standard --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CLIENT: Messenger</masterLabel>
+            <translation><!-- CLIENT: Messenger --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CLIENT: UPS 2 Day</masterLabel>
+            <translation><!-- CLIENT: UPS 2 Day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CLIENT: UPS Ground</masterLabel>
+            <translation><!-- CLIENT: UPS Ground --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CLIENT: UPS Next Day Air</masterLabel>
+            <translation><!-- CLIENT: UPS Next Day Air --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E-mail</masterLabel>
+            <translation><!-- E-mail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FedEx: 1st by 8AM</masterLabel>
+            <translation><!-- FedEx: 1st by 8AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FedEx: 2 Day</masterLabel>
+            <translation><!-- FedEx: 2 Day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FedEx: Alaska/Hawaii</masterLabel>
+            <translation><!-- FedEx: Alaska/Hawaii --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FedEx: Canada</masterLabel>
+            <translation><!-- FedEx: Canada --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FedEx: Ground</masterLabel>
+            <translation><!-- FedEx: Ground --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FedEx: International</masterLabel>
+            <translation><!-- FedEx: International --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FedEx: Priority</masterLabel>
+            <translation><!-- FedEx: Priority --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FedEx: Saturday</masterLabel>
+            <translation><!-- FedEx: Saturday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FedEx: Standard</masterLabel>
+            <translation><!-- FedEx: Standard --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MESSENGER</masterLabel>
+            <translation><!-- MESSENGER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Messenger: RUSH</masterLabel>
+            <translation><!-- Messenger: RUSH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Multiple Locations</masterLabel>
+            <translation><!-- Multiple Locations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pick Up/Drop Off</masterLabel>
+            <translation><!-- Pick Up/Drop Off --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Shipping State --></label>
+        <name>Shipping_State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipping Street --></label>
+        <name>Shipping_Street__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipping Tracking # --></label>
+        <name>Shipping_Tracking__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipping Zip --></label>
+        <name>Shipping_Zip__c</name>
+    </fields>
+    <fields>
+        <label><!-- Slow Moving Account --></label>
+        <name>Slow_Moving_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Softrax Synced Date --></label>
+        <name>Softrax_Synced_Date__c</name>
+    </fields>
+    <fields>
+        <name>StageName</name>
+        <picklistValues>
+            <masterLabel>APP: Approved</masterLabel>
+            <translation><!-- APP: Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>APP: Pending Approval</masterLabel>
+            <translation><!-- APP: Pending Approval --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>APP: Rejected</masterLabel>
+            <translation><!-- APP: Rejected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CA: Early Renewal</masterLabel>
+            <translation><!-- CA: Early Renewal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CA: Rejected</masterLabel>
+            <translation><!-- CA: Rejected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CA: Review</masterLabel>
+            <translation><!-- CA: Review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed Lost</masterLabel>
+            <translation><!-- Closed Lost --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed Won</masterLabel>
+            <translation><!-- Closed Won --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contacted</masterLabel>
+            <translation><!-- Contacted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contract Sent</masterLabel>
+            <translation><!-- Contract Sent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cust: Contract Opened</masterLabel>
+            <translation><!-- Cust: Contract Opened --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cust: Contract Rejected</masterLabel>
+            <translation><!-- Cust: Contract Rejected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cust: Contract Signed</masterLabel>
+            <translation><!-- Cust: Contract Signed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Demo</masterLabel>
+            <translation><!-- Demo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finance: Tax Exempt Review</masterLabel>
+            <translation><!-- Finance: Tax Exempt Review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Negotiation</masterLabel>
+            <translation><!-- In Negotiation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Needs Analysis Completed</masterLabel>
+            <translation><!-- Needs Analysis Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Proposal</masterLabel>
+            <translation><!-- Proposal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Qualified</masterLabel>
+            <translation><!-- Qualified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trial</masterLabel>
+            <translation><!-- Trial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Voided</masterLabel>
+            <translation><!-- Voided --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sub Account --></label>
+        <name>Sub_Account__c</name>
+        <relationshipLabel><!-- Sub Account Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Subtotal --></label>
+        <name>Subtotal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tax Exempt --></label>
+        <name>Tax_Exempt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Terms --></label>
+        <name>Terms__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time 59 Minutes before save --></label>
+        <name>Time_59_Minutes_before_save__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Broadcast Sales --></label>
+        <name>Total_Broadcast_Sales__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Discount --></label>
+        <name>Total_Discount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total --></label>
+        <name>Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- Training At Risk Case Created --></label>
+        <name>Training_At_Risk_Case_Created__c</name>
+    </fields>
+    <fields>
+        <label><!-- Training Order Cases Created --></label>
+        <name>Training_Order_Cases_Created__c</name>
+    </fields>
+    <fields>
+        <name>Type</name>
+        <picklistValues>
+            <masterLabel>Late Renewal</masterLabel>
+            <translation><!-- Late Renewal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renewal</masterLabel>
+            <translation><!-- Renewal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renewal (Paid Extension)</masterLabel>
+            <translation><!-- Renewal (Paid Extension) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transactional Broadcast Order</masterLabel>
+            <translation><!-- Transactional Broadcast Order --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Upsell</masterLabel>
+            <translation><!-- Upsell --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Up Against --></label>
+        <name>Up_Against__c</name>
+        <picklistValues>
+            <masterLabel>Agency</masterLabel>
+            <translation><!-- Agency --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BurrellesLuce</masterLabel>
+            <translation><!-- BurrellesLuce --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Wire</masterLabel>
+            <translation><!-- Business Wire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client Won&apos;t Say/Don&apos;t Know</masterLabel>
+            <translation><!-- Client Won&apos;t Say/Don&apos;t Know --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Critical Mention</masterLabel>
+            <translation><!-- Critical Mention --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dow Jones Factiva</masterLabel>
+            <translation><!-- Dow Jones Factiva --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GlobeNewswire/MyMediaInfo</masterLabel>
+            <translation><!-- GlobeNewswire/MyMediaInfo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GoogleNews</masterLabel>
+            <translation><!-- GoogleNews --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketwired</masterLabel>
+            <translation><!-- Marketwired --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meltwater</masterLabel>
+            <translation><!-- Meltwater --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Moreover</masterLabel>
+            <translation><!-- Moreover --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Competitor</masterLabel>
+            <translation><!-- No Competitor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PR Newswire (Agility)</masterLabel>
+            <translation><!-- PR Newswire (Agility) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Radian6</masterLabel>
+            <translation><!-- Radian6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sysomos</masterLabel>
+            <translation><!-- Sysomos --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TVEyes</masterLabel>
+            <translation><!-- TVEyes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Universal</masterLabel>
+            <translation><!-- Universal --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- VIP Client --></label>
+        <name>VIP_Client__c</name>
+    </fields>
+    <fields>
+        <label><!-- Verbal Agreement: will close this month --></label>
+        <name>Verbal_Agreement_will_close_this_month__c</name>
+    </fields>
+    <fields>
+        <label><!-- Verified? --></label>
+        <name>Verified__c</name>
+    </fields>
+    <fields>
+        <help><!-- If you have selected &quot;Opp Voided&quot; for the Opportunity Stage, you must select one of the following reasons. --></help>
+        <label><!-- Void Reason --></label>
+        <name>Void_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Billing Error</masterLabel>
+            <translation><!-- Billing Error --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client did not order</masterLabel>
+            <translation><!-- Client did not order --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Clip Not Found</masterLabel>
+            <translation><!-- Clip Not Found --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fee Dispute</masterLabel>
+            <translation><!-- Fee Dispute --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incentive</masterLabel>
+            <translation><!-- Incentive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incorrect Segment</masterLabel>
+            <translation><!-- Incorrect Segment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Never Received</masterLabel>
+            <translation><!-- Never Received --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Client Need</masterLabel>
+            <translation><!-- No Client Need --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quality</masterLabel>
+            <translation><!-- Quality --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Current Generator(s) --></label>
+        <name>fw1__CurrentGenerators__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delivery/Installation Status --></label>
+        <name>fw1__DeliveryInstallationStatus__c</name>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation><!-- Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In progress</masterLabel>
+            <translation><!-- In progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yet to begin</masterLabel>
+            <translation><!-- Yet to begin --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Main Competitor(s) --></label>
+        <name>fw1__MainCompetitors__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Number --></label>
+        <name>fw1__OrderNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tracking Number --></label>
+        <name>fw1__TrackingNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Plan --></label>
+        <name>fw2__Payment_Plan__c</name>
+        <relationshipLabel><!-- Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- If you enter text into this field the text will be displayed in a pop-up message whenever someone views this record. --></help>
+        <label><!-- Alert Message --></label>
+        <name>rrpu__Alert_Message__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- CisionPoint Subscription --></label>
+        <name>CisionPoint_Subscription</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Document Changes Approved --></label>
+        <name>Document_Changes_Approved</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Locked New Biz --></label>
+        <name>Locked_New_Biz</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Locked Renewals --></label>
+        <name>Locked_Renewals</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Locked Transactional Broadcast --></label>
+        <name>Locked_Transactional_Broadcast</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- New Biz --></label>
+        <name>New_Biz</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Renewals --></label>
+        <name>Renewals</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Transactional Broadcast --></label>
+        <name>Transactional_Broadcast</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Reason - At Risk and Shipping State is required if At Risk? is marked as Yes. --></errorMessage>
+        <name>At_Reason_and_Shipping_State_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- At Risk? is required 6 Months before Renewal Due Date --></errorMessage>
+        <name>At_Risk_Required_6_Months_Before_Renewal</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only Billing can change the Stage to Finance: Rejected --></errorMessage>
+        <name>Billing_Stage_Requirements</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Both the Stage and Opp Status need to be set to Voided if you are voiding this Opp. --></errorMessage>
+        <name>Both_Stage_and_Opp_Status_Voided</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Stage Name of this Opportunity can only be Changed by &apos;Billing&apos; or &apos;Contract Administration&apos; --></errorMessage>
+        <name>Cannot_Change_Opp_Stage</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Document changes must be approved before moving to this stage. --></errorMessage>
+        <name>Check_for_Document_Approved</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Opportunity Status can only be Pending Sale on your first Save. --></errorMessage>
+        <name>Clone_Check_Opp_Status</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You can&apos;t clone an Opp that has PinPoint Notes at the Opp level.  Please create a new Opp from scratch or clone an Opp that doesn&apos;t have PinPoint Notes. --></errorMessage>
+        <name>Clone_Check_PinPoint_Notes</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Route To needs to be empty on your first Save. --></errorMessage>
+        <name>Clone_Checking_Route_To</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Close Reasons is required. --></errorMessage>
+        <name>Close_Reasons_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must select a Competitor when setting the Stage of an Opportunity as &quot;Close Won&quot; or &quot;Closed Lost&quot; --></errorMessage>
+        <name>Competitor_must_be_selected</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This account is on CREDIT HOLD. You can not route this opportunity until this accounting issue is resolved. --></errorMessage>
+        <name>Credit_Hold_Alert</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This account is marked DO NOT USE.  You are not allowed to create new Opportunities for this account. --></errorMessage>
+        <name>DO_NOT_USE</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Due Date can not be in the past. --></errorMessage>
+        <name>Due_Date_can_not_be_in_the_past</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only the Invoice Contact Name should appear in this field.  E-mail addresses should be put in the Invoice Contact Email field. --></errorMessage>
+        <name>Invoice_Contact_No_Symbol_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This record is closed and can&apos;t be edited. --></errorMessage>
+        <name>Locked_Opportunity</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You can not Route this Opportunity until you add a Broadcast Item to it. --></errorMessage>
+        <name>No_Items_No_Traffic</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please change the Owner of this Opportunity to a valid Sales Rep. --></errorMessage>
+        <name>Opportunity_Owner_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A P.O. is required for the Account on this Opportunity --></errorMessage>
+        <name>PO_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must have a Payment Plan on your Quote. --></errorMessage>
+        <name>Payment_Plan_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must have Payment Terms on your Quote. --></errorMessage>
+        <name>Payment_Terms_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must have Payment Type on your Quote. --></errorMessage>
+        <name>Payment_Type_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must have at least one product on your Quote. --></errorMessage>
+        <name>Products_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter a Redo Reason --></errorMessage>
+        <name>Redo_Reason_Completed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Renewal Due Date is required on Renewals --></errorMessage>
+        <name>Renewal_Due_Date_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot delete quotes which are in Approved --></errorMessage>
+        <name>Restrict_Quote_deletion_Fr_Few_Profiles</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter a valid billing and/or shipping address --></errorMessage>
+        <name>Shipping_Address_Must_Be_Completed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Shipping Country needs to be the 3 letter ISO code. (For example, USA for United States, CAN for Canada, GBR for the United Kingdom, SWE for Sweden). Google for the correct code if you don&apos;t know it or chatter @SFDC Admin to ask for help. --></errorMessage>
+        <name>Shipping_Country_ISO_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Shipping State needs to be the 2 letter postal code for USA and CAN addresses. Google for the correct code if you don&apos;t know it or chatter @SFDC Admin to ask for help. --></errorMessage>
+        <name>Shipping_State_Abbr_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must have Up Against filled in at this Stage. --></errorMessage>
+        <name>Up_Against_Requirement</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select a Void Reason if this Opportunity has been Voided. --></errorMessage>
+        <name>Void_Reason_Completed</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Finalize_Opportunity --></label>
+        <name>AVA_SFCORE__Finalize_Opportunity</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- OppValBillTo --></label>
+        <name>AVA_SFCORE__OppValBillTo</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- OppValShipTo --></label>
+        <name>AVA_SFCORE__OppValShipTo</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Opp_Calc_Tax --></label>
+        <name>AVA_SFCORE__Opp_Calc_Tax</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Add_Product --></label>
+        <name>Add_Product</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Close_as_Lost --></label>
+        <name>Close_as_Lost</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Close_as_Won --></label>
+        <name>Close_as_Won</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Create_invoice --></label>
+        <name>Create_invoice</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Docusign --></label>
+        <name>Docusign</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generate_Tax_NEW --></label>
+        <name>Generate_Tax_NEW</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Help --></label>
+        <name>Help</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Make_Changes --></label>
+        <name>Make_Changes</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Mass_Update_Owner --></label>
+        <name>Mass_Update_Owner</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- New_Opportunity_Override --></label>
+        <name>New_Opportunity_Override</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- OpportunityToInvoice --></label>
+        <name>OpportunityToInvoice</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Print_Broadcast_Labels --></label>
+        <name>Print_Broadcast_Labels</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Print_Detail_Feed --></label>
+        <name>Print_Detail_Feed</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Print_Labels --></label>
+        <name>Print_Labels</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Print_View --></label>
+        <name>Print_View</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Ready_For_Invoicing --></label>
+        <name>Ready_For_Invoicing</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Report_Test --></label>
+        <name>Report_Test</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Sales_Support --></label>
+        <name>Sales_Support</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Submit_Quote --></label>
+        <name>Submit_Quote</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Validate_Shipping_Address --></label>
+        <name>Validate_Shipping_Address</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Void_Tax --></label>
+        <name>Void_Tax</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_with_DocuSign --></label>
+        <name>dsfs__Send_with_DocuSign</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Convert_to_Invoice --></label>
+        <name>fw2__Convert_to_Invoice</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,4 @@
+Hi {!Case.OwnerFirstName},
+
+SSG needs more information in order to resolve your Case for {!Case.Account}.  Please update the Case with more information to in the Expected ({!Case.Expected__c}) field or the Actual ({!Case.Actual__c}) field.
+Please click here to see your Case: {!Case.Link}

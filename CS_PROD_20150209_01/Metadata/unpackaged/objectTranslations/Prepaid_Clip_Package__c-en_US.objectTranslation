@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Clip Package</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Clip Packages</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Clip Packages --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Clip Package Status --></label>
+        <name>Clip_Package_Status__c</name>
+        <picklistValues>
+            <masterLabel>Current Stock</masterLabel>
+            <translation><!-- Current Stock --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Depleted</masterLabel>
+            <translation><!-- Depleted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Future Stock</masterLabel>
+            <translation><!-- Future Stock --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Did I sell this? --></label>
+        <name>Did_I_sell_this__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expiration Date --></label>
+        <name>Expiration_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- No Clip Package --></label>
+        <name>No_Clip_Package__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Clips --></label>
+        <name>Number_of_Clips__c</name>
+    </fields>
+    <fields>
+        <label><!-- Package Depleted? --></label>
+        <name>Package_Depleted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Per Item Amount --></label>
+        <name>Per_Item_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Clip Package --></label>
+        <name>PrePaid_Package__c</name>
+        <picklistValues>
+            <masterLabel>DVD Clip</masterLabel>
+            <translation><!-- DVD Clip --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DigiCombo High Res</masterLabel>
+            <translation><!-- DigiCombo High Res --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DigiCombo Low Res</masterLabel>
+            <translation><!-- DigiCombo Low Res --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Digital High Res</masterLabel>
+            <translation><!-- Digital High Res --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Digital Low Res</masterLabel>
+            <translation><!-- Digital Low Res --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HD</masterLabel>
+            <translation><!-- HD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation><!-- None --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Radio Clip</masterLabel>
+            <translation><!-- Radio Clip --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Self Service</masterLabel>
+            <translation><!-- Self Service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transcript</masterLabel>
+            <translation><!-- Transcript --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Purchase Date --></label>
+        <name>Purchase_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Remaining Package Clips --></label>
+        <name>Remaining_Package_Clips__c</name>
+    </fields>
+    <fields>
+        <label><!-- Remaining by Percent --></label>
+        <name>Remaining_by_Percent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sold By --></label>
+        <name>Sold_By__c</name>
+        <relationshipLabel><!-- Clip Packages --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Total Clip Packages Spent --></label>
+        <name>Total_Clip_Packages_Spent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Package Amount --></label>
+        <name>Total_Package_Amount__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

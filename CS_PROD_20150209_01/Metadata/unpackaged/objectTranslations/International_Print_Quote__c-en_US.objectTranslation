@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>International Print Quote</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>International Print Quotes</value>
+    </caseValues>
+    <fields>
+        <label><!-- CisionPoint ID --></label>
+        <name>CisionPoint_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Country(s) --></label>
+        <name>Country_s__c</name>
+    </fields>
+    <fields>
+        <label><!-- Coverage End Date --></label>
+        <name>Coverage_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Coverage Start Date --></label>
+        <name>Coverage_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Keyword Specs per Subscription --></label>
+        <name>Keyword_Specs_per_Subscription__c</name>
+    </fields>
+    <fields>
+        <label><!-- Media Source --></label>
+        <name>Media_Source__c</name>
+        <picklistValues>
+            <masterLabel>Print</masterLabel>
+            <translation><!-- Print --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Radio</masterLabel>
+            <translation><!-- Radio --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TV</masterLabel>
+            <translation><!-- TV --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- International Print Quotes --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Quote Status --></label>
+        <name>Quote_Status__c</name>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation><!-- Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Volume of Subscriptions --></label>
+        <name>Volume_of_Subscriptions__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

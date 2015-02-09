@@ -1,0 +1,9 @@
+Billing has completed your quote request.
+
+The Plan Credit Amount is: {!Credit_for_Existing_Services_Quote__c.Plan_Credit_Amount__c}
+
+The Monitoring Credit Amount is: {!Credit_for_Existing_Services_Quote__c.Monitoring_Credit_Amount__c}
+
+The Credit Expiration Date is: {!Credit_for_Existing_Services_Quote__c.Quote_Expiration_Date__c}
+
+{!Credit_for_Existing_Services_Quote__c.Link}

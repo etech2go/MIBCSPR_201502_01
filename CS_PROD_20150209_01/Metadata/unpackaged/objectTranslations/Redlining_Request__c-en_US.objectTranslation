@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Redlining Request</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Redlining Requests</value>
+    </caseValues>
+    <fields>
+        <label><!-- Addendum Approval Needed --></label>
+        <name>Addendum_Approval_Needed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Comments --></label>
+        <name>Business_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dates --></label>
+        <name>Dates__c</name>
+        <picklistValues>
+            <masterLabel>Change MSA/Addendum Date</masterLabel>
+            <translation><!-- Change MSA/Addendum Date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Change Service Term/Effective Date</masterLabel>
+            <translation><!-- Change Service Term/Effective Date --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Finance Comments --></label>
+        <name>Finance_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- General #4: Fees &amp; Payments --></label>
+        <name>General_4_Fees_Payments__c</name>
+        <picklistValues>
+            <masterLabel>(a) Pricing</masterLabel>
+            <translation><!-- (a) Pricing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>(b) Taxes</masterLabel>
+            <translation><!-- (b) Taxes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>(c) Invoices</masterLabel>
+            <translation><!-- (c) Invoices --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>(d) Fees</masterLabel>
+            <translation><!-- (d) Fees --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- General #5: Term; Susp; Termination --></label>
+        <name>General_5_Term_Susp_Termination__c</name>
+        <picklistValues>
+            <masterLabel>(a)(i) Removal of Auto-Renewal Clause</masterLabel>
+            <translation><!-- (a)(i) Removal of Auto-Renewal Clause --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>(a)(ii) Addition of Out Clause</masterLabel>
+            <translation><!-- (a)(ii) Addition of Out Clause --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- General #8: Limitation on Liability --></label>
+        <name>General_8_Limitation_on_Liability__c</name>
+        <picklistValues>
+            <masterLabel>(e) Indemnification</masterLabel>
+            <translation><!-- (e) Indemnification --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- General #9: Miscellaneous --></label>
+        <name>General_9_Miscellaneous__c</name>
+        <picklistValues>
+            <masterLabel>(c) Assignment</masterLabel>
+            <translation><!-- (c) Assignment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>(i) Governing Law</masterLabel>
+            <translation><!-- (i) Governing Law --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- International Print/Eval Terms Comments --></label>
+        <name>International_Print_Eval_Terms_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- International Print/Evaluation Terms --></label>
+        <name>International_Print_Evaluation_Terms__c</name>
+        <picklistValues>
+            <masterLabel>Add Canadian Copyright T&amp;Cs</masterLabel>
+            <translation><!-- Add Canadian Copyright T&amp;Cs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Add Evaluation Appendix</masterLabel>
+            <translation><!-- Add Evaluation Appendix --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Add UK Copyright T&amp;Cs</masterLabel>
+            <translation><!-- Add UK Copyright T&amp;Cs --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Legal Comments --></label>
+        <name>Legal_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Legal Other --></label>
+        <name>Legal_Other__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- Redlining Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Other Comments --></label>
+        <name>Other_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other --></label>
+        <name>Other__c</name>
+    </fields>
+    <fields>
+        <label><!-- Out Clause Type --></label>
+        <name>Out_Clause_Type__c</name>
+        <picklistValues>
+            <masterLabel>Breach of Contract</masterLabel>
+            <translation><!-- Breach of Contract --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Custom</masterLabel>
+            <translation><!-- Custom --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Legal</masterLabel>
+            <translation><!-- Legal --></translation>
+        </picklistValues>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

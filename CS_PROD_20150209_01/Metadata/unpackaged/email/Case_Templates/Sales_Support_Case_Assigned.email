@@ -1,0 +1,7 @@
+Hi Sales Support<br/><br/>
+
+You have a new case awaiting your expertise!<br/><br/>
+
+Please click on the link below to view the details of the Case<br/><br/>
+
+<a href="{!Case.Link}">View Case</a>

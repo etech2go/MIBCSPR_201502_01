@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Training template to send to new and renewal clients that are in need of training for second outreach.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Client_Services_LetterHead</letterhead>
+    <name>Consult Outreach - 2nd Touch</name>
+    <style>freeForm</style>
+    <subject>Follow-Up: Cision Training - {!Account.Name}</subject>
+    <textOnly>Hi  {!Contact.FirstName} -
+
+I hope your day is going well! I am following-up to my note sent a few days ago. Have you given any thought to scheduling a training on your CisionPoint account? If you (or your team) are interested, could you please reply to this note with the following:
+
+Day/time(s) that you have in mind for the training (the session will last 1 hour)*
+Your current timezone
+Areas of CisionPoint that you would like to cover (ex: List Building, Monitoring, etc)
+How many people will be attending the session
+
+*Please note that our team works on a first come, first served basis. If you are interested in locking-in the above time, please let us know as soon as possible.
+
+I look forward to connecting with you soon!
+
+Best,
+{!Case.OwnerFullName}</textOnly>
+    <type>html</type>
+</EmailTemplate>

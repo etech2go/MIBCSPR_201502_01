@@ -1,0 +1,3 @@
+Billing has rejected your credit for existing services quote request due to {!Credit_for_Existing_Services_Quote__c.Rejected_Reason__c} .
+
+{!Credit_for_Existing_Services_Quote__c.Link}

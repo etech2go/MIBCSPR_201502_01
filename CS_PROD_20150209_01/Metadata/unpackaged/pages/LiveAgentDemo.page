@@ -1,0 +1,67 @@
+<apex:page standardStylesheets="false" sidebar="false" showHeader="false">
+    
+    <apex:stylesheet value="{!URLFOR($Resource.CisionChatResources,'Site.css')}"/>
+     
+
+    <header>  
+        <logo title="Live Agent Demo" alt="Live Agent Demo"></logo>
+    </header>
+
+    
+    <apex:Form >
+            <div id="wrapper">
+                <div class="logo"><a href="/">Cision</a></div>
+                <br/><br/><br/>
+                      
+                <div class="content">
+                    <h1>Live Agent Demo</h1>
+                    <p class="subup">
+                    </p>
+    
+                    <p class="full">
+                        Ask your questions through our customer chat and get immediate assistance from Cision support.<br />
+                        We are online during normal business hours (8:30 - 17:30 Monday - Friday).<br />
+                    </p>
+                       
+                    <img id="liveagent_button_online_573d0000000GxHX" style="display: none; border: 0px none; cursor: pointer" onclick="liveagent.startChat('573d0000000GxHX')" src="{!URLFOR($Resource.CisionChatResources,'Online.gif')}" />
+                    <img id="liveagent_button_offline_573d0000000GxHX" style="display: none; border: 0px none; " src="{!URLFOR($Resource.CisionChatResources,'Offline.gif')}" />
+                    
+                    <script type="text/javascript">
+                        if (!window._laq) { window._laq = []; }
+                            window._laq.push(function(){liveagent.showWhenOnline('573d0000000GxHX', document.getElementById('liveagent_button_online_573d0000000GxHX'));
+                            liveagent.showWhenOffline('573d0000000GxHX', document.getElementById('liveagent_button_offline_573d0000000GxHX'));
+                    });</script>                   
+
+                
+                    <br/><br/>
+                    <p class="full">
+                        Alternatively. If you would like to speak to a member of our Customer Services Team then please give us a call.<br/>
+                        
+                    </p>
+                    
+                </div>
+           
+            </div>
+    
+            <!-- Deployment code -->
+            <script type='text/javascript' src='https://c.la1w1.salesforceliveagent.com/content/g/js/32.0/deployment.js'></script>
+            <script type='text/javascript'>
+                liveagent.init('https://d.la1w1.salesforceliveagent.com/chat', '572d0000000GwoO', '00Dd0000000iEuw');
+                liveagent.addCustomDetail("Account Name", "OracleChatVarsCustomerName", true);
+                liveagent.addCustomDetail("Customer Id", "OracleChatVarsCustomerId", true);
+                liveagent.addCustomDetail("User Name", "OracleChatVarsUserName", true);
+                liveagent.addCustomDetail("First Name", "OracleChatVarsUserFirstName", true);
+                liveagent.addCustomDetail("Last Name", "OracleChatVarsUserLastName", true);
+                liveagent.addCustomDetail("Email Address", "mark.doggett@cision.com", true);
+                liveagent.addCustomDetail("License Expiration Date", "OracleChatVarsExpirationDate", true);
+                liveagent.addCustomDetail("Origin of Sale", "OracleChatVarsOriginOfSale", true);
+                liveagent.addCustomDetail("Billing Acocunt Id", "OracleChatVarsBillingAccountId", true);
+                
+                liveagent.findOrCreate("Contact").map("Email", "Email Address", true, true, true).saveToTranscript("contactId").showOnCreate();
+
+            </script>
+                      
+        </apex:Form>
+
+    
+</apex:page>

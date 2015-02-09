@@ -1,0 +1,39 @@
+<apex:page standardController="Lead" extensions="LeadAssignmentExtension" showHeader="false">
+	<body style="bgcolor:white">
+	    <apex:form id="frmLeadAssignment">	       
+			<table width="100%">					
+				<tr>
+					<td>
+						<apex:pageBlock id="leadDetails" mode="edit">  				             	
+							<apex:pageMessages id="MSG"/>
+			                <apex:pageBlockSection title="" columns="1">	
+								<apex:actionRegion >
+									<apex:selectList id="AssignLead" size="1" value="{!AssignLead}">
+										<apex:actionSupport event="onchange" action="{!ShowHideOwner}"></apex:actionSupport>
+										<apex:selectOption itemValue="New Biz Auto" itemLabel="Auto Assign To New Biz"/>										
+										<apex:selectOption itemValue="Broadcast" itemLabel="Auto Assign To Broadcast"/>										
+										<apex:selectOption itemValue="New Biz Manual" itemLabel="Manual Assign To New Biz"/>
+										<apex:selectOption itemValue="Renewals" itemLabel="Manual Assign To Renewals"/>
+									</apex:selectList>									
+								</apex:actionRegion>								
+								<apex:inputField id="leadOwnerName" rendered="{!LeadViewMode}" value="{!l.OwnerId}" label=""></apex:inputField>
+								<apex:inputField id="taskOwnerName" rendered="{!TaskViewMode}" value="{!t.OwnerId}" label=""></apex:inputField>
+							</apex:pageBlockSection>                       
+				         </apex:pageBlock>        			
+					</td>
+				</tr>								
+			 </table>
+			<table width="100%">
+				 <tr align="center">
+					<td>
+						<apex:pageBlock >
+						<apex:pageblockbuttons location="bottom">						
+								<apex:commandButton action="{!PassLead}" value="Pass Lead"/> 
+						</apex:pageblockbuttons>
+						</apex:pageBlock>
+					</td>												
+				</tr>    								
+			</table>
+		</apex:form>
+	</body>	
+	</apex:page>

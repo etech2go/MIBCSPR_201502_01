@@ -1,0 +1,7 @@
+Hi </br>
+
+A new Email has been received for your existing Case Number {!Case.CaseNumber}</br> </br> 
+
+Please Review this Case </br></br> 
+
+ <a href="{!Case.Link}">Link to case</a>

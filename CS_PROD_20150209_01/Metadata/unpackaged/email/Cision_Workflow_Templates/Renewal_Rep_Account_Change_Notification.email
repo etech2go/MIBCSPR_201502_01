@@ -1,0 +1,7 @@
+Hi {!Renewal_Rep_History__c.New_Renewal_Rep__c},
+
+The Account {!Renewal_Rep_History__c.Account__c} now belongs to you.  
+
+The previous Account owner was {!Renewal_Rep_History__c.Old_Renewal_Rep__c}.
+
+Here is a link to the change history: {!Renewal_Rep_History__c.Link}

@@ -1,0 +1,5 @@
+{!Opportunity.Name} has not been Routed to Traffic for more than an hour. 
+
+{!Opportunity.Link}
+
+Please either Route this Opportunity to Traffic or change the Opportunity Stage to Contract Pending.

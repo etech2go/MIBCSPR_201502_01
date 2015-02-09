@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>This is an email that will be sent to Sales Group based off of Campaigns that are run.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>CampaignMemberLeadEmailForContact</name>
+    <style>none</style>
+    <subject>New Lead - {!Account.Name}</subject>
+    <textOnly>Account Name:  {!Lead.Company}
+Contact Name:  {!Lead.Name}
+Email:  {!Lead.Email}
+Phone: {!Lead.Phone}
+City: {!Lead.City}
+State/Province:  {!Lead.State}
+Country:  {!Lead.Country}
+Campaign Name! {!Campaign.Name}
+Job Role: {!Lead.Job_Role__c}</textOnly>
+    <type>custom</type>
+</EmailTemplate>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>BDC Activity Type</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>BDC Activity Types</value>
+    </caseValues>
+    <fields>
+        <label><!-- Call Template --></label>
+        <name>Call_Template__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days/Months --></label>
+        <name>Days_Months__c</name>
+        <picklistValues>
+            <masterLabel>Days</masterLabel>
+            <translation><!-- Days --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Months</masterLabel>
+            <translation><!-- Months --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- From --></label>
+        <name>From__c</name>
+        <picklistValues>
+            <masterLabel>Renewal Creation Date</masterLabel>
+            <translation><!-- Renewal Creation Date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renewal Due Date</masterLabel>
+            <translation><!-- Renewal Due Date --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- New Renewal Customer --></label>
+        <name>New_Renewal_Customer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Days/Months --></label>
+        <name>Number_of_Days_Months__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

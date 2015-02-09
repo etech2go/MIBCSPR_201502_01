@@ -1,0 +1,5 @@
+Hi {!Case.OwnerFirstName},
+
+SSG has added a Jira Number ({!Case.Jira_Number__c}) to your Case for {!Case.Account}.
+
+Please click here to see your Case: {!Case.Link}

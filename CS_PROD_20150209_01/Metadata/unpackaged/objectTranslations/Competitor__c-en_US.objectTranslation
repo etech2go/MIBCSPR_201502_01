@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Competitor</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Competitors</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Owner Name --></label>
+        <name>Account_Owner_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Competitors --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Brand/Campaign --></label>
+        <name>Brand_Campaign__c</name>
+    </fields>
+    <fields>
+        <label><!-- CRM Account ID --></label>
+        <name>CRM_Account_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Competitive Spend --></label>
+        <name>Competitive_Spend__c</name>
+    </fields>
+    <fields>
+        <label><!-- Competitor Name --></label>
+        <name>Competitor_Name__c</name>
+        <picklistValues>
+            <masterLabel>Agency</masterLabel>
+            <translation><!-- Agency --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BurrellesLuce</masterLabel>
+            <translation><!-- BurrellesLuce --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Wire</masterLabel>
+            <translation><!-- Business Wire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Carma</masterLabel>
+            <translation><!-- Carma --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client Won&apos;t Say/Don&apos;t Know</masterLabel>
+            <translation><!-- Client Won&apos;t Say/Don&apos;t Know --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Critical Mention</masterLabel>
+            <translation><!-- Critical Mention --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dow Jones Factiva</masterLabel>
+            <translation><!-- Dow Jones Factiva --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GlobeNewswire/NASDAQ</masterLabel>
+            <translation><!-- GlobeNewswire/NASDAQ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GoogleNews</masterLabel>
+            <translation><!-- GoogleNews --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gorkana</masterLabel>
+            <translation><!-- Gorkana --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketwired</masterLabel>
+            <translation><!-- Marketwired --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meltwater</masterLabel>
+            <translation><!-- Meltwater --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Moreover</masterLabel>
+            <translation><!-- Moreover --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MyMediaInfo (MMI)</masterLabel>
+            <translation><!-- MyMediaInfo (MMI) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Competitor</masterLabel>
+            <translation><!-- No Competitor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PR Newswire (Agility)</masterLabel>
+            <translation><!-- PR Newswire (Agility) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Radian6</masterLabel>
+            <translation><!-- Radian6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sysomos</masterLabel>
+            <translation><!-- Sysomos --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TVEyes</masterLabel>
+            <translation><!-- TVEyes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Universal</masterLabel>
+            <translation><!-- Universal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vocus/PRWeb</masterLabel>
+            <translation><!-- Vocus/PRWeb --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Competitor Notes --></label>
+        <name>Competitor_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Note Snippet --></label>
+        <name>Note_Snippet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Close --></label>
+        <name>Opportunity_Close__c</name>
+        <picklistValues>
+            <masterLabel>Lost To</masterLabel>
+            <translation><!-- Lost To --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stolen From</masterLabel>
+            <translation><!-- Stolen From --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- Competitors --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Service Expiration Alert Sent --></label>
+        <name>Service_Expiration_Alert_Sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Expiration Date --></label>
+        <name>Service_Expiration_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Provided --></label>
+        <name>Service_Provided__c</name>
+        <picklistValues>
+            <masterLabel>Analytics</masterLabel>
+            <translation><!-- Analytics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Broadcast</masterLabel>
+            <translation><!-- Broadcast --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Clips</masterLabel>
+            <translation><!-- Clips --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Integrated</masterLabel>
+            <translation><!-- Integrated --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internet</masterLabel>
+            <translation><!-- Internet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monitoring</masterLabel>
+            <translation><!-- Monitoring --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plan</masterLabel>
+            <translation><!-- Plan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Print</masterLabel>
+            <translation><!-- Print --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Social</masterLabel>
+            <translation><!-- Social --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wire</masterLabel>
+            <translation><!-- Wire --></translation>
+        </picklistValues>
+    </fields>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- New_Competitor_Override --></label>
+        <name>New_Competitor_Override</name>
+    </webLinks>
+</CustomObjectTranslation>

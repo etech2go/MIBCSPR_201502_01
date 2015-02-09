@@ -1,0 +1,103 @@
+<apex:page standardController="Account" extensions="AccountAlertExtension" showHeader="false" sidebar="false" title="">
+    <script>
+        function showPopup()
+        {
+            var showPopup = false;
+        
+            var acctId = "{!Account.Id}"; 
+            var renewalInfo = "{!Account.Renewal_Info__c}"; 
+            var collectionsInfo = "{!Account.Collections_Info__c}"; 
+            var newBizInfo = "{!Account.New_Biz_Info__c}"; 
+            var clientServicesInfo = "{!Account.Client_Services_Info__c}"; 
+            var extensionsInfo = "{!Account.Extensions_Info__c}"; 
+            var creditHold = "{!Account.Credit_Hold__c}"; 
+            var poRequired = "{!Account.P_O_Required__c}"; 
+            var lexisNexisNamedAccount = "{!Account.LexisNexis_Named_Account__c}"; 
+            var quickShareAccount = "{!Account.QuickShare_Account__c}";    
+			var renewalPeriod = "{!Account.Renewal_Period__c}";    
+			var renewalsNamedAccount = "{!Account.Renewals_Named_Account_Rep__c}";
+			var newBizNamedAccount = "{!Account.New_Biz_Named_Account_Rep__c}";
+			var doNotSellAccount = "{!Account.Do_Not_Sell__c}";
+                    
+            if(renewalInfo.length > 0)
+            {
+                //alert("1-" + renewalInfo.length);
+                showPopup = true;
+            }
+            else if(collectionsInfo.length > 0)
+            {
+                //alert("2-" + collectionsInfo.length);
+                showPopup = true;
+            }
+            else if(newBizInfo.length > 0)
+            {
+                //alert("3-" + newBizInfo.length);
+                showPopup = true;
+            }
+            else if(clientServicesInfo.length > 0)
+            {
+                //alert("4-" + clientServicesInfo.length);
+                showPopup = true;
+            }
+            else if(extensionsInfo.length > 0)
+            {
+                //alert("5-" + extensionsInfo.length);
+                showPopup = true;
+            }
+            else if(lexisNexisNamedAccount == "true")
+            {
+                //alert("6-" + lexisNexisNamedAccount);
+                showPopup = true;
+            }
+            else if(quickShareAccount == "true")
+            {
+                //alert("7-" + quickShareAccount);  
+                showPopup = true;
+            }
+            else if(creditHold == "true")
+            {
+                //alert("8-" + creditHold);
+                showPopup = true;
+            }
+            else if(poRequired == "true")
+            {
+                //alert("9-" + poRequired);
+                showPopup = true;
+            }   
+		    else if(renewalPeriod == "true")
+            {
+                //alert("10-" + renewalPeriod);
+                showPopup = true;
+            }  
+		    else if(renewalsNamedAccount.length > 0)
+            {
+                //alert("11-" + renewalsNamedAccount);
+                showPopup = true;
+            }  
+		    else if(newBizNamedAccount.length > 0)
+            {
+                //alert("12-" + newBizNamedAccount);
+                showPopup = true;
+            }  
+			else if(doNotSellAccount == "true")
+            {
+                //alert("13-" + doNotSellAccount);
+                showPopup = true;
+            } 
+                        
+            if(showPopup == true)
+            {                           
+                var x = screen.width/2 - 500/2;
+                var y = screen.height/2 - 500/2;
+                var newwindow;
+                accounturl = window.location.protocol + '//' + window.location.host + '/' + 'apex/AccountAlert?aid=' + acctId;
+                newwindow = window.open (accounturl, 'Account Alert', config='height=500,width=500,toolbar=no,menubar=no,scrollbars=yes,resizable=no,location=no,directories=no,status=no,left='+ x + ',top=' + y);             
+                newwindow.focus();
+            }
+        }
+    </script>
+    <head>
+        <style></style>
+    </head>
+    <body onload="showPopup();"></body>
+</apex:page>

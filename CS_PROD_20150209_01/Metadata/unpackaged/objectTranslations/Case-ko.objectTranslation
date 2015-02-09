@@ -1,0 +1,2226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Account Billing City --></label>
+        <name>Account_Billing_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Billing Country --></label>
+        <name>Account_Billing_Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Billing State --></label>
+        <name>Account_Billing_State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Billing Street --></label>
+        <name>Account_Billing_Street__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Billing Zip --></label>
+        <name>Account_Billing_Zip__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Type --></label>
+        <name>Account_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Website --></label>
+        <name>Account_Website__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual --></label>
+        <name>Actual__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional Contacts --></label>
+        <name>Additional_Contacts__c</name>
+    </fields>
+    <fields>
+        <label><!-- Affected CP ID --></label>
+        <name>Affected_CP_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- After Hours --></label>
+        <name>After_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Air Date --></label>
+        <name>Air_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Air Time --></label>
+        <name>Air_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Article Publication Date --></label>
+        <name>Article_Publication_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Article Title --></label>
+        <name>Article_Title__c</name>
+    </fields>
+    <fields>
+        <label><!-- Article URL --></label>
+        <name>Article_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- BAC # --></label>
+        <name>BAC__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billable Dollars --></label>
+        <name>Billable_Dollars__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Contact Name --></label>
+        <name>Billing_Contact_Name__c</name>
+        <relationshipLabel><!-- Cases --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Billing Type --></label>
+        <name>Billing_Type__c</name>
+        <picklistValues>
+            <masterLabel>Billable</masterLabel>
+            <translation><!-- Billable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-Billable</masterLabel>
+            <translation><!-- Non-Billable --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Broadcast Date --></label>
+        <name>Broadcast_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Broadcast Quote Filtered Type --></label>
+        <name>Broadcast_Quote_Filtered_Type__c</name>
+        <picklistValues>
+            <masterLabel>Auto-Filtered</masterLabel>
+            <translation><!-- Auto-Filtered --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Human</masterLabel>
+            <translation><!-- Human --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Broadcast Quote Source --></label>
+        <name>Broadcast_Quote_Source__c</name>
+        <picklistValues>
+            <masterLabel>Radio</masterLabel>
+            <translation><!-- Radio --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TV</masterLabel>
+            <translation><!-- TV --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Broadcast Subtypes --></label>
+        <name>Broadcast_Subtypes__c</name>
+        <picklistValues>
+            <masterLabel>Audio/Visual Quality</masterLabel>
+            <translation><!-- Audio/Visual Quality --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Download Issue</masterLabel>
+            <translation><!-- Download Issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Player Issue</masterLabel>
+            <translation><!-- Player Issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Website Issue</masterLabel>
+            <translation><!-- Website Issue --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Broadcast Time --></label>
+        <name>Broadcast_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Browser --></label>
+        <name>Browser__c</name>
+        <picklistValues>
+            <masterLabel>Chrome</masterLabel>
+            <translation><!-- Chrome --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IE</masterLabel>
+            <translation><!-- IE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mozilla/Firefox</masterLabel>
+            <translation><!-- Mozilla/Firefox --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Netscape</masterLabel>
+            <translation><!-- Netscape --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Safari</masterLabel>
+            <translation><!-- Safari --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Burrelles Pricing --></label>
+        <name>Burrelles_Pricing__c</name>
+    </fields>
+    <fields>
+        <label><!-- CRM Activity ID --></label>
+        <name>CRM_Activity_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- CRM Case ID --></label>
+        <name>CRM_Case_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- CSI ID --></label>
+        <name>CSI_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- CS Product --></label>
+        <name>CS_Product__c</name>
+        <picklistValues>
+            <masterLabel>Billing</masterLabel>
+            <translation><!-- Billing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CisionPoint: Analyze</masterLabel>
+            <translation><!-- CisionPoint: Analyze --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CisionPoint: Combo</masterLabel>
+            <translation><!-- CisionPoint: Combo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CisionPoint: Monitoring</masterLabel>
+            <translation><!-- CisionPoint: Monitoring --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CisionPoint: Research</masterLabel>
+            <translation><!-- CisionPoint: Research --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketwired</masterLabel>
+            <translation><!-- Marketwired --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Navigator</masterLabel>
+            <translation><!-- Navigator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Seek or Shout</masterLabel>
+            <translation><!-- Seek or Shout --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Social Media</masterLabel>
+            <translation><!-- Social Media --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Campaign Trial? --></label>
+        <name>Campaign_Trial__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Case Owner Assigned --></label>
+        <name>Case_Owner_Assigned__c</name>
+    </fields>
+    <fields>
+        <label><!-- Categories --></label>
+        <name>Categories__c</name>
+        <picklistValues>
+            <masterLabel>Broadcast Quote</masterLabel>
+            <translation><!-- Broadcast Quote --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Burelles Contracts (New Biz)</masterLabel>
+            <translation><!-- Burelles Contracts (New Biz) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Burelles Contracts (Renewal)</masterLabel>
+            <translation><!-- Burelles Contracts (Renewal) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Extension Request</masterLabel>
+            <translation><!-- Extension Request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lead Pass</masterLabel>
+            <translation><!-- Lead Pass --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Press Report</masterLabel>
+            <translation><!-- Press Report --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pricing Question</masterLabel>
+            <translation><!-- Pricing Question --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product/General Question</masterLabel>
+            <translation><!-- Product/General Question --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pub Check</masterLabel>
+            <translation><!-- Pub Check --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quote Quickly</masterLabel>
+            <translation><!-- Quote Quickly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RFP</masterLabel>
+            <translation><!-- RFP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RPOST</masterLabel>
+            <translation><!-- RPOST --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Salesforce Adjustment (Changing account reps)</masterLabel>
+            <translation><!-- Salesforce Adjustment (Changing account reps) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Salesforce Adjustment (Potential)</masterLabel>
+            <translation><!-- Salesforce Adjustment (Potential) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trial Question, Modification or Extension</masterLabel>
+            <translation><!-- Trial Question, Modification or Extension --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trials</masterLabel>
+            <translation><!-- Trials --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>University Program</masterLabel>
+            <translation><!-- University Program --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>eNews Quote</masterLabel>
+            <translation><!-- eNews Quote --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- CisionPoint Email --></label>
+        <name>CisionPoint_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- CisionPoint ID --></label>
+        <name>CisionPoint_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- CisionPoint Login --></label>
+        <name>CisionPoint_Login__c</name>
+    </fields>
+    <fields>
+        <label><!-- CisionPoint Username --></label>
+        <name>CisionPoint_Username__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client LN ID --></label>
+        <name>Client_LN_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Close Reason --></label>
+        <name>Close_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Outstanding technical issue</masterLabel>
+            <translation><!-- Outstanding technical issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Resolved case</masterLabel>
+            <translation><!-- Resolved case --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Training Canceled</masterLabel>
+            <translation><!-- Training Canceled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Training Completed</masterLabel>
+            <translation><!-- Training Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Training Denied</masterLabel>
+            <translation><!-- Training Denied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Training No Contact</masterLabel>
+            <translation><!-- Training No Contact --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Contact Title --></label>
+        <name>Contact_Title__c</name>
+    </fields>
+    <fields>
+        <label><!-- Content Provider --></label>
+        <name>Content_Provider__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contract Dates --></label>
+        <name>Contract_Dates__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contract End Date --></label>
+        <name>Contract_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contract Start Date --></label>
+        <name>Contract_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Country --></label>
+        <name>Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Coverage End Date --></label>
+        <name>Coverage_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Coverage Start Date --></label>
+        <name>Coverage_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Currency --></label>
+        <name>Currency__c</name>
+        <picklistValues>
+            <masterLabel>Canadian Dollar</masterLabel>
+            <translation><!-- Canadian Dollar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Euro</masterLabel>
+            <translation><!-- Euro --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UK Pounds</masterLabel>
+            <translation><!-- UK Pounds --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>US Dollar</masterLabel>
+            <translation><!-- US Dollar --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Current Broadcast Service --></label>
+        <name>Current_Broadcast_Service__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Print Rates --></label>
+        <name>Current_Print_Rates__c</name>
+    </fields>
+    <fields>
+        <label><!-- DCS Issue Status --></label>
+        <name>DCS_Issue_Status__c</name>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>More Information Needed</masterLabel>
+            <translation><!-- More Information Needed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Resolved</masterLabel>
+            <translation><!-- Resolved --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- DCS Reasons --></label>
+        <name>DCS_Reasons__c</name>
+        <picklistValues>
+            <masterLabel>Article is video/slideshow/gallery ONLY link</masterLabel>
+            <translation><!-- Article is video/slideshow/gallery ONLY link --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Article not available for this plan</masterLabel>
+            <translation><!-- Article not available for this plan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client settings need adjustment</masterLabel>
+            <translation><!-- Client settings need adjustment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Copyright/paywall</masterLabel>
+            <translation><!-- Copyright/paywall --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dead link/link no longer active</masterLabel>
+            <translation><!-- Dead link/link no longer active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Full article not captured/captured incorrectly</masterLabel>
+            <translation><!-- Full article not captured/captured incorrectly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hyperlinks in article not captured</masterLabel>
+            <translation><!-- Hyperlinks in article not captured --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Key Term omitted from article</masterLabel>
+            <translation><!-- Key Term omitted from article --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Key Term was a hyperlink and was not picked up</masterLabel>
+            <translation><!-- Key Term was a hyperlink and was not picked up --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Late capture.  Article was captured a few days after it was published.</masterLabel>
+            <translation><!-- Late capture.  Article was captured a few days after it was published. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lexis Nexis, article not yet available</masterLabel>
+            <translation><!-- Lexis Nexis, article not yet available --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lexis Nexis, publication no longer monitored</masterLabel>
+            <translation><!-- Lexis Nexis, publication no longer monitored --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lexis Nexis, verified article not available</masterLabel>
+            <translation><!-- Lexis Nexis, verified article not available --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mismapped/not mapped to correct Media ID</masterLabel>
+            <translation><!-- Mismapped/not mapped to correct Media ID --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Moreover, crawler settings</masterLabel>
+            <translation><!-- Moreover, crawler settings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Moreover, drop-off in coverage</masterLabel>
+            <translation><!-- Moreover, drop-off in coverage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Moreover, site not monitored</masterLabel>
+            <translation><!-- Moreover, site not monitored --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Moreover, sub-domain not ingested</masterLabel>
+            <translation><!-- Moreover, sub-domain not ingested --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Moreover, wrong portion of site crawled</masterLabel>
+            <translation><!-- Moreover, wrong portion of site crawled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Need to update Search String</masterLabel>
+            <translation><!-- Need to update Search String --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not missed.  Found in CP.</masterLabel>
+            <translation><!-- Not missed.  Found in CP. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Out of Archive Range</masterLabel>
+            <translation><!-- Out of Archive Range --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Search Agent filters need update</masterLabel>
+            <translation><!-- Search Agent filters need update --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WISE, crawler settings</masterLabel>
+            <translation><!-- WISE, crawler settings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WISE, drop-off in coverage</masterLabel>
+            <translation><!-- WISE, drop-off in coverage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WISE, site not monitored</masterLabel>
+            <translation><!-- WISE, site not monitored --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WISE, sub-domain not ingested</masterLabel>
+            <translation><!-- WISE, sub-domain not ingested --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WISE, wrong portion of site crawled</masterLabel>
+            <translation><!-- WISE, wrong portion of site crawled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>no Key Term(s) found in article</masterLabel>
+            <translation><!-- no Key Term(s) found in article --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Daily Email Alert Time --></label>
+        <name>Daily_Email_Alert_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- DataHub Subtypes --></label>
+        <name>DataHub_Subtypes__c</name>
+        <picklistValues>
+            <masterLabel>Add</masterLabel>
+            <translation><!-- Add --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Edit</masterLabel>
+            <translation><!-- Edit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Remove</masterLabel>
+            <translation><!-- Remove --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Dates for Extension --></label>
+        <name>Dates_for_Extension__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deal Amount --></label>
+        <name>Deal_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Define Issue --></label>
+        <name>Define_Issue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Device --></label>
+        <name>Device__c</name>
+        <picklistValues>
+            <masterLabel>Mac</masterLabel>
+            <translation><!-- Mac --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mobile</masterLabel>
+            <translation><!-- Mobile --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PC</masterLabel>
+            <translation><!-- PC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tablet</masterLabel>
+            <translation><!-- Tablet --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Distance --></label>
+        <name>Distance__c</name>
+        <picklistValues>
+            <masterLabel>European Standard</masterLabel>
+            <translation><!-- European Standard --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>US Standard</masterLabel>
+            <translation><!-- US Standard --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Do they want digital downloads --></label>
+        <name>Do_they_want_digital_downloads__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Due Date/Time --></label>
+        <name>Due_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Edition --></label>
+        <name>Edition__c</name>
+        <picklistValues>
+            <masterLabel>Corporate</masterLabel>
+            <translation><!-- Corporate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Team</masterLabel>
+            <translation><!-- Team --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Emails --></label>
+        <name>Emails__c</name>
+    </fields>
+    <fields>
+        <label><!-- Escalated to GSD Date --></label>
+        <name>Escalated_to_GSD_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Escalated to Service Desk? --></label>
+        <name>Escalated_to_Service_Desk__c</name>
+    </fields>
+    <fields>
+        <label><!-- Estimated Deal Amount --></label>
+        <name>Estimated_Deal_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expected --></label>
+        <name>Expected__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expenses --></label>
+        <name>Expenses__c</name>
+    </fields>
+    <fields>
+        <label><!-- Extension Date Month Compare --></label>
+        <name>Extension_Date_Month_Compare__c</name>
+    </fields>
+    <fields>
+        <label><!-- Extension End Date --></label>
+        <name>Extension_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Extension Start Date --></label>
+        <name>Extension_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Feed Setups Subtypes --></label>
+        <name>Feed_Setups_Subtypes__c</name>
+        <picklistValues>
+            <masterLabel>Burrelles Luce</masterLabel>
+            <translation><!-- Burrelles Luce --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gnip</masterLabel>
+            <translation><!-- Gnip --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Radian6</masterLabel>
+            <translation><!-- Radian6 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Follow-Up Date --></label>
+        <name>Follow_Up_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- GP Cust ID --></label>
+        <name>GP_Cust_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- IE Version Number --></label>
+        <name>IE_Version_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Issue Status --></label>
+        <name>Issue_Status__c</name>
+        <picklistValues>
+            <masterLabel>Cannot Reproduce</masterLabel>
+            <translation><!-- Cannot Reproduce --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Development Work</masterLabel>
+            <translation><!-- Development Work --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>More Information Needed</masterLabel>
+            <translation><!-- More Information Needed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Resolved</masterLabel>
+            <translation><!-- Resolved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Under Investigation</masterLabel>
+            <translation><!-- Under Investigation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Working as Designed</masterLabel>
+            <translation><!-- Working as Designed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Jira Number --></label>
+        <name>Jira_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Language --></label>
+        <name>Language__c</name>
+        <picklistValues>
+            <masterLabel>English UK</masterLabel>
+            <translation><!-- English UK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>English US</masterLabel>
+            <translation><!-- English US --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finnish</masterLabel>
+            <translation><!-- Finnish --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>German</masterLabel>
+            <translation><!-- German --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Last Emailed --></label>
+        <name>Last_Emailed__c</name>
+    </fields>
+    <fields>
+        <label><!-- List ID --></label>
+        <name>List_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- MDW ID --></label>
+        <name>MDW_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mapping Term --></label>
+        <name>Mapping_Term__c</name>
+    </fields>
+    <fields>
+        <label><!-- Matched Key Term --></label>
+        <name>Matched_Key_Term__c</name>
+    </fields>
+    <fields>
+        <label><!-- Media ID --></label>
+        <name>Media_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Media Type --></label>
+        <name>Media_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Metadata Subtypes --></label>
+        <name>Metadata_Subtypes__c</name>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Outlet</masterLabel>
+            <translation><!-- Outlet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pub Value</masterLabel>
+            <translation><!-- Pub Value --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reach</masterLabel>
+            <translation><!-- Reach --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wrong Country</masterLabel>
+            <translation><!-- Wrong Country --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Missed Hit --></label>
+        <name>Missed_Hit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monitor/Analyze Options --></label>
+        <name>Monitor_Analyze_Options__c</name>
+        <picklistValues>
+            <masterLabel>Analyze Tab</masterLabel>
+            <translation><!-- Analyze Tab --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Automated Toning - Requires CGA approval</masterLabel>
+            <translation><!-- Automated Toning - Requires CGA approval --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Broadcast (Filtered) - Requires RRF</masterLabel>
+            <translation><!-- Broadcast (Filtered) - Requires RRF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Broadcast (Unfiltered)</masterLabel>
+            <translation><!-- Broadcast (Unfiltered) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Content Marketing</masterLabel>
+            <translation><!-- Content Marketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Social Media Dashboard</masterLabel>
+            <translation><!-- Social Media Dashboard --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Social Media Premium</masterLabel>
+            <translation><!-- Social Media Premium --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Social Media Top Tier Blogs</masterLabel>
+            <translation><!-- Social Media Top Tier Blogs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>eNews Global</masterLabel>
+            <translation><!-- eNews Global --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>eNews NA</masterLabel>
+            <translation><!-- eNews NA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>eNews Web</masterLabel>
+            <translation><!-- eNews Web --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Monitoring ID --></label>
+        <name>Monitoring_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monitoring Services to Check --></label>
+        <name>Monitoring_Services_to_Check__c</name>
+        <picklistValues>
+            <masterLabel>Burrelles</masterLabel>
+            <translation><!-- Burrelles --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lexis</masterLabel>
+            <translation><!-- Lexis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Social Media</masterLabel>
+            <translation><!-- Social Media --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Web</masterLabel>
+            <translation><!-- Web --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Nielsen Data --></label>
+        <name>Nielsen_Data__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notify Sales? --></label>
+        <name>Notify_Sales__c</name>
+    </fields>
+    <fields>
+        <label><!-- Num of Users Trained --></label>
+        <name>Num_of_Users_Trained__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Items --></label>
+        <name>Number_of_Items__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Sorts --></label>
+        <name>Number_of_Sorts__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Subscriptions/Agents --></label>
+        <name>Number_of_Subscriptions_Agents__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Subscriptions --></label>
+        <name>Number_of_Subscriptions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Users Affected --></label>
+        <name>Number_of_Users_Affected__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Users --></label>
+        <name>Number_of_Users__c</name>
+    </fields>
+    <fields>
+        <label><!-- Operating System --></label>
+        <name>Operating_System__c</name>
+        <picklistValues>
+            <masterLabel>Mac OS9</masterLabel>
+            <translation><!-- Mac OS9 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mac OS9 &amp; OSX</masterLabel>
+            <translation><!-- Mac OS9 &amp; OSX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mac OSX</masterLabel>
+            <translation><!-- Mac OSX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unix/Linux</masterLabel>
+            <translation><!-- Unix/Linux --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Windows &amp; Mac OS9</masterLabel>
+            <translation><!-- Windows &amp; Mac OS9 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Windows &amp; Mac OSX</masterLabel>
+            <translation><!-- Windows &amp; Mac OSX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Windows 2000</masterLabel>
+            <translation><!-- Windows 2000 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Windows 2003</masterLabel>
+            <translation><!-- Windows 2003 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Windows 7</masterLabel>
+            <translation><!-- Windows 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Windows 95/98</masterLabel>
+            <translation><!-- Windows 95/98 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Windows Vista</masterLabel>
+            <translation><!-- Windows Vista --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Windows XP</masterLabel>
+            <translation><!-- Windows XP --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Owner Manager --></label>
+        <name>Opportunity_Owner_Manager__c</name>
+        <relationshipLabel><!-- Cases (Opportunity Owner Manager) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Owner --></label>
+        <name>Opportunity_Owner__c</name>
+        <relationshipLabel><!-- Cases (Opportunity Owner) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Type --></label>
+        <name>Opportunity_Type__c</name>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renewal</masterLabel>
+            <translation><!-- Renewal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renewal (Paid Extension)</masterLabel>
+            <translation><!-- Renewal (Paid Extension) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Upsell</masterLabel>
+            <translation><!-- Upsell --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- Cases --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Order Name --></label>
+        <name>Order_Name__c</name>
+    </fields>
+    <fields>
+        <name>Origin</name>
+        <picklistValues>
+            <masterLabel>Automated Client Services Case</masterLabel>
+            <translation><!-- Automated Client Services Case --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Automated Contract Admin Case</masterLabel>
+            <translation><!-- Automated Contract Admin Case --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Automated Training Case</masterLabel>
+            <translation><!-- Automated Training Case --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chat</masterLabel>
+            <translation><!-- Chat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contract Admin Button</masterLabel>
+            <translation><!-- Contract Admin Button --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Support Email</masterLabel>
+            <translation><!-- Customer Support Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DCS Button</masterLabel>
+            <translation><!-- DCS Button --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email</masterLabel>
+            <translation><!-- Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal</masterLabel>
+            <translation><!-- Internal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monitoring Email</masterLabel>
+            <translation><!-- Monitoring Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phone</masterLabel>
+            <translation><!-- Phone --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales Support Button</masterLabel>
+            <translation><!-- Sales Support Button --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Social Media</masterLabel>
+            <translation><!-- Social Media --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Training Email</masterLabel>
+            <translation><!-- Training Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Training Request Button</masterLabel>
+            <translation><!-- Training Request Button --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Web</masterLabel>
+            <translation><!-- Web --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Orion Subtypes --></label>
+        <name>Orion_Subtypes__c</name>
+        <picklistValues>
+            <masterLabel>Add</masterLabel>
+            <translation><!-- Add --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Edit</masterLabel>
+            <translation><!-- Edit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FTP Setup</masterLabel>
+            <translation><!-- FTP Setup --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Remove</masterLabel>
+            <translation><!-- Remove --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Other Teams Involved --></label>
+        <name>Other_Teams_Involved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Outlet --></label>
+        <name>Outlet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Case Owner --></label>
+        <name>Parent_Case_Owner__c</name>
+        <relationshipLabel><!-- Cases (Parent Case Owner) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Plan/Connect Options --></label>
+        <name>Plan_Connect_Options__c</name>
+        <picklistValues>
+            <masterLabel>Content Marketing</masterLabel>
+            <translation><!-- Content Marketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Package (Global)</masterLabel>
+            <translation><!-- Data Package (Global) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Package (INTL)</masterLabel>
+            <translation><!-- Data Package (INTL) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Package (NA)</masterLabel>
+            <translation><!-- Data Package (NA) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Influencer Database</masterLabel>
+            <translation><!-- Influencer Database --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>News Search</masterLabel>
+            <translation><!-- News Search --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Premium Profiles</masterLabel>
+            <translation><!-- Premium Profiles --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Player Error --></label>
+        <name>Player_Error__c</name>
+    </fields>
+    <fields>
+        <name>Priority</name>
+        <picklistValues>
+            <masterLabel>High</masterLabel>
+            <translation><!-- High --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low</masterLabel>
+            <translation><!-- Low --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medium</masterLabel>
+            <translation><!-- Medium --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Product/Service --></label>
+        <name>Product_Service__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>Product__c</name>
+        <picklistValues>
+            <masterLabel>Cision Social Media</masterLabel>
+            <translation><!-- Cision Social Media --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CisionPoint: Analyze</masterLabel>
+            <translation><!-- CisionPoint: Analyze --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CisionPoint: Connect</masterLabel>
+            <translation><!-- CisionPoint: Connect --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CisionPoint: Monitoring</masterLabel>
+            <translation><!-- CisionPoint: Monitoring --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CisionPoint: Plan</masterLabel>
+            <translation><!-- CisionPoint: Plan --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Products being sold --></label>
+        <name>Products_being_sold__c</name>
+    </fields>
+    <fields>
+        <label><!-- Program Title --></label>
+        <name>Program_Title__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Name --></label>
+        <name>Project_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Publication --></label>
+        <name>Publication__c</name>
+    </fields>
+    <fields>
+        <label><!-- QC Number --></label>
+        <name>QC_Number__c</name>
+    </fields>
+    <fields>
+        <name>Reason</name>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation><!-- Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Complex functionality</masterLabel>
+            <translation><!-- Complex functionality --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Existing problem</masterLabel>
+            <translation><!-- Existing problem --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Instructions not clear</masterLabel>
+            <translation><!-- Instructions not clear --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New problem</masterLabel>
+            <translation><!-- New problem --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No DNBi avaliable</masterLabel>
+            <translation><!-- No DNBi avaliable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Training Cancelled</masterLabel>
+            <translation><!-- Training Cancelled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Training Completed</masterLabel>
+            <translation><!-- Training Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Training Denied</masterLabel>
+            <translation><!-- Training Denied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Training No Contact</masterLabel>
+            <translation><!-- Training No Contact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>User didn&apos;t attend training</masterLabel>
+            <translation><!-- User didn&apos;t attend training --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Reason - At Risk --></label>
+        <name>Reason__c</name>
+        <picklistValues>
+            <masterLabel>Budget Objection</masterLabel>
+            <translation><!-- Budget Objection --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Change in User</masterLabel>
+            <translation><!-- Change in User --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Competitor Threat</masterLabel>
+            <translation><!-- Competitor Threat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credit Hold</masterLabel>
+            <translation><!-- Credit Hold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Issue</masterLabel>
+            <translation><!-- Data Issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low Usage</masterLabel>
+            <translation><!-- Low Usage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monitoring Issues</masterLabel>
+            <translation><!-- Monitoring Issues --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Usage</masterLabel>
+            <translation><!-- No Usage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-Responsive</masterLabel>
+            <translation><!-- Non-Responsive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other (See Notes)</masterLabel>
+            <translation><!-- Other (See Notes) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Software Functionality</masterLabel>
+            <translation><!-- Software Functionality --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technical Issue</masterLabel>
+            <translation><!-- Technical Issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Training Issue</masterLabel>
+            <translation><!-- Training Issue --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Renewal Due Date --></label>
+        <name>Renewal_Due_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Renewal Rep Email --></label>
+        <name>Renewal_Rep_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Renewal Rep --></label>
+        <name>Renewal_Rep__c</name>
+        <relationshipLabel><!-- Cases (Renewal Rep) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Report Add Ons --></label>
+        <name>Report_Add_Ons__c</name>
+        <picklistValues>
+            <masterLabel>Coverage Page</masterLabel>
+            <translation><!-- Coverage Page --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Page Numbers</masterLabel>
+            <translation><!-- Page Numbers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Table of Contents</masterLabel>
+            <translation><!-- Table of Contents --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Report Charts --></label>
+        <name>Report_Charts__c</name>
+        <picklistValues>
+            <masterLabel>Frequency</masterLabel>
+            <translation><!-- Frequency --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Media Mix</masterLabel>
+            <translation><!-- Media Mix --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pub Value of Media Mix</masterLabel>
+            <translation><!-- Pub Value of Media Mix --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Report Description --></label>
+        <name>Report_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Report Display Settings --></label>
+        <name>Report_Display_Settings__c</name>
+    </fields>
+    <fields>
+        <label><!-- Report Due Date --></label>
+        <name>Report_Due_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Report Title --></label>
+        <name>Report_Title__c</name>
+    </fields>
+    <fields>
+        <label><!-- Route to SSG Date --></label>
+        <name>Route_to_SSG_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Route to SSG --></label>
+        <name>Route_to_SSG__c</name>
+    </fields>
+    <fields>
+        <label><!-- SSG Rep --></label>
+        <name>SSG_Rep__c</name>
+        <relationshipLabel><!-- Cases (SSG Rep) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Salesperson --></label>
+        <name>Salesperson__c</name>
+        <relationshipLabel><!-- Cases (Salesperson) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Search Agent --></label>
+        <name>Search_Agent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Search Terms --></label>
+        <name>Search_Terms__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Desk Resolution --></label>
+        <name>Service_Desk_Resolution__c</name>
+        <picklistValues>
+            <masterLabel>Entered into DevTrack</masterLabel>
+            <translation><!-- Entered into DevTrack --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Irresolvable</masterLabel>
+            <translation><!-- Irresolvable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kicked-Back</masterLabel>
+            <translation><!-- Kicked-Back --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Resolved</masterLabel>
+            <translation><!-- Resolved --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Service Desk Ticket Number --></label>
+        <name>Service_Desk_Ticket_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Services for Quote --></label>
+        <name>Services_for_Quote__c</name>
+        <picklistValues>
+            <masterLabel>eNews Web</masterLabel>
+            <translation><!-- eNews Web --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>eNews w/ LexisNexis Global</masterLabel>
+            <translation><!-- eNews w/ LexisNexis Global --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>eNews w/ LexisNexis NA</masterLabel>
+            <translation><!-- eNews w/ LexisNexis NA --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Services to be included in the report --></label>
+        <name>Services_to_be_included_in_the_report__c</name>
+        <picklistValues>
+            <masterLabel>LexisNexis Global</masterLabel>
+            <translation><!-- LexisNexis Global --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LexisNexis NA</masterLabel>
+            <translation><!-- LexisNexis NA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Radio</masterLabel>
+            <translation><!-- Radio --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Social Media Premium</masterLabel>
+            <translation><!-- Social Media Premium --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Social Media Top Tier</masterLabel>
+            <translation><!-- Social Media Top Tier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TV</masterLabel>
+            <translation><!-- TV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>eNews Web Global</masterLabel>
+            <translation><!-- eNews Web Global --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>eNews Web NA</masterLabel>
+            <translation><!-- eNews Web NA --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Services to be trained on --></label>
+        <name>Services_to_be_trained_on__c</name>
+        <picklistValues>
+            <masterLabel>Analyze</masterLabel>
+            <translation><!-- Analyze --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cision Social Media</masterLabel>
+            <translation><!-- Cision Social Media --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Connect</masterLabel>
+            <translation><!-- Connect --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monitor</masterLabel>
+            <translation><!-- Monitor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plan</masterLabel>
+            <translation><!-- Plan --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Source --></label>
+        <name>Source__c</name>
+        <picklistValues>
+            <masterLabel>Moreover</masterLabel>
+            <translation><!-- Moreover --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WISE</masterLabel>
+            <translation><!-- WISE --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- State/Province --></label>
+        <name>State_Province__c</name>
+    </fields>
+    <fields>
+        <label><!-- Station --></label>
+        <name>Station__c</name>
+    </fields>
+    <fields>
+        <name>Status</name>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation><!-- Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Escalated</masterLabel>
+            <translation><!-- Escalated --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On Hold</masterLabel>
+            <translation><!-- On Hold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Scheduled</masterLabel>
+            <translation><!-- Scheduled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waiting for Client Response</masterLabel>
+            <translation><!-- Waiting for Client Response --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waiting for Internal Response</masterLabel>
+            <translation><!-- Waiting for Internal Response --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Steps to Reproduce --></label>
+        <name>Steps_to_Reproduce__c</name>
+    </fields>
+    <fields>
+        <label><!-- Steps to recreate (if error) --></label>
+        <name>Steps_to_recreate_if_error__c</name>
+    </fields>
+    <fields>
+        <help><!-- Related Account to the Case.  For example, the Agency&apos;s Client or vice-versa. --></help>
+        <label><!-- Sub Account Name --></label>
+        <name>Sub_Account_Name__c</name>
+        <relationshipLabel><!-- Sub Account on Cases --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sub Topic --></label>
+        <name>Sub_Topic__c</name>
+        <picklistValues>
+            <masterLabel>10 day check-in</masterLabel>
+            <translation><!-- 10 day check-in --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30 day check-in</masterLabel>
+            <translation><!-- 30 day check-in --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6 month check-in</masterLabel>
+            <translation><!-- 6 month check-in --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>60 day check-in</masterLabel>
+            <translation><!-- 60 day check-in --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>90 day check-in</masterLabel>
+            <translation><!-- 90 day check-in --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Access</masterLabel>
+            <translation><!-- Access --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Account Maintenance</masterLabel>
+            <translation><!-- Account Maintenance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Analysis</masterLabel>
+            <translation><!-- Analysis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>App Slow</masterLabel>
+            <translation><!-- App Slow --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>App down</masterLabel>
+            <translation><!-- App down --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Article Inquiry</masterLabel>
+            <translation><!-- Article Inquiry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Backsearch</masterLabel>
+            <translation><!-- Backsearch --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Billing</masterLabel>
+            <translation><!-- Billing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Broadcast</masterLabel>
+            <translation><!-- Broadcast --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Browser</masterLabel>
+            <translation><!-- Browser --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bug</masterLabel>
+            <translation><!-- Bug --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BurrellesLuce</masterLabel>
+            <translation><!-- BurrellesLuce --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CP Build Complaint</masterLabel>
+            <translation><!-- CP Build Complaint --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CP Build Inquiry</masterLabel>
+            <translation><!-- CP Build Inquiry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancel</masterLabel>
+            <translation><!-- Cancel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Competitor Mention</masterLabel>
+            <translation><!-- Competitor Mention --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Complaint</masterLabel>
+            <translation><!-- Complaint --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Content</masterLabel>
+            <translation><!-- Content --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contract</masterLabel>
+            <translation><!-- Contract --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Copyright</masterLabel>
+            <translation><!-- Copyright --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Courtesy Call</masterLabel>
+            <translation><!-- Courtesy Call --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credit/Refund</masterLabel>
+            <translation><!-- Credit/Refund --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Distribution</masterLabel>
+            <translation><!-- Distribution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error message</masterLabel>
+            <translation><!-- Error message --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Firewall</masterLabel>
+            <translation><!-- Firewall --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal Check-In</masterLabel>
+            <translation><!-- Internal Check-In --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lead pass</masterLabel>
+            <translation><!-- Lead pass --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lists</masterLabel>
+            <translation><!-- Lists --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Managed Services</masterLabel>
+            <translation><!-- Managed Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketwired</masterLabel>
+            <translation><!-- Marketwired --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Media List/Pub inquiry</masterLabel>
+            <translation><!-- Media List/Pub inquiry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Missed/Incorrect article</masterLabel>
+            <translation><!-- Missed/Incorrect article --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prepaid Services</masterLabel>
+            <translation><!-- Prepaid Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pub addition</masterLabel>
+            <translation><!-- Pub addition --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Publicity value</masterLabel>
+            <translation><!-- Publicity value --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reading instructions</masterLabel>
+            <translation><!-- Reading instructions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renewal Call</masterLabel>
+            <translation><!-- Renewal Call --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reports</masterLabel>
+            <translation><!-- Reports --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Save</masterLabel>
+            <translation><!-- Save --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Search agent</masterLabel>
+            <translation><!-- Search agent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Search walkthrough</masterLabel>
+            <translation><!-- Search walkthrough --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Social Newsroom</masterLabel>
+            <translation><!-- Social Newsroom --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Switchover</masterLabel>
+            <translation><!-- Switchover --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Training Request</masterLabel>
+            <translation><!-- Training Request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transition Call</masterLabel>
+            <translation><!-- Transition Call --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>User maintenance</masterLabel>
+            <translation><!-- User maintenance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Walkthrough</masterLabel>
+            <translation><!-- Walkthrough --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- test help --></help>
+        <label><!-- Subscription Name --></label>
+        <name>Subscription_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Subscription --></label>
+        <name>Subscription__c</name>
+    </fields>
+    <fields>
+        <label><!-- Subtitle --></label>
+        <name>Subtitle__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time Zone --></label>
+        <name>Time_Zone__c</name>
+        <picklistValues>
+            <masterLabel>CST</masterLabel>
+            <translation><!-- CST --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EST</masterLabel>
+            <translation><!-- EST --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MST</masterLabel>
+            <translation><!-- MST --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PST</masterLabel>
+            <translation><!-- PST --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Topic/Profile --></label>
+        <name>Topic_Profile__c</name>
+    </fields>
+    <fields>
+        <label><!-- Topic --></label>
+        <name>Topic__c</name>
+        <picklistValues>
+            <masterLabel>Enhancement</masterLabel>
+            <translation><!-- Enhancement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monitoring</masterLabel>
+            <translation><!-- Monitoring --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Outreach</masterLabel>
+            <translation><!-- Outreach --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Performance</masterLabel>
+            <translation><!-- Performance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Support</masterLabel>
+            <translation><!-- Support --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Total Extension Days --></label>
+        <name>Total_Extension_Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Trial Days --></label>
+        <name>Total_Trial_Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Trial Extension Days --></label>
+        <name>Total_Trial_Extension_Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Training Audience --></label>
+        <name>Training_Audience__c</name>
+        <picklistValues>
+            <masterLabel>Both New and Existing</masterLabel>
+            <translation><!-- Both New and Existing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Existing users</masterLabel>
+            <translation><!-- Existing users --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New users</masterLabel>
+            <translation><!-- New users --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Trial End Date --></label>
+        <name>Trial_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trial Start Date --></label>
+        <name>Trial_Start_Date__c</name>
+    </fields>
+    <fields>
+        <name>Type</name>
+        <picklistValues>
+            <masterLabel>Add Subscriptions(DataHub)</masterLabel>
+            <translation><!-- Add Subscriptions(DataHub) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Add Subscriptions(Orion)</masterLabel>
+            <translation><!-- Add Subscriptions(Orion) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>At Risk Request</masterLabel>
+            <translation><!-- At Risk Request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Broadcast Issues</masterLabel>
+            <translation><!-- Broadcast Issues --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Broadcast Quote</masterLabel>
+            <translation><!-- Broadcast Quote --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Burrelles Contracts(New Biz)</masterLabel>
+            <translation><!-- Burrelles Contracts(New Biz) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Burrelles Contracts(Renewal)</masterLabel>
+            <translation><!-- Burrelles Contracts(Renewal) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client Services</masterLabel>
+            <translation><!-- Client Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consult Request</masterLabel>
+            <translation><!-- Consult Request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contract Admin Request</masterLabel>
+            <translation><!-- Contract Admin Request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Demo Request</masterLabel>
+            <translation><!-- Demo Request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Extension Request</masterLabel>
+            <translation><!-- Extension Request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Feed Setups</masterLabel>
+            <translation><!-- Feed Setups --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>General Request</masterLabel>
+            <translation><!-- General Request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal Training Request</masterLabel>
+            <translation><!-- Internal Training Request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Metadata Issues</masterLabel>
+            <translation><!-- Metadata Issues --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Missed Articles</masterLabel>
+            <translation><!-- Missed Articles --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Small Business Outreach</masterLabel>
+            <translation><!-- New Small Business Outreach --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On-Site Request</masterLabel>
+            <translation><!-- On-Site Request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PitchEngine Setup</masterLabel>
+            <translation><!-- PitchEngine Setup --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Press Report</masterLabel>
+            <translation><!-- Press Report --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pricing Question</masterLabel>
+            <translation><!-- Pricing Question --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product/General Question</masterLabel>
+            <translation><!-- Product/General Question --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pub Check</masterLabel>
+            <translation><!-- Pub Check --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quote Quickly Configuration</masterLabel>
+            <translation><!-- Quote Quickly Configuration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RFP</masterLabel>
+            <translation><!-- RFP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RPOST</masterLabel>
+            <translation><!-- RPOST --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Site Adjustments</masterLabel>
+            <translation><!-- Site Adjustments --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trial Extension Request</masterLabel>
+            <translation><!-- Trial Extension Request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trial Questions and Modifications</masterLabel>
+            <translation><!-- Trial Questions and Modifications --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trials</masterLabel>
+            <translation><!-- Trials --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>University Program</masterLabel>
+            <translation><!-- University Program --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Verification Call</masterLabel>
+            <translation><!-- Verification Call --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Webinar Request</masterLabel>
+            <translation><!-- Webinar Request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>eNews Quote</masterLabel>
+            <translation><!-- eNews Quote --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Upset Client Notes --></label>
+        <name>Upset_Client_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Upset Client? --></label>
+        <name>Upset_Client__c</name>
+    </fields>
+    <fields>
+        <label><!-- Usernames --></label>
+        <name>Usernames__c</name>
+    </fields>
+    <fields>
+        <label><!-- Volume --></label>
+        <name>Volume__c</name>
+    </fields>
+    <fields>
+        <label><!-- Were search terms updated? --></label>
+        <name>Were_search_terms_updated__c</name>
+    </fields>
+    <fields>
+        <label><!-- Which Campaign? --></label>
+        <name>Which_Campaign__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wise Site ID --></label>
+        <name>Wise_Site_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- If you enter text into this field the text will be displayed in a pop-up message whenever someone views this record. --></help>
+        <label><!-- Alert Message --></label>
+        <name>rrpu__Alert_Message__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- Client Services --></label>
+        <name>Client_Services</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Contract Admin --></label>
+        <name>Contract_Admin_Request</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- DCS Add Subscriptions DataHub --></label>
+        <name>DCS_Add_Subscriptions_DataHub</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- DCS Add Subscriptions Orion --></label>
+        <name>DCS_Add_Subscriptions_Orion</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- DCS Broadcast Issues --></label>
+        <name>DCS_Broadcast_Issues</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- DCS Feed Setups --></label>
+        <name>DCS_Feed_Setups</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- DCS Gnip Setups --></label>
+        <name>DCS_Gnip_Setups</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- DCS Mapping Issues --></label>
+        <name>DCS_Mapping_Issues</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- DCS Metadata Issues --></label>
+        <name>DCS_Metadata_Issues</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- DCS Missed Articles --></label>
+        <name>DCS_Missed_Articles</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- DCS Missed Internet Articles (MIAs) --></label>
+        <name>DCS_Missed_Internet_Articles_MIAs</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- DCS Missed LexisNexis Articles --></label>
+        <name>DCS_Missed_LexisNexis_Articles</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- DCS Radian6 Setups --></label>
+        <name>DCS_Radian6_Setups</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- DCS Site Adjustments --></label>
+        <name>DCS_Site_Adjustments</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- DCS Subscription Additions --></label>
+        <name>DCS_Subscription_Additions</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Sales Support Broadcast Quote --></label>
+        <name>Sales_Support_Broadcast_Quote</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Sales Support Burrelles Contracts New Biz --></label>
+        <name>Sales_Support_Burrelles_Contracts_New_Biz</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Sales Support Burrelles Contracts Renewal --></label>
+        <name>Sales_Support_Burrelles_Contracts_Renewal</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Sales Support Extension Request --></label>
+        <name>Sales_Support_Extension_Request</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Sales Support Press Report --></label>
+        <name>Sales_Support_Press_Report</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Sales Support Pricing Question --></label>
+        <name>Sales_Support_Pricing_Question</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Sales Support Product General Question --></label>
+        <name>Sales_Support_Product_General_Question</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Sales Support Pub Check --></label>
+        <name>Sales_Support_Pub_Check</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Sales Support Quote Quickly Configuration --></label>
+        <name>Sales_Support_Quote_Quickly_Configuration</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Sales Support RFP --></label>
+        <name>Sales_Support_RFP</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Sales Support RPOST --></label>
+        <name>Sales_Support_RPOST</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Sales Support Trial Extension Request --></label>
+        <name>Sales_Support_Trial_Extension_Request</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Sales Support Trial Questions and Modifications --></label>
+        <name>Sales_Support_Trial_Questions_and_Modifications</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Sales Support Trials --></label>
+        <name>Sales_Support_Trials</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Sales Support University Program --></label>
+        <name>Sales_Support_University_Program</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Sales Support eNews Quote --></label>
+        <name>Sales_Support_eNews_Quote</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Training --></label>
+        <name>Training</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- When the Issue Status is Development Work, then a Jira Number is required. --></errorMessage>
+        <name>Development_Work_requires_Jira_Number</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- SSG Information is required in order to close the Case as Outstanding Technical Issue. --></errorMessage>
+        <name>SSG_Requirement</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- When a Service Desk Ticket Number is filled in, then Issue Status is required. --></errorMessage>
+        <name>Service_Desk_Ticket_requires_Issue_Statu</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- test --></errorMessage>
+        <name>test</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- CA_Support --></label>
+        <name>CA_Support</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- DCS_Support --></label>
+        <name>DCS_Support</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Escalate_To_SSG --></label>
+        <name>Escalate_To_SSG</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Training_Request --></label>
+        <name>Training_Request</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_with_DocuSign --></label>
+        <name>dsfs__Send_with_DocuSign</name>
+    </webLinks>
+</CustomObjectTranslation>

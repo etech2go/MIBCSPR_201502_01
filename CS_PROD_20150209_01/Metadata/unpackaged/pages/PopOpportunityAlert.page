@@ -1,0 +1,28 @@
+<apex:page standardController="Opportunity" extensions="OpportunityAlertExtension" showHeader="false" sidebar="false" title="">
+    <script>
+		function showPopup()
+        {
+            var showPopup = false;
+        
+            var oppId = "{!opp.Id}"; 
+			var creditHold = "{!acct.Credit_Hold__c}";  
+			//alert(oppId);
+			if(creditHold == "true")
+            {
+                //alert("8-" + creditHold);
+                showPopup = true;
+            }
+		
+			if(showPopup == true)
+            {                           
+                var x = screen.width/2 - 300/2;
+                var y = screen.height/2 - 300/2;
+                var newwindow;
+                var oppUrl = window.location.protocol + '//' + window.location.host + '/' + 'apex/OpportunityAlert?oid=' + oppId;
+                newwindow = window.open (oppUrl, 'Opportunity Alert', config='height=300,width=300,toolbar=no,menubar=no,scrollbars=yes,resizable=no,location=no,directories=no,status=no,left='+ x + ',top=' + y);             
+                newwindow.focus();
+            }
+		}
+	</script>			
+    <body onload="showPopup();"></body>
+</apex:page>

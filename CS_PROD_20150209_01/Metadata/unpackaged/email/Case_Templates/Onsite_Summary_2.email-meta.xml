@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Client_Services_LetterHead</letterhead>
+    <name>Training Onsite Summary</name>
+    <style>freeForm</style>
+    <subject>Onsite Summary: {!Account.Name} ({!Account.Total_Renewal_Value__c})</subject>
+    <textOnly>Hi {!Account.Renewal_Rep__c},
+
+Below are the notes from my onsite training with {!Account.Name}. Please let me know if you have any questions
+
+Training Date: {!Case.Follow_Up_Date__c}
+Location: {!Case.State_Province__c}
+Key Office Coordinator: {!Case.Contact}
+Total Number of Attendees: {!Case.Num_of_Users_Trained__c}
+
+-- Training Details --
+
+Training Notes
+{!Case.Last_Case_Comment}
+
+Outstanding Issues
+List any outstanding issues
+
+Upsell Opportunities
+List any upsell opportunities
+
+View all case info at &lt;a href=&quot;{!Case.Link}&quot;&gt;{!Case.Link}&lt;/a&gt;</textOnly>
+    <type>html</type>
+</EmailTemplate>

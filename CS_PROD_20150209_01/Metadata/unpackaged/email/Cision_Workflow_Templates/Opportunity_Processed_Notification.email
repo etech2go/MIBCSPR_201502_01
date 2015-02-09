@@ -1,0 +1,5 @@
+An Opportunity for {!Opportunity.Account} has been submitted to Softrax by {!Opportunity.CA_Rep__c}.
+
+Note: This notification doesn't mean the Opportunity has successfully made it into Softrax, yet.  There could be issues with data on the Opportunity that keep it from being picked up Softrax.  
+
+Click here to view the Opportunity in Salesforce: {!Opportunity.Link}

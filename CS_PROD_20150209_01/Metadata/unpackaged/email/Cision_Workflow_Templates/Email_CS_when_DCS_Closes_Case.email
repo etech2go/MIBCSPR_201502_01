@@ -1,0 +1,7 @@
+Hi {!Case.Parent_Case_Owner__c},
+
+{!Case.OwnerFullName} has closed a DCS Case that you opened with them for your Case with {!Case.Account}.
+
+Click here to see the DCS Case: {!Case.Link}
+
+Thanks!

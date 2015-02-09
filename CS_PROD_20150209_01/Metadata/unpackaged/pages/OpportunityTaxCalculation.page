@@ -1,0 +1,69 @@
+<apex:page standardController="Opportunity" extensions="OpportunityTaxExtension">
+    <apex:form >
+    	<apex:pageBlock >
+            <apex:facet name="footer">
+            	<apex:panelGrid id="footerPanel" columns="2" width="100%">
+                	<apex:outputPanel >
+                    	<apex:commandButton action="{!CalculateTax}" value="Calc Tax"/>
+                    	<apex:commandButton action="{!SaveTax}" value="Save Tax"/>
+                    	<apex:commandButton action="{!Cancel}" value="Cancel"/>
+                    </apex:outputPanel>
+                </apex:panelGrid>
+            </apex:facet>
+            
+            <apex:pageBlockSection title="Address Information">
+                			    
+			    <apex:pageBlockSectionItem >
+			    	<apex:panelGrid id="toAddress" columns="2" width="100%">
+						<apex:outputText value="Destination Street"/>
+						<apex:OutputText value="{!opp.Shipping_Street__c}"/>
+						<apex:outputText value="Destination City"/>
+						<apex:OutputText value="{!opp.Shipping_City__c}"/>
+						<apex:outputText value="Destination State"/>
+						<apex:OutputText value="{!opp.Shipping_State__c}"/>
+						<apex:outputText value="Destination Postal Code"/>
+						<apex:OutputText value="{!opp.Shipping_Zip__c}"/>
+					</apex:panelGrid>
+			    </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+            
+                      
+            <br/>
+            
+            <apex:pageBlockSection columns="1" title="Opportunity Line Items">
+            	<apex:pageBlockTable width="100%" value="{!lineWrapperList}" var="lineItem" columns="7">
+          				<apex:column headerValue="Name">
+            				<apex:OutputText value="{!lineItem.Name}"/>
+        				</apex:column>
+        				<apex:column headerValue="Quantity">
+            				<apex:OutputText value="{!lineItem.Quantity}"/>
+        				</apex:column>
+        				<apex:column headerValue="Sale Price">
+            				<apex:OutputText value="{!lineItem.SalesPrice}"/>
+        				</apex:column>
+        				<apex:column headerValue="Tax">
+            				<apex:OutputText value="{!lineItem.Tax}"/>
+        				</apex:column>
+        				<apex:column headerValue="Rate">
+            				<apex:OutputText value="{!lineItem.Rate}"/>
+        				</apex:column>
+        				<apex:column headerValue="Total After Tax">
+            				<apex:OutputText value="{!lineItem.TotalAfterTax}"/>
+        				</apex:column>
+        				<apex:column width="200px" headerValue="Tax Details">
+            				<apex:OutputText value="{!lineItem.TaxDetails}"/>
+        				</apex:column>
+          			</apex:pageBlockTable>
+            </apex:pageBlockSection>
+            
+            <br/>
+            
+            <apex:pageBlockSection title="Result">
+            	<apex:panelGrid id="results" columns="1" width="100%">
+            		<apex:outputText value="{!TaxResult}"/>
+            	</apex:panelGrid>
+            </apex:pageBlockSection>
+    	</apex:pageBlock>
+            
+    </apex:form>
+</apex:page>

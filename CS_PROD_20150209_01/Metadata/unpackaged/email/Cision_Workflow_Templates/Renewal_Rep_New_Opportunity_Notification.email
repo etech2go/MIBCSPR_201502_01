@@ -1,0 +1,5 @@
+Hi {!Opportunity.OwnerFirstName},
+
+The Renewal Opportunity for {!Opportunity.Account} has been assigned to you by {!Opportunity.LastModifiedBy}.
+
+Click here to view the Opportunity in Salesforce.com: {!Opportunity.Link}

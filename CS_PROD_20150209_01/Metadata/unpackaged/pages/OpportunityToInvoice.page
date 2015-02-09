@@ -1,0 +1,2 @@
+<apex:page standardController="Opportunity" extensions="OpportunityToInvoiceController" action="{!createInvoice}">
+</apex:page>

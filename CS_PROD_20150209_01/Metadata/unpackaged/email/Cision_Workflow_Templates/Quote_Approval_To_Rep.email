@@ -1,0 +1,5 @@
+Hi
+
+Your Quote - {!Quote.Name} - has been submitted for Approval.
+
+{!Quote.Link}

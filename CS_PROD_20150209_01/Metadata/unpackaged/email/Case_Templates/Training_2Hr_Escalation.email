@@ -1,0 +1,12 @@
+Hi {!Case.OwnerFullName}<br/><br/>
+
+There is a Case awaiting your response<br/><br/>
+
+<B>Contact</B> {!Case.Contact}<br/>
+<B>Account</B> {!Case.Account}<br/>
+<B>Subject</B> {!Case.Subject}<br/>
+<B>Description</B> {!Case.Description}<br/><br/>
+
+{!Case.Link}<br/><br/>
+
+Thanks

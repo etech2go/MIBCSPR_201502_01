@@ -1,0 +1,5 @@
+Hi {!Opportunity.Account}
+
+You have one more month to try to save this Account before New Biz takes over this Account's territory.
+
+Click here to see your Opp: {!Opportunity.Link}

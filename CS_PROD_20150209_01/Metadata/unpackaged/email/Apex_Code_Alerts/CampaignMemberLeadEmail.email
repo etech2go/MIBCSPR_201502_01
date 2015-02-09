@@ -1,0 +1,16 @@
+<B>Account Name</B>:  {!Lead.Company} <br/>
+<B>Contact Name</B>:  {!Lead.Name} <br/>
+<B>Email</B>:  {!Lead.Email} <br/>
+<B>Phone</B>: {!Lead.Phone} <br/>
+<B>City</B>: {!Lead.City} <br/>
+<B>State/Province</B>:  {!Lead.State} <br/>
+<B>Country</B>:  {!Lead.Country} <br/>
+<B>Campaign Name</B>: {!Campaign.Name} <br/>
+<B>Job Role</B>: {!Lead.Job_Role__c} <br/>
+<B>Function/Department</B>: {!Lead.Function_Department__c} <br/>
+<B>PR Department Size</B>: {!Lead.PR_Department_Size__c} <br/>
+<B>PR Activities</B>: {!Lead.PR_Activities__c} <br/>
+<B>Areas of Interest</B>: {!Lead.Areas_of_Interest__c} <br/>
+<B>Web Employees</B>: {!Lead.Web_Employees__c} <br/>
+<B>Web Revenue</B>: {!Lead.Web_Revenue__c} <br/>
+<B>Web Lead Comments</B>: {!Lead.Description} <br/>

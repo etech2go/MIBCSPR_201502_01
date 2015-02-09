@@ -1,0 +1,289 @@
+<apex:page standardController="Opportunity" extensions="OpportunityPrintViewExtension" showHeader="false" renderAs="pdf">
+    <head>
+        <style> 
+            body
+            {
+                font-size:12px;
+	        }
+			
+			.pinPointNotes
+            {
+                font-size:10px;
+	        }
+			
+			.boldText
+			{
+				font-weight:bold;
+				padding:10px;
+			}
+			
+			.sectionHeader
+			{
+				font-weight:bold;
+				font-size:16px;
+				color:#0C2871;
+			}
+			
+			.documentHeader
+			{
+				font-weight:bold;
+				font-size:20px;
+				color:#0C2871;
+			}
+			
+			.colStyle
+			{
+				width:50%;
+				text-align: left;
+				vertical-align:top;
+				border-bottom:0.5px dotted #92C74A;
+			}
+			
+			.bb
+        	{
+            	border-bottom:0.5px dotted #92C74A;
+        	}
+			
+			@page
+			{
+				margin: 2%;
+			
+				@top-left
+				{
+					font-size:12px;
+    				content: "Opportunity Print View";
+  				}
+  
+				@top-right
+				{
+					font-size:12px;
+    				content: "Page " counter(page);
+  				}
+			}
+		</style>
+				
+    </head>
+    
+    <apex:form >
+		<apex:panelGrid columns="2">
+			<apex:image url="{!$Resource.CisionLogo}" width="110" height="32"/>
+			<apex:outputLabel value="Print View for Opportunity : {!Opportunity.Name}" styleclass="documentHeader"/>	
+		</apex:panelGrid>
+		
+		<br/>
+		
+        <apex:pageBlock mode="detailBlock">
+           <apex:facet name="header">
+				<apex:outputPanel >
+			   		<apex:outputLabel value="Opportunity Details" styleclass="sectionHeader"/>
+					<div style="width:100%; height:2px; background:#0C2871;"></div>
+					<br/>
+				</apex:outputPanel>
+			</apex:facet>
+				
+			<table width="100%">
+				<colgroup>
+    				<col style="width: 50%" />
+    				<col style="width: 50%" />
+    			</colgroup>
+				
+				<tr>
+					<td valign="top">
+						<apex:pageBlockTable width="100%" value="{!LeftDetailFields}" var="leftDetail" columns="2" >
+							<apex:column headerValue="" styleClass="colStyle">
+	           					<apex:outputText value="{!leftDetail.Label}" styleclass="boldText"/>
+	                   		</apex:column>
+							<apex:column headerValue="" styleClass="colStyle">
+	           					<apex:outputField value="{!opp[leftDetail.fieldPath]}"/>
+	                   		</apex:column>
+						</apex:pageBlockTable>
+					</td>
+					
+					<td valign="top">
+						<apex:pageBlockTable width="100%" value="{!rightDetailFields}" var="rightDetail" columns="2">
+							<apex:column headerValue="" styleClass="colStyle">
+	           					<apex:outputText value="{!rightDetail.Label}" styleclass="boldText"/>
+	                   		</apex:column>
+							<apex:column headerValue="" styleClass="colStyle">
+	           					<apex:outputField value="{!opp[rightDetail.fieldPath]}"/>
+	                   		</apex:column>
+						</apex:pageBlockTable>
+					</td>
+				</tr>
+							
+			</table>
+			
+			<br/>
+			<apex:outputField value="{!opp.Order_Instructions__c}"/>
+			<br/>
+		</apex:pageBlock>
+													
+		<br/>
+		
+		<apex:pageBlock mode="detailBlock">
+			<apex:facet name="header">
+				<apex:outputPanel >
+			    	<apex:outputLabel value="Recurring Client Needs" styleclass="sectionHeader"/>
+					<div style="width:100%; height:2px; background:#0C2871;"></div>
+					<br/>
+				</apex:outputPanel>
+			</apex:facet>
+			
+			<table width="100%">
+				<colgroup>
+    				<col style="width: 100%" />
+    			</colgroup>
+				
+				<tr>
+					<td valign="top">
+						<apex:pageBlockTable width="100%" value="{!LeftRCNFields}" var="leftRCN" columns="2">
+							<apex:column headerValue="" styleClass="colStyle">
+            					<apex:outputText value="{!leftRCN.Label}" styleclass="boldText"/>
+                    		</apex:column>
+							<apex:column headerValue="" styleClass="colStyle">
+            					<apex:outputField value="{!opp[leftRCN.fieldPath]}"/>
+                    		</apex:column>
+						</apex:pageBlockTable>
+					</td>
+										
+				</tr>
+			</table>
+		</apex:pageBlock>	
+		
+		<br/>
+		
+		<apex:pageBlock mode="detailBlock">
+			<apex:facet name="header">
+				<apex:outputPanel >
+			   		<apex:outputLabel value="Shipping Details" styleclass="sectionHeader"/>
+					<div style="width:100%; height:2px; background:#0C2871;"></div>
+					<br/>
+				</apex:outputPanel>
+			</apex:facet>
+			
+			<table width="100%">
+				<colgroup>
+    				<col style="width: 50%" />
+    				<col style="width: 50%" />
+    			</colgroup>
+				
+				<tr>
+					<td valign="top">
+						<apex:pageBlockTable width="100%" value="{!LeftShippingFields}" var="leftShipping" columns="2">
+							<apex:column headerValue="" styleClass="colStyle">
+            					<apex:outputText value="{!leftShipping.Label}" styleclass="boldText"/>
+                    		</apex:column>
+							<apex:column headerValue="" styleClass="colStyle">
+            					<apex:outputField value="{!opp[leftShipping.fieldPath]}"/>
+                    		</apex:column>
+						</apex:pageBlockTable>
+					</td>
+					
+					<td valign="top">
+						<apex:pageBlockTable width="100%" value="{!RightShippingFields}" var="rightShipping" columns="2">
+							<apex:column headerValue="" styleClass="colStyle">
+            					<apex:outputText value="{!rightShipping.Label}" styleclass="boldText"/>
+                    		</apex:column>
+							<apex:column headerValue="" styleClass="colStyle">
+            					<apex:outputField value="{!opp[rightShipping.fieldPath]}"/>
+                    		</apex:column>
+						</apex:pageBlockTable>
+					</td>
+				</tr>
+								
+			</table>
+        </apex:pageBlock>
+		
+		<br/>
+			
+		<apex:pageBlock mode="detailBlock">
+			<apex:facet name="header">
+				<apex:outputPanel >
+			    	<apex:outputLabel value="Broadcast Items" styleclass="sectionHeader"/>
+					<div style="width:100%; height:2px; background:#0C2871;"></div>
+					<br/>
+				</apex:outputPanel>
+			</apex:facet>
+			
+			<apex:repeat value="{!BroadcastItems}" var="broadcastItem">
+	        	<table width="100%">
+					<colgroup>
+    					<col style="width: 33%;" />
+    					<col style="width: 33%;" />
+    					<col style="width: 33%;" />
+					</colgroup>
+				
+					<tr>
+						<td valign="top" class="bb">
+							<apex:outputText value="Item#" styleclass="boldText"/>
+	                        <apex:outputText value="{!broadcastItem.ItemNumber__c}"/>	
+						</td>
+						
+						<td valign="top" class="bb">
+							<apex:outputText value="Name" styleclass="boldText"/>
+	                        <apex:outputText value="{!broadcastItem.Name}"/>
+						</td>
+						
+						<td valign="top" class="bb">
+							<apex:outputText value="Item" styleclass="boldText"/>
+	                        <apex:outputText value="{!broadcastItem.Item__c}"/>
+						</td>
+					</tr>
+					
+					<tr>
+						<td valign="top" class="bb">
+							<apex:outputText value="Station" styleclass="boldText"/>
+	                        <apex:outputText value="{!broadcastItem.Market_Station__c}"/>
+						</td>
+						
+						<td valign="top" class="bb">
+							<apex:outputText value="Air Date" styleclass="boldText"/>
+	                        <apex:outputText value="{!broadcastItem.Air_Date_Time_Time_Zone__c}"/>
+						</td>
+						
+						<td valign="top" class="bb">
+							<apex:outputText value="Format Options" styleclass="boldText"/>
+	                        <apex:outputText value="{!broadcastItem.Format_Options__c}"/>
+						</td>
+					</tr>
+					
+					<tr>
+						<td valign="top" class="bb">
+							<apex:outputText value="Program Title" styleclass="boldText"/>
+	                        <apex:outputText value="{!broadcastItem.Program_Title__c}"/>
+						</td>
+						
+						<td valign="top" class="bb">
+							<apex:outputText value="Subject" styleclass="boldText"/>
+	                        <apex:outputText value="{!broadcastItem.Subject_Description__c}"/>
+						</td>
+						
+						<td valign="top" class="bb">
+							<apex:outputText value="TRT" styleclass="boldText"/>
+	                        <apex:outputText value="{!broadcastItem.TRT__c}"/>
+						</td>
+					</tr>
+					
+					<tr>
+						<td valign="top" class="bb">
+							<apex:outputText value="Total" styleclass="boldText"/>
+	                        <apex:outputText value="{!broadcastItem.Total_after_Tax__c}"/>
+						</td>											
+						<td valign="top" class="bb"></td>						
+						<td valign="top" class="bb"></td>
+					</tr>
+										
+				</table>
+				
+				<br/>
+				
+				<apex:outputText value="{!broadcastItem.PinPoint_Notes__c}" styleclass="pinPointNotes"/>
+				
+				<br/><br/>
+	            
+				<div style="width:100%; height:2px; background:#0C2871;"></div>
+	        </apex:repeat>
+		</apex:pageBlock>
+    </apex:Form>
+        
+</apex:page>

@@ -1,0 +1,5 @@
+A new Case called {!Case.Subject} has come in for you.
+
+Here is a link to the Case: {!Case.Link}
+
+Here is a link to the Account: {!Account.Link}

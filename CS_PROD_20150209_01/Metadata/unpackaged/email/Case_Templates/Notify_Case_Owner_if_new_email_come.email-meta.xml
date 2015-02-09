@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Notify Case Owner if new email comes</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Notify Case Owner if new email comes</name>
+    <style>none</style>
+    <subject>&quot;{!Account.Name}-Case Update&quot; {!Case.CaseNumber}</subject>
+    <textOnly>Hi
+
+A new Email has been received for your existing Case Number {!Case.CaseNumber}
+
+Please Review this Case
+
+Link to case</textOnly>
+    <type>custom</type>
+</EmailTemplate>

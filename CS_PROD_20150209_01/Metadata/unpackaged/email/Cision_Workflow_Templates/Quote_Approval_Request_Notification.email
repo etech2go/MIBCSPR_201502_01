@@ -1,0 +1,18 @@
+{!Opportunity.OwnerFullName} needs your approval for the following:
+
+- Discount: {!SBQQ__Quote__c.Require_Discount_Approval__c} ({!SBQQ__Quote__c.Discount_Percent_for_Approval__c}%)
+- Email Points Discount:  {!SBQQ__Quote__c.Require_Email_Points_Discount_Approval__c}
+- Copyright Fee Discount:  {!SBQQ__Quote__c.Require_Copyright_Fee_Discount_Approval__c}
+- International Print Discount:  {!SBQQ__Quote__c.Require_Intl_Print_Discount_Approval__c}
+- Credit for Existing Services: {!SBQQ__Quote__c.Require_Credit_for_Services_Approval__c}
+- Subscription Term:  {!SBQQ__Quote__c.Require_Subscription_Term_Approval__c}
+- Payment Plan:  {!SBQQ__Quote__c.Require_Payment_Plan_Approval__c} ({!SBQQ__Quote__c.Payment_Plan__c})
+- Payment Terms:  {!SBQQ__Quote__c.Require_Payment_Terms_Approval__c} ({!SBQQ__Quote__c.SBQQ__PaymentTerms__c})
+- Payment Type: {!SBQQ__Quote__c.Require_Payment_Type_Approval__c}
+- Credit Risk: {!SBQQ__Quote__c.Require_Credit_Risk_Approval__c}
+- Discounted Below Cost: {!SBQQ__Quote__c.Require_Product_Below_Cost_Approval__c}
+- International Address: {!SBQQ__Quote__c.Require_International_Address_Approval__c}
+- Contract Extension: {!SBQQ__Quote__c.Require_Contract_Extension_Approval__c}
+
+Link to Quote:
+{!SBQQ__Quote__c.Link}

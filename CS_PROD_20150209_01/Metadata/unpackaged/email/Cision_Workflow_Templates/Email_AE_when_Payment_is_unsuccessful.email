@@ -1,0 +1,3 @@
+The payment for {!Opportunity.Account} (Opp Number:  {!Opportunity.Name}) was unsuccessful.
+
+{!Opportunity.Link}

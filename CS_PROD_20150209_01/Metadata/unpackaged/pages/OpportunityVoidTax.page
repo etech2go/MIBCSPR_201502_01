@@ -1,0 +1,3 @@
+<apex:page standardController="Opportunity" extensions="OpportunityVoidTaxExtension" action="{!VoidTax}">
+	<apex:pageBlock title="{!ErrorMessage}"/>
+</apex:page>

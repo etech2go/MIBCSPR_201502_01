@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Email New Biz when Lost Renewal</name>
+    <style>none</style>
+    <subject>Lost Renewal Alert: {!Opportunity.Account}</subject>
+    <type>text</type>
+</EmailTemplate>
